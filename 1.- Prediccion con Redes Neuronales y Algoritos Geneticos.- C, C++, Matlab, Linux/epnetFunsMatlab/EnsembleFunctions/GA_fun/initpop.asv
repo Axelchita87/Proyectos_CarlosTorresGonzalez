@@ -1,0 +1,22 @@
+function [Pop_str, Pop_beta] = initpop(Pop_str, Pop_beta,pop_size,ind_pop)
+    %function to initialize the population and beta parameter
+    %prototype
+    %input:
+        %Pop_str    Population string
+        %Pop_beta   Population beta
+        %pop_size   size of population, columns in genotype
+        %ind_pop    
+    for i=1:ind_pop
+        for j=1:pop_size
+            rand_temp = rand();
+            if (rand_temp < 0.5)
+                Pop_str(i,j) = 0;
+            else
+                Pop_str(i,j)  = 1;
+            end
+        end
+        rand_temp = rand();
+        Pop_beta(i,1) = rand_temp;
+    end
+
+

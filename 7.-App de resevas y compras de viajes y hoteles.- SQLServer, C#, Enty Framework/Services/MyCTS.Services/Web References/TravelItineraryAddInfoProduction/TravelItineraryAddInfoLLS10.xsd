@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://webservices.sabre.com/sabreXML/2003/07" elementFormDefault="qualified" targetNamespace="http://webservices.sabre.com/sabreXML/2003/07" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TravelItineraryAddInfoRQ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="POS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Source">
+                <xs:complexType>
+                  <xs:attribute name="PseudoCityCode" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation xml:lang="en">An identification code assigned to an office/agency by a reservation system.																</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="AgencyInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="AddressLine" type="xs:string" />
+                    <xs:element minOccurs="0" name="StreetNmbr" type="xs:string" />
+                    <xs:element minOccurs="0" name="CityName" type="xs:string" />
+                    <xs:element minOccurs="0" name="PostalCode" type="xs:string" />
+                    <xs:element minOccurs="0" name="County" type="xs:string" />
+                    <xs:element minOccurs="0" name="StateCountyProv">
+                      <xs:complexType>
+                        <xs:attribute name="StateCode" use="optional">
+                          <xs:annotation>
+                            <xs:documentation xml:lang="en">The postal service standard code or abbreviation for the state, province, or region.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:minLength value="1" />
+                              <xs:maxLength value="8" />
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="CountryCode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Ticketing">
+                <xs:complexType>
+                  <xs:attribute name="TicketType" type="xs:string" use="optional" />
+                  <xs:attribute name="TicketTimeLimit" type="xs:string" use="optional" />
+                  <xs:attribute name="PseudoCityCode" type="xs:string" use="optional" />
+                  <xs:attribute name="QueueNumber" type="xs:string" use="optional" />
+                  <xs:attribute name="ShortText" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="CustomerInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Corporate">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="ID" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="CustomerIdentifier" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="CustLoyalty">
+                <xs:complexType>
+                  <xs:attribute name="MembershipID" type="xs:string" use="optional" />
+                  <xs:attribute name="NameNumber" type="xs:decimal" use="optional" />
+                  <xs:attribute name="ProgramID" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation xml:lang="en">Identifier to indicate the company owner of the loyalty program.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="SegmentNumber" type="xs:decimal" use="optional" />
+                  <xs:attribute name="TravelingCarrierCode" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Email">
+                <xs:complexType>
+                  <xs:attribute name="Address" type="xs:string" use="optional" />
+                  <xs:attribute name="NameNumber" type="xs:decimal" use="optional" />
+                  <xs:attribute name="ShortText" type="xs:string" use="optional" />
+                  <xs:attribute name="Type" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="99" name="PersonName">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="GivenName" type="xs:string" />
+                    <xs:element minOccurs="0" name="Surname" type="xs:string" />
+                    <xs:element minOccurs="0" name="GroupInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="VendorPref">
+                            <xs:complexType>
+                              <xs:attribute name="Code" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Name" type="xs:string" use="optional" />
+                        <xs:attribute name="NumSeatsRemaining" type="xs:integer" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute default="false" name="Infant" type="xs:boolean" use="optional" />
+                  <xs:attribute name="NameNumber" type="xs:decimal" use="optional" />
+                  <xs:attribute name="NameReference" type="xs:string" use="optional" />
+                  <xs:attribute name="PassengerType" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Telephone">
+                <xs:complexType>
+                  <xs:attribute name="AreaCityCode" type="xs:string" use="optional" />
+                  <xs:attribute name="InsertAfterLine" type="xs:integer" use="optional" />
+                  <xs:attribute name="NameNumber" type="xs:decimal" use="optional" />
+                  <xs:attribute name="PhoneNumber" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation xml:lang="en">Telephone number assigned to a single location.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="PhoneUseType" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="TimeStamp" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicates the creation date and time of the message in UTC using the following format specified by ISO 8601; YYYY-	MM-					DDThh:mm:ssZ with time values using the 24 hour clock (e.g. 20 November 2003, 1:59:38 pm UTC becomes 2003-11-20T13:59:38Z).						</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Version" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">For all OTA versioned messages, the version of the message is indicated by a decimal value.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

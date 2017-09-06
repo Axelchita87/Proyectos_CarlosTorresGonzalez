@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="97bb9ac5-1ecb-434c-b23d-b29fdb1b7a30" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service2.wsdl" MetadataType="Wsdl" ID="2b5a68a0-9e07-4b86-b007-97a2f2975533" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" />
+    <MetadataFile FileName="service3.xsd" MetadataType="Schema" ID="a347a976-4259-4539-a99e-112f59c16736" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" />
+    <MetadataFile FileName="service4.xsd" MetadataType="Schema" ID="1cb2bc69-9538-4fdb-934e-137a0519d8f0" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" />
+    <MetadataFile FileName="CTS.Entities2.xsd" MetadataType="Schema" ID="6f300a1c-fd23-43a5-b2dd-aa984db70910" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" />
+    <MetadataFile FileName="Arrays2.xsd" MetadataType="Schema" ID="46e33ca9-4373-40c9-a496-0ac78d2ca38f" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/Volaris.svc/mex/mex/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

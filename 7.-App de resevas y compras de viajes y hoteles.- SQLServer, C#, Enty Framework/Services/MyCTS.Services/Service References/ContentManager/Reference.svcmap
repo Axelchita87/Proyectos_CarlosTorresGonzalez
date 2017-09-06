@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="18c90753-406d-4b89-a3be-1d29c26d408c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="be01aa71-9236-4a03-893c-b779f4da5813" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="39177569-b8e0-4f2d-a9a4-6a3f9f0e1e16" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="8815810f-b14a-4007-80b5-9eaa757a1df4" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+    <MetadataFile FileName="Booking.xsd" MetadataType="Schema" ID="0fa234e1-57f8-4659-9a1e-13dc4569335b" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+    <MetadataFile FileName="Content.xsd" MetadataType="Schema" ID="049623a8-93a6-4a54-ab4f-82d5ebc4458a" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+    <MetadataFile FileName="Enumerations.xsd" MetadataType="Schema" ID="2b90514a-be9b-4218-af21-0167e448786e" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJContentManager.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

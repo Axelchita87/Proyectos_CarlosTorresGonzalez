@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\bin\Debug\MyCTS.Business.dll">
+   <Modules>
+    <Module Name="mycts.business.dll">
+     <Namespaces>
+      <Namespace Name="MyCTS.Business">
+       <Types>
+        <Type Name="ApplicationsBL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeleteApplications(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ApplicationsBL.cs" Line="133">'ApplicationsBL.DeleteApplications(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAllApplications()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ApplicationsBL.cs" Line="55">'ApplicationsBL.GetAllApplications()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetApplications(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ApplicationsBL.cs" Line="30">'ApplicationsBL.GetApplications(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertApplications(System.String,System.String,System.Guid,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ApplicationsBL.cs" Line="82">'ApplicationsBL.InsertApplications(string, string, Guid, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateApplications(System.String,System.String,System.Guid,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ApplicationsBL.cs" Line="107">'ApplicationsBL.UpdateApplications(string, string, Guid, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImpuestosBajoCostoBL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#InsertImpuestosBajoCosto(System.String,System.String,System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business" File="ImpuestosBajoCostoBL.cs" Line="19">'ImpuestosBajoCostoBL.InsertImpuestosBajoCosto(string, string, string, string, string, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateImpuestosBajoCosto(System.String,System.String,System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business" File="ImpuestosBajoCostoBL.cs" Line="42">'ImpuestosBajoCostoBL.UpdateImpuestosBajoCosto(string, string, string, string, string, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProfileBL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeleteProfile(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ProfileBL.cs" Line="178">'ProfileBL.DeleteProfile(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAllProfile()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ProfileBL.cs" Line="73">'ProfileBL.GetAllProfile()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProfile(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ProfileBL.cs" Line="39">'ProfileBL.GetProfile(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertProfile(System.Guid,System.String,System.String,System.Byte[],System.DateTime)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ProfileBL.cs" Line="109">'ProfileBL.InsertProfile(Guid, string, string, byte[], DateTime)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateProfile(System.Guid,System.String,System.String,System.Byte[],System.DateTime)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="ProfileBL.cs" Line="143">'ProfileBL.UpdateProfile(Guid, string, string, byte[], DateTime)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SetAirLinesFareBL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SetAirLinesFare(System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Byte[],System.Boolean)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business" File="SetAirLinesFareBL.cs" Line="24">'SetAirLinesFareBL.SetAirLinesFare(string, string, bool, bool, bool, bool, bool, byte[], bool)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserinrolBL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeleteUserinrol(System.Guid,System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="UsersInRolesBL.cs" Line="114">'UserinrolBL.DeleteUserinrol(Guid, Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAllUserinrol(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="UsersInRolesBL.cs" Line="56">'UserinrolBL.GetAllUserinrol(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetUserinrol(System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="UsersInRolesBL.cs" Line="30">'UserinrolBL.GetUserinrol(Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertUserinrol(System.Guid,System.Guid)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:39Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Business\Security" File="UsersInRolesBL.cs" Line="85">'UserinrolBL.InsertUserinrol(Guid, Guid)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

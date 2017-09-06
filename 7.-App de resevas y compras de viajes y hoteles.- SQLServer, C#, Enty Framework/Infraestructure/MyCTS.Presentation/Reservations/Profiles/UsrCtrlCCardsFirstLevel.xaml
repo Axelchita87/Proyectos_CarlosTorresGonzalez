@@ -1,0 +1,212 @@
+﻿<UserControl x:Class="MyCTS.Presentation.Reservations.Profiles.UsrCtrlCCardsFirstLevel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="144" d:DesignWidth="450">
+    
+    <Grid>
+        <GroupBox Margin="0,0,0,0"   Grid.Row="3" Grid.Column="1"
+                  Background="LightBlue">
+            <GroupBox.Header>
+                Tarjetas de Crédito Corporativa:
+            </GroupBox.Header>
+            <ScrollViewer Opacity="2">
+                <Grid Name="AirlinesGroup">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Expander Name="Expander" Header="" DockPanel.Dock="Left" Grid.Row="1" Grid.Column="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Grid Width="Auto" Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="CCCode" Height="24" Width="31" Grid.Row="0" Grid.Column="0" MaxLength="2"></TextBox>
+                                <PasswordBox Name="CC" Height="24" Width="158" Grid.Row="0" Grid.Column="2" MaxLength="16"></PasswordBox>
+                                <Label Name="Exp" Content="Exp.:" Grid.Row="0" Grid.Column="3"/>
+                                <PasswordBox Name="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4" MaxLength="2" Password=""></PasswordBox>
+                                <Label Name="lblMM" Content="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4"></Label>
+                                <PasswordBox Name="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6" MaxLength="2"></PasswordBox>
+                                <Label Name="lblYY" Content="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6"></Label>
+                                <PasswordBox Name="Code" Height="24" Width="34" Grid.Row="0" Grid.Column="8" MaxLength="4"></PasswordBox>
+                                <Label Name="lblCode" Content="CVV" Height="24" Width="34" Grid.Row="0" Grid.Column="8"></Label>
+                                <Label Name="Use" Content="Uso:" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,-5.336" Grid.Row="1"/>
+                                <CheckBox Name="chkAir" Content="AIR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                                <CheckBox Name="chkCar" Content="CAR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkHtl" Content="HTL" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                                <Label Name="lblUse" Content="Uso:" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,0,0,-5.336" Grid.ColumnSpan="3"/>
+                                <TextBox Name="txtSpecificUse" Height="24" Width="104.864" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="0,3.996,0,-4.002"></TextBox>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Expander Name="Expander2" Header="" DockPanel.Dock="Left" Grid.Row="2" Grid.Column="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Grid Width="Auto" Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="CCCode2" Height="24" Width="31" Grid.Row="0" Grid.Column="0" MaxLength="2"></TextBox>
+                                <PasswordBox Name="CC2" Height="24" Width="158" Grid.Row="0" Grid.Column="2" MaxLength="16"></PasswordBox>
+                                <Label Name="Exp2" Content="Exp.:" Grid.Row="0" Grid.Column="3"/>
+                                <PasswordBox Name="MM2" Height="24" Width="30" Grid.Row="0" Grid.Column="4" MaxLength="2"></PasswordBox>
+                                <Label Name="lblMM2" Content="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4"></Label>
+                                <PasswordBox Name="YY2" Height="24" Width="30" Grid.Row="0" Grid.Column="6" MaxLength="2"></PasswordBox>
+                                <Label Name="lblYY2" Content="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6"></Label>
+                                <PasswordBox Name="Code2" Height="24" Width="34" Grid.Row="0" Grid.Column="8" MaxLength="4"></PasswordBox>
+                                <Label Name="lblCode2" Content="CVV" Height="24" Width="34" Grid.Row="0" Grid.Column="8"></Label>
+                                <Label Name="Use2" Content="Uso:" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,-5.336" Grid.Row="1"/>
+                                <CheckBox Name="chkAir2" Content="AIR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkCar2" Content="CAR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkHtl2" Content="HTL" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                                <Label Name="lblUse2" Content="Uso:" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,0,0,-5.336" Grid.ColumnSpan="3"/>
+                                <TextBox Name="txtSpecificUse2" Height="24" Width="104.864" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="0,3.996,0,-4.002"></TextBox>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Expander Name="Expander3" Header="" DockPanel.Dock="Left" Grid.Row="3" Grid.Column="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Grid Width="Auto" Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="CCCode3" Height="24" Width="31" Grid.Row="0" Grid.Column="0" MaxLength="2"></TextBox>
+                                <PasswordBox Name="CC3" Height="24" Width="158" Grid.Row="0" Grid.Column="2" MaxLength="16"></PasswordBox>
+                                <Label Name="Exp3" Content="Exp.:" Grid.Row="0" Grid.Column="3"/>
+                                <PasswordBox Name="MM3" Height="24" Width="30" Grid.Row="0" Grid.Column="4" MaxLength="2"></PasswordBox>
+                                <Label Name="lblMM3" Content="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4"></Label>
+                                <PasswordBox Name="YY3" Height="24" Width="30" Grid.Row="0" Grid.Column="6" MaxLength="2"></PasswordBox>
+                                <Label Name="lblYY3" Content="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6"></Label>
+                                <PasswordBox Name="Code3" Height="24" Width="34" Grid.Row="0" Grid.Column="8" MaxLength="4"></PasswordBox>
+                                <Label Name="lblCode3" Content="CVV" Height="24" Width="34" Grid.Row="0" Grid.Column="8"></Label>
+                                <Label Name="Use3" Content="Uso:" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,-5.336" Grid.Row="1"/>
+                                <CheckBox Name="chkAir3" Content="AIR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkCar3" Content="CAR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkHtl3" Content="HTL" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                                <Label Name="lblUse3" Content="Uso:" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,0,0,-5.336" Grid.ColumnSpan="3"/>
+                                <TextBox Name="txtSpecificUse3" Height="24" Width="104.864" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="0,3.996,0,-4.002"></TextBox>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Expander Name="Expander4" Header="" DockPanel.Dock="Left" Grid.Row="4" Grid.Column="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Grid Width="Auto" Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="CCCode4" Height="24" Width="31" Grid.Row="0" Grid.Column="0" MaxLength="2"></TextBox>
+                                <PasswordBox Name="CC4" Height="24" Width="158" Grid.Row="0" Grid.Column="2" MaxLength="16"></PasswordBox>
+                                <Label Name="Exp4" Content="Exp.:" Grid.Row="0" Grid.Column="3"/>
+                                <PasswordBox Name="MM4" Height="24" Width="30" Grid.Row="0" Grid.Column="4" MaxLength="2"></PasswordBox>
+                                <Label Name="lblMM4" Content="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4"></Label>
+                                <PasswordBox Name="YY4" Height="24" Width="30" Grid.Row="0" Grid.Column="6" MaxLength="2"></PasswordBox>
+                                <Label Name="lblYY4" Content="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6"></Label>
+                                <PasswordBox Name="Code4" Height="24" Width="34" Grid.Row="0" Grid.Column="8" MaxLength="4"></PasswordBox>
+                                <Label Name="lblCode4" Content="CVV" Height="24" Width="34" Grid.Row="0" Grid.Column="8"></Label>
+                                <Label Name="Use4" Content="Uso:" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,-5.336" Grid.Row="1"/>
+                                <CheckBox Name="chkAir4" Content="AIR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkCar4" Content="CAR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkHtl4" Content="HTL" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                                <Label Name="lblUse4" Content="Uso:" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,0,0,-5.336" Grid.ColumnSpan="3"/>
+                                <TextBox Name="txtSpecificUse4" Height="24" Width="104.864" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="0,3.996,0,-4.002"></TextBox>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                    <Expander Name="Expander5" Header="" DockPanel.Dock="Left" Grid.Row="5" Grid.Column="0">
+                        <StackPanel Margin="10,4,0,0">
+                            <Grid Width="Auto" Margin="0,0,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="CCCode5" Height="24" Width="31" Grid.Row="0" Grid.Column="0" MaxLength="2"></TextBox>
+                                <PasswordBox Name="CC5" Height="24" Width="158" Grid.Row="0" Grid.Column="2" MaxLength="16"></PasswordBox>
+                                <Label Name="Exp5" Content="Exp.:" Grid.Row="0" Grid.Column="3"/>
+                                <PasswordBox Name="MM5" Height="24" Width="30" Grid.Row="0" Grid.Column="4" MaxLength="2"></PasswordBox>
+                                <Label Name="lblMM5" Content="MM" Height="24" Width="30" Grid.Row="0" Grid.Column="4"></Label>
+                                <PasswordBox Name="YY5" Height="24" Width="30" Grid.Row="0" Grid.Column="6" MaxLength="2"></PasswordBox>
+                                <Label Name="lblYY5" Content="YY" Height="24" Width="30" Grid.Row="0" Grid.Column="6"></Label>
+                                <PasswordBox Name="Code5" Height="24" Width="34" Grid.Row="0" Grid.Column="8" MaxLength="4"></PasswordBox>
+                                <Label Name="lblCode5" Content="CVV" Height="24" Width="34" Grid.Row="0" Grid.Column="8"></Label>
+                                <Label Name="Use5" Content="Uso:" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,-5.336" Grid.Row="1"/>
+                                <CheckBox Name="chkAir5" Content="AIR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkCar5" Content="CAR" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                                <CheckBox Name="chkHtl5" Content="HTL" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+                                <Label Name="lblUse5" Content="Uso:" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="3,0,0,-5.336" Grid.ColumnSpan="3"/>
+                                <TextBox Name="txtSpecificUse5" Height="24" Width="104.864" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="5" HorizontalAlignment="Right" Margin="0,3.996,0,-4.002"></TextBox>
+                            </Grid>
+                        </StackPanel>
+                    </Expander>
+                </Grid>
+            </ScrollViewer>
+        </GroupBox>
+    </Grid>
+</UserControl>

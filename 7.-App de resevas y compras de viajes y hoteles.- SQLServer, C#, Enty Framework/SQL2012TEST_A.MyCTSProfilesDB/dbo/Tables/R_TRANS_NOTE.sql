@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[R_TRANS_NOTE] (
+    [ID_TRANSFORMATION] INT NULL,
+    [ID_NOTE]           INT NULL
+);
+

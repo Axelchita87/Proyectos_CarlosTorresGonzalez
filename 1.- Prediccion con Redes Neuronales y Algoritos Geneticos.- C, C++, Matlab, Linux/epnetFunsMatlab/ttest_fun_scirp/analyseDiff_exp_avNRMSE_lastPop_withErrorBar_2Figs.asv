@@ -1,0 +1,237 @@
+% Script to analyse different experiments for the average NRMSE of the
+% final population. This reuyslts are plot and compared with the error
+% bars.
+
+%THIS SCRITP PLOT ONE OR TWO FIGURES IN THE SAME PLOT
+%LINE 1 AVERAGE BEST FINAL TEST SET 
+%LLINE 2 AVERAGE FORM THE LAST POP TEST SET INSIDE epnet 
+
+%This script use another 3 scrpts in a subfolder
+
+clear
+clc
+
+%Directories to compare, the posistion to enter them is the position to plot 
+dirExp{1,1} = 'D:\DoctoradoResultados\TSEPnet22C\';   
+dirExp{1,2} = 'D:\DoctoradoResultados\TSEPnet23C\';   
+dirExp{1,3} = 'D:\DoctoradoResultados\TSEPnet24C\';   
+dirExp{1,4} = 'D:\DoctoradoResultados\TSEPnet25C\';
+dirExp{1,5} = 'D:\DoctoradoResultados\TSEPnet37C\';
+dirExp{1,6} = 'D:\DoctoradoResultados\TSEPnet38C\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet40C\';
+dirExp{1,8} = 'D:\DoctoradoResultados\TSEPnet42C\';
+dirExp{1,9} = 'D:\DoctoradoResultados\TSEPnet43C\';
+dirExp{1,10} = 'D:\DoctoradoResultados\TSEPnet44C\';
+dirExp{1,11} = 'D:\DoctoradoResultados\TSEPnet45C\';
+dirExp{1,12} = 'D:\DoctoradoResultados\TSEPnet46C\';
+dirExp{1,13} = 'D:\DoctoradoResultados\TSEPnet47C\';
+dirExp{1,14} = 'D:\DoctoradoResultados\TSEPnet48C\';
+dirExp{1,15} = 'D:\DoctoradoResultados\TSEPnet50C\';
+dirExp{1,16} = 'D:\DoctoradoResultados\TSEPnet51Ca\';
+dirExp{1,17} = 'D:\DoctoradoResultados\TSEPnet52Ca\';
+dirExp{1,18} = 'D:\DoctoradoResultados\TSEPnet53C\';
+dirExp{1,19} = 'D:\DoctoradoResultados\TSEPnet54C\';
+dirExp{1,20} = 'D:\DoctoradoResultados\TSEPnet55C\';
+dirExp{1,21} = 'D:\DoctoradoResultados\TSEPnet56C\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet57Ca\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet57Cb\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet57Cc\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet30C\';
+dirExp{1,7} = 'D:\DoctoradoResultados\TSEPnet31C\';
+
+
+
+
+%dir to save all the figures
+dir2save{1,1} = 'D:\DoctoradoResultados\AnalyseRes\Comparison22C_58cfigs\';
+
+%Dir to save the figures with two plots, error bars inside and outside
+%epnet
+dir2save{2,1} = 'D:\DoctoradoResultados\AnalyseRes\Comparison22C_58cfigs\';
+
+
+%Modify Tikcs accordingly to the experiments
+
+TicksX = {' ';'A';'B';'C';'D';'E';'F'};%'G'};
+
+%Section to determinate with OS is running 
+cd('..');  cd('LinuxOrWindows')
+%use adecuate paht
+slash2use = isLinOrWin();
+cd('..');  
+
+%add path for used funtions
+cd('ANN');
+path1{1,1} = pwd;
+addpath(path1{1,1});
+cd('..'); 
+cd(['ttest_fun_scirp', slash2use, 'scripts']);
+path1{2,1} = pwd;
+addpath(path1{2,1});
+cd('..'); cd('..'); cd('..'); 
+
+
+path1{3,1} = pwd;        %I do not know if i need this
+
+%load the TS
+load TS.mat
+
+
+%create array to save values
+tamExps = size(dirExp,2);
+tamTS = size(TS,2);
+
+
+
+for TSdir =1:21         %for all TS
+    
+    for temp=1:tamExps           %for to set up the directories for each TS
+        dir{1,temp} = [dirExp{1,temp},TS{1,TSdir}];
+    end
+    
+    
+    
+    for directory=1:tamExps      %for all exp.
+        
+        cd(dir{1,directory});
+
+        
+        cd('res');
+        %load file
+        load allrun.mat
+
+        %obtain name of the TS
+        if directory == 1
+            cd('..')
+            fid = fopen('TSname.txt', 'r');
+            TSname = fgetl(fid);
+            if (fclose(fid) ~= 0)
+                'error closing file'
+            end
+            corrida = size(allrun,2);
+            generation = allrun{1,1}.var.generations;
+
+            %Allocate memory to some variables, they could be for the best or
+            %the average over the final population
+
+            ErrorPerRun = zeros(corrida,tamExps);
+            InputsPerRun = zeros(corrida,tamExps);
+            HiddenPerRun = zeros(corrida,tamExps);
+            ConnPerRun = zeros(corrida,tamExps);
+            
+            InsideErrorPerRun = zeros(corrida,tamExps);
+            InsideInputsPerRun = zeros(corrida,tamExps);
+            InsideHiddenPerRun = zeros(corrida,tamExps);
+            InsideConnPerRun = zeros(corrida,tamExps);
+            
+        end
+        
+        
+
+        %Sum the values to obtain the averages
+        for i=1:corrida
+            %for the best individual (Final test set)
+            ErrorPerRun(i,directory) = allrun{1,i}.Network{1,1}.iterateNRMSE_F;
+            InputsPerRun(i,directory) = allrun{1,i}.Network{1,1}.sizepos(1,1);
+            HiddenPerRun(i,directory) = allrun{1,i}.Network{1,1}.sizepos(1,2);
+            %this part is for the conenctions            
+            ConnPerRun(i,directory) = countConnections(allrun{1,i}.Network{1,1}.CW, allrun{1,i}.Network{1,1}.bias);
+
+            %for the average values, comment as required (inside test set)
+            InsideErrorPerRun(i,directory) = allrun{1,i}.ALLParam.AvIterateNRMS_I(1,generation);
+            InsideInputsPerRun(i,directory) = allrun{1,i}.ALLParam.Avinputs(1,generation);
+            InsideHiddenPerRun(i,directory) = allrun{1,i}.ALLParam.Avhidden(1,generation);
+            InsideConnPerRun(i,directory) = allrun{1,i}.ALLParam.Avconnections(1,generation);
+            
+            if isnan(ErrorPerRun(i,directory)) && i~=1
+                ErrorPerRun(i,directory) = ErrorPerRun(i-1,directory);
+            end
+            
+            if isnan(InputsPerRun(i,directory)) && i~=1
+                InputsPerRun(i,directory) = InputsPerRun(i-1,directory);
+            end
+            
+            if isnan(HiddenPerRun(i,directory)) && i~=1
+                HiddenPerRun(i,directory) = HiddenPerRun(i-1,directory);
+            end
+
+            if isnan(ConnPerRun(i,directory)) && i~=1
+                ConnPerRun(i,directory) = ConnPerRun(i-1,directory);
+            end
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            if isnan(InsideErrorPerRun(i,directory)) && i==1
+                InsideErrorPerRun(i,directory) = InsideErrorPerRun(i+1,directory);
+            elseif isnan(InsideErrorPerRun(i,directory)) && i~=1
+                InsideErrorPerRun(i,directory) = InsideErrorPerRun(i-1,directory);
+            end
+            
+            if isnan(InsideInputsPerRun(i,directory)) && i~=1
+                InsideInputsPerRun(i,directory) = InsideInputsPerRun(i-1,directory);
+            end
+            
+            if isnan(InsideHiddenPerRun(i,directory)) && i~=1
+                InsideHiddenPerRun(i,directory) = InsideHiddenPerRun(i-1,directory);
+            end
+
+            if isnan(InsideConnPerRun(i,directory)) && i~=1
+                InsideConnPerRun(i,directory) = InsideConnPerRun(i-1,directory);
+            end
+            
+        end
+
+        clear allrun
+    end
+
+    %divide to average them
+    AvErrorPerRun = (sum(ErrorPerRun))/corrida;
+    AvInputsPerRun = (sum(InputsPerRun))/corrida;
+    AvHiddenPerRun = (sum(HiddenPerRun))/corrida;
+    AvConnPerRun = (sum(ConnPerRun))/corrida;
+
+    InsideAvErrorPerRun = (sum(InsideErrorPerRun))/corrida;
+    InsideAvInputsPerRun = (sum(InsideInputsPerRun))/corrida;
+    InsideAvHiddenPerRun = (sum(InsideHiddenPerRun))/corrida;
+    InsideAvConnPerRun = (sum(InsideConnPerRun))/corrida;
+    
+    %error bars
+    STDnrms = std(ErrorPerRun);
+    STDcon = std(ConnPerRun);
+    STDinput = std(InputsPerRun);
+    STDhidden = std(HiddenPerRun);
+        
+    InsideSTDnrms = std(InsideErrorPerRun);
+    InsideSTDcon = std(InsideConnPerRun);
+    InsideSTDinput = std(InsideInputsPerRun);
+    InsideSTDhidden = std(InsideHiddenPerRun);
+    
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %Comment the parts that are required
+    
+    %To calculate the ttest from inputs, hidden nodes and connections
+    ttestInHiConErr;
+   
+    %To plot only the error bars of the final test set for all exps
+    PlotAndSaveErroBarsManyExp;
+    
+    PlotAndSaveErroBarsInOutsideMExp;
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    
+    
+    
+    clear TSname
+    %cd('..');  %exit dir TS
+
+end
+
+%delete paths
+for i=1:size(path1,1)-1
+    rmpath(path1{i,1});
+end
+
+

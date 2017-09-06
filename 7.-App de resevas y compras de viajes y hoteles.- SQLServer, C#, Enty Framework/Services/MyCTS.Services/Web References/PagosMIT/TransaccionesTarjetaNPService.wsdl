@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Cobro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReferencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNumero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMesExpira" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnioExpira" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodigoSeguridad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTipoTarjeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMerchant" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransaccionesRespuestasEntities">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EstatusTransaccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MensajeAmistoso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroOperacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroAutorizacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CobroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CobroResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CobroMultiempresa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReferencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNumero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMesExpira" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnioExpira" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCodigoSeguridad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCurrency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTipoTarjeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMerchant" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="organizacionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CobroMultiempresaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CobroMultiempresaResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cancelacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dMonto" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNoOperacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAutorizacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelacionResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SolicitudSDOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReservacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sReferencia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMonto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCreditCardNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCreditCardExpMonth" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCreditCardExpYear" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingStreet" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingHouseNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingHouseNumberInt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingNeighborhood" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingMunicipality" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingState" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingZipCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingCountry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingPhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingPhone2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBillingEMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserSessionID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserHostName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserAccept" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserAcceptEncoding" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserAcceptCharset" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserIDLanguageCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserReferer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBrowserConnection" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sJavascriptData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SolicitudSDOSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="tns:TransaccionesRespuestasEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNumeroIntentos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReservacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNumeroIntentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNumeroIntentosResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNumeroTransacciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReservacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNumeroTransaccionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNumeroTransaccionesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaNumeroAutorizacionOperacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReservacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaNumeroAutorizacionOperacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerificaNumeroAutorizacionOperacionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Historico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sReferencia" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HistoricoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HistoricoResult" type="tns:ArrayOfUsuarioTransaccionesEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUsuarioTransaccionesEntities">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UsuarioTransaccionesEntities" nillable="true" type="tns:UsuarioTransaccionesEntities" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UsuarioTransaccionesEntities">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="sDescripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sFechaRegistro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNumeroAutorizacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNumeroOperacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sMonto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sResumen" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMotivoTransaccionPrevia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dtFechaConsulta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMotivoTransaccionPreviaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMotivoTransaccionPreviaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:TransaccionesEntities" />
+            <s:element minOccurs="1" maxOccurs="1" name="dtFechaConsulta" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransaccionesEntities">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="sCompanyId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sBranchId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sMerchant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sReference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sTpOperacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUsrTransacction" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCurrency" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sExpMonth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sExpYear" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCvvCsc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sAuth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sNoOperacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sPeticion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sRespuesta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sResumen" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="bRoom" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="iCrypto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="iTransaccionID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidatePaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidatePaymentResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:TransaccionesEntities" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CobroSoapIn">
+    <wsdl:part name="parameters" element="tns:Cobro" />
+  </wsdl:message>
+  <wsdl:message name="CobroSoapOut">
+    <wsdl:part name="parameters" element="tns:CobroResponse" />
+  </wsdl:message>
+  <wsdl:message name="CobroMultiempresaSoapIn">
+    <wsdl:part name="parameters" element="tns:CobroMultiempresa" />
+  </wsdl:message>
+  <wsdl:message name="CobroMultiempresaSoapOut">
+    <wsdl:part name="parameters" element="tns:CobroMultiempresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Cancelacion" />
+  </wsdl:message>
+  <wsdl:message name="CancelacionSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="SolicitudSDOSSoapIn">
+    <wsdl:part name="parameters" element="tns:SolicitudSDOS" />
+  </wsdl:message>
+  <wsdl:message name="SolicitudSDOSSoapOut">
+    <wsdl:part name="parameters" element="tns:SolicitudSDOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNumeroIntentosSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNumeroIntentos" />
+  </wsdl:message>
+  <wsdl:message name="GetNumeroIntentosSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNumeroIntentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNumeroTransaccionesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNumeroTransacciones" />
+  </wsdl:message>
+  <wsdl:message name="GetNumeroTransaccionesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNumeroTransaccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerificaNumeroAutorizacionOperacionSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificaNumeroAutorizacionOperacion" />
+  </wsdl:message>
+  <wsdl:message name="VerificaNumeroAutorizacionOperacionSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificaNumeroAutorizacionOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="HistoricoSoapIn">
+    <wsdl:part name="parameters" element="tns:Historico" />
+  </wsdl:message>
+  <wsdl:message name="HistoricoSoapOut">
+    <wsdl:part name="parameters" element="tns:HistoricoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMotivoTransaccionPreviaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMotivoTransaccionPrevia" />
+  </wsdl:message>
+  <wsdl:message name="GetMotivoTransaccionPreviaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMotivoTransaccionPreviaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidatePayment" />
+  </wsdl:message>
+  <wsdl:message name="ValidatePaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidatePaymentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TransaccionesTarjetaNPServiceSoap">
+    <wsdl:operation name="Cobro">
+      <wsdl:input message="tns:CobroSoapIn" />
+      <wsdl:output message="tns:CobroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CobroMultiempresa">
+      <wsdl:input message="tns:CobroMultiempresaSoapIn" />
+      <wsdl:output message="tns:CobroMultiempresaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cancelacion">
+      <wsdl:input message="tns:CancelacionSoapIn" />
+      <wsdl:output message="tns:CancelacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SolicitudSDOS">
+      <wsdl:input message="tns:SolicitudSDOSSoapIn" />
+      <wsdl:output message="tns:SolicitudSDOSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroIntentos">
+      <wsdl:input message="tns:GetNumeroIntentosSoapIn" />
+      <wsdl:output message="tns:GetNumeroIntentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroTransacciones">
+      <wsdl:input message="tns:GetNumeroTransaccionesSoapIn" />
+      <wsdl:output message="tns:GetNumeroTransaccionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificaNumeroAutorizacionOperacion">
+      <wsdl:input message="tns:VerificaNumeroAutorizacionOperacionSoapIn" />
+      <wsdl:output message="tns:VerificaNumeroAutorizacionOperacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Historico">
+      <wsdl:input message="tns:HistoricoSoapIn" />
+      <wsdl:output message="tns:HistoricoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMotivoTransaccionPrevia">
+      <wsdl:input message="tns:GetMotivoTransaccionPreviaSoapIn" />
+      <wsdl:output message="tns:GetMotivoTransaccionPreviaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <wsdl:input message="tns:ValidatePaymentSoapIn" />
+      <wsdl:output message="tns:ValidatePaymentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TransaccionesTarjetaNPServiceSoap" type="tns:TransaccionesTarjetaNPServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Cobro">
+      <soap:operation soapAction="http://tempuri.org/Cobro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CobroMultiempresa">
+      <soap:operation soapAction="http://tempuri.org/CobroMultiempresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cancelacion">
+      <soap:operation soapAction="http://tempuri.org/Cancelacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitudSDOS">
+      <soap:operation soapAction="http://tempuri.org/SolicitudSDOS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroIntentos">
+      <soap:operation soapAction="http://tempuri.org/GetNumeroIntentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroTransacciones">
+      <soap:operation soapAction="http://tempuri.org/GetNumeroTransacciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaNumeroAutorizacionOperacion">
+      <soap:operation soapAction="http://tempuri.org/VerificaNumeroAutorizacionOperacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Historico">
+      <soap:operation soapAction="http://tempuri.org/Historico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMotivoTransaccionPrevia">
+      <soap:operation soapAction="http://tempuri.org/GetMotivoTransaccionPrevia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <soap:operation soapAction="http://tempuri.org/ValidatePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TransaccionesTarjetaNPServiceSoap12" type="tns:TransaccionesTarjetaNPServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Cobro">
+      <soap12:operation soapAction="http://tempuri.org/Cobro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CobroMultiempresa">
+      <soap12:operation soapAction="http://tempuri.org/CobroMultiempresa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cancelacion">
+      <soap12:operation soapAction="http://tempuri.org/Cancelacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitudSDOS">
+      <soap12:operation soapAction="http://tempuri.org/SolicitudSDOS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroIntentos">
+      <soap12:operation soapAction="http://tempuri.org/GetNumeroIntentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumeroTransacciones">
+      <soap12:operation soapAction="http://tempuri.org/GetNumeroTransacciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificaNumeroAutorizacionOperacion">
+      <soap12:operation soapAction="http://tempuri.org/VerificaNumeroAutorizacionOperacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Historico">
+      <soap12:operation soapAction="http://tempuri.org/Historico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMotivoTransaccionPrevia">
+      <soap12:operation soapAction="http://tempuri.org/GetMotivoTransaccionPrevia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePayment">
+      <soap12:operation soapAction="http://tempuri.org/ValidatePayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransaccionesTarjetaNPService">
+    <wsdl:port name="TransaccionesTarjetaNPServiceSoap" binding="tns:TransaccionesTarjetaNPServiceSoap">
+      <soap:address location="http://200.53.149.68/Portal/MyCTSSecureServices/TransaccionesTarjetaNPService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TransaccionesTarjetaNPServiceSoap12" binding="tns:TransaccionesTarjetaNPServiceSoap12">
+      <soap12:address location="http://200.53.149.68/Portal/MyCTSSecureServices/TransaccionesTarjetaNPService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

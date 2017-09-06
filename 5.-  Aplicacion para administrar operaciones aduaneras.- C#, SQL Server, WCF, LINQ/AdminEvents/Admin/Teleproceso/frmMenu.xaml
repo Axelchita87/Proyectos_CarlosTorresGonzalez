@@ -1,0 +1,108 @@
+﻿<Window x:Class="AdminEvents.Admin.Teleproceso.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="495.695" Width="518" Background="#FFD8D8D8" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="frmMenu_Load">
+    <Grid Height="496" VerticalAlignment="Top" Margin="0,0,0,-8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="39"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="73*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="5" Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                    <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                    <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="lblTituloForm" Content="Menu de Teleproceso" Height="26" VerticalAlignment="Top" FontFamily="Arial" FontSize="14.667" Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" Margin="0,0,79,0"/>
+        <Button x:Name="btnAgrTabla" Grid.Row="1" Height="40" Margin="0,11,0,29" VerticalAlignment="Center"  Click="btnAgrTabla_Click" Style="{DynamicResource all_butons}" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" Width="88">
+            <TextBlock TextWrapping="Wrap" Height="33" Width="61" TextAlignment="Center">Agregar Tele</TextBlock>
+        </Button>
+        <Button x:Name="btnGuaTabla" Grid.Row="1" Content="Guardar" HorizontalAlignment="Right" Height="26" Margin="0,12,0,2" VerticalAlignment="Center" Width="84"  Click="btnGuaTabla_Click" Style="{DynamicResource all_butons}" Grid.Column="3"/>
+        <Button x:Name="btnEdiTabla" Grid.Row="2" Content="Editar" HorizontalAlignment="Right" Height="26" Margin="0,14,0,2" VerticalAlignment="Center" Width="84"  Click="btnEdiTabla_Click" Style="{DynamicResource all_butons}" Grid.Column="3" />
+        <Button x:Name="btnEliTabla" Grid.Row="3" Content="Eliminar" HorizontalAlignment="Right" Height="26" Margin="0,12,0,5" VerticalAlignment="Center" Width="84"  Click="btnEliTabla_Click" Style="{DynamicResource all_butons}" Grid.Column="3" />
+        <Button x:Name="btnAgrArch" Grid.Row="5"   HorizontalAlignment="Right" Height="40" Margin="0,17,0,32" VerticalAlignment="Center" Width="88"  Click="btnAgrArch_Click" Style="{DynamicResource all_butons}" Grid.Column="1" >
+            <TextBlock TextWrapping="Wrap" Width="78" HorizontalAlignment="Center" TextAlignment="Center" Text="Agregar archivo"/>
+        </Button>
+        <Button x:Name="btnEliArch" Grid.Row="5" Content="Eliminar" Height="26" Margin="26,17,0,46" VerticalAlignment="Center"  Click="btnEliArch_Click" Style="{DynamicResource all_butons}" Grid.Column="3" HorizontalAlignment="Left" Width="84" />
+        <DataGrid x:Name="dgTablas" Margin="28,0,18,8" ItemsSource="{Binding}" AutoGenerateColumns="False" FontSize="11" Background="WhiteSmoke" Grid.Column="2" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Codigodfa}" Header="Fracciones de Desdoblamiento" Width="21*" IsReadOnly="True"  />
+
+                <DataGridTemplateColumn Width="60*" HeaderStringFormat="Center" >
+                    <DataGridTemplateColumn.Header>
+                        <TextBlock  Text="Criterio de Desdoblamiento" TextAlignment="Center" Width="490" />
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="txtDescr" Text="{Binding Criterio}" TextWrapping="Wrap" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <DataGrid x:Name="dgArchivos" Margin="28,0,18,36" ItemsSource="{Binding}" AutoGenerateColumns="False" FontSize="11" Background="WhiteSmoke" Grid.Column="2" RenderTransformOrigin="0.5,0.5" Grid.Row="5" Grid.RowSpan="2">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Codigodfa}" Header="Fracciones de Desdoblamiento" Width="21*" IsReadOnly="True"  />
+
+                <DataGridTemplateColumn Width="60*" HeaderStringFormat="Center" >
+                    <DataGridTemplateColumn.Header>
+                        <TextBlock  Text="Criterio de Desdoblamiento" TextAlignment="Center" Width="490" />
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock x:Name="txtDescr" Text="{Binding Criterio}" TextWrapping="Wrap" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <Label x:Name="lblNomNumTele" Content="Nombre y número:" HorizontalAlignment="Left" Height="26" Margin="0,4,0,5" VerticalAlignment="Center" Width="133" FontFamily="Arial" FontSize="14.667" Foreground="White" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblVersion" Content="Versión:" HorizontalAlignment="Left" Height="26" Margin="0,4,0,7" VerticalAlignment="Center" Width="74" FontFamily="Arial" FontSize="14.667" Foreground="White" Grid.Column="1" Grid.Row="9"/>
+        <TextBox x:Name="txtNombreNum" Margin="40,3,10,4" Grid.Row="7" TextWrapping="Wrap" Text=""  AllowDrop="False" TextAlignment="Justify"  VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" IsReadOnly="True" Grid.Column="2"/>
+        <TextBox x:Name="txtVersion" Margin="0,8,10,3" Grid.Row="9" TextWrapping="Wrap" Text=""  AllowDrop="False" TextAlignment="Justify"  VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" IsReadOnly="True" Grid.Column="2"/>
+        <Button x:Name="btnCrear"  Grid.Row="6" Grid.Column="3" HorizontalAlignment="Right" Height="40" VerticalAlignment="Center" Width="88"  Click="btnCrear_Click" Style="{DynamicResource all_butons}" Margin="0,45,0,0" Grid.RowSpan="2" >
+            <TextBlock TextWrapping="Wrap" Width="78" HorizontalAlignment="Center" TextAlignment="Center" Text="Crear Teleproceso"/>
+        </Button>
+        <Button x:Name="btnSubir"  Grid.Row="9" Grid.Column="3" HorizontalAlignment="Right" Height="38" VerticalAlignment="Center" Width="88"  Click="btnSubir_Click" Style="{DynamicResource all_butons}" Margin="0,6,0,68" Grid.RowSpan="2" >
+            <TextBlock TextWrapping="Wrap" Width="78" HorizontalAlignment="Center" TextAlignment="Center" Text="Subir Teleproceso"/>
+        </Button>
+        <Button x:Name="btnLimpiar" Grid.Row="2" Content="Limpiar" HorizontalAlignment="Right" Height="26" Margin="0,0,4,0" VerticalAlignment="Bottom" Width="84"  Click="btnLimpiar_Click" Style="{DynamicResource all_butons}" Grid.Column="1" />
+    </Grid>
+</Window>

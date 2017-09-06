@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCESO_DIRECTO_REQ_AEREOLINEA" xml:space="preserve">
+    <value>PARA ACCESO DIRECTO REQUIERE AEREOLÍNEA</value>
+  </data>
+  <data name="ASIGNACION_DUTYCODE_EXITOSO" xml:space="preserve">
+    <value>ASIGNACION DE DUTYCODE EXITOSO</value>
+  </data>
+  <data name="BOLETO_CANCELADO" xml:space="preserve">
+    <value>EL BOLETO YA ESTABA CANCELADO</value>
+  </data>
+  <data name="BOLETO_NO_PUEDE_SER_CANCELADO" xml:space="preserve">
+    <value>EL BOLETO ES UN REVISADO Y LA AEROLÍNEA NO PERMITE CANCELACIONES</value>
+  </data>
+  <data name="BSS" xml:space="preserve">
+    <value>BSS</value>
+  </data>
+  <data name="CAMBIO_CODIGO_AGENTE_EXITOSO" xml:space="preserve">
+    <value>CAMBIO DE CODIGO DE AGENTE EXITOSO</value>
+  </data>
+  <data name="CAMBIO_NOMBRE_EXITOSO" xml:space="preserve">
+    <value>CAMBIO DE NOMBRE EXITOSO</value>
+  </data>
+  <data name="CAMBIO_NOMBRE_SABRE_EXITOSO" xml:space="preserve">
+    <value>CAMBIO DE NOMBRE EN SABRE EXITOSO</value>
+  </data>
+  <data name="CERO_NO_PERMITIDO" xml:space="preserve">
+    <value>EL CERO NO ES PERMITIDO</value>
+  </data>
+  <data name="CIUDAD_DEBE_TENER_3_CARAC" xml:space="preserve">
+    <value>LA CIUDAD DEBE TENER 3 CARACTERES</value>
+  </data>
+  <data name="COD_AEREOLINEA_DEBE_SER_DOS_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE AEREOLÍNEA DEBE DE SER DE DOS CARACTERES</value>
+  </data>
+  <data name="COD_CUIDAD_CONEXION_TRES_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE CIUDAD DE CONEXIÓN DEBE DE SER DE TRES CARACTERES</value>
+  </data>
+  <data name="COD_CUIDAD_DESTINO_TRES_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE CIUDAD DE DESTINO DEBE DE SER DE TRES CARACTERES</value>
+  </data>
+  <data name="COD_CUIDAD_ORIGEN_TRES_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE CIUDAD DE ORIGEN DEBE DE SER DE TRES CARACTERES</value>
+  </data>
+  <data name="COD_MONEDA_DEBE_SER_TRES_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE MONEDA DEBE DE SER DE TRES CARACTERES</value>
+  </data>
+  <data name="CÓDIGO_AEROLÍNEA_DEBE_TENER_2_DÍG" xml:space="preserve">
+    <value>EL CÓDIGO DE AEROLÍNEA DEBE TENER 2 DÍGITOS</value>
+  </data>
+  <data name="CODIGO_AGENTE_NO_ENCONTRADO" xml:space="preserve">
+    <value>CODIGO DE AGENTE NO ENCONTRADO</value>
+  </data>
+  <data name="CODIGO_CAMBIADO_CON_EXITO" xml:space="preserve">
+    <value>CODIGO CAMBIADO CON EXITO</value>
+  </data>
+  <data name="CODIGO_RESERVA_DEBE_SER_SEIS_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE RESERVA DEBE SER DE 6 CARACTERES</value>
+  </data>
+  <data name="CONEXIONES_REQ_HORA_SALIDA" xml:space="preserve">
+    <value>PARA CONEXIONES SE REQUIERE HORA DE SALIDA</value>
+  </data>
+  <data name="CONTINUE_RADIUS" xml:space="preserve">
+    <value>Continue Radius</value>
+  </data>
+  <data name="CONTINUE_SANTANDER" xml:space="preserve">
+    <value>Continue Santander</value>
+  </data>
+  <data name="DATOS_FUERON_CAMBIADO_CORRECTAMENTE" xml:space="preserve">
+    <value>LOS DATOS FUERON CAMBIADO CORRECTAMENTE</value>
+  </data>
+  <data name="DEBES_INDICAR_PAIS_DONDE_APLICA" xml:space="preserve">
+    <value>DEBES INGRESAR EL PAÍS DONDE APLICA</value>
+  </data>
+  <data name="DEBES_INDICAR_TIPO_PASAJERO" xml:space="preserve">
+    <value>DEBES INDICAR EL TIPO DE PASAJERO</value>
+  </data>
+  <data name="DEBES_ING_ALGUN_NUM_TELEFONO" xml:space="preserve">
+    <value>DEBES INGRESAR ALGÚN NÚMERO DE TELÉFONO PARA SER AGREGADO</value>
+  </data>
+  <data name="DEBES_ING_CIUDAD_EMISION" xml:space="preserve">
+    <value>DEBES INGRESAR LA CIUDAD DE EMISIÓN</value>
+  </data>
+  <data name="DEBES_ING_DATOS_EN_UN_CAMPO" xml:space="preserve">
+    <value>DEBES DE INGRESAR DATOS EN AL MENOS UN CAMPO</value>
+  </data>
+  <data name="DEBES_ING_FECHA_EMISION" xml:space="preserve">
+    <value>DEBES INGRESAR LA FECHA DE EMISIÓN</value>
+  </data>
+  <data name="DEBES_ING_LINEA_BORRAR" xml:space="preserve">
+    <value>DEBES INGRESAR LA LÍNEA A BORRAR</value>
+  </data>
+  <data name="DEBES_ING_LUGAR_NACIMIENTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL LUGAR DE NACIMIENTO</value>
+  </data>
+  <data name="DEBES_ING_NUM_CONEXIONES" xml:space="preserve">
+    <value>DEBES DE INGRESAR NÚMERO DE CONEXIONES</value>
+  </data>
+  <data name="DEBES_ING_NUM_PASAJERO" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE PASAJERO</value>
+  </data>
+  <data name="DEBES_ING_NUM_PERFIL_IMPRESION" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE PERFIL DE IMPRESIÓN{0}PARA PODER CONTINUAR</value>
+  </data>
+  <data name="DEBES_ING_NUM_TELEFONO" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE TELÉFONO</value>
+  </data>
+  <data name="DEBES_ING_NUM_VISA" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE VISA</value>
+  </data>
+  <data name="DEBES_ING_PRIMER_POS_PAS_PARA_ING_OTRO" xml:space="preserve">
+    <value>DEBES INGRESAR LA PRIMERA POSICIÓN DE PASAJERO{0} PARA INGRESAR ALGÚN OTRO</value>
+  </data>
+  <data name="DEBES_ING_PRIMER_SEG_PARA_ING_OTROS" xml:space="preserve">
+    <value>DEBES INGRESAR EL PRIMER SEGMENTO PARA PODER{0}INGRESAR LOS OTROS</value>
+  </data>
+  <data name="DEBES_ING_PRIMER_SEGEMEMTO" xml:space="preserve">
+    <value>DEBES INGRESAR AL MENOS EL PRIMER SEGMETO</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_CUARTA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA CUARTA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_OCTAVA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA OCTAVA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_PRIMERA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA PRIMERA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_QUINTA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA QUINTA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_SEGUNDA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA SEGUNDA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_SEPTIMA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA SÉPTIMA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_SEXTA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA SEXTA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEGMENTO_INICIO_TERCERA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR EL SEGMENTO DE INICIO DE LA TERCERA FILA{0}PARA PODER INGRESAR LOS SIGUIENTES DATOS</value>
+  </data>
+  <data name="DEBES_ING_SEIS_CARAC_TA_SOLICITADA" xml:space="preserve">
+    <value>DEBES INGRESAR LOS SEIS CARACTERES DE LA TA SOLICITADA</value>
+  </data>
+  <data name="DEBES_ING_TIPO_TELEFONO" xml:space="preserve">
+    <value>DEBES INGRESAR EL TIPO DE TELÉFONO</value>
+  </data>
+  <data name="DEBES_INGRESAR_CLASE_DE_SERVICIO" xml:space="preserve">
+    <value>INGRESA CLASE DE SERVICIO PARA  EL SEGMENTO INGRESADO</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_STATUS" xml:space="preserve">
+    <value>INGRESA EL CÓDIGO DE STATUS PARA  EL SEGMENTO INGRESADO</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_PRIMERA_FILA" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN LA PRIMERA FILA PARA PODER CONTINUAR</value>
+  </data>
+  <data name="DEBES_INGRESAR_NUMERO_SEGMENTO_INICIALMENTE" xml:space="preserve">
+    <value>INGRESA EL NÚMERO DE SEGMENTO PARA PODER INGRESAR LOS DEMAS DATOS</value>
+  </data>
+  <data name="DEBES_SELEC_VUELOS_DIREC_O_CONEXIONES" xml:space="preserve">
+    <value>DEBES SELECCIONAR POR VUELOS DIRECTOS O POR CONEXIONES</value>
+  </data>
+  <data name="DEBES_SELECC_ASIG_O_DES_ASIG_IMPR_NO_AMBAS" xml:space="preserve">
+    <value>DEBES SELECCIONAR ASIGNAR O DES-ASIGNAR IMPRESORA NO AMBAS</value>
+  </data>
+  <data name="DEBES_SELECCIONAR_ASIGNAR_O_NO_ASIGNAR" xml:space="preserve">
+    <value>DEBES SELECCIONAR ASIGNAR O DES-ASIGNAR IMPRESORA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_CUARTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA CUARTA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_OCTAVA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA OCTAVA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_PRIMERA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA PRIMERA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_QUINTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA QUINTA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_SEGUNDA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA SEGUNDA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_SEPTIMA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA SEPTIMA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_SEXTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA SEXTA FILA</value>
+  </data>
+  <data name="DES_CANT_DOS_DECIMALES_TERCERA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR CANTIDAD A APLICAR DEBE{0}TENER DOS NÚMEROS DECIMALES EN LA TERCERA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR{0} DEBE SER MENOR O IGUAL A 100</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_CUARTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA CUARTA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_OCTAVA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA OCTAVA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_PRIMERA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA PRIMERA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_QUINTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA QUINTA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_SEGUNDA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA SEGUNDA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_SEPTIMA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA SEPTIMA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_SEXTA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA SEXTA FILA</value>
+  </data>
+  <data name="DES_PORCENTAJE_DOS_NUMEROS_TERCERA_FILA" xml:space="preserve">
+    <value>EL DESCUENTO POR PORCENTAJE A APLICAR DEBE{0}SER MENOR O IGUAL A 100 EN LA TERCERA FILA</value>
+  </data>
+  <data name="DK_NO_VALIDO" xml:space="preserve">
+    <value>DK NO REGISTRADO EN INTEGRA</value>
+  </data>
+  <data name="DUTYCODE_ASIGNADO_INVALIDO" xml:space="preserve">
+    <value>EL DUTYCODE ASIGNADO ES INVALIDO</value>
+  </data>
+  <data name="ELIGE_TIPO_PASAJERO" xml:space="preserve">
+    <value>ELIGE EL TIPO DE PASAJERO</value>
+  </data>
+  <data name="ELIGE_TIPO_PASAJERO_VALIDO" xml:space="preserve">
+    <value>ELIGE UN TIPO DE PASAJERO VALIDO</value>
+  </data>
+  <data name="ERROR_INGRESAR_DATOS" xml:space="preserve">
+    <value>ERROR AL INGRESAR LOS DATOS</value>
+  </data>
+  <data name="ERROR_NUM_SEGMENTO" xml:space="preserve">
+    <value>ERROR EN EL NÚMERO DE SEGMENTO</value>
+  </data>
+  <data name="ESPERE_FAVOR_VALIDANDO_DK_INTEGRA" xml:space="preserve">
+    <value>ESPERE POR FAVOR, VALIDANDO DK EN INTEGRA</value>
+  </data>
+  <data name="FECHA_DEBE_TENER_7_CARAC" xml:space="preserve">
+    <value>LA FECHA DEBE TENER DE 7 CARACTERES</value>
+  </data>
+  <data name="FECHA_EMISION_NO_VALIDA" xml:space="preserve">
+    <value>LA FECHA DE EMISIÓN NO ES VALIDA</value>
+  </data>
+  <data name="FECHA_NO_VALIDA" xml:space="preserve">
+    <value>LA FECHA INGRESADA NO ES VALIDA</value>
+  </data>
+  <data name="FECHA_SELEC_MENOR_ACTUAL" xml:space="preserve">
+    <value>LA FECHA SELECCIONADA ES MENOR A LA ACTUAL O ES INCORRECTA</value>
+  </data>
+  <data name="FECHA_SELECCIONADA_MAYOR_ACTUAL" xml:space="preserve">
+    <value>LA FECHA SELECCIONADA ES MAYOR A LA ACTUAL</value>
+  </data>
+  <data name="FIN_CAMBIO_AREA_Y_ASIGNACION_IMPRESION" xml:space="preserve">
+    <value>FIN DE CAMBIO DE ÁREA Y ASIGNACIÓN DE IMPRESIÓN</value>
+  </data>
+  <data name="FIRMA_ELIMINADA_EXITO" xml:space="preserve">
+    <value>FIRMA ELIMINADA CON EXITO</value>
+  </data>
+  <data name="FIRMA_FUE_ELIMINADA_EXITO" xml:space="preserve">
+    <value>LA FIRMA FUE ELIMINADA CON EXITO</value>
+  </data>
+  <data name="FIRMA_HA_QUEDADO_ACTIVA" xml:space="preserve">
+    <value>LA FIRMA HA QUEDADO ACTIVA</value>
+  </data>
+  <data name="FIRMA_LIMPIADA_EXITO" xml:space="preserve">
+    <value>¡FIRMA LIMPIADA CON EXITO!</value>
+  </data>
+  <data name="FIRMA_MODIFICADA_EXITO" xml:space="preserve">
+    <value>FIRMA MODIFICADA CON EXITO</value>
+  </data>
+  <data name="FIRMA_YA_ESTABA_ACTIVA" xml:space="preserve">
+    <value>LA FIRMA YA ESTABA ACTIVA</value>
+  </data>
+  <data name="FIRMA_YA_ESTABA_INACTIVA" xml:space="preserve">
+    <value>LA FIRMA YA ESTABA INACTIVA</value>
+  </data>
+  <data name="FORMAT_FECHA_DOS_NUM_TRES_ALFA" xml:space="preserve">
+    <value>EL FORMATO DE FECHA DEBE TENER  2 CARACTERES NUMÉRICOS{0}Y 3 CARACTERES ALFABÉTICOS</value>
+  </data>
+  <data name="FORMATO_CORPORATE_ID_NO_ES_CORRECTO" xml:space="preserve">
+    <value>EL FORMATO DE CORPORATE ID DEBE TENER 3 CARACTERES{0}ALFABÉTICOS Y 2 CARACTERES NUMÉRICOS</value>
+  </data>
+  <data name="FORMATO_FECHA_EMISION_NO_VALIDO" xml:space="preserve">
+    <value>EL FORMATO DE FECHA DE EMISIÓN NO ES VALIDO</value>
+  </data>
+  <data name="FORMATO_FECHA_NACIMIENTO_INCORRECTO" xml:space="preserve">
+    <value>LA FECHA DE NACIMIENTO NO TIENE EL FORMATO CORRECTO</value>
+  </data>
+  <data name="FORMATO_NUM_PAX_ES_INCORRECTO" xml:space="preserve">
+    <value>EL FORMATO DEL NÚMERO DE PASAJERO ES INCRRECTO</value>
+  </data>
+  <data name="FORMATO_POSICION_PAX_INCORRECTO" xml:space="preserve">
+    <value>EL FORMATO DE LA POSICIÓN DE PASAJERO ES INCORRECTO</value>
+  </data>
+  <data name="IMPUESTO_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>EL IMPUESTO DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="IND_HORA_SALIDA_LLEGADA" xml:space="preserve">
+    <value>INDICA SI EL HORARIO ES DE SALIDA O DE LLEGADA</value>
+  </data>
+  <data name="INDIQUE_FECHAS_REPORTE" xml:space="preserve">
+    <value>INDIQUE LAS FECHAS DEL REPORTE</value>
+  </data>
+  <data name="ING_AL_MENOS_UN_SEGMENTO" xml:space="preserve">
+    <value>INGRESA AL MENOS UN SEGMENTO</value>
+  </data>
+  <data name="ING_AL_MENOS_UNA_POS_PAS" xml:space="preserve">
+    <value>INGRESA AL MENOS UNA POSICIÓN DE PASAJERO</value>
+  </data>
+  <data name="ING_COT_MANUAL" xml:space="preserve">
+    <value>INGRESA COTIZACIÓN MANUAL</value>
+  </data>
+  <data name="INGRESA_APELLIDO_PAX" xml:space="preserve">
+    <value>DEBES INGRESAR EL APELLIDO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_COD_AEREOLINEA" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DE AEREOLÍNEA</value>
+  </data>
+  <data name="INGRESA_COD_AEREOLINEA_FF_NUM_PAX_POR_LINEA" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE AEREOLÍNEA, NÚMERO DE FF Y NUM DE PAX POR CADA FILA</value>
+  </data>
+  <data name="INGRESA_COD_NACIONALIDAD_PAX" xml:space="preserve">
+    <value>INGRESA EL CÓDIGO DE LA NACIONALIDAD DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_CÓDIGO_AEROLÍNEA" xml:space="preserve">
+    <value>INGRESA EL CÓDIGO DE AEROLÍNEA</value>
+  </data>
+  <data name="INGRESA_CÓDIGO_CIUDAD" xml:space="preserve">
+    <value>INGRESA EL CÓDIGO DE LA CIUDAD</value>
+  </data>
+  <data name="INGRESA_CORPORATE_ID_O_ACCOUNT_CODE" xml:space="preserve">
+    <value>DEBES INGRESAR CORPORATE ID O ACCOUNT CODE</value>
+  </data>
+  <data name="INGRESA_CUARTA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA CUARTA FILA{0}CON ALGUN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_DATOS_COMPLETOS_NUEVA_AEREOLINEA" xml:space="preserve">
+    <value>PARA INGRESAR OTRA AEREOLÍNEA DEBE INGRESAR LA INFORMACIÓN PERTINENTE</value>
+  </data>
+  <data name="INGRESA_DATOS_COMPLETOS_PARA_AGREGAR_REFERENCIAS" xml:space="preserve">
+    <value>PARA AGREGAR REFERENCIAS DEL PASAJERO DEBES INGRESAR TODOS LOS DATOS</value>
+  </data>
+  <data name="INGRESA_DESC_A_APLICAR" xml:space="preserve">
+    <value>INGRESA EL DESCUENTO A APLICAR. LA OPCIÓN TIPO DE DESCUENTO{0}SE DESACTIVARÁ AUTOMÁTICAMENTE</value>
+  </data>
+  <data name="INGRESA_DESC_A_APLICAR_PRIMERA_FILA" xml:space="preserve">
+    <value>INGRESA EL DESCUENTO A APLICAR EN LA PRIMERA FILA.{0}LA OPCIÓN TIPO DE DESCUENTO SE DESACTIVARÁ AUTOMÁTICAMENTE</value>
+  </data>
+  <data name="INGRESA_DESCRIPCION_SERVICIO_ESPECIAL" xml:space="preserve">
+    <value>DEBES INGRESAR ALGUNA DESCRIPCIÓN PARA EL SERVICIO ESPECIAL</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_CUARTA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA CUARTA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_OCTAVA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA OCTAVA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_QUINTA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA QUINTA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_SEGUNDA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA SEGUNDA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_SEPTIMA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA SÉPTIMA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_SEXTA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O{0}TICKET DESIGNATOR EN LA SEXTA FILA</value>
+  </data>
+  <data name="INGRESA_FARE_BASIS_FBASIS_A_MOSTRAR_DESC_TDESIGNATOR_TERCERA_FILA" xml:space="preserve">
+    <value>INGRESA FARE BASIS, FARE BASIS A MOSTRAR, DESCUENTO O {0}TICKET DESIGNATOR EN LA TERCERA FILA</value>
+  </data>
+  <data name="INGRESA_FECHA_NACIMIENTO_PAX" xml:space="preserve">
+    <value>DEBES INGRESAR LA FECHA DE NACIMIENTO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_FECHA_SALIDA_VUELO" xml:space="preserve">
+    <value>INGRESA LA FECHA DE SALIDA DEL VUELO</value>
+  </data>
+  <data name="INGRESA_FORMATO_CORRECTO_POSICION_PASAJERO" xml:space="preserve">
+    <value>INGRESA EL FORMATO CORRECTO PARA POSICION DE PASAJERO</value>
+  </data>
+  <data name="INGRESA_NOMBRE_PAX" xml:space="preserve">
+    <value>DEBES INGRESAR EL NOMBRE DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_NÚEMRO_VUELO" xml:space="preserve">
+    <value>INGRESA EL NÚEMRO DE VUELO</value>
+  </data>
+  <data name="INGRESA_NUM_LINEA_INICIO" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE LÍNEA DONDE INICIA TU RANGO</value>
+  </data>
+  <data name="INGRESA_NUM_PASAPORTE_PAX" xml:space="preserve">
+    <value>INGRESA EL NÚMERO DE PASAPORTE DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_NUM_PAX" xml:space="preserve">
+    <value>DEBES INGRESAR UN NÚMERO DE PASAJERO</value>
+  </data>
+  <data name="INGRESA_NÚMERO_BOLETO" xml:space="preserve">
+    <value>INGRESA EL NÚMERO DE BOLETO</value>
+  </data>
+  <data name="INGRESA_NUMERO_ITEM" xml:space="preserve">
+    <value>INGRESA EL NÚMERO DE ITEM</value>
+  </data>
+  <data name="INGRESA_NUMERO_PASAJERO" xml:space="preserve">
+    <value>DEBES INGRESAR UN NÚMERO DE PASAJERO</value>
+  </data>
+  <data name="INGRESA_OCTAVA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA OCTAVA FILA{0}CON ALGÚN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_PCC_CORRECTO" xml:space="preserve">
+    <value>INGRESA PCC CORRECTO</value>
+  </data>
+  <data name="INGRESA_PERFIL_O_TA_SOLICITADA" xml:space="preserve">
+    <value>INGRESA PERFIL DE IMPRESIÓN O TA SOLICITADA</value>
+  </data>
+  <data name="INGRESA_PRIMERA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA PRIMERA FILA{0} CON ALGÚN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_QUINTA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA QUINTA FILA{0}CON ALGUN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_RECORD_LOCALIZADOR" xml:space="preserve">
+    <value>INGRESA EL RECORD LOCALIZADOR</value>
+  </data>
+  <data name="INGRESA_RENGLON_OPCION_A_VENDER" xml:space="preserve">
+    <value>INGRESA EL RÉNGLON DE LA OPCIÓN A VENDER</value>
+  </data>
+  <data name="INGRESA_RENGLON_TARIFA_A_MOSTRAR" xml:space="preserve">
+    <value>INGRESA EL RÉNGLON DE LA TARIFA A MOSTRAR</value>
+  </data>
+  <data name="INGRESA_REQUERIMIENTOS_A_ENVIAR" xml:space="preserve">
+    <value>DEBES INGRESAR LOS REQUERIMIENTOS A ENVIAR</value>
+  </data>
+  <data name="INGRESA_SEGUNDA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA SEGUNDA FILA{0}CON ALGUN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_SEPTIMA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA SÉPTIMA FILA{0}CON ALGÚN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_SEXTA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA SEXTA FILA {0}CON ALGÚN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_SIQUIERA_POS_PAX" xml:space="preserve">
+    <value>DEBES INGRESAR POR LO MENOS UNA POSICIÓN DE PASAJERO</value>
+  </data>
+  <data name="INGRESA_TARIFA" xml:space="preserve">
+    <value>REQUIERE INGRESAR LA TARIFA </value>
+  </data>
+  <data name="INGRESA_TARIFA_PUBLICA_O_PRIVADA" xml:space="preserve">
+    <value>INGRESA LA TARIFA COMO PUBLICA O PRIVADA</value>
+  </data>
+  <data name="INGRESA_TERCERA_FILA_CON_DATO_ADICIONAL" xml:space="preserve">
+    <value>INGRESA AL MENOS EL SEGMENTO DE INICIO EN LA TERCERA FILA{0}CON ALGÚN DATO ADICIONAL</value>
+  </data>
+  <data name="INGRESA_TODOS_LOS_DATOS_FOID_POR_PASAPORTE" xml:space="preserve">
+    <value>PARA INGRESAR FOID POR PASAPORTE DEBES INGRESAR TODOS LOS DATOS</value>
+  </data>
+  <data name="INGRESA_TODOS_LOS_DATOS_FOID_POR_TARJETA" xml:space="preserve">
+    <value>PARA INGRESAR FOID POR TARJETA BANCARIA DEBES INGRESAR TODOS LOS DATOS</value>
+  </data>
+  <data name="INGRESAR_SOLO_UN_DATO" xml:space="preserve">
+    <value>INGRESE SOLO UN DATO </value>
+  </data>
+  <data name="INGRESE_ADULTO_CARGO" xml:space="preserve">
+    <value>INGRESE EL ADULTO A CARGO</value>
+  </data>
+  <data name="INGRESE_AGENTE_PARA_GENERAR_REPORTE" xml:space="preserve">
+    <value>INGRESE AGENTE PARA GENERAR REPORTE</value>
+  </data>
+  <data name="INGRESE_APELLIDO_NOMBRE" xml:space="preserve">
+    <value>INGRESE APELLIDO Y NOMBRE</value>
+  </data>
+  <data name="INGRESE_APELLIDO_PASAJERO" xml:space="preserve">
+    <value>INGRESE APELLIDO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESE_EDAD_PASAJERO" xml:space="preserve">
+    <value>INGRESE LA EDAD DEL PASAJERO</value>
+  </data>
+  <data name="INGRESE_NOMBRE_PASAJERO" xml:space="preserve">
+    <value>INGRESE EL NOMBRE DEL PASAJERO</value>
+  </data>
+  <data name="INGRESE_NÚMERO_ASIENTO_ASIGNARSE" xml:space="preserve">
+    <value>INGRESE EL NÚMERO DE ASIENTO A ASIGNARSE</value>
+  </data>
+  <data name="INGRESE_NUMERO_BOLETO" xml:space="preserve">
+    <value>INGRESE EL NÚMERO DE BOLETO</value>
+  </data>
+  <data name="INICIALES_YA_EXISTEN_INGRESE_OTRAS" xml:space="preserve">
+    <value>LAS INICIALES YA EXISTEN, INGRESE OTRAS</value>
+  </data>
+  <data name="IVA_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>EL IVA DEBE DE TENER DOS DECIMALES</value>
+  </data>
+  <data name="KEYWORDS_MODIFICADOS_EXITO" xml:space="preserve">
+    <value>KEYWORDS MODIFICADOS CON EXITO</value>
+  </data>
+  <data name="LA_FIRMA_NO_EXISTE" xml:space="preserve">
+    <value>LA FIRMA NO EXISTE</value>
+  </data>
+  <data name="LINEA_AEREA_NO_REQ_INFORMACION" xml:space="preserve">
+    <value>LA LÍNEA AÉREA NO REQUIERE ESTA INFORMACIÓN</value>
+  </data>
+  <data name="MCA" xml:space="preserve">
+    <value>MCA</value>
+  </data>
+  <data name="MCAFEE" xml:space="preserve">
+    <value>MCAFEE</value>
+  </data>
+  <data name="MESSAGE_INACTIVO" xml:space="preserve">
+    <value>INACTIVO</value>
+  </data>
+  <data name="MESSAGE_NO" xml:space="preserve">
+    <value>NO EXISTE LOCATION</value>
+  </data>
+  <data name="MESSAGE_NULL" xml:space="preserve">
+    <value>NULL</value>
+  </data>
+  <data name="MONTO_POR_EMISION_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>MONTO POR EMISIÓN DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="MONTO_POR_ENVIO_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>MONTO POR ENVIÓ DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="NECESITA_INGRESAR_10_CARAC_MIN" xml:space="preserve">
+    <value>NECESITA INGRESAR 10 CARACTERES MÍNIMO</value>
+  </data>
+  <data name="NECESITA_INGRESAR_2_CAR_MAX" xml:space="preserve">
+    <value>NECESITA INGRESAR 2 CARACTESRES MÁXIMO </value>
+  </data>
+  <data name="NECESITA_INGRESAR_2_CARAC_MIN" xml:space="preserve">
+    <value>NECESITA INGRESAR 2 CARACTERES MÍNIMO</value>
+  </data>
+  <data name="NECESITA_INGRESAR_2_CARACTERES" xml:space="preserve">
+    <value>NECESITA INGRESAR 2 CARACTERES</value>
+  </data>
+  <data name="NECESITA_INGRESAR_3_CARAC_MIN" xml:space="preserve">
+    <value>NECESITA INGRESAR 3 CARACTERES MÍNIMO</value>
+  </data>
+  <data name="NECESITA_INGRESAR_TODOS_DATOS" xml:space="preserve">
+    <value>NECESITA INGRESAR TODOS LOS DATOS</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_APELLIDO" xml:space="preserve">
+    <value>NECESITAS INGRESAR APELLIDO</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_CIUDAD" xml:space="preserve">
+    <value>NECESITAS INGRESAR CIUDAD</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_FECHA" xml:space="preserve">
+    <value>NECESITAS INGRESAR FECHA</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_NOMBRE" xml:space="preserve">
+    <value>NECESITAS INGRESAR NOMBRE</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_RECORD_LOCALIZADOR" xml:space="preserve">
+    <value>NECESITAS INGRESAR RECORD LOCALIZADOR</value>
+  </data>
+  <data name="NO_ESPACIO_TA_SOLICITADA" xml:space="preserve">
+    <value>NO SE ADMITEN ESPACIOS EN EL FORMATO DE TA SOLICITADA</value>
+  </data>
+  <data name="NO_ESPACIOS_CODIGO_RESERVA" xml:space="preserve">
+    <value>NO SE ADMITEN ESPACIOS EN EL CÓDIGO DE RESERVA</value>
+  </data>
+  <data name="NO_ESPACIOS_ITEM_A_IMPRIMIR" xml:space="preserve">
+    <value>NO SE ADMITEN ESPACIOS EN EL NÚMERO DE ITEM A IMPRIMIR</value>
+  </data>
+  <data name="NO_EXISTE_ITINERARIO" xml:space="preserve">
+    <value>NO EXISTE ITINERARIO O RECORD PRESENTE</value>
+  </data>
+  <data name="NO_EXISTE_LOCATIONDK_INTEGRA" xml:space="preserve">
+    <value>El DK Ingresado NO EXISTE EN INTEGRA, favor de contactar a Cuentas por Cobrar.</value>
+  </data>
+  <data name="NO_EXISTEN_PASAJEROS_RECORD" xml:space="preserve">
+    <value>NO EXISTEN PASAJEROS EN EL RECORD</value>
+  </data>
+  <data name="NO_PER_COD_AEREOLINEA_REPETIDOS" xml:space="preserve">
+    <value>NO SE PERMITEN CÓDIGOS DE AEREOLÍNEAS REPETIDOS</value>
+  </data>
+  <data name="NO_PERMITEN_CEROS" xml:space="preserve">
+    <value>NO SE PERMITEN CEROS</value>
+  </data>
+  <data name="NO_SE_PUEDE_COTIZAR_SIN_RESERVACION" xml:space="preserve">
+    <value>NO SE PUEDE CONTINUAR SIN UNA COTIZACIÓN</value>
+  </data>
+  <data name="NO_TIENE_AUTORIZACION_LIMPIAR_FIRMAS" xml:space="preserve">
+    <value>NO TIENE AUTORIZACION PARA LIMPIAR FIRMAS</value>
+  </data>
+  <data name="NUM_MAX_CONEXIONES_3" xml:space="preserve">
+    <value>EL NÚMERO MÁXIMO DE CONEXIONES ES DE 3</value>
+  </data>
+  <data name="NUM_PASAJERO_NO_VALIDO" xml:space="preserve">
+    <value>EL NÚMERO DE PASAJERO NO ES VALIDO</value>
+  </data>
+  <data name="NUMERO_BOLETO_DEBE_SER_TRECE_DIGITOS" xml:space="preserve">
+    <value>EL NÚMERO DE BOLETO DEBE DE SER DE 13 DIGITOS</value>
+  </data>
+  <data name="NÚMERO_BOLETO_DEBE_TENER_10_DÍGITOS" xml:space="preserve">
+    <value>EL NÚMERO DE BOLETO DEBE TENER 10 DÍGITOS</value>
+  </data>
+  <data name="NUMERO_BOLETO_DEBE_TENER_13_DIGITOS" xml:space="preserve">
+    <value>EL NÚMERO DE BOLETO DEBE TENER 13 DÍGITOS</value>
+  </data>
+  <data name="NUMERO_CLIENTE_LOCATIONDKINACTIVO_VERIFICAR_INTEGRA" xml:space="preserve">
+    <value>El DK ingresado se encuentra INACTIVO en Integra, favor de contactar a Cuentas por Cobrar</value>
+  </data>
+  <data name="NUMERO_FIRMA_NO_ENCONTRADA" xml:space="preserve">
+    <value>NUMERO DE FIRMA NO ENCONTRADA</value>
+  </data>
+  <data name="OCURRIO_ERROR_CANCELAR_BOLETO" xml:space="preserve">
+    <value>OCURRIO ERROR AL CANCELAR BOLETO</value>
+  </data>
+  <data name="OCURRIO_ERROR_VALIDAR_DK_VUELVA_INTENTARLO" xml:space="preserve">
+    <value>OCURRIO UN ERROR AL VALIDAR DK, VUELVA A INTENTARLO</value>
+  </data>
+  <data name="OPCIONES_SELEC_NO_COMBINAN_CON_TARIFA_PUBLICA_O_PRIVADA" xml:space="preserve">
+    <value>LAS OPCIONES SELECCIONADAS NO COMBINAN CON TARIFA PUBLICA{0}O PRIVADA</value>
+  </data>
+  <data name="PASSCODE_TEMPORAL_ASIGNADO" xml:space="preserve">
+    <value>PASSCODE TEMPORAL ASIGNADO</value>
+  </data>
+  <data name="POR_FAVOR_INGRESA_SEGMENTO_1" xml:space="preserve">
+    <value>POR FAVOR INGRESA EL SEGMENTO 1</value>
+  </data>
+  <data name="PRESENTO_ERROR" xml:space="preserve">
+    <value>SE PRESENTO UN ERROR</value>
+  </data>
+  <data name="RECORD_LOCALIZADOR_DEBE_TENER_6_CARAC" xml:space="preserve">
+    <value>EL RECORD LOCALIZADOR DEBE TENER 6 CARACTERES</value>
+  </data>
+  <data name="REQ_DESC_INGRESO_TICKET_DESIGNATOR" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_CUARTA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA CUARTA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_OCTAVA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA OCTAVA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_QUINTA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA QUINTA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_SEGUNDA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA SEGUNDA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_SEPTIMA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA SÉPTIMA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_SEXTA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA SEXTA LÍNEA</value>
+  </data>
+  <data name="REQ_DESC_TICKET_DESIGNATOR_TERCERA_FILA" xml:space="preserve">
+    <value>REQUIERE DESCUENTO EL INGRESO DE TICKET DESIGNATOR{0}EN LA TERCERA LÍNEA</value>
+  </data>
+  <data name="REQ_HORA_LLEGADA_SALIDA" xml:space="preserve">
+    <value>SE REQUIERE HORA DE LLEGADA O DE SALIDA</value>
+  </data>
+  <data name="REQ_ING_NUM_QUEUE" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL NÚMERO DE QUEUE</value>
+  </data>
+  <data name="REQ_ING_NUM_QUEUE_PIC_COD" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL NÚMERO DE QUEUE Y PIC CODES</value>
+  </data>
+  <data name="REQ_ING_PIC_COD" xml:space="preserve">
+    <value>REQUIERE INGRESAR PIC CODES</value>
+  </data>
+  <data name="REQ_ORIGEN_FECHA_DEST" xml:space="preserve">
+    <value>SE REQUIERE FECHA, ORIGEN Y DESTINO</value>
+  </data>
+  <data name="REQUIERE_CLASE_SERVICIO" xml:space="preserve">
+    <value>REQUIERE CLASE DE SERVICIO</value>
+  </data>
+  <data name="REQUIERE_CLASE_SERVICIO_REQUIERE_NÚMERO_LÍNEA" xml:space="preserve">
+    <value>REQUIERE CLASE DE SERVICIO Y REQUIERE NÚMERO DE LÍNEA</value>
+  </data>
+  <data name="REQUIERE_ELEGIR_ALGUNA_OPCIONES" xml:space="preserve">
+    <value>REQUIERE ELEGIR ALGUNA DE LAS OPCIONES</value>
+  </data>
+  <data name="REQUIERE_ESPACIOS_RESERVAR" xml:space="preserve">
+    <value>REQUIERE ESPACIOS A RESERVAR</value>
+  </data>
+  <data name="REQUIERE_INGESE_IVA" xml:space="preserve">
+    <value>REQUIERE SE INGRESE EL IVA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_APELLIDO" xml:space="preserve">
+    <value>REQUIERE INGRESAR APELLIDO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_AUTORIZADO_POR" xml:space="preserve">
+    <value>REQUIERE INGRESAR AUTORIZADO POR</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_CÓDIGO_AGENTE" xml:space="preserve">
+    <value>REQUIERE INGRESAR CÓDIGO DE AGENTE</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_CODIGO_SEGURIDAD" xml:space="preserve">
+    <value>REQUIERE INGRESAR CODIGO DE SEGURIDAD</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_COSTO_KG" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL COSTO POR KILO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_DK" xml:space="preserve">
+    <value>REQUIERE SE INGRESE DK </value>
+  </data>
+  <data name="REQUIERE_INGRESAR_EMAIL" xml:space="preserve">
+    <value>REQUIERE INGRESAR E-MAIL</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_FAMILY_NAME" xml:space="preserve">
+    <value>REQUIERE INGRESAR FAMILY NAME</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_FARE_BASIS" xml:space="preserve">
+    <value>REQUIERE INGRESAR FARE BASIS</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_ID_USUARIO" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL ID DEL USUARIO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_INICIAL" xml:space="preserve">
+    <value>REQUIERE INGRESAR INICIAL</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_KILOS_EXCESO" xml:space="preserve">
+    <value>REQUIERE INGRESAR LOS KILOS EN EXCESO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_MAIL" xml:space="preserve">
+    <value>REQUIERE SE INGRESE MAIL</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NOMBRE_COMPLETO" xml:space="preserve">
+    <value>REQUIERE INGRESAR NOMBRE COMPLETO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NUMERO_BOLETO" xml:space="preserve">
+    <value>REQUIRE SE INGRESE EL NÚMERO DE BOLETO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NUMERO_FIRMA" xml:space="preserve">
+    <value>REQUIERE INGRESAR NUMERO DE FIRMA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NÚMERO_FIRMA_PCC" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL NÚMERO DE FIRMA Y PCC</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_PASSCODE" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL PASSCODE</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_QUEUE" xml:space="preserve">
+    <value>REQUIERE INGRESAR QUEUE</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_QUIEN_SOLICITA" xml:space="preserve">
+    <value>REQUIERE INGRESAR QUIEN SOLICITA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_TA" xml:space="preserve">
+    <value>REQUIERE INGRESAR LA TA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_TIPO_CAMBIO" xml:space="preserve">
+    <value>REQUIERE INGRESAR TIPO DE CAMBIO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_USER_NAME" xml:space="preserve">
+    <value>REQUIERE INGRESAR USER NAME</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_VENCIMIENTO" xml:space="preserve">
+    <value>REQUIERE INGRESAR VENCIMIENTO</value>
+  </data>
+  <data name="REQUIERE_INGRESE_FECHA_TIEMPO_LIMITE" xml:space="preserve">
+    <value>REQUIERE SE  INGRESE FECHA TIEMPO LIMITE</value>
+  </data>
+  <data name="REQUIERE_INGRESE_MIN_13_DIG" xml:space="preserve">
+    <value>REQUIERE SE INGRESE MINIMO 13 DIGITOS</value>
+  </data>
+  <data name="REQUIERE_INGRESE_NOMBRE_SOLICITANTE" xml:space="preserve">
+    <value>REQUIERE SE INGRESE  DATOS</value>
+  </data>
+  <data name="REQUIERE_INGRESE_NUMERO_RECORD" xml:space="preserve">
+    <value>REQUIERE SE INGRESE NÚMERO DE RECORD</value>
+  </data>
+  <data name="REQUIERE_INGRESE_PCC" xml:space="preserve">
+    <value>REQUIERE SE INGRESE EL PCC</value>
+  </data>
+  <data name="REQUIERE_INGRESE_PERFIL_COMPAÑÍA" xml:space="preserve">
+    <value>REQUIERE SE INGRESE PERFIL DE LA COMPAÑÍA</value>
+  </data>
+  <data name="REQUIERE_INGRESE_SEGMENTO_INICIAL" xml:space="preserve">
+    <value>REQUIERE INGRESE EL SEGMENTO INICIAL</value>
+  </data>
+  <data name="REQUIERE_INGRESE_TIPO_TARJETA" xml:space="preserve">
+    <value>REQUIERE SE INGRESE TIPO DE TARJETA</value>
+  </data>
+  <data name="REQUIERE_INGRESE_TUA" xml:space="preserve">
+    <value>REQUIERE SE INGRESE LA TUA</value>
+  </data>
+  <data name="REQUIERE_NÚMERO_LÍNEA" xml:space="preserve">
+    <value>REQUIERE NÚMERO DE LÍNEA</value>
+  </data>
+  <data name="REQUIERE_SELECCIONAR_FORMA_PAGO" xml:space="preserve">
+    <value>SELECCIONE FORMA DE PAGO</value>
+  </data>
+  <data name="REQUIERES_INGRESAR_AUTORIZACION" xml:space="preserve">
+    <value>REQUIERE INGRESAR ATUROIZACIÓN</value>
+  </data>
+  <data name="SELEC_PAS_O_TARIFA_NEG" xml:space="preserve">
+    <value>SELECCIONA POR PASAJERO O POR TARIFA NEGOCIADA</value>
+  </data>
+  <data name="SELEC_UN_TIPO_TARIFA_NEG" xml:space="preserve">
+    <value>SELECCIONA UN TIPO DE TARIFA NEGOCIADA</value>
+  </data>
+  <data name="SELECCIONA_CODIGO_SERVICIO_ESPECIAL" xml:space="preserve">
+    <value>DEBES SELECCIONAR EL CÓDIGO DE SERVICIO ESPECIAL ADECUADO</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_CUARTA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA CUARTA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_OCTAVA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA OCTAVA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_QUINTA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA QUINTA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_SEGUNDA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA SEGUNDA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_SEPTIMA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA SÉPTIMA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_SEXTA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA SEXTA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DES_APLICAR_TERCERA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA TERCERA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DESC_A_APLICAR" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR</value>
+  </data>
+  <data name="SELECCIONA_TIPO_DESC_A_APLICAR_PRIMERA_FILA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE DESCUENTO A APLICAR EN LA PRIMERA FILA</value>
+  </data>
+  <data name="SELECCIONA_TIPO_PASAJERO" xml:space="preserve">
+    <value>SELECCIONA UN TIPO DE PASAJERO</value>
+  </data>
+  <data name="SELECCIONE_ALGUNA_OPCIÓN" xml:space="preserve">
+    <value>SELECCIONE ALGUNA OPCIÓN</value>
+  </data>
+  <data name="SELECCIONE_NACIONAL_INTERNACIONAL" xml:space="preserve">
+    <value>SELECCIONE NACIONAL O INTERNACIONAL</value>
+  </data>
+  <data name="SIMULTANEOUS_CHANGES_TO_PNR" xml:space="preserve">
+    <value>SIMULTANEOUS CHANGES TO PNR</value>
+  </data>
+  <data name="STATUS_ALREADY_ACTIVE" xml:space="preserve">
+    <value>STATUS ALREADY ACTIVE</value>
+  </data>
+  <data name="STATUS_ALREADY_INACTIVE" xml:space="preserve">
+    <value>STATUS ALREADY INACTIVE</value>
+  </data>
+  <data name="TARIFA_BASE_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>LA TARIFA BASE DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="TARIFA_USD_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>LA TARIFA USD DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="TARJETA_DEBE_TENER_15_DIGITOS" xml:space="preserve">
+    <value>EL NÚMERO DE TARJETA DEBE TENER 15 DÍGITOS</value>
+  </data>
+  <data name="TARJETA_DEBE_TENER_16_DIGITOS" xml:space="preserve">
+    <value>EL NÚMERO DE TARJETA DEBE TENER 16 DÍGITOS</value>
+  </data>
+  <data name="THE_DUTYCODE_INVALID_ASSIGNED" xml:space="preserve">
+    <value>THE DUTY CODE IS INVALID OR NOT ASSIGNED</value>
+  </data>
+  <data name="TIPO_CAMBIO_DEBE_TENER_SEIS_DECIMALES" xml:space="preserve">
+    <value>EL TIPO DE CAMBIO DEBE DE TENER SEIS DECIMALES</value>
+  </data>
+  <data name="TUA_DEBE_TENER_DOS_DECIMALES" xml:space="preserve">
+    <value>EL TUA  DEBE TENER DOS DECIMALES</value>
+  </data>
+  <data name="VUELOS_DIREC_NO_COM_ACCESO_DIRECTO" xml:space="preserve">
+    <value>VUELOS DIRECTOS NO COMBINA CON ACCESO DIRECTO</value>
+  </data>
+  <data name="EL_DK_DEBE_SER_6_CARACTERES" xml:space="preserve">
+    <value>EL DK DEBE DE SER DE 6 CARACTERES</value>
+  </data>
+  <data name="INGRESE_APELLIDO_EMAIL" xml:space="preserve">
+    <value>INGRESE EL APELLIDO Y EL E-MAIL</value>
+  </data>
+  <data name="INGRESE_APELLIDO_NOMBRE_EMAIL" xml:space="preserve">
+    <value>INGRESE APELLIDO, NOMBRE Y EMAIL</value>
+  </data>
+  <data name="INGRESE_EMAIL" xml:space="preserve">
+    <value>INGRESE EL E-MAIL.</value>
+  </data>
+  <data name="INGRESE_NOMBRE_EMAIL" xml:space="preserve">
+    <value>INGRESE EL NOMBRE Y EL E-MAIL</value>
+  </data>
+</root>

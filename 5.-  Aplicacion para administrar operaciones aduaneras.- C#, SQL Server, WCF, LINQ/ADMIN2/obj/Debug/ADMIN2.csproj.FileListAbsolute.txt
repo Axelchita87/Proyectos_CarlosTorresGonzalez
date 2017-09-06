@@ -1,0 +1,177 @@
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\AppCatalogs.config
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.exe.config
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.exe.manifest
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.application
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.exe
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Controls.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Lib.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ClosedXML.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\Ionic.Zip.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Controls.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Entity.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\bin\Debug\ADMIN2.Lib.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmCliente.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmEntidades.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmSucursal.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Configuración\FrmPerfiles.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Configuración\FrmUsuarios.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Encript.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\frmCatologoGenerico.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\frmProcesando.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Main.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\MainWindow.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Splash.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\App.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\avisosis.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmCliente.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmEntidades.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Clientes\FrmSucursal.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Configuración\FrmPerfiles.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Configuración\FrmUsuarios.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Encript.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\frmCatologoGenerico.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\frmProcesando.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Main.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\MainWindow.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\Splash.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\App.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.lref
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\avisosis.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.g.resources
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.Properties.Resources.resources
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.csproj.GenerateResource.Cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.TrustInfo.xml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.exe.manifest
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.application
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.exe
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2\obj\Debug\ADMIN2.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\AppCatalogs.config
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe.config
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe.manifest
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.application
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Controls.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Lib.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ClosedXML.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\Ionic.Zip.dll
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Controls.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Entity.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Lib.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmCliente.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmEntidades.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmSucursal.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmPerfiles.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmUsuarios.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Encript.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmCatologoGenerico.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmProcesando.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Main.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\MainWindow.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Splash.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\App.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\avisosis.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmCliente.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmEntidades.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmSucursal.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmPerfiles.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmUsuarios.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Encript.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmCatologoGenerico.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmProcesando.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Main.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\MainWindow.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Splash.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\App.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.cache
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.lref
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\avisosis.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.g.resources
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.Properties.Resources.resources
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.csproj.GenerateResource.Cache
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.TrustInfo.xml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.exe.manifest
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.application
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.exe
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\AppCatalogs.config
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe.config
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe.manifest
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.application
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.exe
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.BR.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Controls.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.DAL.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Entity.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Lib.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ClosedXML.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\Ionic.Zip.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.BR.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Controls.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.DAL.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Entity.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\bin\Debug\ADMIN2.Lib.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmCliente.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmEntidades.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmSucursal.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmPerfiles.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmUsuarios.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Encript.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmCatologoGenerico.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmProcesando.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Main.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\MainWindow.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Splash.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\App.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\avisosis.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmCliente.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmEntidades.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Clientes\FrmSucursal.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmPerfiles.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Configuración\FrmUsuarios.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Encript.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmCatologoGenerico.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\frmProcesando.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Main.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\MainWindow.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\Splash.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\App.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2_MarkupCompile.lref
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\avisosis.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.g.resources
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.Properties.Resources.resources
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.csproj.GenerateResource.Cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.TrustInfo.xml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.exe.manifest
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.application
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.exe
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2\obj\Debug\ADMIN2.pdb

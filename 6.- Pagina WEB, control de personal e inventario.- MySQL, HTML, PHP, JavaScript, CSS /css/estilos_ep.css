@@ -1,0 +1,249 @@
+/*Estilos*/
+
+html {height:100%;}
+body {
+margin:0;
+padding:0;
+height:100%;
+background-color:#ffffff;
+font-size: 14px;
+font-family: 'Arial';
+}
+
+h3{text-align: center;font-weight: bolder;}
+hr{color:#69b40f;background: #69b40f;height:1px;}
+
+.table-responsive{
+min-height:100%;
+position:relative;
+}
+
+#cont-image_preview{
+    max-width: 120px;
+    max-height:150px;
+}
+
+#cont-image_preview #foto_preview{
+    width: 100%;
+    height:100%;
+}
+
+#menuV {
+    border-radius:0px; 
+    width:240px; 
+    padding-top:2px; 
+    height:100%; 
+    background: #000;
+    position: fixed;
+    }
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #69b40f;
+  border-color: #360;
+}
+
+#label_user{
+    color:#fff;
+    font-size:17px;
+    text-align: right;
+    padding:5px;
+    /*margin:5px;*/
+    border-bottom: 1px solid #69b40f;
+}
+
+#slidein-panel {
+    background-color: #000;
+}
+
+#encabezado-principal{border-bottom: solid 2px #69b40f;padding:10px;position:relative;height:90px;}
+#encabezado-principal .logo{right:20px;position:absolute; max-height: 60px}
+
+#pie{
+    position:relative;
+    text-align: left;
+    background-color:#000;
+    color:#ccc;
+    font-size: 12px; 
+    padding:20px;
+    margin-top:10;
+    
+    
+}
+
+#pie .contLogo{ position:absolute; right:15px;bottom:0;}
+
+.text-danger {
+  color: #69b40f;
+}
+
+#label_user a{color:#69b40f;}
+
+.btn{
+    background-color: #69b40f;
+    color:#fff;
+    padding:7px;
+    border:1px solid #4B810B;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.sub-menu .text-danger{
+    margin-left: 15px;
+    color:#fff;
+    font-weight: bolder;
+}
+
+.sub-menu .text-danger a{
+    color:#FFF;
+    text-decoration: none;
+}
+
+.sub-menu .text-danger a:hover{
+    color:#CCC;
+}
+
+#contenido{
+
+}
+
+#contenedor{
+    padding:20px;
+}
+
+.cont-form{
+    border:solid 1px #69b40f;
+
+    margin: 50px auto;
+}
+
+.label {
+    color:#333;
+}
+
+.caja-campos{
+    margin:10px;
+    position:relative;
+}
+
+.label-h{
+    background-color: #69b40f;
+    padding:3px;
+    text-align: center;
+    color:#fff;
+}
+
+.label{text-align: left;font-weight: bolder;font-size: 11px;}
+.cont-form.col-md-10{float:none;}
+.row.grid{margin-top:10px;}
+
+
+#marco-foto{
+    right:20px;
+    top:10px;
+}
+
+#marco-foto #cont-image_preview{
+    border:1px solid #ccc;
+    width:95px;
+    height: 120px;
+    cursor:pointer;
+}
+
+#marco-foto #image-file{
+    display: none;
+}
+
+input, select{
+    color:#69b40f;
+}
+
+input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[type="button"] {
+    width: 200px;
+    display:inline-block;
+    margin-top: inherit;
+}
+
+
+#cont-image_preview2{
+	/*max-width:480px; */
+	max-height:320px; 
+	height: 280px; 
+	/*width: 460px; */
+	margin:0 auto;
+	border:1px #ccc solid;
+	text-align:center;
+}
+
+#cont-image_preview2 img{
+	max-width: 100%;
+	height: 100%;
+	max-height:100%;
+}
+
+.fancybox-thumbs img{
+    max-height:150px;
+    max-width: 150px;
+    margin:3px;
+}
+#contenedor-galeria{
+    text-align: center;
+}
+
+.tituloApp{
+    color:#999;
+    text-shadow:2px 2px #ccc;
+}
+
+.btn-xs{
+    cursor:pointer;
+    display: inline-block;
+    background-color: #69b40f;
+    border:1px solid #FFF;
+    padding:3px;
+    width: 25px;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF;
+    font-size: 14px;
+}
+
+.btn-xs:hover{
+    background-color: #8BC04A;
+}
+
+.t_h_label{
+    display: inline-block;
+    background-color: #69b40f;
+    margin:0 1px;
+    padding:3px auto;
+    text-align: center;
+    font-weight: bold;
+    color:#FFF;
+    font-size: 11px;    
+}
+
+#cont_preguntas_extras .row:nth-child(2n+1){background:#FFF;}
+#cont_preguntas_extras .row:nth-child(2n+1){background:#CEFF97;}
+
+.btn-xs img{
+    width:100%;
+}
+
+.input-group-addon{min-width: 40px;}
+
+@media (min-width: 768px) {
+.google-visualization-table-table .headerCell{
+    font-size: 8pt;
+  }
+  .tableCell{
+    font-size: 12px;
+  }
+
+}

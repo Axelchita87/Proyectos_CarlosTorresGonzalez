@@ -1,0 +1,59 @@
+function Pop = sort_Pop(Pop, type)
+%function to sort a population of networks or a structure Population
+
+%sort a unique population of networks acordingly thi ther fitness for the
+%prediction
+if nargin == 1
+    sizeNet = size(Pop,2);
+    for i=1:sizeNet
+        for j=i+1:sizeNet
+            if(Pop{1,i}.fitness > Pop{1,j}.fitness)
+                tempN = Pop{1,i};
+                Pop{1,i} = Pop{1,j};
+                Pop{1,j} = tempN;
+            end
+        end
+    end
+end
+
+%sort a structure Population, for Average and RBLC, acordingly to their
+%fitness in the GA
+if nargin == 2
+    if(strcmp(type,'Average') || strcmp(type,'RawFit') )
+        sizePop = size(Pop.fitness,1);
+        for i=1:sizePop
+            for j=i+1:sizePop
+                if(Pop.fitness(i,1) > Pop.fitness(j,1))
+                    tempStr(1,:) = Pop.string(i,:);
+                    tempFit = Pop.fitness(i,1);
+                    
+                    Pop.string(i,:) = Pop.string(j,:);
+                    Pop.fitness(i,1) = Pop.fitness(j,1);
+                    
+                    Pop.string(j,:) = tempStr(1,:);
+                    Pop.fitness(j,1) = tempFit;
+                end
+            end
+        end
+    elseif(strcmp(type,'RBLC'))
+        sizePop = size(Pop.fitness,1);
+        for i=1:sizePop
+            for j=i+1:sizePop
+                if(Pop.fitness(i,1) > Pop.fitness(j,1))
+                    tempStr(1,:) = Pop.string(i,:);
+                    tempFit = Pop.fitness(i,1);
+                    tempBeta = Pop.beta(i,1);
+
+                    Pop.string(i,:) = Pop.string(j,:);
+                    Pop.fitness(i,1) = Pop.fitness(j,1);
+                    Pop.beta(i,1) = Pop.beta(j,1);
+
+                    Pop.string(j,:) = tempStr(1,:);
+                    Pop.fitness(j,1) = tempFit;
+                    Pop.beta(j,1) = tempBeta;
+                end
+            end
+        end
+    end
+    
+end

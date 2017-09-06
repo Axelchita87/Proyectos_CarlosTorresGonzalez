@@ -1,0 +1,32 @@
+﻿<Window x:Class="ADMIN2.Controls.avisosis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:ADMIN2.Controls.WindowSist"
+         Title="ADMIN2" Height="218" Width="652" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" BorderBrush="#D0A82D" 
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Border BorderThickness="3" BorderBrush="#D0A82D" Margin="0,0,94,28">
+        <Grid Background="White">
+            <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="2">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                        <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                        <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label Style="{DynamicResource labe_cabecera}" x:Name="lblTitulo" Margin="-1,-2,0,0" Height="28" Width="Auto" Content="Mensaje ADMIN 2.0"/>
+            <ScrollViewer Height="75" Width="456" VerticalScrollBarVisibility="Auto" Margin="86,48,10,61">
+                <TextBlock Name="txtMsg" TextWrapping="Wrap" Visibility="Visible" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="Auto" FontSize="14" IsEnabled="False" Text="" OpacityMask="White">
+                </TextBlock>
+            </ScrollViewer>
+            <Button x:Name="btnYes" Style="{DynamicResource btn_gen_naranja}" Margin="0,0,237,15" my:ButtonHelper.DialogResult="True" HorizontalAlignment="Right" Width="100" Height="30" VerticalAlignment="Bottom" IsDefault="True">Si</Button>
+            <Button x:Name="btnNo" Style="{DynamicResource btn_gen_naranja}" Margin="0,0,125,15" my:ButtonHelper.DialogResult="False" HorizontalAlignment="Right" Width="100" Height="30" VerticalAlignment="Bottom" Content="No"/>
+            <Button x:Name="btnCancel" Style="{DynamicResource btn_gen_naranja}" Margin="0,0,16,15" Click="btnCancel_Click" HorizontalAlignment="Right" Width="100" Height="30" VerticalAlignment="Bottom" Visibility="Hidden" >Cancelar</Button>
+            <Button x:Name="btnCopiarError" Style="{DynamicResource btn_gen_naranja}" Margin="0,0,430,15" HorizontalAlignment="Right" Width="110" Height="30" VerticalAlignment="Bottom" IsDefault="True" Click="btnCopiarError_Click" Visibility="Hidden">Copiar Descripción</Button>
+            <Image x:Name="lblImage" HorizontalAlignment="Left" Height="50" Margin="10,48,0,0" VerticalAlignment="Top" Width="50" Source="Images/check_blue.png"/>
+        </Grid>
+    </Border>
+</Window>
+

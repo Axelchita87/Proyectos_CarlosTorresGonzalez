@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AGREGAR_NUEVO" xml:space="preserve">
+    <value>EL DATO INGRESADO EN {0}{1} NO EXISTE EN LA BASE DE DATOS ¿DESEAS AGREGARLO?</value>
+  </data>
+  <data name="AGREGAR_NUEVO_CC" xml:space="preserve">
+    <value>EL DATO INGRESADO DE CENTRO DE COSTOS NO EXISTE{0}EN LA BASE DE DATOS ¿DESEAS AGREGARLO?</value>
+  </data>
+  <data name="AGREGAR_NUEVO_EMPLEADO" xml:space="preserve">
+    <value>EL DATO INGRESADO DE NÚMERO DE EMPLEADO{0}NO EXISTE EN LA BASE DE DATOS.{0}¿DESEAS AGREGARLO?</value>
+  </data>
+  <data name="CERO_NO_PERMITIDO" xml:space="preserve">
+    <value>EL CERO NO ES PERMITIDO</value>
+  </data>
+  <data name="COD_AEREOLINEA_DEBE_SER_DOS_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE AEREOLÍNEA DEBE DE SER DE DOS CARACTERES</value>
+  </data>
+  <data name="COD_AEROLINEA_NO_PERMITIDO" xml:space="preserve">
+    <value>EL CÓDIGO DE AEROLÍNEA NO EXISTE O NO ES PERMITIDO</value>
+  </data>
+  <data name="CODIGO_TIPO_PAX_TRES_CARAC" xml:space="preserve">
+    <value>EL CÓDIGO DE TIPO DE PASAJERO DEBE SER DE TRES CARACTERES</value>
+  </data>
+  <data name="DEBES_BOLETEAR_FUERA_QUEUE" xml:space="preserve">
+    <value>RECUPERA EL RECORD FUERA DE QUEUE PARA PODER EMITIRLO</value>
+  </data>
+  <data name="DEBES_ING_PRIMER_NOMBRE_PARA_ING_OTRO" xml:space="preserve">
+    <value>DEBES INGRESAR EL PRIMER NOMBRE  PARA INGRESAR ALGÚN OTRO</value>
+  </data>
+  <data name="DEBES_ING_PRIMER_SEG_PARA_ING_OTROS" xml:space="preserve">
+    <value>DEBES INGRESAR EL PRIMER SEGMENTO PARA PODER INGRESAR LOS OTROS</value>
+  </data>
+  <data name="DEBES_INGRESAR_CANTIDAD_IMPUESTO1" xml:space="preserve">
+    <value>DEBES INGRESAR LA CANTIDAD DEL IMPUESTO 1</value>
+  </data>
+  <data name="DEBES_INGRESAR_CANTIDAD_IMPUESTO2" xml:space="preserve">
+    <value>DEBES INGRESAR LA CANTIDAD DEL IMPUESTO 2</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_AEREOLINEA" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DE AEROLÍNEA</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_IT" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DE IT</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_POS_CONTRATO" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE POSICIÓN DEL CONTRATO</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_QC_VALIDO" xml:space="preserve">
+    <value>DEBES INGRESAR UN CÓDIGO DE {0} VÁLIDO</value>
+  </data>
+  <data name="DEBES_INGRESAR_COD_SOLICITANTE" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE SOLICITANTE</value>
+  </data>
+  <data name="DEBES_INGRESAR_CODIGO_IMPUESTO1" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DEL IMPUESTO 1</value>
+  </data>
+  <data name="DEBES_INGRESAR_CODIGO_IMPUESTO2" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DEL IMPUESTO 2</value>
+  </data>
+  <data name="DEBES_INGRESAR_CODIGO_TARIFA" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DE TARIFA</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_AGREGAR" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS A AGREGAR</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_AGREGAR_SOBREESCRIBIR" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS A AGREGAR O SOBRE ESCRIBIR</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_CAMPO_EQUIPAJE" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN EL CAMPO DE EQUIPAJE DE LA LÍNEA {0}</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_CAMPO_FAREBASIS" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN EL CAMPO FARE BASIS DE LA LÍNEA {0}</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_CAMPO_MAX" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN EL CAMPO MAX DE LA LÍNEA {0}</value>
+  </data>
+  <data name="DEBES_INGRESAR_DATOS_SOBREESCRIBIR" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS A SOBRE ESCRIBIR</value>
+  </data>
+  <data name="DEBES_INGRESAR_LINEA_CALCULO" xml:space="preserve">
+    <value>DEBES INGRESAR LÍNEA DE CÁLCULO</value>
+  </data>
+  <data name="DEBES_INGRESAR_NUM_FASE_IV" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE FASE IV</value>
+  </data>
+  <data name="DEBES_INGRESAR_PORCANTAJE_COMISION" xml:space="preserve">
+    <value>DEBES INGRESAR EL PORCENTAJE DE COMISIÓN</value>
+  </data>
+  <data name="DEBES_INGRESAR_TARIFA_APLICABLE" xml:space="preserve">
+    <value>DEBES INGRESAR LA TARIFA A APLICAR</value>
+  </data>
+  <data name="DEBES_INGRESAR_TIPO_IT" xml:space="preserve">
+    <value>DEBES INGRESAR EL TIPO DE IT</value>
+  </data>
+  <data name="DK_NO_EXISTENTE" xml:space="preserve">
+    <value>DK NO REGISTRADO FAVOR DE CONTACTAR A  SISTEMAS</value>
+  </data>
+  <data name="ELIGE_SOLO_UN_TIPO_CLIENTE" xml:space="preserve">
+    <value>ELIGE SOLO UN TIPO DE CLIENTE</value>
+  </data>
+  <data name="EMISION_EXISTENTE_DESEAS_CONTINUAR" xml:space="preserve">
+    <value>YA EXISTE UN BOLETO EXPEDIDO. ¿DESEAS CONTINUAR CON LA EXPEDICIÓN?</value>
+  </data>
+  <data name="ERROR_INGRESO_CANTIDADES" xml:space="preserve">
+    <value>ERROR AL INGRESAR CANTIDADES</value>
+  </data>
+  <data name="ERROR_INGRESO_LINEA_CALCULO" xml:space="preserve">
+    <value>ERROR AL INGRESAR LÍNEA DE CÁLCULO</value>
+  </data>
+  <data name="ERROR_INGRESO_LINEAS_VALIDEZ" xml:space="preserve">
+    <value>ERROR AL INGRRESAR LÍNEAS DE VÁLIDEZ</value>
+  </data>
+  <data name="ERROR_VALIDACION_LOCATION" xml:space="preserve">
+    <value>OCURRIO UN ERROR AL VALIDAR LOCATION(DK). VUELVA A INTENTARLO.</value>
+  </data>
+  <data name="FASEIV_NECESITA_OPCION_POR_NOMBRES" xml:space="preserve">
+    <value>PARA FASE IV, DEBES INGRESAR LOS DATOS DE LA OPCIÓN POR NOMBRES</value>
+  </data>
+  <data name="FECHA_DEBE_SER_MENOR" xml:space="preserve">
+    <value>LA FECHA DEBE SER MENOR O IGUAL A LA DE HOY</value>
+  </data>
+  <data name="FECHA_NO_EXISTE" xml:space="preserve">
+    <value>LA FECHA INGRESADA NO EXISTE</value>
+  </data>
+  <data name="FECHA_NO_VALIDA" xml:space="preserve">
+    <value>ALGUNA DE LAS FECHAS INGRESADAS NO ES VALIDA</value>
+  </data>
+  <data name="FORMATO_CANTIDAD_EQUIVALENTE_INCORRECTO" xml:space="preserve">
+    <value>FALTA INGRESAR DECIMALES EN LA SECCIÓN EQUIVALENTE</value>
+  </data>
+  <data name="FORMATO_CANTIDAD_IMPUESTO_INCORRECTO" xml:space="preserve">
+    <value>FALTA INGRESAR DECIMALES EN LA CANTIDAD DEL IMPUESTO {0} </value>
+  </data>
+  <data name="FORMATO_CANTIDAD_TARIFA_INCORRECTO" xml:space="preserve">
+    <value>FALTA INGRESAR DECIMALES EN LA SECCIÓN DE CANTIDAD DE TARIFA</value>
+  </data>
+  <data name="FORMATO_CORPORATE_ID_NO_ES_CORRECTO" xml:space="preserve">
+    <value>EL FORMATO DE CORPORATE ID DEBE TENER 3 CARACTERES{0}ALFABÉTICOS Y 2 CARACTERES NUMÉRICOS</value>
+  </data>
+  <data name="FORMATO_POSICION_NOMBRE_INCORRECTO" xml:space="preserve">
+    <value>EL FORMATO DE LA POSICIÓN DEL NOMBRE ES INCORRECTO</value>
+  </data>
+  <data name="ING_AL_MENOS_UN_NOMBRE" xml:space="preserve">
+    <value>INGRESA AL MENOS UN NOMBRE</value>
+  </data>
+  <data name="ING_AL_MENOS_UN_SEGMENTO" xml:space="preserve">
+    <value>INGRESA AL MENOS UN SEGMENTO</value>
+  </data>
+  <data name="INGRESA_COD_FARE_INDICATOR" xml:space="preserve">
+    <value>INGRESA CÓDIGO DE FARE INDICATOR</value>
+  </data>
+  <data name="INGRESA_COD_LEGAL_ENTITY" xml:space="preserve">
+    <value>INGRESA CÓDIGO DE LEGAL ENTITY</value>
+  </data>
+  <data name="INGRESA_COD_ONLINE_B_INDICATOR" xml:space="preserve">
+    <value>INGRESA CÓDIGO DE ONLINE BOOKING INDICATOR</value>
+  </data>
+  <data name="INGRESA_COD_TARIFA_NEGOCIADA" xml:space="preserve">
+    <value>INGRESA CÓDIGO DE TARIFA NEGOCIADA</value>
+  </data>
+  <data name="INGRESA_COD_TARIFA_REAL" xml:space="preserve">
+    <value>INGRESA CÓDIGO DE TARIFA REAL</value>
+  </data>
+  <data name="INGRESA_CODIGO_CARGO_SERVICIO_VALIDO" xml:space="preserve">
+    <value>INGRESA UN CÓDIGO DE CARGO POR SERVICIO VÁLIDO</value>
+  </data>
+  <data name="INGRESA_NUM_ACCOUNT_CODE" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE ACCOUNT CODE</value>
+  </data>
+  <data name="INGRESA_NUM_CORPORATE_ID" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO DE CORPORATE ID</value>
+  </data>
+  <data name="INGRESA_TARIFA_PUBLICA_O_PRIVADA" xml:space="preserve">
+    <value>INGRESA LA TARIFA COMO PUBLICA O PRIVADA</value>
+  </data>
+  <data name="INGRESAR_COD_AREA" xml:space="preserve">
+    <value>DEBES INGRESAR EL CÓDIGO DE ÁREA</value>
+  </data>
+  <data name="INGRESAR_COD_CENTRO_GESTOR" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE CENTRO GESTOR</value>
+  </data>
+  <data name="INGRESAR_COD_POS_PRESUPUESTAL" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE POSICIÓN PRESUPUESTAL</value>
+  </data>
+  <data name="INGRESAR_CODIGO_AUTORIZACION" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE AUTORIZACIÓN</value>
+  </data>
+  <data name="INGRESAR_CODIGO_CENTRO_COSTOS" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE CENTRO DE COSTOS</value>
+  </data>
+  <data name="INGRESAR_CODIGO_DEPARTAMENTO" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE DEPARTAMENTO</value>
+  </data>
+  <data name="INGRESAR_CODIGO_DIVISION" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE DIVISIÓN</value>
+  </data>
+  <data name="INGRESAR_CODIGO_FOLIO" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE FOLIO</value>
+  </data>
+  <data name="INGRESAR_CODIGO_SOCIEDAD" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE SOCIEDAD</value>
+  </data>
+  <data name="INGRESAR_JUSTIFICACION_ADECUADA" xml:space="preserve">
+    <value>DEBES INGRESAR LA JUSTIFICACIÓN ADECUADA</value>
+  </data>
+  <data name="INGRESAR_NUM_EMPLEADO" xml:space="preserve">
+    <value>DEBES INGRESAR NÚMERO DE EMPLEADO</value>
+  </data>
+  <data name="INGRESAR_UNIDAD_NEGOCIO_REQ" xml:space="preserve">
+    <value>DEBES INGRESAR LA UNIDAD OPERATIVA REQUERIDA</value>
+  </data>
+  <data name="NECESITAS_ESTAR_AREA_E_EMITIR_ETKTS" xml:space="preserve">
+    <value>NECESITAS ESTAR EN EL ÁREA E PARA EMITIR ETKTS</value>
+  </data>
+  <data name="NECESITAS_INGRESAR_NUMERO_TARJETA_VALIDO" xml:space="preserve">
+    <value>NECESITAS INGRESAR NUMERO DE TARJETA VALIDO</value>
+  </data>
+  <data name="NO_CALC_TARIFA_VENDIDA_RECOTIZA" xml:space="preserve">
+    <value>NO SE PUDO CALCULAR TARIFA VENDIDA. RECOTIZA ITINERARIO</value>
+  </data>
+  <data name="NO_ES_POSIBLE_DOS_OPCIONES" xml:space="preserve">
+    <value>NO ES POSIBLE ELEGIR LAS DOS OPCIONES</value>
+  </data>
+  <data name="NO_ES_POSIBLE_SALTARSE_CAMPOS" xml:space="preserve">
+    <value>NO ES POSIBLE SALTARSE CAMPOS</value>
+  </data>
+  <data name="NO_EXISTE_AUTORIZACION_CLIENTE_PARA_EMISION" xml:space="preserve">
+    <value>NO EXISTE AUTORIZACION DEL CLIENTE PARA SU EMISION</value>
+  </data>
+  <data name="NO_EXISTE_FASE_IV" xml:space="preserve">
+    <value>NO EXISTE FASE IV EN EL RECORD</value>
+  </data>
+  <data name="NO_GENERA_EXCEL" xml:space="preserve">
+    <value>NO SE PUEDE GENERAR REPORTE EXCEL SIN ASIGNAR FECHA, DK O AEROLINEA</value>
+  </data>
+  <data name="NO_INGRESADOS_SEGMENTOS_VALIDOS" xml:space="preserve">
+    <value>NO SE HAN INGRESADO SEGMENTOS VÁLIDOS</value>
+  </data>
+  <data name="NO_LOCATION_INTEGRA" xml:space="preserve">
+    <value>El DK Ingresado NO EXISTE EN INTEGRA, favor de contactar a Cuentas por Cobrar.</value>
+  </data>
+  <data name="NO_NOMBRES_PRESENTES" xml:space="preserve">
+    <value>NO EXISTEN NOMBRES EN EL RECORD</value>
+  </data>
+  <data name="NO_RECORD_PRESENTE" xml:space="preserve">
+    <value>NO EXISTE ITINERARIO</value>
+  </data>
+  <data name="NUM_CLIENTE_O_LOCATION_INACTIVO" xml:space="preserve">
+    <value>El DK ingresado se encuentra INACTIVO en Integra, favor de contactar a Cuentas por Cobrar.</value>
+  </data>
+  <data name="NUM_PAX_DUPLICADO" xml:space="preserve">
+    <value>ALGÚN NÚMERO DE PASAJERO SE ENCUENTRA DUPLICADO</value>
+  </data>
+  <data name="NUMERO_PAX_NO_VALIDOS" xml:space="preserve">
+    <value>ALGUN NÚMERO DE PASAJERO NO ES VÁLIDO</value>
+  </data>
+  <data name="RECORD_CEDIDO_CERRAR_CERRAR_ANTES_BOLETEAR" xml:space="preserve">
+    <value>ESTE ES UN RECORD CEDIDO, SE RECOMIENDA CERRARLO ANTES DE EMITIR</value>
+  </data>
+  <data name="RECORD_NO_CERRADO" xml:space="preserve">
+    <value>EL RECORD NO ESTA CERRADO</value>
+  </data>
+  <data name="REQUIERE_AEROLINEA" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE AEREOLINEA PARA GENERAR EL REPORTE</value>
+  </data>
+  <data name="REQUIERE_DESCRIPCION" xml:space="preserve">
+    <value>DEBES INGRESAR LA DESCRIPCION</value>
+  </data>
+  <data name="REQUIERE_DK" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO DE DK PARA GENERAR EL REPORTE</value>
+  </data>
+  <data name="REQUIERE_FECHA_INICIO" xml:space="preserve">
+    <value>DEBES INGRESAR LA FECHA DE INICIO PARA GENERAR EL REPORTE</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_AEROLINEA_CORRECTA" xml:space="preserve">
+    <value>REQUIERE INGRESAR AEROLINEA CORRECTA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_CODIGO_POSTAL" xml:space="preserve">
+    <value>REQUIERE INGRESAR CÓDIGO POSTAL</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_COLONIA" xml:space="preserve">
+    <value>REQUIERE INGRESAR COLONIA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_DELEGACION" xml:space="preserve">
+    <value>REQUIERE INGRESAR DELEGACION O MUNICIPIO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_DIUDAD" xml:space="preserve">
+    <value>REQUIERE INGRESAR CIUDAD</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_ESTADO" xml:space="preserve">
+    <value>REQUIERE INGRESAR ESTADO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_MESES" xml:space="preserve">
+    <value>REQUIERE INGRESAR LOS MESES</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NUMERO" xml:space="preserve">
+    <value>REQUIERE INGRESAR NUMERO INTERIOR O EXTERIOR</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_NUMERO_TARJETA" xml:space="preserve">
+    <value>INGRESAR NÚMERO DE TARJETA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_RAZON_SOCIAL" xml:space="preserve">
+    <value>REQUIERE INGRESAR RAZON SOCIAL</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_RFC_COMPLETO" xml:space="preserve">
+    <value>NECESITA INGRESAR RFC COMPLETO</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_TIPO_TARJETA" xml:space="preserve">
+    <value>REQUIERE INGRESAR TIPO DE TARJETA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_TIPO_TARJETA_VALIDA" xml:space="preserve">
+    <value>REQUIERE INGRESAR TIPO DE TARJETA VALIDA</value>
+  </data>
+  <data name="REQUIERE_INGRESE_CENTRO_COSTOS" xml:space="preserve">
+    <value>REQUIERE INGRESAR CENTRO DE COSTOS</value>
+  </data>
+  <data name="REQUIERE_MES_VALIDO" xml:space="preserve">
+    <value>REQUIERE INGRESAR UN MES VALIDO</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_CUARTA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA CUARTA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_OCTAVA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA OCTAVA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_PRIMERA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA PRIMERA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_QUINTA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA QUINTA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_SEGUNDA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA SEGUNDA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_SEPTIMA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA SEPTIMA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_SEXTA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA SEXTA FILA</value>
+  </data>
+  <data name="REQUIERE_TICKET_DESIGNATOR_DESC_TERCERA_FILA" xml:space="preserve">
+    <value>REQUIERE TICKET DESIGNATOR EL INGRESO DE DESCUENTO EN LA TERCERA FILA</value>
+  </data>
+  <data name="REQUIRE_INGRESAR_CALLE" xml:space="preserve">
+    <value>REQUIERE INGRESAR CALLE</value>
+  </data>
+  <data name="REQUIREN_NOMBRES_RECORD_EMITIR_BOLETO" xml:space="preserve">
+    <value>SE REQUIEREN NOMBRES EN EL RECORD PARA EMITIR EL BOLETO</value>
+  </data>
+  <data name="RUTA_NO_VALIDA" xml:space="preserve">
+    <value>LA RUTA NO ES VALIDA Y NO SE PUDO GENERAR EL ARCHIVO</value>
+  </data>
+  <data name="SELEC_COD_ACCOUNT_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE ACCOUNT REQUERIDO</value>
+  </data>
+  <data name="SELEC_COD_ACTIVITY_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE ACTIVITY REQUERIDO</value>
+  </data>
+  <data name="SELEC_COD_COMPANY_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE COMPANY REQUERIDO</value>
+  </data>
+  <data name="SELEC_COD_COSTCENTER_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE COSTCENTER REQUERIDO</value>
+  </data>
+  <data name="SELEC_COD_CUSTOMER_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE CUSTOMER REQUERIDO</value>
+  </data>
+  <data name="SELEC_COD_SUBACTIVITY_REQ" xml:space="preserve">
+    <value>SELECCIONA EL CÓDIGO DE SUBACTIVITY REQUERIDO</value>
+  </data>
+  <data name="SELECCIONAR_ORIGEN_VENTA" xml:space="preserve">
+    <value>DEBES SELECCIONAR EL ORIGEN DE LA VENTA</value>
+  </data>
+  <data name="SOLO_PERMITEN_2_LETRAS" xml:space="preserve">
+    <value>SOLO SE PEREMITEN INGRESAR 2 LETRAS</value>
+  </data>
+  <data name="TARIFA_NEGOCIADA_CORPORATEID_O_ACCOUNT_CODE" xml:space="preserve">
+    <value>DEBES INGRESAR TARIFA NEGOCIADA, CORPORATE ID O ACCOUNT CODE</value>
+  </data>
+  <data name="TIPO_TARJETA_NO_VÁLIDA" xml:space="preserve">
+    <value>TIPO DE TARJETA NO VÁLIDA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_PAIS" xml:space="preserve">
+    <value>REQUIERE INGRESAR PAÍS</value>
+  </data>
+  <data name="COMANDO_NO_WFR" xml:space="preserve">
+    <value>LA INSTRUCCIÓN NO DEBE TENER LA SENTENCIA WFR</value>
+  </data>
+  <data name="REQUIERE_INSTRUCCION" xml:space="preserve">
+    <value>REQUIERE INSTRUCCIÓN DE SABRE</value>
+  </data>
+  <data name="SELECCIONAR_PAIS_LISTA" xml:space="preserve">
+    <value>REQUIERE SELECCIONAR PAIS DE LA LISTA</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_CODIGO_SEGURIDAD" xml:space="preserve">
+    <value>REQUIERE INGRESAR EL CÓDIGO DE SEGURIDAD</value>
+  </data>
+  <data name="REQUIERE_INGRESAR_MONTO" xml:space="preserve">
+    <value>REQUIERE INGRESAR MONTO A PAGAR</value>
+  </data>
+  <data name="REQUIERE_SELECCIONAR_BANCO" xml:space="preserve">
+    <value>REQUIERE SELECCIONAR UN BANCO DE LA LISTA</value>
+  </data>
+  <data name="EXISTE_CODIGO_AUTH" xml:space="preserve">
+    <value>EXISTE UN CÓDIGO DE AUTORIZACIÓN PENDIENTE POR APLICAR PARA ESTA RESERVACIÓN, SERÁ UTILIZADO EN ESTA EMISIÓN</value>
+  </data>
+  <data name="AVISO_PAGO_MIXTO" xml:space="preserve">
+    <value>EL MONTO DE LA TARIFA ACTUAL ES DIFERENTE AL MONTO DE LA AUTORIZACIÓN, SE PROCEDERÁ A EMITIR CON FORMA DE PAGO MIXTA.  
+
+LA DIFERENCIA A FAVOR O EN CONTRA DEBERÁ SER REPORTADA AL CLIENTE YA SEA PARA EL COBRO DE LA DIFERENCIA O REEMBOLSO.</value>
+  </data>
+  <data name="AVISO_TOTAL_IGUALADO" xml:space="preserve">
+    <value>LAS INSTRUCCIONES PARA LA EMISIÓN HAN CAMBIADO, Y SE HA IGUALADO LA TARIFA DEL CÓDIGO DE AUTORIZACIÓN.
+
+SE PROCEDERÁ A EMITIR CON AUTORIZACIÓN AUTOMÁTICA.</value>
+  </data>
+  <data name="SELECCIONA_COTIZA_GENERA" xml:space="preserve">
+    <value>DEBES INDICAR SI DESEAS COTIZACIÓN O EMISIÓN</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WARNING - PNR MODIFICATION IN PROGRESS" xml:space="preserve">
+    <value>SE HA PRESENTADO UN ERROR CRITICO ANTES DE LA EMISION.
+
+  * SIMULTANEOUS CHANGE TO PNR-USE TO IGNORE AND RETRIEVE PNR
+
+EL RECORD SE ENCUENTRA ABIERTO POR UN AGENTE DE RESERVACIONES AL MISMO TIEMPO O NO CONCLUISTE LOS ULTIMOS CAMBIOS.
+
+IGNORA Y REDESPLIEGA PARA QUE PROCEDAS CON LA EMISION NUEVAMENTE.
+
+SI EL PROBLEMA PERSISTE ASEGURATE QUE NADIE MAS TENGA LA RESERVACION ABIERTA .
+
+SI REQUIERES APOYO CONTACTA A LA MESA DE SERVICIO.</value>
+  </data>
+</root>

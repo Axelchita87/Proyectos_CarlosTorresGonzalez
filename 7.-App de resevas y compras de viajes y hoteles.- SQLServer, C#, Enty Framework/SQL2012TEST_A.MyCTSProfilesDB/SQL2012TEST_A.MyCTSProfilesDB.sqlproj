@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SQL2012TEST_A.MyCTSProfilesDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8f05802e-b8be-419a-a31f-b5db7254f87e}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SQL2012TEST_A.MyCTSProfilesDB</RootNamespace>
+    <AssemblyName>SQL2012TEST_A.MyCTSProfilesDB</AssemblyName>
+    <ModelCollation>3082,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>Modern_Spanish_CI_AS</DefaultCollation>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>90</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiNulls>False</AnsiNulls>
+    <AnsiPadding>False</AnsiPadding>
+    <AnsiWarnings>False</AnsiWarnings>
+    <ArithAbort>False</ArithAbort>
+    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
+    <QuotedIdentifier>False</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Service Broker\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\R_SLAVE.sql" />
+    <Build Include="dbo\Tables\R_CLUSTER_SLAVE.sql" />
+    <Build Include="dbo\Tables\R_TRANS_SLAVE.sql" />
+    <Build Include="dbo\Tables\CatPreferencePlaces.sql" />
+    <Build Include="dbo\Tables\R_TRANS_CLUSTER.sql" />
+    <Build Include="dbo\Tables\Hoja1_.sql" />
+    <Build Include="dbo\Tables\R_TRANS_HOP.sql" />
+    <Build Include="dbo\Tables\R_TRANS_STEP_CONDITION.sql" />
+    <Build Include="dbo\Tables\R_CONDITION.sql" />
+    <Build Include="dbo\Tables\R_VALUE.sql" />
+    <Build Include="dbo\Tables\StarNew2.sql" />
+    <Build Include="dbo\Tables\R_STEP_TYPE.sql" />
+    <Build Include="dbo\Tables\R_STEP.sql" />
+    <Build Include="dbo\Tables\R_STEP_ATTRIBUTE.sql" />
+    <Build Include="dbo\Tables\tblCorreos.sql" />
+    <Build Include="dbo\Tables\R_STEP_DATABASE.sql" />
+    <Build Include="dbo\Tables\R_TRANS_NOTE.sql" />
+    <Build Include="dbo\Tables\R_LOGLEVEL.sql" />
+    <Build Include="dbo\Tables\updateteva_.sql" />
+    <Build Include="dbo\Tables\R_LOG.sql" />
+    <Build Include="dbo\Tables\TAP100_.sql" />
+    <Build Include="dbo\Tables\CatStarsSecondLevel.sql" />
+    <Build Include="dbo\Tables\TPH100_.sql" />
+    <Build Include="dbo\Tables\R_JOB.sql" />
+    <Build Include="dbo\Tables\hoja2.sql" />
+    <Build Include="dbo\Tables\R_JOBENTRY_DATABASE.sql" />
+    <Build Include="dbo\Tables\R_JOBENTRY_TYPE.sql" />
+    <Build Include="dbo\Tables\R_JOBENTRY.sql" />
+    <Build Include="dbo\Tables\R_JOBENTRY_COPY.sql" />
+    <Build Include="dbo\Tables\R_JOBENTRY_ATTRIBUTE.sql" />
+    <Build Include="dbo\Tables\R_JOB_HOP.sql" />
+    <Build Include="dbo\Tables\R_JOB_NOTE.sql" />
+    <Build Include="dbo\Tables\R_TRANS_LOCK.sql" />
+    <Build Include="dbo\Tables\R_JOB_LOCK.sql" />
+    <Build Include="dbo\Tables\CatProfileLines.sql" />
+    <Build Include="dbo\Tables\CatProfilesCommand.sql" />
+    <Build Include="dbo\Tables\R_USER.sql" />
+    <Build Include="dbo\Tables\StarsBackup.sql" />
+    <Build Include="dbo\Tables\starsback2.sql" />
+    <Build Include="dbo\Tables\Star1.sql" />
+    <Build Include="dbo\Tables\Star2.sql" />
+    <Build Include="dbo\Tables\OracleProfiles.sql" />
+    <Build Include="dbo\Tables\ProfilesChanges_log.sql" />
+    <Build Include="dbo\Tables\Metadatas.sql" />
+    <Build Include="dbo\Tables\DocsSecondLevel.sql" />
+    <Build Include="dbo\Tables\Stars.sql" />
+    <Build Include="dbo\Tables\LogNewFormatProfiles.sql" />
+    <Build Include="dbo\Tables\DetailStars.sql" />
+    <Build Include="dbo\Tables\R_REPOSITORY_LOG.sql" />
+    <Build Include="dbo\Tables\R_VERSION.sql" />
+    <Build Include="dbo\Tables\R_DATABASE_TYPE.sql" />
+    <Build Include="dbo\Tables\R_DATABASE_CONTYPE.sql" />
+    <Build Include="dbo\Tables\R_NOTE.sql" />
+    <Build Include="dbo\Tables\R_DATABASE.sql" />
+    <Build Include="dbo\Tables\R_DATABASE_ATTRIBUTE.sql" />
+    <Build Include="dbo\Tables\R_DIRECTORY.sql" />
+    <Build Include="dbo\Tables\R_TRANSFORMATION.sql" />
+    <Build Include="dbo\Tables\R_TRANS_ATTRIBUTE.sql" />
+    <Build Include="dbo\Tables\UpdatedProfiles.sql" />
+    <Build Include="dbo\Tables\R_JOB_ATTRIBUTE.sql" />
+    <Build Include="dbo\Tables\R_DEPENDENCY.sql" />
+    <Build Include="dbo\Tables\R_PARTITION_SCHEMA.sql" />
+    <Build Include="dbo\Tables\CatStarsFirstLevel.sql" />
+    <Build Include="dbo\Tables\R_PARTITION.sql" />
+    <Build Include="dbo\Tables\R_TRANS_PARTITION_SCHEMA.sql" />
+    <Build Include="dbo\Tables\CatStarsFirstLevel_old.sql" />
+    <Build Include="dbo\Tables\R_CLUSTER.sql" />
+    <Build Include="dbo\Views\cts_cuentas_salesforce_v.sql" />
+    <Build Include="dbo\Functions\CalculateMetadata.sql" />
+    <Build Include="dbo\Stored Procedures\SetStarsLevel2.sql" />
+    <Build Include="dbo\Stored Procedures\enviarSolicitudLista.sql" />
+    <Build Include="dbo\Stored Procedures\PR_ReciveData.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStarLevel2byLevel2.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsFirstLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisProfile.sql" />
+    <Build Include="dbo\Stored Procedures\spBuscaStores.sql" />
+    <Build Include="dbo\Stored Procedures\GetStars1stLevelCatalog.sql" />
+    <Build Include="dbo\Stored Procedures\Get1stStarInfoByLocationWS.sql" />
+    <Build Include="dbo\Stored Procedures\SetStarsLevel1Info.sql" />
+    <Build Include="dbo\Stored Procedures\GetStars2ndLevelCatalog.sql" />
+    <Build Include="dbo\Stored Procedures\SetStarsLevel2Info.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllStars.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar1stLevelInfo.sql" />
+    <Build Include="dbo\Stored Procedures\GetProfiles2LevelByFirstLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar2ndLevelInfo.sql" />
+    <Build Include="dbo\Stored Procedures\Get1stStarInfoByLocation.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStarLevel1Info.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStarLevel2Info.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStarLevel1Info.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStarLevel2Info.sql" />
+    <Build Include="dbo\Stored Procedures\SB_ReceiveData_UniversalProfilesDB.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatProfileLines.sql" />
+    <Build Include="dbo\Stored Procedures\SetSearchAllEmail.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStarLevel1.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar2ByEmail.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteStarLevel2.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStarLevel1.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatPreferencePlaces.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStarLevel2.sql" />
+    <Build Include="dbo\Stored Procedures\ActiveStarLevel1.sql" />
+    <Build Include="dbo\Stored Procedures\ActiveStarLevel2.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteDocsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardFromFristLevelProfile_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetDocsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetDocsSecondLevelByImageId.sql" />
+    <Build Include="dbo\Stored Procedures\SetProfileChanges.sql" />
+    <Build Include="dbo\Stored Procedures\GetDocsSecondLevelbyProfileId.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar1_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\SetDocsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateDocsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar1profileByDk.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar2ProfileByEmail.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsSecondLevel_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsFirstLevel_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\Delete2ndLevelProfile.sql" />
+    <Build Include="dbo\Stored Procedures\SetLogNewFormatProfiles.sql" />
+    <Build Include="dbo\Stored Procedures\Get2StarEmail.sql" />
+    <Build Include="dbo\Stored Procedures\GetStartFields.sql" />
+    <Build Include="dbo\Stored Procedures\GetDeactivatedStars.sql" />
+    <Build Include="dbo\Stored Procedures\GetLinesDeactivatedStars.sql" />
+    <Build Include="dbo\Stored Procedures\GetLogNewFormatProfiles.sql" />
+    <Build Include="dbo\Stored Procedures\Delete1stLevelProfile.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar1stLevelByStar2Level.sql" />
+    <Build Include="dbo\Stored Procedures\GetUserProfile.sql" />
+    <Build Include="dbo\Stored Procedures\SetOrUpadateStar.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar1.sql" />
+    <Build Include="dbo\Stored Procedures\GetStar2.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllStarstemp.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStar1DKAll.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateStar2MailAll.sql" />
+    <Build Include="dbo\Stored Procedures\GetXMLStar2.sql" />
+    <Build Include="dbo\Stored Procedures\GetDeactivatedStarSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetInterJetProfile.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardFromFristLevelProfile.sql" />
+    <Build Include="dbo\Stored Procedures\SetStarsLevel1.sql" />
+    <Build Include="Service Broker\__Common_Databases_DBContract.sql" />
+    <Build Include="Service Broker\__Common_Databases_SendMessage.sql" />
+    <Build Include="Service Broker\__Common_Databases_ReplyMessage.sql" />
+    <Build Include="Service Broker\SenderQueue.sql" />
+    <Build Include="Service Broker\__SenderDB_Databases_SenderService.sql" />
+  </ItemGroup>
+</Project>

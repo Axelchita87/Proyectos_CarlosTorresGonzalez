@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f20ab511-0c44-4798-a49c-4d9aa93bc8a3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://201.149.13.14:5498/CTSServices/InterJet.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InterJet2.xsd" MetadataType="Schema" ID="0143e0cb-c4fd-4fea-83fe-fc5483412c92" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd5" />
+    <MetadataFile FileName="InterJet13.xsd" MetadataType="Schema" ID="663377fb-e570-47b1-80dd-19a5ff6eb346" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd2" />
+    <MetadataFile FileName="InterJet14.xsd" MetadataType="Schema" ID="ebd868a8-6cba-4028-ae6a-f1dfe54d2f5b" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd7" />
+    <MetadataFile FileName="InterJet15.xsd" MetadataType="Schema" ID="ca631205-9a65-4bd6-81f8-d1c248ec9a05" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd8" />
+    <MetadataFile FileName="InterJet16.xsd" MetadataType="Schema" ID="e7c70df7-c492-415b-babe-f992af2511a1" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd1" />
+    <MetadataFile FileName="InterJet17.xsd" MetadataType="Schema" ID="87d4ea6f-8e7a-4925-8fe9-bb058eadd267" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd3" />
+    <MetadataFile FileName="InterJet18.xsd" MetadataType="Schema" ID="3f9526ca-bdaf-4b19-9d2e-a24a95eda0d5" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd4" />
+    <MetadataFile FileName="InterJet2.disco" MetadataType="Disco" ID="7cfc8fea-ad3c-48dd-9a2a-5241919bd66b" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?disco" />
+    <MetadataFile FileName="InterJet19.xsd" MetadataType="Schema" ID="4b97b970-dd87-438a-b457-cf6cbfb51d07" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd6" />
+    <MetadataFile FileName="InterJet2.wsdl" MetadataType="Wsdl" ID="236d0e34-6f1b-4dd3-af8b-12acd0613d3e" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?wsdl" />
+    <MetadataFile FileName="InterJet20.xsd" MetadataType="Schema" ID="9a107c39-affb-4efa-80b2-42842b69027d" SourceId="1" SourceUrl="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

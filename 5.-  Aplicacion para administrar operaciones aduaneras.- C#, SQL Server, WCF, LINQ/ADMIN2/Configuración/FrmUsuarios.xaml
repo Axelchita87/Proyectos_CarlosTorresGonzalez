@@ -1,0 +1,126 @@
+﻿<control:BaseWindow x:Class="ADMIN2.Configuración.FrmUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Usuarios" Height="315.759" Width="354.76"
+        xmlns:control="clr-namespace:ADMIN2.Controls;assembly=ADMIN2.Controls"
+        xmlns:my="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+        WindowStyle="None" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#D0A82D" Background="#FFd6d6d6" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <control:BaseWindow.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisConverter" />
+
+    </control:BaseWindow.Resources>
+    <Grid Margin="0,0,0,5">
+        <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                    <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                    <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Style="{DynamicResource labe_cabecera}" Content="Usuarios" Margin="10,0,42,0" Grid.ColumnSpan="2"/>
+        <Button Name="btnCerrar" Click="BtnCerrarClick" Style="{DynamicResource close_boton}" Margin="324,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsCancel="True"/>
+        <GroupBox Header="" BorderBrush="#D0A82D" BorderThickness="2" Margin="6,30,0,30" HorizontalAlignment="Left" Width="339">
+            <StackPanel Margin="0,0,-2,0">
+                <Grid Height="225" x:Name="Grid1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="10,10,0,0" Text="Usuario:" x:Name="lblr" Visibility="Hidden" />
+                    <TextBox x:Name="TxtUsuario" Margin="85,9,0,0"  TabIndex="1" Visibility="Hidden"
+                		HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Template="{StaticResource TextBoxBaseControlTemplate}" Tag="Usuario"
+                		Width="229" Height="22" MaxLength="12" TextChanged="TextBox_TextChanged" />
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="8,75,0,0" Text="Contraseña:" x:Name="lblr_Copy" />
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="8,145,0,0" Text="Área:" x:Name="lblr_Copy1" />
+                    <TextBlock TextWrapping="Wrap" Grid.Column="0"
+                		VerticalAlignment="Top" 
+                		TextAlignment="Left"
+                		Style="{DynamicResource estilo_labels}" 
+                		Margin="8,101,0,0"
+                		HorizontalAlignment="Left"
+                		Width="85"
+                		Text="Confirmar Contraseña:" Height="33"/>
+                    <PasswordBox x:Name="txtContrasena" HorizontalAlignment="Left" Margin="83,75,0,0" VerticalAlignment="Top" Width="229" TabIndex="4" MaxLength="30"/>
+                    <PasswordBox x:Name="txtConfirmacion" HorizontalAlignment="Left" Margin="83,107,0,0" VerticalAlignment="Top" Width="229" LostFocus="txtContrasena_LostFocus" TabIndex="5" MaxLength="30"/>
+                    <ComboBox x:Name="CmbPerfil" VerticalAlignment="Top" Visibility="Hidden"
+                		TabIndex="7"
+                		HorizontalAlignment="Left" ItemsSource="{Binding}"
+                		Width="227" Margin="87,203,0,-54" Height="22" SelectedValuePath="IdPerfil" 
+                		DisplayMemberPath="Perfil"  StaysOpenOnEdit="True" 
+                		IsTextSearchEnabled="True" 
+                		IsReadOnly="True"
+                		IsEditable="False"
+                		Tag="Perfil"
+                		SelectionChanged="cmbPerfil_SelectionChanged"/>
+                    <ComboBox x:Name="CmbArea" VerticalAlignment="Top"
+                		HorizontalAlignment="Left" ItemsSource="{Binding}"
+                		Width="229" Margin="83,139,0,0" Height="22" SelectedValuePath="IdArea" 
+                		TextSearch.TextPath="Area"  StaysOpenOnEdit="True" 
+                		IsTextSearchEnabled="True" 
+                		IsReadOnly="True"
+                		IsEditable="False"
+                		Tag="Área"
+                		TabIndex="6" SelectionChanged="cmbAreaSelectionChanged">
+                        <ComboBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VirtualizingStackPanel />
+                            </ItemsPanelTemplate>
+                        </ComboBox.ItemsPanel>
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate >
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock  Text="Abrev: " FontWeight="Bold"
+                						Visibility="{Binding HasContent, Converter={StaticResource BoolToVisConverter}}"/>
+                                    <TextBlock  Text="{Binding Abreviatura}" Margin="4,0"
+                						Visibility="{Binding HasContent, Converter={StaticResource BoolToVisConverter}}"/>
+                                    <TextBlock  Text="Área:" FontWeight="Bold"
+                						Visibility="{Binding HasContent, Converter={StaticResource BoolToVisConverter}}"/>
+                                    <TextBlock Text="{Binding Area}" Margin="4,0"
+                						Visibility="{Binding HasContent, Converter={StaticResource BoolToVisConverter}}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <TextBox x:Name="TxtNombre" Margin="83,10,0,0"  TabIndex="2"
+                		HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Template="{StaticResource TextBoxBaseControlTemplate}" Tag="Nombre"
+                		Width="229" Height="22" MaxLength="12" TextChanged="TextBox_TextChanged" />
+                    <TextBlock Height="Auto" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"
+                		Style="{DynamicResource estilo_labels}" Margin="8,10,0,0" Text="Usuario:" x:Name="lblr_Copy2" />
+                    <TextBox x:Name="TxtCorreo" Margin="83,43,0,0"  TabIndex="3"
+                		HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Template="{StaticResource TextBoxBaseControlTemplate}" Tag="Nombre"
+                		Width="229" Height="22" MaxLength="12" TextChanged="TextBox_TextChanged" />
+                    <TextBlock Height="32" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" TextWrapping="Wrap" Margin="8,37,0,0" Text="Correo Electrónico:" x:Name="lblr_Copy4" RenderTransformOrigin="0.448,-1.25" />
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="8,177,0,0" Text="Permisos:" x:Name="lblr_Copy5" />
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="10,203,0,0" Text="Activo:" x:Name="LblActivo" RenderTransformOrigin="0.485,-0.438"
+                               Visibility="Hidden"/>
+                    <CheckBox x:Name="chkDeshabilitado" Margin="87,206,0,0"
+                    	FontWeight="Bold" Visibility="Hidden" 
+                    	VerticalAlignment="Top" HorizontalAlignment="Left" TabIndex="4" Height="16" Width="30" IsEnabled="True"/>
+                    <Button x:Name="btnAceptar_Copy" Height="25" Cursor="Arrow"
+                    	Content="Agregar Permisos" HorizontalAlignment="Right" VerticalAlignment="Top" TabIndex="4"
+                    	Width="227" Margin="0,173,17,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black" Click="btnAceptar_Copy_Click"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <Grid x:Name="GridBotones" HorizontalAlignment="Left" Height="35" Margin="129,280,0,-8" VerticalAlignment="Top" Width="222">
+            <Button x:Name="btnAceptar" Height="25" Cursor="Arrow" Click="btnAceptar_Click"
+        		Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Top" TabIndex="4"
+        		Width="100" Margin="0,0,122,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black"/>
+            <Button x:Name="btnCancelar" Height="25" Cursor="Arrow" TabIndex="5" Click="btnCancelClick"
+            	Content="Cancelar" HorizontalAlignment="Right" VerticalAlignment="Top" 
+            	Width="100" Margin="0,0,10,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black"/>
+        </Grid>
+    </Grid>
+</control:BaseWindow>
+

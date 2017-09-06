@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetProfileByLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileByLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileByLocationResult" type="tns:Cat1stStarInfoByLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Cat1stStarInfoByLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Municipality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MainPhone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAttribute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttributeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttributeResult" type="tns:GetAttribute1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAttribute1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status_Site" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLocationByAttribute1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attribute1" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationByAttribute1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationByAttribute1Result" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInfoByTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoByTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoByTicketResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegenerateInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="typeInvoice" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numberDocument" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegenerateInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegenerateInvoiceResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTranferCheckNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dk" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTranferCheckNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTranferCheckNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProfileByLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileByLocation" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileByLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileByLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttribute" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByAttribute1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationByAttribute1" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByAttribute1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationByAttribute1Response" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoByTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoByTicket" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoByTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoByTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegenerateInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:RegenerateInvoice" />
+  </wsdl:message>
+  <wsdl:message name="RegenerateInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:RegenerateInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTranferCheckNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTranferCheckNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetTranferCheckNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTranferCheckNumberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetProfileByLocation">
+      <wsdl:input message="tns:GetProfileByLocationSoapIn" />
+      <wsdl:output message="tns:GetProfileByLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <wsdl:input message="tns:GetAttributeSoapIn" />
+      <wsdl:output message="tns:GetAttributeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <wsdl:input message="tns:GetLocationByAttribute1SoapIn" />
+      <wsdl:output message="tns:GetLocationByAttribute1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByTicket">
+      <wsdl:input message="tns:GetInfoByTicketSoapIn" />
+      <wsdl:output message="tns:GetInfoByTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <wsdl:input message="tns:GetCreditCardNumberSoapIn" />
+      <wsdl:output message="tns:GetCreditCardNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegenerateInvoice">
+      <wsdl:input message="tns:RegenerateInvoiceSoapIn" />
+      <wsdl:output message="tns:RegenerateInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumber">
+      <wsdl:input message="tns:GetTranferCheckNumberSoapIn" />
+      <wsdl:output message="tns:GetTranferCheckNumberSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProfileByLocation">
+      <soap:operation soapAction="http://tempuri.org/GetProfileByLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <soap:operation soapAction="http://tempuri.org/GetAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <soap:operation soapAction="http://tempuri.org/GetLocationByAttribute1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByTicket">
+      <soap:operation soapAction="http://tempuri.org/GetInfoByTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <soap:operation soapAction="http://tempuri.org/GetCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegenerateInvoice">
+      <soap:operation soapAction="http://tempuri.org/RegenerateInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumber">
+      <soap:operation soapAction="http://tempuri.org/GetTranferCheckNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProfileByLocation">
+      <soap12:operation soapAction="http://tempuri.org/GetProfileByLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <soap12:operation soapAction="http://tempuri.org/GetAttribute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <soap12:operation soapAction="http://tempuri.org/GetLocationByAttribute1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoByTicket">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoByTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegenerateInvoice">
+      <soap12:operation soapAction="http://tempuri.org/RegenerateInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetTranferCheckNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://201.149.13.14:5498/MyCTSOracleConnection/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://201.149.13.14:5498/MyCTSOracleConnection/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

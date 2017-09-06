@@ -1,0 +1,32 @@
+function vars_per_gen = saveVars(vars, Pop, generation, sizePop)
+%function to save all the infor per generation
+
+vars.AvFitness(1,generation) = mean(Pop.fitness(:,1));
+
+vars.bestFitness = Pop.fitness(1,1);
+vars.worstFitness = Pop.fitness(sizePop,1);
+vars.AvNoInd = mean(sum(Pop.string,2));
+
+vars.bestNoInd = sum(Pop.string(1,:));
+
+vars.AvBeta = mean(Pop.beta(:,1));
+
+vars.bestBeta = Pop.beta(1,1);
+
+
+
+
+vars_per_gen.AvFitness = zeros(1,maxGen);
+vars_per_gen.stdFitness = zeros(1,maxGen);
+vars_per_gen.bestFitness = zeros(1,maxGen);
+vars_per_gen.worstFitness = zeros(1,maxGen);
+
+vars_per_gen.AvNoInd = zeros(1,maxGen);
+vars_per_gen.stdNoInd = zeros(1,maxGen);
+vars_per_gen.bestNoInd = zeros(1,maxGen);
+vars_per_gen.worstNoInd = zeros(1,maxGen);
+
+vars_per_gen.AvBeta = zeros(1,maxGen);
+vars_per_gen.stdBeta = zeros(1,maxGen);
+vars_per_gen.bestBeta = zeros(1,maxGen)
+vars_per_gen.worstBeta = zeros(1,maxGen);

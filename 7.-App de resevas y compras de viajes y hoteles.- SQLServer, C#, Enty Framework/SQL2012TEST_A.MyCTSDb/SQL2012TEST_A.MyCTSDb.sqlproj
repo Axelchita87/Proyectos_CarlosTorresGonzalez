@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>SQL2012TEST_A.MyCTSDb</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{c7be22a8-ec49-4259-9832-d1281bb5180a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>SQL2012TEST_A.MyCTSDb</RootNamespace>
+    <AssemblyName>SQL2012TEST_A.MyCTSDb</AssemblyName>
+    <ModelCollation>3082,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>Modern_Spanish_CI_AS</DefaultCollation>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>0</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>CHECKSUM</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>90</CompatibilityMode>
+    <AnsiNullDefault>False</AnsiNullDefault>
+    <AnsiNulls>False</AnsiNulls>
+    <AnsiPadding>False</AnsiPadding>
+    <AnsiWarnings>False</AnsiWarnings>
+    <ArithAbort>False</ArithAbort>
+    <ConcatNullYieldsNull>False</ConcatNullYieldsNull>
+    <QuotedIdentifier>False</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\CatPCCsSubCategory.sql" />
+    <Build Include="dbo\Tables\QCControlsFeatures.sql" />
+    <Build Include="dbo\Tables\LabelsRemarks.sql" />
+    <Build Include="dbo\Tables\SSR.sql" />
+    <Build Include="dbo\Tables\ITTourCodes.sql" />
+    <Build Include="dbo\Tables\CatOnlineToolsPicCodes.sql" />
+    <Build Include="dbo\Tables\DK.sql" />
+    <Build Include="dbo\Tables\CatFareTypes.sql" />
+    <Build Include="dbo\Tables\CatHotels.sql" />
+    <Build Include="dbo\Tables\Error_log_ServiceCharge.sql" />
+    <Build Include="dbo\Tables\Corporatives.sql" />
+    <Build Include="dbo\Tables\CatCities.sql" />
+    <Build Include="dbo\Tables\Star2.sql" />
+    <Build Include="dbo\Tables\CatServicesMD.sql" />
+    <Build Include="dbo\Tables\Log_Tickets_Interjet.sql" />
+    <Build Include="dbo\Tables\CatCountries.sql" />
+    <Build Include="dbo\Tables\CatFormats.sql" />
+    <Build Include="dbo\Tables\Log_Tickets_Volaris.sql" />
+    <Build Include="dbo\Tables\QC1.sql" />
+    <Build Include="dbo\Tables\ToolOnlineDiasFestivos.sql" />
+    <Build Include="dbo\Tables\CatAirPorts.sql" />
+    <Build Include="dbo\Tables\CatCarEquipmentCodes.sql" />
+    <Build Include="dbo\Tables\QualityControls.sql" />
+    <Build Include="dbo\Tables\CatBusCodes.sql" />
+    <Build Include="dbo\Tables\CostCenters.sql" />
+    <Build Include="dbo\Tables\CatCarTypesCodes.sql" />
+    <Build Include="dbo\Tables\CatSubTypePax.sql" />
+    <Build Include="dbo\Tables\LowFareAirLinesErrorLog.sql" />
+    <Build Include="dbo\Tables\CatPccs.sql" />
+    <Build Include="dbo\Tables\VolarisLog.sql" />
+    <Build Include="dbo\Tables\CatCarVendorsCodes.sql" />
+    <Build Include="dbo\Tables\ClientsCatalogs.sql" />
+    <Build Include="dbo\Tables\tbl_CTA_BANC_CBR_MyCTS.sql" />
+    <Build Include="dbo\Tables\NumCta_ClientsOracl.sql" />
+    <Build Include="dbo\Tables\LogsUnusedTicket.sql" />
+    <Build Include="dbo\Tables\ToolOnlineLog.sql" />
+    <Build Include="dbo\Tables\CatCreditCardCodes.sql" />
+    <Build Include="dbo\Tables\CtrlCatalogues.sql" />
+    <Build Include="dbo\Tables\CatServicesExtras.sql" />
+    <Build Include="dbo\Tables\InterJetPointToPointV2.sql" />
+    <Build Include="dbo\Tables\ReservationLog.sql" />
+    <Build Include="dbo\Tables\Justifications.sql" />
+    <Build Include="dbo\Tables\CatAirLinesFare.sql" />
+    <Build Include="dbo\Tables\CatFormPaymentCTS.sql" />
+    <Build Include="dbo\Tables\LogsApplicationHist.sql" />
+    <Build Include="dbo\Tables\Star1.sql" />
+    <Build Include="dbo\Tables\CatAirLinLogo.sql" />
+    <Build Include="dbo\Tables\CusErrMsg.sql" />
+    <Build Include="dbo\Tables\CatAirLinesClass.sql" />
+    <Build Include="dbo\Tables\CorporativesFeatures.sql" />
+    <Build Include="dbo\Tables\Parameter.sql" />
+    <Build Include="dbo\Tables\CatCurrencyCountry.sql" />
+    <Build Include="dbo\Tables\ToolOnlineQueues.sql" />
+    <Build Include="dbo\Tables\DetailsPNRHotel.sql" />
+    <Build Include="dbo\Tables\Clients.sql" />
+    <Build Include="dbo\Tables\DiferenceCatCities.sql" />
+    <Build Include="dbo\Tables\Attributes.sql" />
+    <Build Include="dbo\Tables\CatTypePax.sql" />
+    <Build Include="dbo\Tables\VolarisCatStates.sql" />
+    <Build Include="dbo\Tables\CatCurrentCriteriaQCControlFeatures.sql" />
+    <Build Include="dbo\Tables\Location_Attribute.sql" />
+    <Build Include="dbo\Tables\LogClipboardCTS.sql" />
+    <Build Include="dbo\Tables\AllPromoFOP.sql" />
+    <Build Include="dbo\Tables\LogOnlinePayServices.sql" />
+    <Build Include="dbo\Tables\CatBanks.sql" />
+    <Build Include="dbo\Tables\CatZones.sql" />
+    <Build Include="dbo\Tables\RuleNumberNotEnableForLocation.sql" />
+    <Build Include="dbo\Tables\Modules.sql" />
+    <Build Include="dbo\Tables\CatMealCodes.sql" />
+    <Build Include="dbo\Tables\SabreMessages.sql" />
+    <Build Include="dbo\Tables\OperativeUnits.sql" />
+    <Build Include="dbo\Tables\SabreErrMsg.sql" />
+    <Build Include="dbo\Tables\LogAuthCCPending.sql" />
+    <Build Include="dbo\Tables\LogsApplication.sql" />
+    <Build Include="dbo\Tables\TC_ClientsOracle.sql" />
+    <Build Include="dbo\Tables\CatStatesUSA.sql" />
+    <Build Include="dbo\Tables\CatOnlineTools.sql" />
+    <Build Include="dbo\Tables\TC_CTSOracle.sql" />
+    <Build Include="dbo\Tables\CTS_CLIENTES_V.sql" />
+    <Build Include="dbo\Tables\CTS_PROVEEDORES_V.sql" />
+    <Build Include="dbo\Tables\Catalogs.sql" />
+    <Build Include="dbo\Tables\CatSeaVendorsCodes.sql" />
+    <Build Include="dbo\Tables\SabreCusErrMsgMod.sql" />
+    <Build Include="dbo\Tables\Qualities_Future.sql" />
+    <Build Include="dbo\Tables\tblCXSHoteles.sql" />
+    <Build Include="dbo\Tables\CatCommands.sql" />
+    <Build Include="dbo\Tables\CatMealCodesToDIX.sql" />
+    <Build Include="dbo\Tables\InterJetPointToPoint.sql" />
+    <Build Include="dbo\Tables\CatEventosOracle.sql" />
+    <Build Include="dbo\Tables\InterJetTax.sql" />
+    <Build Include="dbo\Tables\Enterprise.sql" />
+    <Build Include="dbo\Tables\LogInterJet.sql" />
+    <Build Include="dbo\Tables\CatTypesCar.sql" />
+    <Build Include="dbo\Tables\CatStateInterJet.sql" />
+    <Build Include="dbo\Tables\CatVendorCar.sql" />
+    <Build Include="dbo\Tables\CatEquipmentCar.sql" />
+    <Build Include="dbo\Tables\ToolOnlineRules.sql" />
+    <Build Include="dbo\Tables\AlAgreements.sql" />
+    <Build Include="dbo\Tables\FareTypes.sql" />
+    <Build Include="dbo\Tables\TargetElementsRules.sql" />
+    <Build Include="dbo\Tables\CatRobotGEA.sql" />
+    <Build Include="dbo\Tables\CorporativeFeesRules.sql" />
+    <Build Include="dbo\Tables\PCCKeys.sql" />
+    <Build Include="dbo\Tables\TargetElements.sql" />
+    <Build Include="dbo\Tables\ToolOnlineRulesDelete.sql" />
+    <Build Include="dbo\Tables\ClientsAlAgreements.sql" />
+    <Build Include="dbo\Tables\BannerImages.sql" />
+    <Build Include="dbo\Tables\VolarisPointToPointV2.sql" />
+    <Build Include="dbo\Tables\CatAirLines.sql" />
+    <Build Include="dbo\Tables\CommandsActions.sql" />
+    <Build Include="dbo\Tables\CatStatusCodes.sql" />
+    <Build Include="dbo\Tables\QCCustomRemarksClients.sql" />
+    <Build Include="dbo\Tables\CatAccSuppliers.sql" />
+    <Build Include="dbo\Tables\QualityControlsClients.sql" />
+    <Build Include="dbo\Tables\CTSAlAgreements.sql" />
+    <Build Include="dbo\Tables\OriginSales.sql" />
+    <Build Include="dbo\Tables\tblViajanetTempDestinos.sql" />
+    <Build Include="dbo\Views\DK_CORP_JUST.sql" />
+    <Build Include="dbo\Views\CatCars.sql" />
+    <Build Include="Security\adminMyCTS.sql" />
+    <Build Include="Security\desarrollo.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\fnSplitString.sql" />
+    <Build Include="dbo\Stored Procedures\AddNewUserIn.sql" />
+    <Build Include="dbo\Stored Procedures\InsertDetailsPNRHotel_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_ClientsCatalogs.sql" />
+    <Build Include="dbo\Stored Procedures\GetCTSAlAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\spVN_InsertaConsultaVuelo.sql" />
+    <Build Include="dbo\Stored Procedures\sprInsertRegistroCxSHoteles_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetBusinessUnits.sql" />
+    <Build Include="dbo\Stored Procedures\spVN_ClearTableConsultaVuelo.sql" />
+    <Build Include="dbo\Stored Procedures\GET_CTS_MyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientsAlAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\spVN_GetConsultaVuelo.sql" />
+    <Build Include="dbo\Stored Procedures\GetAttribute1_WS.sql" />
+    <Build Include="dbo\Stored Procedures\spBuscaStores.sql" />
+    <Build Include="dbo\Stored Procedures\GetInvoiceFileName.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardByClientMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisCountries.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCControlsClients.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteToolOnlineQueues.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardByNumberMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisStates.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCCustomRemarks.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_SSRCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardNumberMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetITTourCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetPcc.sql" />
+    <Build Include="dbo\Stored Procedures\GetValuesXMLQualityControlsClients-100.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardNumberMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\InsertPcc.sql" />
+    <Build Include="dbo\Stored Procedures\GetLogoAirline.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardNumberMyCTS2.sql" />
+    <Build Include="dbo\Stored Procedures\UpdatePcc.sql" />
+    <Build Include="dbo\Stored Procedures\SetLogoAirline.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatOnlineToolsPicCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GETCTS_CLIENTES_MyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\SetAirLineAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\GetOnlyAttributte1.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirPortCityCountry_Predictive.sql" />
+    <Build Include="dbo\Stored Procedures\Location_Attribute1_Prueba1.sql" />
+    <Build Include="dbo\Stored Procedures\GetLabelsRemarks.sql" />
+    <Build Include="dbo\Stored Procedures\SetAirLinesFare.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisCatStatesPredictive.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTables1_INTEGRAtoMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\ConsultaCorporativePorAgente_Firma.sql" />
+    <Build Include="dbo\Stored Procedures\SetAirPorts.sql" />
+    <Build Include="dbo\Stored Procedures\GetEventCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLines_Predictive.sql" />
+    <Build Include="dbo\Stored Procedures\SetPNRHotelError.sql" />
+    <Build Include="dbo\Stored Procedures\SetPCCs.sql" />
+    <Build Include="dbo\Stored Procedures\GetPAirLinesFare.sql" />
+    <Build Include="dbo\Stored Procedures\sp_BackupMyCTSProductivityDb.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteAirLineAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\GetLogTicketsInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\GetValuesQualityControls.sql" />
+    <Build Include="dbo\Stored Procedures\GetComissionAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteAirLinesFare.sql" />
+    <Build Include="dbo\Stored Procedures\GetLogTicketsVolaris.sql" />
+    <Build Include="dbo\Stored Procedures\GetValuesXMLQualityControls.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\DeletePccs.sql" />
+    <Build Include="dbo\Stored Procedures\InsertLogTicketsVolaris.sql" />
+    <Build Include="dbo\Stored Procedures\InsertErrorLogServiceCharge.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateAirLineAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\InsertLogTicketsInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\GetVendor.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateAirLineFare.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateLogTicketsInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateLogTicketsVolaris.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTables2_INTEGRAtoMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetAttribute1_WS_MyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\UpdatePccs.sql" />
+    <Build Include="dbo\Stored Procedures\AddLocationFromIntegra.sql" />
+    <Build Include="dbo\Stored Procedures\GetServicesMD.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLineFare.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirPort.sql" />
+    <Build Include="dbo\Stored Procedures\GetAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirPorts.sql" />
+    <Build Include="dbo\Stored Procedures\GETRANDOM.sql" />
+    <Build Include="dbo\Stored Procedures\GetALAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\GetOnlyAttributte1_DK.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllPccs.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllPccsComplet.sql" />
+    <Build Include="dbo\Stored Procedures\Get_ToolOnlineDiasFestivos.sql" />
+    <Build Include="dbo\Stored Procedures\GetVendor2.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirlineCodeByNumID.sql" />
+    <Build Include="dbo\Stored Procedures\GetNationalRoutes.sql" />
+    <Build Include="dbo\Stored Procedures\GetValuesXMLQualityControls-100.sql" />
+    <Build Include="dbo\Stored Procedures\GetValuesQualityControls-100.sql" />
+    <Build Include="dbo\Stored Procedures\InsertLowFareAirLinesError.sql" />
+    <Build Include="dbo\Stored Procedures\GetQC.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateBannerImageTicketPrinter.sql" />
+    <Build Include="dbo\Stored Procedures\GetC1_C100.sql" />
+    <Build Include="dbo\Stored Procedures\GetCiaDHL.sql" />
+    <Build Include="dbo\Stored Procedures\CatFormPaymentCTSSinFoPTP.sql" />
+    <Build Include="dbo\Stored Procedures\GetSiteDHL.sql" />
+    <Build Include="dbo\Stored Procedures\InsertVolarisReservation.sql" />
+    <Build Include="dbo\Stored Procedures\GetCteDHL.sql" />
+    <Build Include="dbo\Stored Procedures\GET_CodTargetMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateVolarisLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetCtaDHL.sql" />
+    <Build Include="dbo\Stored Procedures\GetCtrlCatalogues.sql" />
+    <Build Include="dbo\Stored Procedures\GetActDHL.sql" />
+    <Build Include="dbo\Stored Procedures\sp_NumCuenta_ClientsOracle.sql" />
+    <Build Include="dbo\Stored Procedures\GetSubDHL.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_Pccs.sql" />
+    <Build Include="dbo\Stored Procedures\GetIdRemarkLabel.sql" />
+    <Build Include="dbo\Stored Procedures\SelectALLFromCatServicesExtras.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTables_ICAAVtoMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_ConfirmDK.sql" />
+    <Build Include="dbo\Stored Procedures\GetInterJetPointToPointConnectionsV2.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCbyAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirPortCityCountry.sql" />
+    <Build Include="dbo\Stored Procedures\GetOnlyAttribute1MyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateQCbyAttribute1_AD.sql" />
+    <Build Include="dbo\Stored Procedures\InsertReservationLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatFormPaymentCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientUserInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_SeaVendorsCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLinesFare.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateQualityControls.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_Hotels.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCbyAttribute1_AD.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_CurrenciesCountries.sql" />
+    <Build Include="dbo\Stored Procedures\GetLogoAirlinePath.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_CreditCardsCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatAirLinesClass.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteCatalogQC.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_Countries.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardNumber.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatSubTypePax.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_BusCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardNumber.sql" />
+    <Build Include="dbo\Stored Procedures\GetCityNamePredictive.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_AirPortCityCountry_MIN.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardByNumber.sql" />
+    <Build Include="dbo\Stored Procedures\GetLCCAirlines.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_AirPortCityCountry_MAJ.sql" />
+    <Build Include="dbo\Stored Procedures\GetSabreErrorMsg.sql" />
+    <Build Include="dbo\Stored Procedures\GetCurrencyCountry_Predictive.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_AirLines.sql" />
+    <Build Include="dbo\Stored Procedures\GetClientCreditCardByClient.sql" />
+    <Build Include="dbo\Stored Procedures\GetSubTypePax_Predictive.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllCatalogs.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirporName.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_StatusCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_Cities.sql" />
+    <Build Include="dbo\Stored Procedures\GetAndSetAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_AirLinesClasses.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_EquipmentCodes.sql" />
+    <Build Include="dbo\Stored Procedures\InsertAttributesFromIntegra.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisStatesALL.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_PAirLinesFare.sql" />
+    <Build Include="dbo\Stored Procedures\GetCountry.sql" />
+    <Build Include="dbo\Stored Procedures\GetCountriesAll.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_StatesUSA.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_TypesCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatCitiCouID.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisCatStates.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_VendorCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetPromo.sql" />
+    <Build Include="dbo\Stored Procedures\GetAndSetAttributeBackup.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirlineCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLines.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTables3_INTEGRAtoMyCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetConsultToolOnlineLogPNR.sql" />
+    <Build Include="dbo\Stored Procedures\GetAllBanks.sql" />
+    <Build Include="dbo\Stored Procedures\GetCurrenciesCountries.sql" />
+    <Build Include="dbo\Stored Procedures\GetCostCenters.sql" />
+    <Build Include="dbo\Stored Procedures\InsertLogClipboardCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCities.sql" />
+    <Build Include="dbo\Stored Procedures\GetZoneByCity.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_CostCenters.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_MealCodes.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertNotOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertLogOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\spGetOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\spGetDataOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\SetAuthCode.sql" />
+    <Build Include="dbo\Stored Procedures\spGetPendingOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\GetAuthCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCControls.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTicketsLogOnlinePayServices.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteAuthCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetInformationRuleApplied.sql" />
+    <Build Include="dbo\Stored Procedures\GetGroupCodeLabel.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateToolOnlineRules.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteToolOnlineRules.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateAuthCode.sql" />
+    <Build Include="dbo\Stored Procedures\AddLogApplication.sql" />
+    <Build Include="dbo\Stored Procedures\GetCommandsRestricted_Phase2.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_OriginSales.sql" />
+    <Build Include="dbo\Stored Procedures\GetOnlineTools.sql" />
+    <Build Include="dbo\Stored Procedures\GetCorporativesWithoutQC.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLinFOP.sql" />
+    <Build Include="dbo\Stored Procedures\AddToolOnlineRules.sql" />
+    <Build Include="dbo\Stored Procedures\GetAttribute2.sql" />
+    <Build Include="dbo\Stored Procedures\GetDKTemp.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateCommisionBoardURL.sql" />
+    <Build Include="dbo\Stored Procedures\GetCountryByCity.sql" />
+    <Build Include="dbo\Stored Procedures\GetMissingCatalogs.sql" />
+    <Build Include="dbo\Stored Procedures\AddToolOnlineRulesDelete.sql" />
+    <Build Include="dbo\Stored Procedures\GetReportInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\GetPNRHotels.sql" />
+    <Build Include="dbo\Stored Procedures\GetPNRData.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalogsFileNames.sql" />
+    <Build Include="dbo\Stored Procedures\Get_AllToolOnlineRules.sql" />
+    <Build Include="dbo\Stored Procedures\GetParameterValue.sql" />
+    <Build Include="dbo\Stored Procedures\GetReportVolaris.sql" />
+    <Build Include="dbo\Stored Procedures\GetAvgCancelledTKT2Data.sql" />
+    <Build Include="dbo\Stored Procedures\ConsultaCorporativePorAgente.sql" />
+    <Build Include="dbo\Stored Procedures\GetPNRHotelLines.sql" />
+    <Build Include="dbo\Stored Procedures\InsertDetailsPNRHotel.sql" />
+    <Build Include="dbo\Stored Procedures\updatePNRHotelStatus.sql" />
+    <Build Include="dbo\Stored Procedures\GetSearchClientsCatalogs.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateDetailsPNRHotel.sql" />
+    <Build Include="dbo\Stored Procedures\GetBusCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetQualityControls.sql" />
+    <Build Include="dbo\Stored Procedures\GetCorporativeFeatures.sql" />
+    <Build Include="dbo\Stored Procedures\GetIdSalesOrigin.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateQCGea.sql" />
+    <Build Include="dbo\Stored Procedures\SetClientsCatalogs.sql" />
+    <Build Include="dbo\Stored Procedures\GetCars_Phase2.sql" />
+    <Build Include="dbo\Stored Procedures\Get_ToolOnlineQueues.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateQCGeaCursor.sql" />
+    <Build Include="dbo\Stored Procedures\SetClientsCatalogsNextel.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLinesClasses.sql" />
+    <Build Include="dbo\Stored Procedures\GetCountries.sql" />
+    <Build Include="dbo\Stored Procedures\GetCodeMealToDIX.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_ClientsCatalogs_Nextel.sql" />
+    <Build Include="dbo\Stored Procedures\SetQCByAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetRemarksAuthorization.sql" />
+    <Build Include="dbo\Stored Procedures\GetInfoFeeRuleByAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_ClientsCatalogs_NextelCC.sql" />
+    <Build Include="dbo\Stored Procedures\GetHotels.sql" />
+    <Build Include="dbo\Stored Procedures\GetCorporativeQualityControls.sql" />
+    <Build Include="dbo\Stored Procedures\GetOnlyAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\AddCorporativeQC.sql" />
+    <Build Include="dbo\Stored Procedures\GetSeaVendorsCodes.sql" />
+    <Build Include="dbo\Stored Procedures\AddToolOnlineQueues.sql" />
+    <Build Include="dbo\Stored Procedures\SetNewFeeRule.sql" />
+    <Build Include="dbo\Stored Procedures\GetStatesUSA.sql" />
+    <Build Include="dbo\Stored Procedures\GetLabelXMLRemarks.sql" />
+    <Build Include="dbo\Stored Procedures\SetNewTargetFeeRule.sql" />
+    <Build Include="dbo\Stored Procedures\UpdatePriorityByAttribute1.sql" />
+    <Build Include="dbo\Stored Procedures\GetMealCodes.sql" />
+    <Build Include="dbo\Stored Procedures\SetLocationDKNotAccepted.sql" />
+    <Build Include="dbo\Stored Procedures\ActivationFeeRule.sql" />
+    <Build Include="dbo\Stored Procedures\GetPccs.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_CountriesInterJet.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_Agents.sql" />
+    <Build Include="dbo\Stored Procedures\sprInsertRegistroCxSHoteles.sql" />
+    <Build Include="dbo\Stored Procedures\GetAirLineAgreements.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_StatesUSAInterjet.sql" />
+    <Build Include="dbo\Stored Procedures\GetCxSHoteles.sql" />
+    <Build Include="dbo\Stored Procedures\GetVendorCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetInterJetPointToPointConnections.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTables_LocationsFromIntegra.sql" />
+    <Build Include="dbo\Stored Procedures\GetInterJetState.sql" />
+    <Build Include="dbo\Stored Procedures\GetVendorByCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatalog_FareTypesCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetInterJetTaxes.sql" />
+    <Build Include="dbo\Stored Procedures\GetEquipmentCarByCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetTypeCodes.sql" />
+    <Build Include="dbo\Stored Procedures\InsertInterJetLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetTypesCarByCode.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatCarVenCodName.sql" />
+    <Build Include="dbo\Stored Procedures\Get_ToolOnlineRules.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateInterJetLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatCarTypCodDescription.sql" />
+    <Build Include="dbo\Stored Procedures\GetEquipmentCodes.sql" />
+    <Build Include="dbo\Stored Procedures\GetCatCarEquCodName.sql" />
+    <Build Include="dbo\Stored Procedures\InsertPNRInterJetLog.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateCxSHoteles.sql" />
+    <Build Include="dbo\Stored Procedures\GetCommandsActions.sql" />
+    <Build Include="dbo\Stored Procedures\GetTicketsByPNR.sql" />
+    <Build Include="dbo\Stored Procedures\AddToolOnlineLog.sql" />
+    <Build Include="dbo\Stored Procedures\GetConfirmDK.sql" />
+    <Build Include="dbo\Stored Procedures\GetChargePerService.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateToolOnlineRules_Robot.sql" />
+    <Build Include="dbo\Stored Procedures\ValidateConcludedPNR.sql" />
+    <Build Include="dbo\Stored Procedures\GetBannerImage.sql" />
+    <Build Include="dbo\Stored Procedures\GetStatusCodes.sql" />
+    <Build Include="dbo\Stored Procedures\SetBannerImage.sql" />
+    <Build Include="dbo\Stored Procedures\GetVolarisPointToPointV2.sql" />
+    <Build Include="dbo\Stored Procedures\GetCityName.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsSecondLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetQCControlsClients_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCreditCardsFirstLevel.sql" />
+    <Build Include="dbo\Stored Procedures\GetCxSHoteles_MYCTS.sql" />
+    <Build Include="dbo\Stored Procedures\GetCorporativeFeesRules.sql" />
+    <Build Include="dbo\Stored Procedures\GetPNRHotelLines_MYCTS.sql" />
+    <Build Include="Security\desarrollo_1.sql" />
+    <Build Include="Security\Permissions.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CTS.Entities" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd4" namespace="http://schemas.navitaire.com/WebServices/DataContracts/Booking" />
+  <xs:element name="SeeNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="numberPurche" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SeeNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SeeNumberResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSeatAvailabilityWSList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="flights" nillable="true" type="q1:ArrayOfInterJetFlight" />
+        <xs:element minOccurs="0" name="segments" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSeatAvailabilityWSListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="GetSeatAvailabilityWSListResult" nillable="true" type="q2:ArrayOfGetSeatAvailabilityResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssingSeatWS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="flights" nillable="true" type="q3:ArrayOfInterJetFlight" />
+        <xs:element minOccurs="0" name="segment" type="xs:int" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="passengers" nillable="true" type="q4:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssingSeatWSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="AssingSeatWSResult" nillable="true" type="q5:AssignSeatsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.navitaire.com/WebServices/DataContracts/Booking" minOccurs="0" name="request" nillable="true" type="q6:ArrayOfAvailabilityRequest" />
+        <xs:element minOccurs="0" name="IsInternational" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.navitaire.com/WebServices/DataContracts/Booking" minOccurs="0" name="GetAvailabilityResult" nillable="true" type="q7:TripAvailabilityResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItineraryPrice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.navitaire.com/WebServices/DataContracts/Booking" minOccurs="0" name="request" nillable="true" type="q8:ItineraryPriceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetItineraryPriceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.navitaire.com/WebServices/DataContracts/Booking" minOccurs="0" name="GetItineraryPriceResult" nillable="true" type="q9:Booking" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Confirmation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="signarute" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="contract" type="xs:int" />
+        <xs:element minOccurs="0" name="pnr" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

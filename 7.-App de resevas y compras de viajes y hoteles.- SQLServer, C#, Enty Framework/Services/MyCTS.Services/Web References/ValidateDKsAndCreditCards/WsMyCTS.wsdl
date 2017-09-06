@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost">
+      <s:element name="Get1stStarInfoByLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get1stStarInfoByLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get1stStarInfoByLocationResult" type="tns:Cat1stStarInfoByLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Cat1stStarInfoByLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Municipality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MainPhone" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetStars1stLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStars1stLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStars1stLevelResult" type="tns:ArrayOfCatStars1stLevel" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCatStars1stLevel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CatStars1stLevel" nillable="true" type="tns:CatStars1stLevel" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CatStars1stLevel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Pccid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Star1Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StarL2Exist" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProfileInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileInfoResult" type="tns:Cat1stStarInfoByLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttribute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttributeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttributeResult" type="tns:GetAttribute1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetAttribute1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status_Site" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetClientCreditCardNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCreditCardNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientCreditCardNumberResult" type="tns:ClientCreditCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClientCreditCard">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Client" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetClientCreditCardNumberATT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCreditCardNumberATTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientCreditCardNumberATTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCreditCardNumberByClient">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientCreditCardNumberByClientResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetClientCreditCardNumberByClientResult" type="tns:ClientCreditCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberATT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dk" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orgId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberATTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardNumberATTResult" type="tns:ClientCreditCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberMyCTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberMyCTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardNumberMyCTSResult" type="tns:ClientCreditCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberCTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardNumberCTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardNumberCTSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetQCGetAttribute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="statusSite" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetQCGetAttributeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetQCGetAttributeResult" type="tns:SetQCByAttribute1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetQCByAttribute1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status_Site" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCreditCardsSecondLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="level1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardsSecondLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardsSecondLevelResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCreditCardsFirstLevel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="level1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCreditCardsFirstLevelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCreditCardsFirstLevelResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorporativeQualityControls">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorporativeQualityControlsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorporativeQualityControlsResult" type="tns:ArrayOfCatCorporativeQualityControls" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCatCorporativeQualityControls">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CatCorporativeQualityControls" nillable="true" type="tns:CatCorporativeQualityControls" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CatCorporativeQualityControls">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Attribute1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorporativeIDICAAV" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeleteAccountingLines" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeleteAccountingRemarks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CuotingActualFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeMoreEconomicFareNotAvailable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeMoreEconomicFareAvailable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeStandardFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeStandard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeSpecificFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeSpecific" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeBusinessFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeBusiness1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeBusiness2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeBusiness3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassComparativeBusiness4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComparativeSoldFareVSMoreEconomicFareNotAvailable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FareJustification" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChargePerService" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarksAvailableClasses" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkContableAuthorization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QCAuthorized" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LabelQC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyComparativeMoreEconomicFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkCMEFNA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkCMEFA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkCStdF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkCSpcF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkCBnsF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkFJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RemarkRobot" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FareRemark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="verifyTicketEmission" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GetThereQCValues" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReservationSendQCClient" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmissionSendQCClient" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientRemarkType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetStar1ByDk">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customerDK" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStar1ByDkResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStar1ByDkResult" type="tns:ArrayOfStar1stLevelInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStar1stLevelInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Star1stLevelInfo" nillable="true" type="tns:Star1stLevelInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Star1stLevelInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Pccid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Level1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Line" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Text" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Purged" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProfile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="secondLevelProfile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstLevelProfile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileResult" type="tns:VolarisProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="VolarisProfile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthDay" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstLevelProfile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondLevelProfile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCards" type="tns:VolarisProfileCreditCards" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VolarisProfileCreditCards" />
+      <s:element name="GetProfileInterjet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="secondLevelProfile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstLevelProfile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileInterjetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileInterjetResult" type="tns:InterJetProfile" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InterJetProfile">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BirthDay" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstLevelProfile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SecondLevelProfile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCards" type="tns:InterJetProfileCreditCards" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InterJetProfileCreditCards" />
+      <s:element name="GetProfileCreditCard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="firstLevelProfile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProfileCreditCardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProfileCreditCardResult" type="tns:ArrayOfInterJetProfileCreditCard" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInterJetProfileCreditCard">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InterJetProfileCreditCard" nillable="true" type="tns:InterJetProfileCreditCard" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InterJetProfileCreditCard">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:InterJetProfileCrediCardType" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Level" type="tns:InterJetProfileCrediCardLevelType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsValid" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="InterJetProfileCrediCardType">
+        <s:restriction base="s:string">
+          <s:enumeration value="AmericanExpress" />
+          <s:enumeration value="UniversalTravelPlan" />
+          <s:enumeration value="Visa" />
+          <s:enumeration value="MasterCard" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="InterJetProfileCrediCardLevelType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Frist" />
+          <s:enumeration value="Second" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetTranferCheckNumberMyCTS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DK" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTranferCheckNumberMyCTSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTranferCheckNumberMyCTSResult" type="tns:GetTranferCheckNumber" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GetTranferCheckNumber">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ct_banc_cbr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLocationByAttribute1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attribute1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationByAttribute1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationByAttribute1Result" type="tns:ArrayOfGetOnlyAttribute1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfGetOnlyAttribute1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="GetOnlyAttribute1" nillable="true" type="tns:GetOnlyAttribute1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GetOnlyAttribute1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LocationDK" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get1stStarInfoByLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:Get1stStarInfoByLocation" />
+  </wsdl:message>
+  <wsdl:message name="Get1stStarInfoByLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:Get1stStarInfoByLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStars1stLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStars1stLevel" />
+  </wsdl:message>
+  <wsdl:message name="GetStars1stLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStars1stLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttribute" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberATTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumberATT" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberATTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumberATTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberByClientSoapIn">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumberByClient" />
+  </wsdl:message>
+  <wsdl:message name="GetClientCreditCardNumberByClientSoapOut">
+    <wsdl:part name="parameters" element="tns:GetClientCreditCardNumberByClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberATTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberATT" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberATTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberATTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberMyCTSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberMyCTS" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberMyCTSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberMyCTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberCTSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberCTS" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardNumberCTSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardNumberCTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetQCGetAttributeSoapIn">
+    <wsdl:part name="parameters" element="tns:SetQCGetAttribute" />
+  </wsdl:message>
+  <wsdl:message name="SetQCGetAttributeSoapOut">
+    <wsdl:part name="parameters" element="tns:SetQCGetAttributeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardsSecondLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardsSecondLevel" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardsSecondLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardsSecondLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardsFirstLevelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCreditCardsFirstLevel" />
+  </wsdl:message>
+  <wsdl:message name="GetCreditCardsFirstLevelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCreditCardsFirstLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorporativeQualityControlsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorporativeQualityControls" />
+  </wsdl:message>
+  <wsdl:message name="GetCorporativeQualityControlsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorporativeQualityControlsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStar1ByDkSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStar1ByDk" />
+  </wsdl:message>
+  <wsdl:message name="GetStar1ByDkSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStar1ByDkResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfile" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileInterjetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileInterjet" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileInterjetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileInterjetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileCreditCardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProfileCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="GetProfileCreditCardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProfileCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTranferCheckNumberMyCTSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTranferCheckNumberMyCTS" />
+  </wsdl:message>
+  <wsdl:message name="GetTranferCheckNumberMyCTSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTranferCheckNumberMyCTSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByAttribute1SoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationByAttribute1" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByAttribute1SoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationByAttribute1Response" />
+  </wsdl:message>
+  <wsdl:portType name="WsMyCTSSoap">
+    <wsdl:operation name="Get1stStarInfoByLocation">
+      <wsdl:input message="tns:Get1stStarInfoByLocationSoapIn" />
+      <wsdl:output message="tns:Get1stStarInfoByLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStars1stLevel">
+      <wsdl:input message="tns:GetStars1stLevelSoapIn" />
+      <wsdl:output message="tns:GetStars1stLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInfo">
+      <wsdl:input message="tns:GetProfileInfoSoapIn" />
+      <wsdl:output message="tns:GetProfileInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <wsdl:input message="tns:GetAttributeSoapIn" />
+      <wsdl:output message="tns:GetAttributeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumber">
+      <wsdl:input message="tns:GetClientCreditCardNumberSoapIn" />
+      <wsdl:output message="tns:GetClientCreditCardNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberATT">
+      <wsdl:input message="tns:GetClientCreditCardNumberATTSoapIn" />
+      <wsdl:output message="tns:GetClientCreditCardNumberATTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberByClient">
+      <wsdl:input message="tns:GetClientCreditCardNumberByClientSoapIn" />
+      <wsdl:output message="tns:GetClientCreditCardNumberByClientSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <wsdl:input message="tns:GetCreditCardNumberSoapIn" />
+      <wsdl:output message="tns:GetCreditCardNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberATT">
+      <wsdl:input message="tns:GetCreditCardNumberATTSoapIn" />
+      <wsdl:output message="tns:GetCreditCardNumberATTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberMyCTS">
+      <wsdl:input message="tns:GetCreditCardNumberMyCTSSoapIn" />
+      <wsdl:output message="tns:GetCreditCardNumberMyCTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberCTS">
+      <wsdl:input message="tns:GetCreditCardNumberCTSSoapIn" />
+      <wsdl:output message="tns:GetCreditCardNumberCTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetQCGetAttribute">
+      <wsdl:input message="tns:SetQCGetAttributeSoapIn" />
+      <wsdl:output message="tns:SetQCGetAttributeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsSecondLevel">
+      <wsdl:input message="tns:GetCreditCardsSecondLevelSoapIn" />
+      <wsdl:output message="tns:GetCreditCardsSecondLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsFirstLevel">
+      <wsdl:input message="tns:GetCreditCardsFirstLevelSoapIn" />
+      <wsdl:output message="tns:GetCreditCardsFirstLevelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorporativeQualityControls">
+      <wsdl:input message="tns:GetCorporativeQualityControlsSoapIn" />
+      <wsdl:output message="tns:GetCorporativeQualityControlsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStar1ByDk">
+      <wsdl:input message="tns:GetStar1ByDkSoapIn" />
+      <wsdl:output message="tns:GetStar1ByDkSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <wsdl:input message="tns:GetProfileSoapIn" />
+      <wsdl:output message="tns:GetProfileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInterjet">
+      <wsdl:input message="tns:GetProfileInterjetSoapIn" />
+      <wsdl:output message="tns:GetProfileInterjetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileCreditCard">
+      <wsdl:input message="tns:GetProfileCreditCardSoapIn" />
+      <wsdl:output message="tns:GetProfileCreditCardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumberMyCTS">
+      <wsdl:input message="tns:GetTranferCheckNumberMyCTSSoapIn" />
+      <wsdl:output message="tns:GetTranferCheckNumberMyCTSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <wsdl:input message="tns:GetLocationByAttribute1SoapIn" />
+      <wsdl:output message="tns:GetLocationByAttribute1SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsMyCTSSoap" type="tns:WsMyCTSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get1stStarInfoByLocation">
+      <soap:operation soapAction="http://localhost/Get1stStarInfoByLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStars1stLevel">
+      <soap:operation soapAction="http://localhost/GetStars1stLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInfo">
+      <soap:operation soapAction="http://localhost/GetProfileInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <soap:operation soapAction="http://localhost/GetAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumber">
+      <soap:operation soapAction="http://localhost/GetClientCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberATT">
+      <soap:operation soapAction="http://localhost/GetClientCreditCardNumberATT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberByClient">
+      <soap:operation soapAction="http://localhost/GetClientCreditCardNumberByClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <soap:operation soapAction="http://localhost/GetCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberATT">
+      <soap:operation soapAction="http://localhost/GetCreditCardNumberATT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberMyCTS">
+      <soap:operation soapAction="http://localhost/GetCreditCardNumberMyCTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberCTS">
+      <soap:operation soapAction="http://localhost/GetCreditCardNumberCTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetQCGetAttribute">
+      <soap:operation soapAction="http://localhost/SetQCGetAttribute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsSecondLevel">
+      <soap:operation soapAction="http://localhost/GetCreditCardsSecondLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsFirstLevel">
+      <soap:operation soapAction="http://localhost/GetCreditCardsFirstLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorporativeQualityControls">
+      <soap:operation soapAction="http://localhost/GetCorporativeQualityControls" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStar1ByDk">
+      <soap:operation soapAction="http://localhost/GetStar1ByDk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap:operation soapAction="http://localhost/GetProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInterjet">
+      <soap:operation soapAction="http://localhost/GetProfileInterjet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileCreditCard">
+      <soap:operation soapAction="http://localhost/GetProfileCreditCard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumberMyCTS">
+      <soap:operation soapAction="http://localhost/GetTranferCheckNumberMyCTS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <soap:operation soapAction="http://localhost/GetLocationByAttribute1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsMyCTSSoap12" type="tns:WsMyCTSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get1stStarInfoByLocation">
+      <soap12:operation soapAction="http://localhost/Get1stStarInfoByLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStars1stLevel">
+      <soap12:operation soapAction="http://localhost/GetStars1stLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInfo">
+      <soap12:operation soapAction="http://localhost/GetProfileInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttribute">
+      <soap12:operation soapAction="http://localhost/GetAttribute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumber">
+      <soap12:operation soapAction="http://localhost/GetClientCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberATT">
+      <soap12:operation soapAction="http://localhost/GetClientCreditCardNumberATT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientCreditCardNumberByClient">
+      <soap12:operation soapAction="http://localhost/GetClientCreditCardNumberByClient" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumber">
+      <soap12:operation soapAction="http://localhost/GetCreditCardNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberATT">
+      <soap12:operation soapAction="http://localhost/GetCreditCardNumberATT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberMyCTS">
+      <soap12:operation soapAction="http://localhost/GetCreditCardNumberMyCTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardNumberCTS">
+      <soap12:operation soapAction="http://localhost/GetCreditCardNumberCTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetQCGetAttribute">
+      <soap12:operation soapAction="http://localhost/SetQCGetAttribute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsSecondLevel">
+      <soap12:operation soapAction="http://localhost/GetCreditCardsSecondLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCardsFirstLevel">
+      <soap12:operation soapAction="http://localhost/GetCreditCardsFirstLevel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorporativeQualityControls">
+      <soap12:operation soapAction="http://localhost/GetCorporativeQualityControls" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStar1ByDk">
+      <soap12:operation soapAction="http://localhost/GetStar1ByDk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfile">
+      <soap12:operation soapAction="http://localhost/GetProfile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileInterjet">
+      <soap12:operation soapAction="http://localhost/GetProfileInterjet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileCreditCard">
+      <soap12:operation soapAction="http://localhost/GetProfileCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTranferCheckNumberMyCTS">
+      <soap12:operation soapAction="http://localhost/GetTranferCheckNumberMyCTS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByAttribute1">
+      <soap12:operation soapAction="http://localhost/GetLocationByAttribute1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsMyCTS">
+    <wsdl:port name="WsMyCTSSoap" binding="tns:WsMyCTSSoap">
+      <soap:address location="http://201.149.13.14:5498/ValidationsDKsWS/wsMyCTS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsMyCTSSoap12" binding="tns:WsMyCTSSoap12">
+      <soap12:address location="http://201.149.13.14:5498/ValidationsDKsWS/wsMyCTS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

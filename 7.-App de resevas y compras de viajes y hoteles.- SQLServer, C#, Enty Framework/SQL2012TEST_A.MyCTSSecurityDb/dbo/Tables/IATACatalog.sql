@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[IATACatalog] (
+    [IATA]   NVARCHAR (255) NULL,
+    [OFFICE] NVARCHAR (255) NULL,
+    [PCC]    NVARCHAR (255) NULL
+);
+

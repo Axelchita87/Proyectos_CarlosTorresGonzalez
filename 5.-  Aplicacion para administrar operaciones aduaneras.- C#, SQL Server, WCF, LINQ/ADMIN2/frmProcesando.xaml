@@ -1,0 +1,36 @@
+﻿<Window x:Class="ADMIN2.frmProcesando"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="frmProcesando" Height="96" Width="482" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Grid>
+        <Border BorderThickness="2" Background="White" BorderBrush="White" CornerRadius="0" Margin="0,0,2,0">
+            <Border.Effect>
+                <DropShadowEffect Direction="265" BlurRadius="13" ShadowDepth="3"/>
+            </Border.Effect>
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Width="60" Height="60" Source="Images/Fondo.png" Grid.RowSpan="2" VerticalAlignment="Top" Margin="4,14,412,0" Grid.ColumnSpan="2"
+                       Visibility="Hidden"/>
+                <Path Data="M156,116 L156,230" HorizontalAlignment="Left" Height="110.333" Margin="10,-9.5,0,-9.833" Stretch="Fill" VerticalAlignment="Top" Width="2" StrokeThickness="15" Stroke="#FFDADADA" Grid.Column="1" Grid.RowSpan="2"/>
+
+
+                <TextBlock x:Name="txtLeyenda" 
+                       Grid.Row="1"
+                       FontSize="15"
+                       Text="Tarea..." Margin="21,4,29,30" Foreground="Gray" TextWrapping="Wrap" Grid.Column="1"/>
+
+
+
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

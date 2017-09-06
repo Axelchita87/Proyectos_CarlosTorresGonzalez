@@ -1,0 +1,10 @@
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\bin\Debug\ADMIN2.Entity.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.DAL\obj\Debug\ADMIN2.DAL.pdb

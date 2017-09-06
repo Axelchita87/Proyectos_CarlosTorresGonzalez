@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/CTS.Entities" />
+  <xs:element name="ConsultarDisponibilidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="origen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="destino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fechaLlegada" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="codigoMoneda" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="tipoVuelo" type="q1:TiposVolaris.FlightTypes" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="tipoPasajero" nillable="true" type="q2:ArrayOfTiposVolaris.PassengerType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConsultarDisponibilidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="ConsultarDisponibilidadResult" nillable="true" type="q3:ArrayOfVueloDisponible" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AbrirConexion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AbrirConexionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AbrirConexionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarConexion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CerrarConexionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDisponibilidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="origen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="destino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fechaLlegada" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="codigoMoneda" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="tipoVuelo" type="q4:TiposVolaris.FlightTypes" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="tipoPasajero" nillable="true" type="q5:ArrayOfTiposVolaris.PassengerType" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDisponibilidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="ObtenerDisponibilidadResult" nillable="true" type="q6:ArrayOfVueloDisponible" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVenta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="vueloIda" nillable="true" type="q7:VueloDisponible" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="vueloVuelta" nillable="true" type="q8:VueloDisponible" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="listaTiposPasajero" nillable="true" type="q9:ArrayOfTiposVolaris.PassengerType" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="tipoVuelo" type="q10:TiposVolaris.FlightTypes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerVentaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ObtenerVentaResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarPasajeros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="pasajeros" nillable="true" type="q11:ArrayOfPasajerosVolaris" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarPasajerosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgregarPasajerosResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarExtras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="extrasVolaris" nillable="true" type="q12:ArrayOfExtrasViajeVolaris" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AgregarExtrasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AgregarExtrasResult" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PagarReservacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="metodoPago" nillable="true" type="q13:MetodoPagoVolaris" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="contactPayment" nillable="true" type="q14:Contact" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PagarReservacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PagarReservacionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionReservacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="recordLocator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionReservacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionReservacionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingFromState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Signature" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingFromStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CTS.Entities" minOccurs="0" name="GetBookingFromStateResult" nillable="true" type="q15:BookingData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

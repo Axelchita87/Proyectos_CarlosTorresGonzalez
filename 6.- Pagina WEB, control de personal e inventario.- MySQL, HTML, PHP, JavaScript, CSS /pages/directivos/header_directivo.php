@@ -1,0 +1,1 @@
+<div id="encabezado-principal"><img class="logo" src="images/256px-HTC_logo.png"  width="160px"></div>

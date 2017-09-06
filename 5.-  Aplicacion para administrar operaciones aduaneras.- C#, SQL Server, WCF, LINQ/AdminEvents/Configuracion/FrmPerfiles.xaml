@@ -1,0 +1,71 @@
+﻿<control:BaseWindow x:Class="AdminEvents.Configuracion.FrmPerfiles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="Permisos" Height="354.5" Width="667.662"
+        xmlns:control="clr-namespace:ADMIN2.Controls;assembly=ADMIN2.Controls"
+        xmlns:my="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+        WindowStyle="None" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#D0A82D" Background="#FFd6d6d6" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid Margin="0,0,0,5">
+        <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                    <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                    <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Style="{DynamicResource labe_cabecera}" Content="Permisos" Margin="10,0,42,0" Grid.ColumnSpan="2"/>
+        <Button Name="btnCerrar" Click="BtnCerrarClick" Style="{DynamicResource close_boton}" Margin="635,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsCancel="True"/>
+        <GroupBox Header="" BorderBrush="#D0A82D" BorderThickness="2" Margin="6,30,0,37" HorizontalAlignment="Left" Width="653">
+            <StackPanel Margin="0,0,-2,0">
+                <Grid Height="281">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+        				Style="{DynamicResource estilo_labels}" Margin="0,6,0,0" Text="Nombre del Perfil:" x:Name="lblr" Grid.ColumnSpan="2" 
+                               Visibility="Hidden"/>
+                    <TextBox x:Name="TxtPerfil" Margin="109,0,0,0" Visibility="Hidden"
+        				HorizontalAlignment="Left" VerticalAlignment="Top"
+        				Template="{StaticResource TextBoxBaseControlTemplate}" Tag="Perfil"
+        				Width="285" Height="22" MaxLength="30" TextChanged="TextBox_TextChanged" />
+                    <TextBlock TextWrapping="Wrap" Grid.Column="0"
+                    	VerticalAlignment="Top" 
+                    	TextAlignment="Justify"
+                    	Style="{DynamicResource estilo_labels}" 
+                    	Margin="0,4,0,0"
+                    	HorizontalAlignment="Left"
+                    	Width="133"
+                    	Text="Seleccione Módulos:" Height="16"/>
+                    <TreeView x:Name="TreeSita" HorizontalAlignment="Left" Height="223" Margin="0,25,0,0" VerticalAlignment="Top" Width="216" Loaded="TreeView_Loaded" Background="#FFF0F1F7"/>
+                    <DataGrid x:Name="dgrPermisos" HorizontalAlignment="Left" Margin="221,25,0,0" VerticalAlignment="Top" 
+                              Height="223" Width="416" ItemsSource="{Binding EntPerfil}" EnableColumnVirtualization="True" 
+                              AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True" CanUserDeleteRows="False" 
+                              CanUserAddRows="False"  HorizontalScrollBarVisibility="Auto" FrozenColumnCount="2"
+                              CurrentCellChanged="dgrPermisos_CurrentCellChanged">
+                        <DataGrid.Columns >
+                            <DataGridCheckBoxColumn x:Name="chkCurrentchekLeer" Header="Solo lectura" Binding="{Binding ST_C_AP_LEER}" IsReadOnly="True" />
+                            <DataGridCheckBoxColumn x:Name="chkCurrentchekTotal" Header="Control total" Binding="{Binding ST_C_AP_LEERYESCRIBIR}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="IdPantalla" Binding="{Binding IdPantallas}" Width="49*" Visibility="Hidden" />
+                            <DataGridTextColumn Header="Pantalla" Binding="{Binding RutaPantalla}" Width="100*" IsReadOnly="True" />
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <CheckBox x:Name="chbxSeleccionaTodos" Content="Todos" HorizontalAlignment="Left" Margin="236,7,0,0" VerticalAlignment="Top" Click="chbxSeleccionaTodos_Click" Visibility="Hidden" />
+                    <CheckBox x:Name="chbxSeleccionaTodosCotrolTotal" Content="Todos"  HorizontalAlignment="Left" Margin="306,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.08,0.625" Click="chbxSeleccionaTodosCotrolTotal_Click" Visibility="Hidden"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnCancelar" Height="25" Cursor="Arrow" TabIndex="5" Click="btnCancelClick"
+        	Content="Cancelar" HorizontalAlignment="Right" VerticalAlignment="Top" 
+        	Width="100" Margin="0,315,26,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black"/>
+        <Button x:Name="btnAceptar" Height="25" Cursor="Arrow" Click="btnAceptar_Click"
+        	Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Top" TabIndex="4"
+        	Width="100" Margin="0,315,143,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black"/>
+    </Grid>
+    </control:BaseWindow>
+
+

@@ -1,0 +1,142 @@
+function selected = rankSelection(selected, Pop, sizePop, type, toSelect)
+
+%The population is already sorted
+%range to select the individulas
+a = 1;
+b = sizePop;
+
+for i=1:toSelect
+    select_this = round(a + (b-a) * rand);
+    selected.string(i,:) = Pop.string(select_this,:);
+    if(strcmp(type,'RBLC'))
+        selected.beta(i,1) = Pop.beta(select_this,1);
+    end
+end
+
+
+selected = 0;
+% void selection(void)
+% {
+%     //roulette-wheel selection
+%     int i,j;
+%     double sum=0;
+%     double Prob[population];        //probabilities
+%     double rand_temp;
+%     double limit_prob[population];  //to know the limits/border of each individual given the Prob
+%     int Selected[toSelect];
+%     int point_2cross;
+%     int point_2mutate;
+%     
+%     
+%     int a=1;                //not allow to fall in 0
+%     int b=size_ind-1;       // or 11 (size of genotype) - you can change this and see what happen
+%     
+%     // -----------
+%     for(i=0; i<population; i++){
+%         sum += fitness_Pop_inv[i];
+%         Prob[i] = 0;        // init to 0
+%         limit_prob[i] = 0;  // init to 0
+%         Selected[i] = 0;    // check here Selected need to be equal to population
+%     }
+%     
+%     if(band==1)printf("\n-- Probabilities --\n");		
+%     for(i=0; i<population; i++){
+%         Prob[i] = fitness_Pop_inv[i]/sum;				//calculate probabilities for each individual
+%         if(band==1)printf("Prob1 %f \n",Prob[i]);        
+%     }
+%     
+%     if(band==1)getchar();          //wait, you can put away this
+%     
+%     sum=0;
+%     if(band==1)printf("\nPrint limits\n");
+%     for(i=0; i<population; i++){					//to obtain the boundaries of each individual
+%         sum += Prob[i];
+%         limit_prob[i] = sum;
+%         if(band==1)printf("%f \n",limit_prob[i]);
+%         
+%     }
+%     // now each individual has a boundary, with a random we can now choose one parent
+%     // |-----|------------|----|------------------|--------------| ... --|
+%     //   ind1    ind2      ind3   ...                                  ind n-1
+%     
+%     
+%     //Selection
+%     
+%     //check out where it falls to chose a parent
+%     
+%     if(band==1)printf("\n ---Selected ---\n");
+%     for(j=0; j<toSelect; j++)   // repeat to select n parents
+%     {
+%         rand_temp = rando();
+%         for(i=0; i<population; i++){        //to know where it falls
+%             if(rand_temp <= limit_prob[i])
+%             {
+%                Selected[j] = i;
+%                break;
+%             }
+%         }
+%         if(band==1)printf("%d\n",Selected[j]);
+%     }
+%     
+%     // now apply crossover between parent chosen 0-1, 2-3, 4-5, 6-7 and 8-9
+%     
+%     //flip the bits croosover one-point
+%     for(i=0; i<population; i+=2)
+%     {
+%         point_2cross = (int)(a + (b-a) * rando());  //create a random number between 'a' and 'b'
+%         for(j=0; j<size_ind; j++)
+%         {
+%             if(j < point_2cross)        //copy the original values to offspring
+%             {
+%                 Offspring[i][j] = Population[Selected[i]][j];
+%                 Offspring[i+1][j] = Population[Selected[i+1]][j];
+%             }
+%             else                        //interchange bits
+%             {
+%                 Offspring[i][j] = Population[Selected[i+1]][j];
+%                 Offspring[i+1][j] = Population[Selected[i]][j];
+%             }    
+%         }
+%     }
+%     // This section only prints the population////////////////////////
+%     if(band==1)printf("\n *** Population after crossover *** \n");
+%     for(i=0; i<population; i++)
+%     {
+%         for(j=0; j<size_ind; j++)
+%         {
+%             if(band==1)printf("%c ",Offspring[i][j]);
+%         }
+%         if(band==1)printf("\n");
+%     }//////////////////////////////////////////////////////////////////
+%             
+%     //Apply mutation, only one bit is change here    
+%     int aa=0, bb=size_ind-1;				//new values, from aa to bb can falls the random
+%     
+%     for(i=0; i<population; i++)
+%     {
+%         point_2mutate = (int)(aa + (bb-aa) * rando());
+%         
+%         if (Offspring[i][point_2mutate] == '0')
+%             Offspring[i][point_2mutate] = '1';
+%         else
+%             Offspring[i][point_2mutate] = '0';
+%     }
+%     //This section only prints the new oofsprings ////////////////////
+%     if(band==1)printf("\n *** Population after Mutation *** \n");
+%     for(i=0; i<population; i++)
+%     {
+%         for(j=0; j<size_ind; j++)
+%         {
+%             if(band==1)printf("%c ",Offspring[i][j]);
+%         }
+%         if(band==1)printf("\n");
+%     }/////////////////////////////////////////////////////////////////
+% }
+% 
+% /*You can improve this code (maybe optimize) and create more functions as needed
+% but not that for academic purpose you must create your own implementation*/
+% 
+% 
+% 
+%     
+

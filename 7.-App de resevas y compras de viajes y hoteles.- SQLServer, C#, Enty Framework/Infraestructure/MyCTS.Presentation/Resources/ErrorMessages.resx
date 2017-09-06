@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADULT_NAME_ALREADY_ASSOCIATED" xml:space="preserve">
+    <value>.ADULT NAME ALREADY ASSOCIATED TO AN INFANT</value>
+  </data>
+  <data name="AIRCRAFT" xml:space="preserve">
+    <value>AIRCRAFT</value>
+  </data>
+  <data name="ALL_RECORDS_DELETED" xml:space="preserve">
+    <value>ALL RECORDS DELETED</value>
+  </data>
+  <data name="ASSIGN_PROPER_PRINTER" xml:space="preserve">
+    <value>ASSIGN PROPER PRINTER</value>
+  </data>
+  <data name="AUX_SVC" xml:space="preserve">
+    <value>AUX SVC</value>
+  </data>
+  <data name="AVAIL_EXPIRED" xml:space="preserve">
+    <value>AVAIL EXPIRED</value>
+  </data>
+  <data name="BARGAIN_FINDER_PLUS" xml:space="preserve">
+    <value>BARGAIN FINDER PLUS NOT ALLOWED</value>
+  </data>
+  <data name="CALL_DIRECT" xml:space="preserve">
+    <value>CALL DIRECT</value>
+  </data>
+  <data name="CANNOT_ASSOC_TO_INFANT" xml:space="preserve">
+    <value>.CANNOT ASSOC TO INFANT.</value>
+  </data>
+  <data name="CARDHOLDER_NAME_REQUIRED" xml:space="preserve">
+    <value>CARDHOLDER NAME REQUIRED. ENTER 3OTHS</value>
+  </data>
+  <data name="CARRIER_CODE_REQUIRED" xml:space="preserve">
+    <value>‡CARRIER CODE REQUIRED</value>
+  </data>
+  <data name="CARRIER_REQUESTS_SELL_NN" xml:space="preserve">
+    <value>CARRIER REQUESTS YOU SELL NN</value>
+  </data>
+  <data name="CHECK_ACCOUNTING_DATA" xml:space="preserve">
+    <value>CHECK ACCOUNTING DATA</value>
+  </data>
+  <data name="CHECK_ITINERARY_SEGMENT_NBR" xml:space="preserve">
+    <value>.CHECK ITINERARY. SEGMENT NBR.</value>
+  </data>
+  <data name="CHECK_SEGMENT_CONTINUITY" xml:space="preserve">
+    <value>CHECK SEGMENT CONTINUITY</value>
+  </data>
+  <data name="CHK_DATE_TIME_CONTINUITY" xml:space="preserve">
+    <value>CHK DATE/TIME CONTINUITY</value>
+  </data>
+  <data name="CK_ACCT_DATA" xml:space="preserve">
+    <value>CK ACCT DATA</value>
+  </data>
+  <data name="CK_ACTION_STATUS_CODE" xml:space="preserve">
+    <value>‡CK ACTION/STATUS CODE</value>
+  </data>
+  <data name="CK_FRMT" xml:space="preserve">
+    <value>CK FRMT</value>
+  </data>
+  <data name="CLASS" xml:space="preserve">
+    <value>‡CLASS</value>
+  </data>
+  <data name="CLASS_NOT_AVAILABLE" xml:space="preserve">
+    <value>CLASS NOT AVAILABLE</value>
+  </data>
+  <data name="CLASS_NOT_OFFERED" xml:space="preserve">
+    <value>‡CLASS NOT OFFERED THIS FLIGHT</value>
+  </data>
+  <data name="CODE" xml:space="preserve">
+    <value>‡CODE</value>
+  </data>
+  <data name="CODE_UC_SEG_STATUS" xml:space="preserve">
+    <value>‡CODE - UC SEG STATUS</value>
+  </data>
+  <data name="CON_MUST_BE_APT_NOT_CITY" xml:space="preserve">
+    <value>CON MUST BE APT NOT CITY</value>
+  </data>
+  <data name="CORRECT_NBR_OF_ACCTG_LINES" xml:space="preserve">
+    <value>CORRECT NBR OF ACCTG LINES</value>
+  </data>
+  <data name="CORRUPTED_STAR_RECORD" xml:space="preserve">
+    <value>CORRUPTED STAR RECORD</value>
+  </data>
+  <data name="CPR_NOT_IN_SYS" xml:space="preserve">
+    <value>CPR NOT IN SYS</value>
+  </data>
+  <data name="CREDIT_CARD_WILL_BE_DEBITED" xml:space="preserve">
+    <value>CREDIT CARD WILL BE DEBITED-TICKET NONREFUNDABLE</value>
+  </data>
+  <data name="CREDIT_CARD_WILL_BE_DEBITED_PENALTY" xml:space="preserve">
+    <value>CREDIT CARD WILL BE DEBITED-PENALTY APPLIES</value>
+  </data>
+  <data name="CREDIT_CARD_WILL_BE_DEBITED_TICKET" xml:space="preserve">
+    <value>CREDIT CARD WILL BE DEBITED-TICKET NONREFUNDABLE</value>
+  </data>
+  <data name="CROSS_CLASS_NOT_AVAILABLE" xml:space="preserve">
+    <value>‡CLASS NOT AVAILABLE</value>
+  </data>
+  <data name="CROSS_CTY" xml:space="preserve">
+    <value>‡CTY</value>
+  </data>
+  <data name="CROSS_FORMAT" xml:space="preserve">
+    <value>‡FORMAT</value>
+  </data>
+  <data name="CROSS_INVALID_HOST" xml:space="preserve">
+    <value>‡INVALID HOST</value>
+  </data>
+  <data name="CROSS_ND_NAMES" xml:space="preserve">
+    <value>‡ND NAMES</value>
+  </data>
+  <data name="CROSS_NO_PSGR_DATA" xml:space="preserve">
+    <value>‡NO PSGR DATA</value>
+  </data>
+  <data name="CTY" xml:space="preserve">
+    <value>CTY</value>
+  </data>
+  <data name="CURRENCY" xml:space="preserve">
+    <value>‡CURRENCY</value>
+  </data>
+  <data name="CURRENCY_CODE_DECIMAL_ERROR" xml:space="preserve">
+    <value>CURRENCY CODE OR DECIMAL ERROR</value>
+  </data>
+  <data name="CUSTOMER_NUMBER" xml:space="preserve">
+    <value>CUSTOMER NUMBER</value>
+  </data>
+  <data name="DATA_BEYOND_180_DAYS" xml:space="preserve">
+    <value>DATA BEYOND 180 DAYS</value>
+  </data>
+  <data name="DATA_MORE_180_DAYS" xml:space="preserve">
+    <value>‡DATA BEYOND 180 DAYS</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>‡DATE</value>
+  </data>
+  <data name="DTE" xml:space="preserve">
+    <value>DTE</value>
+  </data>
+  <data name="EMAIL_ADDRESS_NOT_PRESENT" xml:space="preserve">
+    <value>EMAIL ADDRESS NOT PRESENT</value>
+  </data>
+  <data name="END_TRANSACTION_NOT_ALLOWEDN_TYPE_F" xml:space="preserve">
+    <value>END TRANSACTION NOT ALLOWEDN – TYPE F</value>
+  </data>
+  <data name="ENTRY_NOT_HOST" xml:space="preserve">
+    <value>ENTRY NOT VALID FOR THIS HOST</value>
+  </data>
+  <data name="EXPIRATION_DATE" xml:space="preserve">
+    <value>EXPIRATION DATE</value>
+  </data>
+  <data name="FARE_BASIS_EXCEEDS" xml:space="preserve">
+    <value>FARE BASIS EXCEEDS 8 CHARACTER MAXIMUM</value>
+  </data>
+  <data name="FARE_BASIS_LIMITED" xml:space="preserve">
+    <value>FARE BASIS LIMITED TO ALPHA AND/OR NUMERIC CHARACTERS</value>
+  </data>
+  <data name="FARE_BASIS_NOT_AVAILABLE" xml:space="preserve">
+    <value>FARE BASIS NOT AVAILABLE</value>
+  </data>
+  <data name="FARE_BASIS_NOT_FOUND" xml:space="preserve">
+    <value>FARE BASIS NOT FOUND</value>
+  </data>
+  <data name="FF_MILEAGE_AGREEMENT" xml:space="preserve">
+    <value>FF MILEAGE AGREEMENT</value>
+  </data>
+  <data name="FIN_O_IG" xml:space="preserve">
+    <value>FIN OR IG</value>
+  </data>
+  <data name="FLT" xml:space="preserve">
+    <value>‡FLT</value>
+  </data>
+  <data name="FLT_CHK_DATE_CONTINUITY" xml:space="preserve">
+    <value>FLT‡  CHK DATE/TIME CONTINUITY OF FLTS</value>
+  </data>
+  <data name="FONE_ITEM" xml:space="preserve">
+    <value>FONE ITEM</value>
+  </data>
+  <data name="FORMAT" xml:space="preserve">
+    <value>FORMAT</value>
+  </data>
+  <data name="FORMAT_CHECK_SEGMENT_NUMBER" xml:space="preserve">
+    <value>FORMAT, CHECK SEGMENT NUMBER</value>
+  </data>
+  <data name="FORMAT_NEED_PSGR_TYPES_SELECT" xml:space="preserve">
+    <value>FORMAT-NEED MORE PSGR TYPES OR NAME SELECT</value>
+  </data>
+  <data name="FORMAT_UNEQUAL_NAMES" xml:space="preserve">
+    <value>FORMAT-UNEQUAL NAMES</value>
+  </data>
+  <data name="FORMAT_USE_SEGMENT_SELECT" xml:space="preserve">
+    <value>FORMAT - USE SEGMENT SELECT</value>
+  </data>
+  <data name="FVR_INGRESE_SEGMENTO_PROT" xml:space="preserve">
+    <value>FVR DE INGRESAR SEGMENTO DE PROTECCION</value>
+  </data>
+  <data name="HOST_NOT_RESPONDING" xml:space="preserve">
+    <value>HOST NOT RESPONDING</value>
+  </data>
+  <data name="IM_AND_CANCEL_UNABLE_SEGMENTS" xml:space="preserve">
+    <value>*IM AND CANCEL UNABLE SEGMENTS</value>
+  </data>
+  <data name="IN_SA_MODE_UC" xml:space="preserve">
+    <value>IN SA MODE U/C</value>
+  </data>
+  <data name="INACTIVE_AIRLINE" xml:space="preserve">
+    <value>‡INACTIVE AIRLINE</value>
+  </data>
+  <data name="INCORRECT_LINE_NUMBER" xml:space="preserve">
+    <value>INCORRECT LINE NUMBER - MODIFY AND REENTER</value>
+  </data>
+  <data name="INCORRECT_TIME_LIMIT" xml:space="preserve">
+    <value>INCORRECT TIME LIMIT - VERIFY</value>
+  </data>
+  <data name="INCQT_CARD_NBR" xml:space="preserve">
+    <value>INCQT CARD NBR.</value>
+  </data>
+  <data name="INGRESE_LISTA_NOMBRES" xml:space="preserve">
+    <value>INGRESE LISTA DE NOMBRES O NX</value>
+  </data>
+  <data name="INV_FLT_SEG" xml:space="preserve">
+    <value>INV FLT SEG</value>
+  </data>
+  <data name="INVALID_CORPORATE_ID" xml:space="preserve">
+    <value>INVALID CORPORATE ID</value>
+  </data>
+  <data name="INVALID_CREDIT_CARD_INFO" xml:space="preserve">
+    <value>INVALID CREDIT CARD INFO. ENTER 3OTHS</value>
+  </data>
+  <data name="INVALID_CURRENCY_CODE_ENTRY" xml:space="preserve">
+    <value>INVALID CURRENCY CODE</value>
+  </data>
+  <data name="INVALID_DISCOUNT_CODE" xml:space="preserve">
+    <value>INVALID DISCOUNT CODE</value>
+  </data>
+  <data name="INVALID_FARE_BASIS_TKT" xml:space="preserve">
+    <value>INVALID FARE BASIS/TKT DES COMB</value>
+  </data>
+  <data name="INVALID_FLIGHT_NUMBER" xml:space="preserve">
+    <value>INVALID FLIGHT NUMBER</value>
+  </data>
+  <data name="INVALID_FLT" xml:space="preserve">
+    <value>‡INVALID FLT</value>
+  </data>
+  <data name="INVALID_HOST" xml:space="preserve">
+    <value>INVALID HOST</value>
+  </data>
+  <data name="INVALID_RANGE" xml:space="preserve">
+    <value>INVALID RANGE</value>
+  </data>
+  <data name="INVALID_SEG_STATUS" xml:space="preserve">
+    <value>INVALID SEG STATUS</value>
+  </data>
+  <data name="INVALID_SSR_CODE" xml:space="preserve">
+    <value>INVALID SSR CODE</value>
+  </data>
+  <data name="INVLD_ID" xml:space="preserve">
+    <value>INVLD ID</value>
+  </data>
+  <data name="INVLD_ITIN" xml:space="preserve">
+    <value>INVLD ITIN</value>
+  </data>
+  <data name="INVLD_STAR_ID" xml:space="preserve">
+    <value>INVLD STAR ID</value>
+  </data>
+  <data name="ITEM_NB" xml:space="preserve">
+    <value>ITEM_NB</value>
+  </data>
+  <data name="ITEM_NR" xml:space="preserve">
+    <value>ITEM NR</value>
+  </data>
+  <data name="ITINERARY_CHANGE" xml:space="preserve">
+    <value>ITINERARY CHANGE</value>
+  </data>
+  <data name="ITINERARY_REQUIRED" xml:space="preserve">
+    <value>ITINERARY REQUIRED</value>
+  </data>
+  <data name="ITINERARY_REQUIRED_COMPLETE_TRANS" xml:space="preserve">
+    <value>ITINERARY REQUIRED TO COMPLETE TRANSACTION</value>
+  </data>
+  <data name="ITM_NBR" xml:space="preserve">
+    <value>ITM NBR</value>
+  </data>
+  <data name="LAST_DAY_TO_PURCHASE" xml:space="preserve">
+    <value>LAST DAY TO PURCHASE</value>
+  </data>
+  <data name="LEVEL_ONE" xml:space="preserve">
+    <value>LEVEL ONE</value>
+  </data>
+  <data name="LN_NR" xml:space="preserve">
+    <value>‡LN NR</value>
+  </data>
+  <data name="MANDATORY_EDITS" xml:space="preserve">
+    <value>*MANDATORY EDITS*</value>
+  </data>
+  <data name="MANUALLY_LINK_NAMES_CORRECT_PQ" xml:space="preserve">
+    <value>MANUALLY LINK NAMES TO THE CORRECT PQ</value>
+  </data>
+  <data name="MAXIMUM_6_SEGMENTS" xml:space="preserve">
+    <value>MAXIMUM OF 6 SEGMENTS EXCEEDED</value>
+  </data>
+  <data name="MAXIMUM_NUMBER_SEATS_CARRIER" xml:space="preserve">
+    <value>‡MAXIMUM NUMBER OF SEATS THIS CARRIER IS FOUR</value>
+  </data>
+  <data name="MIN_CONNX_TIME_SEG" xml:space="preserve">
+    <value>MIN CONNX TIME SEG</value>
+  </data>
+  <data name="MUST_SEPARATE_PNR" xml:space="preserve">
+    <value>MUST BE IN SEPARATE PNR</value>
+  </data>
+  <data name="NAME_LIST_PRESENT" xml:space="preserve">
+    <value>NAME LIST PRESENT</value>
+  </data>
+  <data name="NAMELIST_TO_DISPLAY" xml:space="preserve">
+    <value>NAMELIST TO DISPLAY</value>
+  </data>
+  <data name="ND_RCVD" xml:space="preserve">
+    <value>ND RCVD</value>
+  </data>
+  <data name="NEED_ADDRESS" xml:space="preserve">
+    <value>NEED ADDRESS</value>
+  </data>
+  <data name="NEED_ADDRESS_USE_W" xml:space="preserve">
+    <value>NEED ADDRESS - USE W</value>
+  </data>
+  <data name="NEED_COMMISSION" xml:space="preserve">
+    <value>‡NEED COMMISSION</value>
+  </data>
+  <data name="NEED_COMMISSION_DOLLAR" xml:space="preserve">
+    <value>NEED COMMISSION DOLLAR</value>
+  </data>
+  <data name="NEED_CUSTOMER_NUMBER" xml:space="preserve">
+    <value>NEED CUSTOMER NUMBER</value>
+  </data>
+  <data name="NEED_EPR_KEYWORD_PVTDIS" xml:space="preserve">
+    <value>NEED EPR KEYWORD PVTDIS</value>
+  </data>
+  <data name="NEED_FIVE" xml:space="preserve">
+    <value>NEED 5/</value>
+  </data>
+  <data name="NEED_NAME_IN_PNR" xml:space="preserve">
+    <value>NEED NAME IN PNR</value>
+  </data>
+  <data name="NEED_PHONE_FIELD" xml:space="preserve">
+    <value>NEED PHONE FIELD</value>
+  </data>
+  <data name="NEED_PNR" xml:space="preserve">
+    <value>NEED PNR</value>
+  </data>
+  <data name="NEED_RECEIVED_FROM_FIELD" xml:space="preserve">
+    <value>NEED RECEIVED FROM FIELD</value>
+  </data>
+  <data name="NEED_TICKETING_TIMELIMIT" xml:space="preserve">
+    <value>NEED TICKETING/TIMELIMIT</value>
+  </data>
+  <data name="NEED_WP_BEFORE_PQ" xml:space="preserve">
+    <value>NEED WP BEFORE PQ-0077</value>
+  </data>
+  <data name="NO_ADVANCED" xml:space="preserve">
+    <value>NO ADVANCED</value>
+  </data>
+  <data name="NO_APPL_FARE_SPECIFIED" xml:space="preserve">
+    <value>NO APPL FARE WITHIN SPECIFIED PENALTY</value>
+  </data>
+  <data name="NO_AVAIL" xml:space="preserve">
+    <value>NO AVAIL</value>
+  </data>
+  <data name="NO_CARRIERS" xml:space="preserve">
+    <value>NO PARTICIPATING CARRIERS AVAIL THIS DATE/CITY</value>
+  </data>
+  <data name="NO_CHANGES_MADE_TO_PNR" xml:space="preserve">
+    <value>NO CHANGES MADE TO PNR - UPDATE OR IGNORE</value>
+  </data>
+  <data name="NO_COMBINABLE_FARES_CLASS" xml:space="preserve">
+    <value>NO COMBINABLE FARES FOR CLASS USED</value>
+  </data>
+  <data name="NO_DIR_SVC" xml:space="preserve">
+    <value>NO DIR SVC</value>
+  </data>
+  <data name="NO_DIRECT_NONSTOPS" xml:space="preserve">
+    <value>NO-DIRECT/NONSTOPS</value>
+  </data>
+  <data name="NO_FARE_CLASS_USED" xml:space="preserve">
+    <value>NO FARE FOR CLASS USED</value>
+  </data>
+  <data name="NO_HOST_SESSION" xml:space="preserve">
+    <value>NO HOST SESSION</value>
+  </data>
+  <data name="NO_INV_PRESENT" xml:space="preserve">
+    <value>NO INV PRESENT</value>
+  </data>
+  <data name="NO_ITEMS_FOR_DISPLAY" xml:space="preserve">
+    <value>NO ITEMS FOR DISPLAY</value>
+  </data>
+  <data name="NO_ITIN" xml:space="preserve">
+    <value>NO ITIN</value>
+  </data>
+  <data name="NO_ITINERARY" xml:space="preserve">
+    <value>‡NO ITINERARY</value>
+  </data>
+  <data name="NO_LEVEL_2" xml:space="preserve">
+    <value>NO LEVEL 2</value>
+  </data>
+  <data name="NO_LEVEL_ONE" xml:space="preserve">
+    <value>NO LEVEL ONE</value>
+  </data>
+  <data name="NO_LVL_1" xml:space="preserve">
+    <value>NO LVL 1</value>
+  </data>
+  <data name="NO_MORE" xml:space="preserve">
+    <value>NO MORE</value>
+  </data>
+  <data name="NO_NAMES" xml:space="preserve">
+    <value>NO NAMES</value>
+  </data>
+  <data name="NO_PNR_PRESENT" xml:space="preserve">
+    <value>NO PNR PRESENT</value>
+  </data>
+  <data name="NO_PQ_RECORD_SUMMARY" xml:space="preserve">
+    <value>NO PQ RECORD SUMMARY OR DETAIL EXISTS</value>
+  </data>
+  <data name="NO_PREVIOUS_WPNI_ENTRY" xml:space="preserve">
+    <value>NO PREVIOUS WPNI ENTRY</value>
+  </data>
+  <data name="NO_PRIOR_CPA" xml:space="preserve">
+    <value>NO PRIOR CPA</value>
+  </data>
+  <data name="NO_PRIVATE_FARES" xml:space="preserve">
+    <value>NO PRIVATE FARES VALID FOR PASSENGER</value>
+  </data>
+  <data name="NO_PSGR_DATA" xml:space="preserve">
+    <value>NO PSGR DATA</value>
+  </data>
+  <data name="NO_PUBLIC_FARES" xml:space="preserve">
+    <value>NO PUBLIC FARES VALID FOR PASSENGER TYPE/CLASS OF SERVICE</value>
+  </data>
+  <data name="NO_RETAINED_FARE_EXISTS" xml:space="preserve">
+    <value>NO RETAINED FARE EXISTS</value>
+  </data>
+  <data name="NO_ROUTINGS" xml:space="preserve">
+    <value>NO ROUTINGS</value>
+  </data>
+  <data name="NO_STAR_2ND_LEVEL" xml:space="preserve">
+    <value>NO STAR - 2ND LEVEL</value>
+  </data>
+  <data name="NO_STARS" xml:space="preserve">
+    <value>NO STARS</value>
+  </data>
+  <data name="NO_TKT_REC_EXISTS" xml:space="preserve">
+    <value>NO TKT REC EXISTS</value>
+  </data>
+  <data name="NO_U_STAR" xml:space="preserve">
+    <value>NO U STAR</value>
+  </data>
+  <data name="NO_VALID_SEGMENT_FOUND" xml:space="preserve">
+    <value>NO VALID SEGMENTS FOUND</value>
+  </data>
+  <data name="NONE_AVAIL" xml:space="preserve">
+    <value>NONE AVAIL</value>
+  </data>
+  <data name="NONE_AVAILABLE" xml:space="preserve">
+    <value>‡NONE AVAILABLE</value>
+  </data>
+  <data name="NONE_SKED" xml:space="preserve">
+    <value>NONE SKED</value>
+  </data>
+  <data name="NOT_IN_SA_MODE_RD" xml:space="preserve">
+    <value> NOT IN SA MODE R/D</value>
+  </data>
+  <data name="NOT_IN_SA_MODE_UC" xml:space="preserve">
+    <value>NOT IN SA MODE U/C</value>
+  </data>
+  <data name="NOT_VALID_CARRIER" xml:space="preserve">
+    <value>NOT VALID FOR CARRIER</value>
+  </data>
+  <data name="NOT_VALID_EXTND" xml:space="preserve">
+    <value>NOT VALID FOR EXTND SRCH</value>
+  </data>
+  <data name="NOT_VALID_FOR_CARRIER" xml:space="preserve">
+    <value>‡NOT VALID FOR CARRIER</value>
+  </data>
+  <data name="NOT_VALID_THIS_HOST" xml:space="preserve">
+    <value>NOT VALID THIS HOST</value>
+  </data>
+  <data name="NR_IN_PTY" xml:space="preserve">
+    <value>‡NR IN PTY</value>
+  </data>
+  <data name="NUMBER_OF_NAMES_NOT_EQUAL" xml:space="preserve">
+    <value>NUMBER OF NAMES NOT EQUAL</value>
+  </data>
+  <data name="NUMBER_PREVIOUSLY_VOIDED" xml:space="preserve">
+    <value>NUMBER PREVIOUSLY VOIDED</value>
+  </data>
+  <data name="NX_TO_CLEAR_NLIST" xml:space="preserve">
+    <value>NX TO CLEAR NLIST</value>
+  </data>
+  <data name="ONE" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OPEN_SEGMENT_ALLOWED_CARRIER" xml:space="preserve">
+    <value>‡OPEN SEGMENT NOT ALLOWED THIS CARRIER</value>
+  </data>
+  <data name="OPEN_SEGMENT_SOLD_SEPERATE_PNR" xml:space="preserve">
+    <value>‡OPEN SEGMENT MUST BE SOLD IN SEPERATE PNR</value>
+  </data>
+  <data name="PAC_VEFIFY_CORRECT_NBR" xml:space="preserve">
+    <value>*PAC TO VERIFY CORRECT NBR </value>
+  </data>
+  <data name="POSITION_EIGHT" xml:space="preserve">
+    <value>8.1</value>
+  </data>
+  <data name="POSITION_FIVE" xml:space="preserve">
+    <value>5.1</value>
+  </data>
+  <data name="POSITION_FOUR" xml:space="preserve">
+    <value>4.1</value>
+  </data>
+  <data name="POSITION_NINE" xml:space="preserve">
+    <value>9.1</value>
+  </data>
+  <data name="POSITION_ONE" xml:space="preserve">
+    <value>1.1</value>
+  </data>
+  <data name="POSITION_SEVEN" xml:space="preserve">
+    <value>7.1</value>
+  </data>
+  <data name="POSITION_SIX" xml:space="preserve">
+    <value>6.1</value>
+  </data>
+  <data name="POSITION_THREE" xml:space="preserve">
+    <value>3.1</value>
+  </data>
+  <data name="POSITION_TWO" xml:space="preserve">
+    <value>2.1</value>
+  </data>
+  <data name="PQ_REQUIRED_BEFORE_END" xml:space="preserve">
+    <value>PQ REQUIRED BEFORE END TRANSACTION</value>
+  </data>
+  <data name="PREVIOUS_ENTRY_ACTIVE_PLEASE_WAIT_FOR_RESPONSE" xml:space="preserve">
+    <value>PREVIOUS ENTRY ACTIVE-PLEASE WAIT FOR RESPONSE</value>
+  </data>
+  <data name="PRICE_QUOTE_RECORD_INDENT_DETAILS" xml:space="preserve">
+    <value>PRICE QUOTE RECORD - DETAILS</value>
+  </data>
+  <data name="PRICE_QUOTE_RECORD_RETAINED" xml:space="preserve">
+    <value>PRICE QUOTE RECORD RETAINED</value>
+  </data>
+  <data name="PURGED" xml:space="preserve">
+    <value>PURGED</value>
+  </data>
+  <data name="RANGE" xml:space="preserve">
+    <value>RANGE</value>
+  </data>
+  <data name="RECEIVED" xml:space="preserve">
+    <value>RECEIVED</value>
+  </data>
+  <data name="REENT_IF" xml:space="preserve">
+    <value>REENT IF</value>
+  </data>
+  <data name="REQUIRES_PAYMENT_WITH_BOOKING" xml:space="preserve">
+    <value>REQUIRES PAYMENT WITH BOOKING</value>
+  </data>
+  <data name="RESPONSE" xml:space="preserve">
+    <value>RESPONSE</value>
+  </data>
+  <data name="RESTRICTED" xml:space="preserve">
+    <value>RESTRICTED</value>
+  </data>
+  <data name="RESTRICTED_INVALID_DUTY_CODE" xml:space="preserve">
+    <value>RESTRICTED-INVALID DUTY CODE</value>
+  </data>
+  <data name="RTP_ENTRY_IGNORED" xml:space="preserve">
+    <value>RTP ENTRY - TRANS IGNORED</value>
+  </data>
+  <data name="SCHEDULES_NOT_YET_AVAILABLE" xml:space="preserve">
+    <value>‡SCHEDULES NOT YET AVAILABLE</value>
+  </data>
+  <data name="SEAT_BOARDING_PASS" xml:space="preserve">
+    <value>SEATS/BOARDING PASS</value>
+  </data>
+  <data name="SEG_NR" xml:space="preserve">
+    <value>‡SEG NR</value>
+  </data>
+  <data name="SEGMENT_NUMBER_NOT_VALID" xml:space="preserve">
+    <value>SEGMENT NUMBER NOT VALID</value>
+  </data>
+  <data name="SEGMENTO_PROTECCION" xml:space="preserve">
+    <value>SEGMENTO DE PROTECCION</value>
+  </data>
+  <data name="SEGMENTS_NOT_IN_DATE_ORDER" xml:space="preserve">
+    <value>SEGMENTS NOT IN DATE ORDER</value>
+  </data>
+  <data name="SEGS_SOLD_ORDER" xml:space="preserve">
+    <value>SEGS MUST BE SOLD IN ORDER</value>
+  </data>
+  <data name="SERVICE_NOT_FOUND" xml:space="preserve">
+    <value>SERVICE NOT FOUND</value>
+  </data>
+  <data name="SIMULTANEOUS_CHANGES_TO_PNR" xml:space="preserve">
+    <value>SIMULTANEOUS CHANGES TO PNR</value>
+  </data>
+  <data name="SKD_CHG_IN_PROG" xml:space="preserve">
+    <value>SKD CHG IN PROG</value>
+  </data>
+  <data name="SMX" xml:space="preserve">
+    <value>.S*MX</value>
+  </data>
+  <data name="SNGL_ITEM_FIELD" xml:space="preserve">
+    <value>.SNGL ITEM FIELD.NOT ENT BGNG WITH</value>
+  </data>
+  <data name="STAR" xml:space="preserve">
+    <value>STAR</value>
+  </data>
+  <data name="STAR_EXIST" xml:space="preserve">
+    <value>STAR EXIST</value>
+  </data>
+  <data name="STARIDS" xml:space="preserve">
+    <value>STARIDS</value>
+  </data>
+  <data name="SUBJECT_TO_CANCELLATION" xml:space="preserve">
+    <value>SUBJECT TO CANCELLATION WITHOUT PAYMENT-ENTER 3OTHS</value>
+  </data>
+  <data name="SUBJECT_TO_CANCELLATION_NONREFUNDABLE" xml:space="preserve">
+    <value>SUBJECT TO CANCELLATION WITHOUT PAYMENT-TKT NONREFUNDABLE</value>
+  </data>
+  <data name="SUBJECT_TO_CANCELLATION_PENALTY_APPLIES" xml:space="preserve">
+    <value>SUBJECT TO CANCELLATION WITHOUT PAYMENT-PENALTY APPLIES</value>
+  </data>
+  <data name="SVC_NOT_IN_SYS" xml:space="preserve">
+    <value>SVC NOT IN SYS</value>
+  </data>
+  <data name="TICKET_TIMELIMIT" xml:space="preserve">
+    <value>TICKET/TIMELIMIT MUST PRECEDE TRAVEL DATE</value>
+  </data>
+  <data name="TIME" xml:space="preserve">
+    <value>‡TIME</value>
+  </data>
+  <data name="TKT_DES_FAILED_RULES_CHECK" xml:space="preserve">
+    <value>TKT DES FAILED RULES CHECK</value>
+  </data>
+  <data name="TKT_DES_INVALID_FOR_CARRIER" xml:space="preserve">
+    <value>TKT DES INVALID FOR CARRIER</value>
+  </data>
+  <data name="TKT_DES_REQUIRES_FARE_BASIS" xml:space="preserve">
+    <value>TKT DES REQUIRES FARE BASIS</value>
+  </data>
+  <data name="TKT_DESIGNATOR_NOT_FOUND" xml:space="preserve">
+    <value>TKT DESIGNATOR NOT FOUND</value>
+  </data>
+  <data name="TKT_PRT_NOT_ASSIGNED" xml:space="preserve">
+    <value>TKT PRT NOT ASSIGNED</value>
+  </data>
+  <data name="TKT_PTR_NOT_ASSIGNED" xml:space="preserve">
+    <value>TKT PTR NOT ASSIGNED</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="U99_CC" xml:space="preserve">
+    <value>U99-CC/</value>
+  </data>
+  <data name="UNABLE" xml:space="preserve">
+    <value>UNABLE</value>
+  </data>
+  <data name="UNABLE_E_TICKET_NOT_ISSUED" xml:space="preserve">
+    <value>UNABLE - E TICKET NOT ISSUED</value>
+  </data>
+  <data name="UNABLE_ENTRY" xml:space="preserve">
+    <value>UNABLE TO VALIDATE ENTRY</value>
+  </data>
+  <data name="UNABLE_LOCATE_SEGMENT" xml:space="preserve">
+    <value>‡UNABLE TO LOCATE SEGMENT</value>
+  </data>
+  <data name="UNABLE_PRICE" xml:space="preserve">
+    <value>UNABLE TO PRICE</value>
+  </data>
+  <data name="UNABLE_SELL_SEGMENTS" xml:space="preserve">
+    <value>UNABLE TO SELL SEGMENTS</value>
+  </data>
+  <data name="UNABLE_TO_CALCULATE_RATE" xml:space="preserve">
+    <value>UNABLE TO CALCULATE RATE</value>
+  </data>
+  <data name="UNABLE_TO_DISPLAY" xml:space="preserve">
+    <value>UNABLE TO DISPLAY</value>
+  </data>
+  <data name="UNABLE_TO_END_TRANSACTION" xml:space="preserve">
+    <value>UNABLE TO END TRANSACTION WITHOUT STORED FARE</value>
+  </data>
+  <data name="UNABLE_TO_PROCESS_NAMES" xml:space="preserve">
+    <value>UNABLE TO PROCESS DUPLICATE NAMES</value>
+  </data>
+  <data name="UPDATE_IN_PROGRESS" xml:space="preserve">
+    <value>UPDATE IN PROGRESS - END OR HALT</value>
+  </data>
+  <data name="USE_NH" xml:space="preserve">
+    <value>USE NH</value>
+  </data>
+  <data name="UTP_VERIFY_NUMBER_PARTY" xml:space="preserve">
+    <value>UTP-VERIFY NUMBER IN PARTY</value>
+  </data>
+  <data name="VERIFY_ORDER_OF_ITINERARY" xml:space="preserve">
+    <value>VERIFY ORDER OF ITINERARY SEGMENTS</value>
+  </data>
+  <data name="VERIFY_SPECIAL_MEALS" xml:space="preserve">
+    <value>VERIFY SPECIAL MEALS</value>
+  </data>
+  <data name="VLD_ITEM_NUMBER" xml:space="preserve">
+    <value>VLD_ITEM_NUMBER</value>
+  </data>
+  <data name="VOID_EXCHANGE_RESTRICTED_BYCARRIER" xml:space="preserve">
+    <value>VOID EXCHANGE RESTRICTED BYCARRIER</value>
+  </data>
+  <data name="VOID_MSG_SENT_WITHIN_BSP_APPROVED" xml:space="preserve">
+    <value>VOID MSG SENT IF WITHIN BSP APPROVED</value>
+  </data>
+  <data name="WITH_FARE_BASIS_CODE_AFTER_Q" xml:space="preserve">
+    <value>WITH FARE BASIS CODE AFTER Q</value>
+  </data>
+  <data name="INGRESA_DATOS_PARA_FACTURAR" xml:space="preserve">
+    <value>INGRESA DATOS PARA FACTURAR</value>
+  </data>
+  <data name="FLIGHTS_REQUIRE_DOCS_FOR_PASSENGERS" xml:space="preserve">
+    <value>FLIGHTS REQUIRE DOCS FOR PASSENGERS</value>
+  </data>
+  <data name="OK_6_6" xml:space="preserve">
+    <value>OK 6.6</value>
+  </data>
+  <data name="VOID_MESSAGE_SENT" xml:space="preserve">
+    <value>VOID MESSAGE SENT</value>
+  </data>
+  <data name="INTERJET_DEPARTURE_NOT_FOUND" xml:space="preserve">
+    <value />
+  </data>
+  <data name="REQUEST_PENDING" xml:space="preserve">
+    <value>REQUEST PENDING</value>
+  </data>
+</root>

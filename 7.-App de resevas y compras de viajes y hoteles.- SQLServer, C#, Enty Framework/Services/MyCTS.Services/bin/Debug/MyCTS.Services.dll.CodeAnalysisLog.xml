@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\bin\Debug\MyCTS.Services.dll">
+   <Modules>
+    <Module Name="mycts.services.dll">
+     <Namespaces>
+      <Namespace Name="MyCTS.Services">
+       <Types>
+        <Type Name="WSSessionSabre" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Provide an overridable implementation of Dispose(bool) on 'WSSessionSabre' or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services" File="WSSessionSabre.cs" Line="244">Modify 'WSSessionSabre.Dispose()' so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="MyCTS.Services.Contracts">
+       <Types>
+        <Type Name="InterJetServiceManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AssingSeat(System.Collections.Generic.List`1&lt;MyCTS.Entities.InterJetFlight&gt;,System.Collections.Generic.List`1&lt;System.String&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts" File="InterJetServiceManager.cs" Line="3098">'InterJetServiceManager.AssingSeat(List&lt;InterJetFlight&gt;, List&lt;string&gt;)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Commit(MyCTS.Entities.InterJetTicket)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts" File="InterJetServiceManager.cs" Line="3506">'InterJetServiceManager.Commit(InterJetTicket)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Confirmation(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts" File="InterJetServiceManager.cs" Line="3035">'InterJetServiceManager.Confirmation(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAvailabilitySeat(System.Collections.Generic.List`1&lt;MyCTS.Entities.InterJetFlight&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts" File="InterJetServiceManager.cs" Line="3064">'InterJetServiceManager.GetAvailabilitySeat(List&lt;InterJetFlight&gt;)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SeeNumber()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts" File="InterJetServiceManager.cs" Line="3021">'InterJetServiceManager.SeeNumber()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="MyCTS.Services.Contracts.Volaris">
+       <Types>
+        <Type Name="VolarisServiceManager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AgregarPasajeros(System.Collections.Generic.List`1&lt;MyCTS.Entities.PasajerosVolaris&gt;,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="1092">'VolarisServiceManager.AgregarPasajeros(List&lt;PasajerosVolaris&gt;, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConfirmarReservacion(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="543">'VolarisServiceManager.ConfirmarReservacion(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAvailability(MyCTS.Entities.AvailabilityRequest)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="146">'VolarisServiceManager.GetAvailability(AvailabilityRequest)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetBookingFromState(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="1073">'VolarisServiceManager.GetBookingFromState(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ObtenerImpuestos()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="353">'VolarisServiceManager.ObtenerImpuestos()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ObtenerVenta(MyCTS.Entities.VueloDisponibleMyCTS,MyCTS.Entities.VueloDisponibleMyCTS,System.Collections.Generic.List`1&lt;MyCTS.Entities.TiposVolaris+PassengerType&gt;,MyCTS.Entities.TiposVolaris+FlightTypes)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="317">'VolarisServiceManager.ObtenerVenta(VueloDisponibleMyCTS, VueloDisponibleMyCTS, List&lt;TiposVolaris.PassengerType&gt;, TiposVolaris.FlightTypes)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PagarReservacion(MyCTS.Entities.MetodoPagoVolaris)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="528">'VolarisServiceManager.PagarReservacion(MetodoPagoVolaris)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ServiciosExtras(System.Collections.Generic.List`1&lt;MyCTS.Entities.ExtrasViajeVolaris&gt;,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="1112">'VolarisServiceManager.ServiciosExtras(List&lt;ExtrasViajeVolaris&gt;, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TranslateFromVueloDisponibleToIFlight(System.Collections.Generic.List`1&lt;MyCTS.Services.APIVolaris.VueloDisponible&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2015-09-11 20:35:52Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\TFS\MyCTS\Main\SolutionMyCTSV2\Services\MyCTS.Services\Contracts\Volaris" File="VolarisServiceManager.cs" Line="1229">'VolarisServiceManager.TranslateFromVueloDisponibleToIFlight(List&lt;VueloDisponible&gt;)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>Implement IDisposable correctly</Name>
+   <Description>All IDisposable types should implement the Dispose pattern correctly.</Description>
+   <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+   <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

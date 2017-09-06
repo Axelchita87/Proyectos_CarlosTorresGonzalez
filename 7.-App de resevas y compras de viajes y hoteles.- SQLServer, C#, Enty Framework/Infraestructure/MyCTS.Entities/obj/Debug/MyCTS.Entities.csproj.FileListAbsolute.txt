@@ -1,0 +1,6 @@
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\bin\Debug\MyCTS.Entities.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\bin\Debug\MyCTS.Entities.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\obj\Debug\MyCTS.Entities.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\obj\Debug\MyCTS.Entities.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\bin\Debug\MyCTS.Entities.dll.CodeAnalysisLog.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Infraestructure\MyCTS.Entities\bin\Debug\MyCTS.Entities.dll.lastcodeanalysissucceeded

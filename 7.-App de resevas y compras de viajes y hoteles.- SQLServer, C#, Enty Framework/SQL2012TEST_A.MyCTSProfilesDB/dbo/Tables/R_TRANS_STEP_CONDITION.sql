@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[R_TRANS_STEP_CONDITION] (
+    [ID_TRANSFORMATION] INT NULL,
+    [ID_STEP]           INT NULL,
+    [ID_CONDITION]      INT NULL
+);
+

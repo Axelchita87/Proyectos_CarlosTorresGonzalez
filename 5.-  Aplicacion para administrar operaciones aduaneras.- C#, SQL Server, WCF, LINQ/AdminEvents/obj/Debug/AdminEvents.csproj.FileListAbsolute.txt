@@ -1,0 +1,138 @@
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\AdminEvents.exe
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\AppCatalogs.config
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\AdminEvents.exe.config
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.Controls.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ClosedXML.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\Ionic.Zip.dll
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Encript.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\frmCatologoGenerico.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\frmProcesando.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Main.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\MainWindow.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Splash.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\App.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\avisosis.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Encript.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\frmCatologoGenerico.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\frmProcesando.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Main.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\MainWindow.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Splash.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\App.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.cache
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.lref
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\avisosis.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.g.resources
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.Properties.Resources.resources
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.csproj.GenerateResource.Cache
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.exe
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\AdminEvents.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\AdminEvents.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.Controls.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.Entity.pdb
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.baml
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.exe
+C:\Program Files (x86)\SDICointer\Admin2\AdminEvents\bin\Debug\ADMIN2.pdb
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\bin\Debug\AdminEvents.exe.config
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents.exe
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Encript.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmCatologoGenerico.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmProcesando.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Main.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\MainWindow.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Splash.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\App.baml
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\avisosis.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Encript.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmCatologoGenerico.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmProcesando.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Main.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\MainWindow.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Splash.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\App.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.cache
+C:\Program Files (x86)\SDICointer\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.lref
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\bin\Debug\AdminEvents.exe.config
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents.exe
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Encript.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmCatologoGenerico.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmProcesando.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Main.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\MainWindow.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Splash.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\App.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmINPC.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoTabla.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmAltaArchivos.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmBitacora.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmTipoCambio.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmSelTabExcel.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Admin\Teleproceso\frmMenu.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\avisosis.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmPerfiles.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Configuracion\FrmUsuarios.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Encript.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmCatologoGenerico.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\frmProcesando.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Main.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\MainWindow.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\Splash.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\App.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\AdminEvents\obj\Debug\AdminEvents_MarkupCompile.lref

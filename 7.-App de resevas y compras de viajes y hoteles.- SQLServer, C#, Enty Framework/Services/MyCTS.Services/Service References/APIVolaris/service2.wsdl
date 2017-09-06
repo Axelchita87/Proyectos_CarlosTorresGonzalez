@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Volaris" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/CTS.Entities" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVolaris_ConsultarDisponibilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarDisponibilidad" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ConsultarDisponibilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarDisponibilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AbrirConexion_InputMessage">
+    <wsdl:part name="parameters" element="tns:AbrirConexion" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AbrirConexion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AbrirConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_CerrarConexion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarConexion" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_CerrarConexion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CerrarConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ObtenerDisponibilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDisponibilidad" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ObtenerDisponibilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDisponibilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ObtenerVenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVenta" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ObtenerVenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AgregarPasajeros_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarPasajeros" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AgregarPasajeros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarPasajerosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AgregarExtras_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarExtras" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_AgregarExtras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarExtrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_PagarReservacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:PagarReservacion" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_PagarReservacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PagarReservacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ConfirmacionReservacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionReservacion" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_ConfirmacionReservacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionReservacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_GetBookingFromState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingFromState" />
+  </wsdl:message>
+  <wsdl:message name="IVolaris_GetBookingFromState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingFromStateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVolaris">
+    <wsdl:operation name="ConsultarDisponibilidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/ConsultarDisponibilidad" message="tns:IVolaris_ConsultarDisponibilidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/ConsultarDisponibilidadResponse" message="tns:IVolaris_ConsultarDisponibilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AbrirConexion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/AbrirConexion" message="tns:IVolaris_AbrirConexion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/AbrirConexionResponse" message="tns:IVolaris_AbrirConexion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CerrarConexion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/CerrarConexion" message="tns:IVolaris_CerrarConexion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/CerrarConexionResponse" message="tns:IVolaris_CerrarConexion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDisponibilidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/ObtenerDisponibilidad" message="tns:IVolaris_ObtenerDisponibilidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/ObtenerDisponibilidadResponse" message="tns:IVolaris_ObtenerDisponibilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/ObtenerVenta" message="tns:IVolaris_ObtenerVenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/ObtenerVentaResponse" message="tns:IVolaris_ObtenerVenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarPasajeros">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/AgregarPasajeros" message="tns:IVolaris_AgregarPasajeros_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/AgregarPasajerosResponse" message="tns:IVolaris_AgregarPasajeros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarExtras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/AgregarExtras" message="tns:IVolaris_AgregarExtras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/AgregarExtrasResponse" message="tns:IVolaris_AgregarExtras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PagarReservacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/PagarReservacion" message="tns:IVolaris_PagarReservacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/PagarReservacionResponse" message="tns:IVolaris_PagarReservacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionReservacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/ConfirmacionReservacion" message="tns:IVolaris_ConfirmacionReservacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/ConfirmacionReservacionResponse" message="tns:IVolaris_ConfirmacionReservacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingFromState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVolaris/GetBookingFromState" message="tns:IVolaris_GetBookingFromState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVolaris/GetBookingFromStateResponse" message="tns:IVolaris_GetBookingFromState_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVolaris" type="tns:IVolaris">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarDisponibilidad">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/ConsultarDisponibilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbrirConexion">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/AbrirConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CerrarConexion">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/CerrarConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDisponibilidad">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/ObtenerDisponibilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerVenta">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/ObtenerVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarPasajeros">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/AgregarPasajeros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarExtras">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/AgregarExtras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PagarReservacion">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/PagarReservacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionReservacion">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/ConfirmacionReservacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookingFromState">
+      <soap:operation soapAction="http://tempuri.org/IVolaris/GetBookingFromState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Volaris">
+    <wsdl:port name="BasicHttpBinding_IVolaris" binding="tns:BasicHttpBinding_IVolaris">
+      <soap:address location="http://201.149.13.14:5498/CTSServices/Volaris.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

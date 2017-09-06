@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD10FAE3-774C-455C-B97D-A3BA60493F9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCTS.Entities</RootNamespace>
+    <AssemblyName>MyCTS.Entities</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActDHL.cs" />
+    <Compile Include="AdditionalAccountingLine.cs" />
+    <Compile Include="AddToolOnlineRulesDelete.cs" />
+    <Compile Include="AddToolsOnlineQueues.cs" />
+    <Compile Include="BookingData.cs" />
+    <Compile Include="BookingServiceCharge.cs" />
+    <Compile Include="ChargeType.cs" />
+    <Compile Include="CollectType.cs" />
+    <Compile Include="CatOnlineToolsPicCodes.cs" />
+    <Compile Include="ConsultorCRUD.cs" />
+    <Compile Include="AddCorporateCRUD.cs" />
+    <Compile Include="AddDetailsTktsLinks.cs" />
+    <Compile Include="AddLinksInvoicesPerTicket.cs" />
+    <Compile Include="AddNewUser.cs" />
+    <Compile Include="AddRecordsContainer.cs" />
+    <Compile Include="Agent.cs" />
+    <Compile Include="AgentPCC.cs" />
+    <Compile Include="Agents.cs" />
+    <Compile Include="AirLineFare.cs" />
+    <Compile Include="AirlineFOP.cs" />
+    <Compile Include="AirLines.cs" />
+    <Compile Include="AirLinesClass.cs" />
+    <Compile Include="AirLinesFare.cs" />
+    <Compile Include="AirPort.cs" />
+    <Compile Include="AirPortCityCountry.cs" />
+    <Compile Include="AirportCodes.cs" />
+    <Compile Include="AirPorts.cs" />
+    <Compile Include="ALAgreements.cs" />
+    <Compile Include="AllPccs.cs" />
+    <Compile Include="AllPCCsComplet.cs" />
+    <Compile Include="AuthCode.cs" />
+    <Compile Include="AvailabilityRequest.cs" />
+    <Compile Include="AvailabilityRequestType.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="Cat1stStarInfoByLocation.cs" />
+    <Compile Include="CatAgent.cs" />
+    <Compile Include="CatAirlines.cs" />
+    <Compile Include="CatAllStars.cs" />
+    <Compile Include="CatBusCodes.cs" />
+    <Compile Include="CatBusinessUnits.cs" />
+    <Compile Include="CatCarEquipemetCodes.cs" />
+    <Compile Include="CatCarTypeCodes.cs" />
+    <Compile Include="CatClientsCatalogs.cs" />
+    <Compile Include="CatFareTypeCodes.cs" />
+    <Compile Include="CatOriginSales.cs" />
+    <Compile Include="CatRoles.cs" />
+    <Compile Include="CatSSRCodes.cs" />
+    <Compile Include="CatStars1stLevel.cs" />
+    <Compile Include="CatStars2ndLevel.cs" />
+    <Compile Include="CatTransaction.cs" />
+    <Compile Include="CatValuesXMLQualityControlsClients.cs" />
+    <Compile Include="CiaDHL.cs" />
+    <Compile Include="CatCities.cs" />
+    <Compile Include="CatConfirmDK.cs" />
+    <Compile Include="CatCorporativeQualityControls.cs" />
+    <Compile Include="CatCostCenter.cs" />
+    <Compile Include="CatCountries.cs" />
+    <Compile Include="CatCreditCardsCodes.cs" />
+    <Compile Include="CatHotels.cs" />
+    <Compile Include="CatITTourCodes.cs" />
+    <Compile Include="CatLineClasses.cs" />
+    <Compile Include="CatMealCodes.cs" />
+    <Compile Include="CatPAirlinesFare.cs" />
+    <Compile Include="CatPccs.cs" />
+    <Compile Include="CatQueue.cs" />
+    <Compile Include="CatSeaVendorsCodes.cs" />
+    <Compile Include="CatStatesUSA.cs" />
+    <Compile Include="CatStatusCodes.cs" />
+    <Compile Include="CatValuesCorporativeQualityControls.cs" />
+    <Compile Include="CatValuesXMLQualityControls.cs" />
+    <Compile Include="ChargePerService.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="ClientCreditCard.cs" />
+    <Compile Include="ClientsCatalogs_Nextel.cs" />
+    <Compile Include="ClientsCatalogs_NextelCC.cs" />
+    <Compile Include="ComissionAgreements.cs" />
+    <Compile Include="CommandsActions.cs" />
+    <Compile Include="commonEnt.cs" />
+    <Compile Include="ConsultingFirm.cs" />
+    <Compile Include="ConsultingFirmRole.cs" />
+    <Compile Include="ContactVolaris.cs" />
+    <Compile Include="CorporativeConsultaGrid.cs" />
+    <Compile Include="CorporativeCRUDConsulta.cs" />
+    <Compile Include="CostumerAccountInterJet.cs" />
+    <Compile Include="CreditCardInfo.cs" />
+    <Compile Include="CtaDHL.cs" />
+    <Compile Include="CteDHL.cs" />
+    <Compile Include="CurrenciesCountries.cs" />
+    <Compile Include="CurrencyCountry.cs" />
+    <Compile Include="CxSHoteles.cs" />
+    <Compile Include="DatosPasajerosVolaris.cs" />
+    <Compile Include="DeactivatedStar.cs" />
+    <Compile Include="DeleteAirPort.cs" />
+    <Compile Include="DeleteAlAgreements.cs" />
+    <Compile Include="DeleteCatalogQC.cs" />
+    <Compile Include="DeleteFirmRole.cs" />
+    <Compile Include="DeletePccs.cs" />
+    <Compile Include="DeleteToolOnlineQueues.cs" />
+    <Compile Include="DeleteToolOnlineRules.cs" />
+    <Compile Include="DeleteUsers.cs" />
+    <Compile Include="DKTemp.cs" />
+    <Compile Include="DocsFirstLevel.cs" />
+    <Compile Include="DocsSecondLevel.cs" />
+    <Compile Include="Documents.cs" />
+    <Compile Include="Dynamic.cs" />
+    <Compile Include="EnableDisableFirm.cs" />
+    <Compile Include="ErrorCode.cs" />
+    <Compile Include="ErrorLogServiceCharge.cs" />
+    <Compile Include="ExtrasViajeVolaris.cs" />
+    <Compile Include="Fare.cs" />
+    <Compile Include="Firm.cs" />
+    <Compile Include="Flights.cs" />
+    <Compile Include="GenericCreditCard.cs" />
+    <Compile Include="GenericCreditCardType.cs" />
+    <Compile Include="GenericFormOfPayment.cs" />
+    <Compile Include="GetAirLineAgreements.cs" />
+    <Compile Include="GetAndSetAttribute1.cs" />
+    <Compile Include="GetAndSetAttributeBackup.cs" />
+    <Compile Include="GetAttribute1.cs" />
+    <Compile Include="GetBannerImage.cs" />
+    <Compile Include="GetCorporativeFeatures.cs" />
+    <Compile Include="GetCorporativeFeesRules.cs" />
+    <Compile Include="GetCtrlCatalogues.cs" />
+    <Compile Include="GetIdRemarkLabel.cs" />
+    <Compile Include="GetInfoGroup.cs" />
+    <Compile Include="GetInformationRuleApplied.cs" />
+    <Compile Include="GetInfoRuleByAttribute1.cs" />
+    <Compile Include="GetLinkByTkt.cs" />
+    <Compile Include="GetLogNewFormatProfiles.cs" />
+    <Compile Include="GetMailByUser.cs" />
+    <Compile Include="GetNationalRoutes.cs" />
+    <Compile Include="GetOnlineTools.cs" />
+    <Compile Include="GetOnlyAttribute1.cs" />
+    <Compile Include="GetQCbyAttribute1.cs" />
+    <Compile Include="GetQCbyAttribute1_AD.cs" />
+    <Compile Include="GetQCIDCtrl.cs" />
+    <Compile Include="GetQualityCotrols.cs" />
+    <Compile Include="GetRandomVolaris.cs" />
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="GroupCodeLabel.cs" />
+    <Compile Include="IATA.cs" />
+    <Compile Include="IAvailabilityRequest.cs" />
+    <Compile Include="IFlight.cs" />
+    <Compile Include="ImpuestosBajoCosto.cs" />
+    <Compile Include="InsertFirmRole.cs" />
+    <Compile Include="InterJetAdultPassanger.cs" />
+    <Compile Include="InterJetAgent.cs" />
+    <Compile Include="InterJetAgentContact.cs" />
+    <Compile Include="InterJetAvailabilityUserInput.cs" />
+    <Compile Include="InterJetChildPassanger.cs" />
+    <Compile Include="InterJetConstant.cs" />
+    <Compile Include="InterJetContact.cs" />
+    <Compile Include="InterJetCreditCardFields.cs" />
+    <Compile Include="InterJetDestinationNotFoundException.cs" />
+    <Compile Include="InterJetDetailPriceMessage.cs" />
+    <Compile Include="InterJetFare.cs" />
+    <Compile Include="InterJetFlight.cs" />
+    <Compile Include="InterJetFlightDesignator.cs" />
+    <Compile Include="InterJetFlightDetailPrice.cs" />
+    <Compile Include="InterJetFlightInformation.cs" />
+    <Compile Include="InterJetFlights.cs" />
+    <Compile Include="InterJetFlightsAvailability.cs" />
+    <Compile Include="InterJetHelper.cs" />
+    <Compile Include="InterJetInfantPassanger.cs" />
+    <Compile Include="InterJetPassanger.cs" />
+    <Compile Include="InterJetPassangerDetailPrice.cs" />
+    <Compile Include="InterJetPassangerInfant.cs" />
+    <Compile Include="InterJetPassangerNumberRecord.cs" />
+    <Compile Include="InterJetPassangerPreviousPricing.cs" />
+    <Compile Include="InterJetPassangers.cs" />
+    <Compile Include="InterJetPassangerType.cs" />
+    <Compile Include="InterJetPointToPoint.cs" />
+    <Compile Include="InterJetPreviousPricing.cs" />
+    <Compile Include="InterJetProfile.cs" />
+    <Compile Include="InterJetProfileCrediCardLevelType.cs" />
+    <Compile Include="InterJetProfileCrediCardType.cs" />
+    <Compile Include="InterJetProfileCreditCard.cs" />
+    <Compile Include="InterJetProfileCreditCards.cs" />
+    <Compile Include="InterjetQualityControleEighty.cs" />
+    <Compile Include="InterJetRemarks.cs" />
+    <Compile Include="InterJetReport.cs" />
+    <Compile Include="InterJetRoundTripFlight.cs" />
+    <Compile Include="InterJetScales.cs" />
+    <Compile Include="InterJetSegment.cs" />
+    <Compile Include="InterJetSelectedFlights.cs" />
+    <Compile Include="InterJetSeniorAdultPassanger.cs" />
+    <Compile Include="InterJetSessionFailureException.cs" />
+    <Compile Include="InterJetState.cs" />
+    <Compile Include="InterJetTax.cs" />
+    <Compile Include="InterJetTicket.cs" />
+    <Compile Include="InvalidAvailabilityRequestException.cs" />
+    <Compile Include="InvalidNumberOfPassangersExeception.cs" />
+    <Compile Include="IPassanger.cs" />
+    <Compile Include="ISegment.cs" />
+    <Compile Include="Itinerary.cs" />
+    <Compile Include="ItineraryFlowVolaris.cs" />
+    <Compile Include="ItineraryType.cs" />
+    <Compile Include="Journey.cs" />
+    <Compile Include="ListTaxesInterjet.cs" />
+    <Compile Include="LogServiceFee.cs" />
+    <Compile Include="LogTickets.cs" />
+    <Compile Include="LowFareAirLinesError.cs" />
+    <Compile Include="MetodoPagoVolaris.cs" />
+    <Compile Include="NewPassengerProfile.cs" />
+    <Compile Include="NumeroBoleto.cs" />
+    <Compile Include="OnlineToolsQueues.cs" />
+    <Compile Include="PasajerosVolaris.cs" />
+    <Compile Include="PaxFare.cs" />
+    <Compile Include="OnlyAttributte1.cs" />
+    <Compile Include="PCC.cs" />
+    <Compile Include="PreferencePlaces.cs" />
+    <Compile Include="PriceTotalResponseInterjet.cs" />
+    <Compile Include="Queue.cs" />
+    <Compile Include="ReportVolaris.cs" />
+    <Compile Include="SCDCBoleto.cs" />
+    <Compile Include="SCDCResumen.cs" />
+    <Compile Include="SCDCVuelo.cs" />
+    <Compile Include="Segment.cs" />
+    <Compile Include="SegmentoDeVuelo.cs" />
+    <Compile Include="SegmentTaxes.cs" />
+    <Compile Include="ServicesExtras.cs" />
+    <Compile Include="ServicesMD.cs" />
+    <Compile Include="SingleListItem.cs" />
+    <Compile Include="Star2ndLevelMail.cs" />
+    <Compile Include="StatusFamilyName.cs" />
+    <Compile Include="TA.cs" />
+    <Compile Include="TiposVolaris.cs" />
+    <Compile Include="UpdateCorporateCRUD.cs" />
+    <Compile Include="UpgradeFileSRW.cs" />
+    <Compile Include="VolarisAdultPassanger.cs" />
+    <Compile Include="IVolarisPassanger.cs" />
+    <Compile Include="LabelXMLRemarks.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="LogsApplication.cs" />
+    <Compile Include="MyCTSVersion.cs" />
+    <Compile Include="NoDepatureFlightSelectedException.cs" />
+    <Compile Include="NoReturningFlightSelectedException.cs" />
+    <Compile Include="NoSelectedFlightException.cs" />
+    <Compile Include="OTATravelItineraryObjectHotel.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="ProductivityMonths.cs" />
+    <Compile Include="ProductivityPCCVsCorporative.cs" />
+    <Compile Include="ProductivityRankingPerCorporative.cs" />
+    <Compile Include="ProductivityRankingPerPCC.cs" />
+    <Compile Include="ProductivityWeeks.cs" />
+    <Compile Include="Promo.cs" />
+    <Compile Include="QCControls.cs" />
+    <Compile Include="QCControlsClients.cs" />
+    <Compile Include="QCCustomRemarks.cs" />
+    <Compile Include="QCExist.cs" />
+    <Compile Include="RequestedPassengers.cs" />
+    <Compile Include="RequestedPassanger.cs" />
+    <Compile Include="RestrictedCommands.cs" />
+    <Compile Include="SabreErrorMsg.cs" />
+    <Compile Include="Hotels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SabreMessages.cs" />
+    <Compile Include="SearchClientsCatalogs.cs" />
+    <Compile Include="Security\ApplicationEntity.cs" />
+    <Compile Include="Security\Profile.cs" />
+    <Compile Include="Security\Rol.cs" />
+    <Compile Include="Security\User.cs" />
+    <Compile Include="Security\UserInRol.cs" />
+    <Compile Include="Segments.cs" />
+    <Compile Include="SegmentType.cs" />
+    <Compile Include="SetAirLineAgreements.cs" />
+    <Compile Include="SetAirLinesFare.cs" />
+    <Compile Include="SetAirport.cs" />
+    <Compile Include="SetClientsCatalogsNextel.cs" />
+    <Compile Include="SetDetailsPNR.cs" />
+    <Compile Include="SetLocationDKNotAccepted.cs" />
+    <Compile Include="SetNewFeeRule.cs" />
+    <Compile Include="SetNewTargetFeeRule.cs" />
+    <Compile Include="SetPCCs.cs" />
+    <Compile Include="SetQCByAttribute1.cs" />
+    <Compile Include="SiteDHL.cs" />
+    <Compile Include="Star1Details.cs" />
+    <Compile Include="Star1stLevelInfo.cs" />
+    <Compile Include="Star2Details.cs" />
+    <Compile Include="Star2ndLevelInfo.cs" />
+    <Compile Include="SubDHL.cs" />
+    <Compile Include="SubTypePax.cs" />
+    <Compile Include="TypePax.cs" />
+    <Compile Include="CatCarVendorsCodes.cs" />
+    <Compile Include="UpdateAirLineFare.cs" />
+    <Compile Include="UpdateAirPort.cs" />
+    <Compile Include="UpdateAlAgreements.cs" />
+    <Compile Include="UpdatePCC.cs" />
+    <Compile Include="UpdatePriorityByAttribute1.cs" />
+    <Compile Include="UpdateQCbyAttribute1_AD.cs" />
+    <Compile Include="UpdateQualityControls.cs" />
+    <Compile Include="UpdateUser.cs" />
+    <Compile Include="UpdateUsers.cs" />
+    <Compile Include="UserProductivityGeneric.cs" />
+    <Compile Include="UserProductivityPerPCC.cs" />
+    <Compile Include="UserSelectByPCC.cs" />
+    <Compile Include="UsersSelectByPCC.cs" />
+    <Compile Include="VolarisAgent.cs" />
+    <Compile Include="VolarisChildPassanger.cs" />
+    <Compile Include="VolarisContactEmails.cs" />
+    <Compile Include="VolarisContact.cs" />
+    <Compile Include="VolarisCountry.cs" />
+    <Compile Include="VolarisCreditCard.cs" />
+    <Compile Include="VolarisCreditCardInformation.cs" />
+    <Compile Include="VolarisCreditCardOwner.cs" />
+    <Compile Include="VolarisCustomerDk.cs" />
+    <Compile Include="VolarisDestinationNotFoundException.cs" />
+    <Compile Include="VolarisContactEmail.cs" />
+    <Compile Include="VolarisEmailType.cs" />
+    <Compile Include="VolarisFlight.cs" />
+    <Compile Include="VolarisHostCommands.cs" />
+    <Compile Include="VolarisInfantPassanger.cs" />
+    <Compile Include="VolarisItinerary.cs" />
+    <Compile Include="VolarisItineraryFare.cs" />
+    <Compile Include="VolarisPassangerBasePrice.cs" />
+    <Compile Include="VolarisPassangerDiscount.cs" />
+    <Compile Include="VolarisPassangerFare.cs" />
+    <Compile Include="VolarisPassangerFares.cs" />
+    <Compile Include="VolarisPassangerGenderType.cs" />
+    <Compile Include="VolarisPassangers.cs" />
+    <Compile Include="VolarisPassangerSpecialService.cs" />
+    <Compile Include="VolarisPassangerSpecialServices.cs" />
+    <Compile Include="VolarisPassangerTax.cs" />
+    <Compile Include="VolarisPassangerTitleType.cs" />
+    <Compile Include="VolarisPassangerType.cs" />
+    <Compile Include="VolarisPayment.cs" />
+    <Compile Include="VolarisPaymentStatus.cs" />
+    <Compile Include="VolarisPhoneType.cs" />
+    <Compile Include="VolarisPointToPoint.cs" />
+    <Compile Include="VolarisProfile.cs" />
+    <Compile Include="VolarisProfileCreditCard.cs" />
+    <Compile Include="VolarisProfileCreditCardLevel.cs" />
+    <Compile Include="VolarisProfileCreditCards.cs" />
+    <Compile Include="VolarisCreditCardType.cs" />
+    <Compile Include="VolarisRecordLocator.cs" />
+    <Compile Include="VolarisRemarks.cs" />
+    <Compile Include="VolarisReservation.cs" />
+    <Compile Include="VolarisReservationStatus.cs" />
+    <Compile Include="VolarisSegment.cs" />
+    <Compile Include="VolarisSepecialServiceType.cs" />
+    <Compile Include="VolarisServicesExtras.cs" />
+    <Compile Include="VolarisSession.cs" />
+    <Compile Include="VolarisSessionFailureException.cs" />
+    <Compile Include="VolarisContactTelephone.cs" />
+    <Compile Include="VolarisContactTelephones.cs" />
+    <Compile Include="VolarisState.cs" />
+    <Compile Include="VueloDisponibleMyCTS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\x86\Debug\MyCTS.Entities.dll" />
+    <Content Include="bin\x86\Debug\MyCTS.Entities.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

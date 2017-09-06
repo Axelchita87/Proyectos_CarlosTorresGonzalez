@@ -1,0 +1,18 @@
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\obj\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\obj\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\bin\Debug\ADMIN2.Entity.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.BR\obj\Debug\ADMIN2.BR.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.BR.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.BR.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.DAL.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.Entity.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.DAL.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\bin\Debug\ADMIN2.Entity.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\obj\Debug\ADMIN2.BR.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\obj\Debug\ADMIN2.BR.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.BR\obj\Debug\ADMIN2.BR.pdb

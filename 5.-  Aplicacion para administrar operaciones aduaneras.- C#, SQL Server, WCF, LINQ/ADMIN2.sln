@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2", "ADMIN2\ADMIN2.csproj", "{FF6E0FA8-9B07-43F3-9D20-56E639D6F64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2.Entity", "ADMIN2.Entity\ADMIN2.Entity.csproj", "{D87936A0-B5FF-4050-A149-1D891D0A1ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2.DAL", "ADMIN2.DAL\ADMIN2.DAL.csproj", "{EA9ED6C2-85B4-405D-B212-A4750B83D4ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2.BR", "ADMIN2.BR\ADMIN2.BR.csproj", "{0C80E226-A677-4927-95ED-03CC7A08C683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2.Controls", "ADMIN2.Controls\ADMIN2.Controls.csproj", "{C2C8F86F-4297-4402-AAFE-1B73EB9B7AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADMIN2.Lib", "ADMIN2.Lib\ADMIN2.Lib.csproj", "{A776B1EF-2635-4CCB-885B-F893E3A7505A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminEvents", "AdminEvents\AdminEvents.csproj", "{49EB774B-F049-4499-B2F7-21ECFDB4BEF2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.233:8080/tfs/coleccion_proyectos_2012
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ADMIN2.BR\\ADMIN2.BR.csproj
+		SccProjectName1 = ADMIN2.BR
+		SccLocalPath1 = ADMIN2.BR
+		SccProjectUniqueName2 = ADMIN2.Controls\\ADMIN2.Controls.csproj
+		SccProjectName2 = ADMIN2.Controls
+		SccLocalPath2 = ADMIN2.Controls
+		SccProjectUniqueName3 = ADMIN2.DAL\\ADMIN2.DAL.csproj
+		SccProjectName3 = ADMIN2.DAL
+		SccLocalPath3 = ADMIN2.DAL
+		SccProjectUniqueName4 = ADMIN2.Entity\\ADMIN2.Entity.csproj
+		SccProjectName4 = ADMIN2.Entity
+		SccLocalPath4 = ADMIN2.Entity
+		SccProjectUniqueName5 = ADMIN2.Lib\\ADMIN2.Lib.csproj
+		SccProjectName5 = ADMIN2.Lib
+		SccLocalPath5 = ADMIN2.Lib
+		SccProjectUniqueName6 = ADMIN2\\ADMIN2.csproj
+		SccProjectName6 = ADMIN2
+		SccLocalPath6 = ADMIN2
+		SccProjectUniqueName7 = AdminEvents\\AdminEvents.csproj
+		SccProjectName7 = AdminEvents
+		SccLocalPath7 = AdminEvents
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF6E0FA8-9B07-43F3-9D20-56E639D6F64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6E0FA8-9B07-43F3-9D20-56E639D6F64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6E0FA8-9B07-43F3-9D20-56E639D6F64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6E0FA8-9B07-43F3-9D20-56E639D6F64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87936A0-B5FF-4050-A149-1D891D0A1ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87936A0-B5FF-4050-A149-1D891D0A1ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87936A0-B5FF-4050-A149-1D891D0A1ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87936A0-B5FF-4050-A149-1D891D0A1ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9ED6C2-85B4-405D-B212-A4750B83D4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9ED6C2-85B4-405D-B212-A4750B83D4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9ED6C2-85B4-405D-B212-A4750B83D4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9ED6C2-85B4-405D-B212-A4750B83D4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C80E226-A677-4927-95ED-03CC7A08C683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C80E226-A677-4927-95ED-03CC7A08C683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C80E226-A677-4927-95ED-03CC7A08C683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C80E226-A677-4927-95ED-03CC7A08C683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C8F86F-4297-4402-AAFE-1B73EB9B7AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C8F86F-4297-4402-AAFE-1B73EB9B7AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C8F86F-4297-4402-AAFE-1B73EB9B7AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C8F86F-4297-4402-AAFE-1B73EB9B7AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A776B1EF-2635-4CCB-885B-F893E3A7505A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A776B1EF-2635-4CCB-885B-F893E3A7505A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A776B1EF-2635-4CCB-885B-F893E3A7505A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A776B1EF-2635-4CCB-885B-F893E3A7505A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EB774B-F049-4499-B2F7-21ECFDB4BEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EB774B-F049-4499-B2F7-21ECFDB4BEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EB774B-F049-4499-B2F7-21ECFDB4BEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EB774B-F049-4499-B2F7-21ECFDB4BEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

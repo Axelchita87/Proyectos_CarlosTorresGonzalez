@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PARAM_C1" xml:space="preserve">
+    <value>C1</value>
+  </data>
+  <data name="PARAM_C10" xml:space="preserve">
+    <value>C10</value>
+  </data>
+  <data name="PARAM_C100" xml:space="preserve">
+    <value>C100</value>
+  </data>
+  <data name="PARAM_C11" xml:space="preserve">
+    <value>C11</value>
+  </data>
+  <data name="PARAM_C12" xml:space="preserve">
+    <value>C12</value>
+  </data>
+  <data name="PARAM_C13" xml:space="preserve">
+    <value>C13</value>
+  </data>
+  <data name="PARAM_C14" xml:space="preserve">
+    <value>C14</value>
+  </data>
+  <data name="PARAM_C15" xml:space="preserve">
+    <value>C15</value>
+  </data>
+  <data name="PARAM_C16" xml:space="preserve">
+    <value>C16</value>
+  </data>
+  <data name="PARAM_C17" xml:space="preserve">
+    <value>C17</value>
+  </data>
+  <data name="PARAM_C18" xml:space="preserve">
+    <value>C18</value>
+  </data>
+  <data name="PARAM_C19" xml:space="preserve">
+    <value>C19</value>
+  </data>
+  <data name="PARAM_C2" xml:space="preserve">
+    <value>C2</value>
+  </data>
+  <data name="PARAM_C20" xml:space="preserve">
+    <value>C20</value>
+  </data>
+  <data name="PARAM_C21" xml:space="preserve">
+    <value>C21</value>
+  </data>
+  <data name="PARAM_C22" xml:space="preserve">
+    <value>C22</value>
+  </data>
+  <data name="PARAM_C23" xml:space="preserve">
+    <value>C23</value>
+  </data>
+  <data name="PARAM_C24" xml:space="preserve">
+    <value>C24</value>
+  </data>
+  <data name="PARAM_C25" xml:space="preserve">
+    <value>C25</value>
+  </data>
+  <data name="PARAM_C26" xml:space="preserve">
+    <value>C26</value>
+  </data>
+  <data name="PARAM_C27" xml:space="preserve">
+    <value>C27</value>
+  </data>
+  <data name="PARAM_C28" xml:space="preserve">
+    <value>C28</value>
+  </data>
+  <data name="PARAM_C29" xml:space="preserve">
+    <value>C29</value>
+  </data>
+  <data name="PARAM_C3" xml:space="preserve">
+    <value>C3</value>
+  </data>
+  <data name="PARAM_C30" xml:space="preserve">
+    <value>C30</value>
+  </data>
+  <data name="PARAM_C31" xml:space="preserve">
+    <value>C31</value>
+  </data>
+  <data name="PARAM_C32" xml:space="preserve">
+    <value>C32</value>
+  </data>
+  <data name="PARAM_C33" xml:space="preserve">
+    <value>C33</value>
+  </data>
+  <data name="PARAM_C34" xml:space="preserve">
+    <value>C34</value>
+  </data>
+  <data name="PARAM_C35" xml:space="preserve">
+    <value>C35</value>
+  </data>
+  <data name="PARAM_C36" xml:space="preserve">
+    <value>C36</value>
+  </data>
+  <data name="PARAM_C37" xml:space="preserve">
+    <value>C37</value>
+  </data>
+  <data name="PARAM_C38" xml:space="preserve">
+    <value>C38</value>
+  </data>
+  <data name="PARAM_C39" xml:space="preserve">
+    <value>C39</value>
+  </data>
+  <data name="PARAM_C4" xml:space="preserve">
+    <value>C4</value>
+  </data>
+  <data name="PARAM_C40" xml:space="preserve">
+    <value>C40</value>
+  </data>
+  <data name="PARAM_C41" xml:space="preserve">
+    <value>C41</value>
+  </data>
+  <data name="PARAM_C42" xml:space="preserve">
+    <value>C42</value>
+  </data>
+  <data name="PARAM_C43" xml:space="preserve">
+    <value>C43</value>
+  </data>
+  <data name="PARAM_C44" xml:space="preserve">
+    <value>C44</value>
+  </data>
+  <data name="PARAM_C45" xml:space="preserve">
+    <value>C45</value>
+  </data>
+  <data name="PARAM_C46" xml:space="preserve">
+    <value>C46</value>
+  </data>
+  <data name="PARAM_C47" xml:space="preserve">
+    <value>C47</value>
+  </data>
+  <data name="PARAM_C48" xml:space="preserve">
+    <value>C48</value>
+  </data>
+  <data name="PARAM_C49" xml:space="preserve">
+    <value>C49</value>
+  </data>
+  <data name="PARAM_C5" xml:space="preserve">
+    <value>C5</value>
+  </data>
+  <data name="PARAM_C50" xml:space="preserve">
+    <value>C50</value>
+  </data>
+  <data name="PARAM_C51" xml:space="preserve">
+    <value>C51</value>
+  </data>
+  <data name="PARAM_C52" xml:space="preserve">
+    <value>C52</value>
+  </data>
+  <data name="PARAM_C53" xml:space="preserve">
+    <value>C53</value>
+  </data>
+  <data name="PARAM_C54" xml:space="preserve">
+    <value>C54</value>
+  </data>
+  <data name="PARAM_C55" xml:space="preserve">
+    <value>C55</value>
+  </data>
+  <data name="PARAM_C56" xml:space="preserve">
+    <value>C56</value>
+  </data>
+  <data name="PARAM_C57" xml:space="preserve">
+    <value>C57</value>
+  </data>
+  <data name="PARAM_C58" xml:space="preserve">
+    <value>C58</value>
+  </data>
+  <data name="PARAM_C59" xml:space="preserve">
+    <value>C59</value>
+  </data>
+  <data name="PARAM_C6" xml:space="preserve">
+    <value>C6</value>
+  </data>
+  <data name="PARAM_C60" xml:space="preserve">
+    <value>C60</value>
+  </data>
+  <data name="PARAM_C61" xml:space="preserve">
+    <value>C61</value>
+  </data>
+  <data name="PARAM_C62" xml:space="preserve">
+    <value>C62</value>
+  </data>
+  <data name="PARAM_C63" xml:space="preserve">
+    <value>C63</value>
+  </data>
+  <data name="PARAM_C64" xml:space="preserve">
+    <value>C64</value>
+  </data>
+  <data name="PARAM_C65" xml:space="preserve">
+    <value>C65</value>
+  </data>
+  <data name="PARAM_C66" xml:space="preserve">
+    <value>C66</value>
+  </data>
+  <data name="PARAM_C67" xml:space="preserve">
+    <value>C67</value>
+  </data>
+  <data name="PARAM_C68" xml:space="preserve">
+    <value>C68</value>
+  </data>
+  <data name="PARAM_C69" xml:space="preserve">
+    <value>C69</value>
+  </data>
+  <data name="PARAM_C7" xml:space="preserve">
+    <value>C7</value>
+  </data>
+  <data name="PARAM_C70" xml:space="preserve">
+    <value>C70</value>
+  </data>
+  <data name="PARAM_C71" xml:space="preserve">
+    <value>C71</value>
+  </data>
+  <data name="PARAM_C72" xml:space="preserve">
+    <value>C72</value>
+  </data>
+  <data name="PARAM_C73" xml:space="preserve">
+    <value>C73</value>
+  </data>
+  <data name="PARAM_C74" xml:space="preserve">
+    <value>C74</value>
+  </data>
+  <data name="PARAM_C75" xml:space="preserve">
+    <value>C75</value>
+  </data>
+  <data name="PARAM_C76" xml:space="preserve">
+    <value>C76</value>
+  </data>
+  <data name="PARAM_C77" xml:space="preserve">
+    <value>C77</value>
+  </data>
+  <data name="PARAM_C78" xml:space="preserve">
+    <value>C78</value>
+  </data>
+  <data name="PARAM_C79" xml:space="preserve">
+    <value>C79</value>
+  </data>
+  <data name="PARAM_C8" xml:space="preserve">
+    <value>C8</value>
+  </data>
+  <data name="PARAM_C80" xml:space="preserve">
+    <value>C80</value>
+  </data>
+  <data name="PARAM_C81" xml:space="preserve">
+    <value>C81</value>
+  </data>
+  <data name="PARAM_C82" xml:space="preserve">
+    <value>C82</value>
+  </data>
+  <data name="PARAM_C83" xml:space="preserve">
+    <value>C83</value>
+  </data>
+  <data name="PARAM_C84" xml:space="preserve">
+    <value>C84</value>
+  </data>
+  <data name="PARAM_C85" xml:space="preserve">
+    <value>C85</value>
+  </data>
+  <data name="PARAM_C86" xml:space="preserve">
+    <value>C86</value>
+  </data>
+  <data name="PARAM_C87" xml:space="preserve">
+    <value>C87</value>
+  </data>
+  <data name="PARAM_C88" xml:space="preserve">
+    <value>C88</value>
+  </data>
+  <data name="PARAM_C89" xml:space="preserve">
+    <value>C89</value>
+  </data>
+  <data name="PARAM_C9" xml:space="preserve">
+    <value>C9</value>
+  </data>
+  <data name="PARAM_C90" xml:space="preserve">
+    <value>C90</value>
+  </data>
+  <data name="PARAM_C91" xml:space="preserve">
+    <value>C91</value>
+  </data>
+  <data name="PARAM_C92" xml:space="preserve">
+    <value>C92</value>
+  </data>
+  <data name="PARAM_C93" xml:space="preserve">
+    <value>C93</value>
+  </data>
+  <data name="PARAM_C94" xml:space="preserve">
+    <value>C94</value>
+  </data>
+  <data name="PARAM_C95" xml:space="preserve">
+    <value>C95</value>
+  </data>
+  <data name="PARAM_C96" xml:space="preserve">
+    <value>C96</value>
+  </data>
+  <data name="PARAM_C97" xml:space="preserve">
+    <value>C97</value>
+  </data>
+  <data name="PARAM_C98" xml:space="preserve">
+    <value>C98</value>
+  </data>
+  <data name="PARAM_C99" xml:space="preserve">
+    <value>C99</value>
+  </data>
+  <data name="PARAM_PAX_NUMBER" xml:space="preserve">
+    <value>PaxNumber</value>
+  </data>
+  <data name="PARAM_QUERY" xml:space="preserve">
+    <value>DKToSearch</value>
+  </data>
+  <data name="PARAM_QUERY10" xml:space="preserve">
+    <value>C9</value>
+  </data>
+  <data name="PARAM_QUERY100" xml:space="preserve">
+    <value>C99</value>
+  </data>
+  <data name="PARAM_QUERY101" xml:space="preserve">
+    <value>C100</value>
+  </data>
+  <data name="PARAM_QUERY11" xml:space="preserve">
+    <value>C10</value>
+  </data>
+  <data name="PARAM_QUERY12" xml:space="preserve">
+    <value>C11</value>
+  </data>
+  <data name="PARAM_QUERY13" xml:space="preserve">
+    <value>C12</value>
+  </data>
+  <data name="PARAM_QUERY14" xml:space="preserve">
+    <value>C13</value>
+  </data>
+  <data name="PARAM_QUERY15" xml:space="preserve">
+    <value>C14</value>
+  </data>
+  <data name="PARAM_QUERY16" xml:space="preserve">
+    <value>C15</value>
+  </data>
+  <data name="PARAM_QUERY17" xml:space="preserve">
+    <value>C16</value>
+  </data>
+  <data name="PARAM_QUERY18" xml:space="preserve">
+    <value>C17</value>
+  </data>
+  <data name="PARAM_QUERY19" xml:space="preserve">
+    <value>C18</value>
+  </data>
+  <data name="PARAM_QUERY2" xml:space="preserve">
+    <value>C1</value>
+  </data>
+  <data name="PARAM_QUERY20" xml:space="preserve">
+    <value>C19</value>
+  </data>
+  <data name="PARAM_QUERY21" xml:space="preserve">
+    <value>C20</value>
+  </data>
+  <data name="PARAM_QUERY22" xml:space="preserve">
+    <value>C21</value>
+  </data>
+  <data name="PARAM_QUERY23" xml:space="preserve">
+    <value>C22</value>
+  </data>
+  <data name="PARAM_QUERY24" xml:space="preserve">
+    <value>C23</value>
+  </data>
+  <data name="PARAM_QUERY25" xml:space="preserve">
+    <value>C24</value>
+  </data>
+  <data name="PARAM_QUERY26" xml:space="preserve">
+    <value>C25</value>
+  </data>
+  <data name="PARAM_QUERY27" xml:space="preserve">
+    <value>C26</value>
+  </data>
+  <data name="PARAM_QUERY28" xml:space="preserve">
+    <value>C27</value>
+  </data>
+  <data name="PARAM_QUERY29" xml:space="preserve">
+    <value>C28</value>
+  </data>
+  <data name="PARAM_QUERY3" xml:space="preserve">
+    <value>C2</value>
+  </data>
+  <data name="PARAM_QUERY30" xml:space="preserve">
+    <value>C29</value>
+  </data>
+  <data name="PARAM_QUERY31" xml:space="preserve">
+    <value>C30</value>
+  </data>
+  <data name="PARAM_QUERY32" xml:space="preserve">
+    <value>C31</value>
+  </data>
+  <data name="PARAM_QUERY33" xml:space="preserve">
+    <value>C32</value>
+  </data>
+  <data name="PARAM_QUERY34" xml:space="preserve">
+    <value>C33</value>
+  </data>
+  <data name="PARAM_QUERY35" xml:space="preserve">
+    <value>C34</value>
+  </data>
+  <data name="PARAM_QUERY36" xml:space="preserve">
+    <value>C35</value>
+  </data>
+  <data name="PARAM_QUERY37" xml:space="preserve">
+    <value>C36</value>
+  </data>
+  <data name="PARAM_QUERY38" xml:space="preserve">
+    <value>C37</value>
+  </data>
+  <data name="PARAM_QUERY39" xml:space="preserve">
+    <value>C38</value>
+  </data>
+  <data name="PARAM_QUERY4" xml:space="preserve">
+    <value>C3</value>
+  </data>
+  <data name="PARAM_QUERY40" xml:space="preserve">
+    <value>C39</value>
+  </data>
+  <data name="PARAM_QUERY41" xml:space="preserve">
+    <value>C40</value>
+  </data>
+  <data name="PARAM_QUERY42" xml:space="preserve">
+    <value>C41</value>
+  </data>
+  <data name="PARAM_QUERY43" xml:space="preserve">
+    <value>C42</value>
+  </data>
+  <data name="PARAM_QUERY44" xml:space="preserve">
+    <value>C43</value>
+  </data>
+  <data name="PARAM_QUERY45" xml:space="preserve">
+    <value>C44</value>
+  </data>
+  <data name="PARAM_QUERY46" xml:space="preserve">
+    <value>C45</value>
+  </data>
+  <data name="PARAM_QUERY47" xml:space="preserve">
+    <value>C46</value>
+  </data>
+  <data name="PARAM_QUERY48" xml:space="preserve">
+    <value>C47</value>
+  </data>
+  <data name="PARAM_QUERY49" xml:space="preserve">
+    <value>C48</value>
+  </data>
+  <data name="PARAM_QUERY5" xml:space="preserve">
+    <value>C4</value>
+  </data>
+  <data name="PARAM_QUERY50" xml:space="preserve">
+    <value>C49</value>
+  </data>
+  <data name="PARAM_QUERY51" xml:space="preserve">
+    <value>C50</value>
+  </data>
+  <data name="PARAM_QUERY52" xml:space="preserve">
+    <value>C51</value>
+  </data>
+  <data name="PARAM_QUERY53" xml:space="preserve">
+    <value>C52</value>
+  </data>
+  <data name="PARAM_QUERY54" xml:space="preserve">
+    <value>C53</value>
+  </data>
+  <data name="PARAM_QUERY55" xml:space="preserve">
+    <value>C54</value>
+  </data>
+  <data name="PARAM_QUERY56" xml:space="preserve">
+    <value>C55</value>
+  </data>
+  <data name="PARAM_QUERY57" xml:space="preserve">
+    <value>C56</value>
+  </data>
+  <data name="PARAM_QUERY58" xml:space="preserve">
+    <value>C57</value>
+  </data>
+  <data name="PARAM_QUERY59" xml:space="preserve">
+    <value>C58</value>
+  </data>
+  <data name="PARAM_QUERY6" xml:space="preserve">
+    <value>C5</value>
+  </data>
+  <data name="PARAM_QUERY60" xml:space="preserve">
+    <value>C59</value>
+  </data>
+  <data name="PARAM_QUERY61" xml:space="preserve">
+    <value>C60</value>
+  </data>
+  <data name="PARAM_QUERY62" xml:space="preserve">
+    <value>C61</value>
+  </data>
+  <data name="PARAM_QUERY63" xml:space="preserve">
+    <value>C62</value>
+  </data>
+  <data name="PARAM_QUERY64" xml:space="preserve">
+    <value>C63</value>
+  </data>
+  <data name="PARAM_QUERY65" xml:space="preserve">
+    <value>C64</value>
+  </data>
+  <data name="PARAM_QUERY66" xml:space="preserve">
+    <value>C65</value>
+  </data>
+  <data name="PARAM_QUERY67" xml:space="preserve">
+    <value>C66</value>
+  </data>
+  <data name="PARAM_QUERY68" xml:space="preserve">
+    <value>C67</value>
+  </data>
+  <data name="PARAM_QUERY69" xml:space="preserve">
+    <value>C68</value>
+  </data>
+  <data name="PARAM_QUERY7" xml:space="preserve">
+    <value>C6</value>
+  </data>
+  <data name="PARAM_QUERY70" xml:space="preserve">
+    <value>C69</value>
+  </data>
+  <data name="PARAM_QUERY71" xml:space="preserve">
+    <value>C70</value>
+  </data>
+  <data name="PARAM_QUERY72" xml:space="preserve">
+    <value>C71</value>
+  </data>
+  <data name="PARAM_QUERY73" xml:space="preserve">
+    <value>C72</value>
+  </data>
+  <data name="PARAM_QUERY74" xml:space="preserve">
+    <value>C73</value>
+  </data>
+  <data name="PARAM_QUERY75" xml:space="preserve">
+    <value>C74</value>
+  </data>
+  <data name="PARAM_QUERY76" xml:space="preserve">
+    <value>C75</value>
+  </data>
+  <data name="PARAM_QUERY77" xml:space="preserve">
+    <value>C76</value>
+  </data>
+  <data name="PARAM_QUERY78" xml:space="preserve">
+    <value>C77</value>
+  </data>
+  <data name="PARAM_QUERY79" xml:space="preserve">
+    <value>C78</value>
+  </data>
+  <data name="PARAM_QUERY8" xml:space="preserve">
+    <value>C7</value>
+  </data>
+  <data name="PARAM_QUERY80" xml:space="preserve">
+    <value>C79</value>
+  </data>
+  <data name="PARAM_QUERY81" xml:space="preserve">
+    <value>C80</value>
+  </data>
+  <data name="PARAM_QUERY82" xml:space="preserve">
+    <value>C81</value>
+  </data>
+  <data name="PARAM_QUERY83" xml:space="preserve">
+    <value>C82</value>
+  </data>
+  <data name="PARAM_QUERY84" xml:space="preserve">
+    <value>C83</value>
+  </data>
+  <data name="PARAM_QUERY85" xml:space="preserve">
+    <value>C84</value>
+  </data>
+  <data name="PARAM_QUERY86" xml:space="preserve">
+    <value>C85</value>
+  </data>
+  <data name="PARAM_QUERY87" xml:space="preserve">
+    <value>C86</value>
+  </data>
+  <data name="PARAM_QUERY88" xml:space="preserve">
+    <value>C87</value>
+  </data>
+  <data name="PARAM_QUERY89" xml:space="preserve">
+    <value>C88</value>
+  </data>
+  <data name="PARAM_QUERY9" xml:space="preserve">
+    <value>C8</value>
+  </data>
+  <data name="PARAM_QUERY90" xml:space="preserve">
+    <value>C89</value>
+  </data>
+  <data name="PARAM_QUERY91" xml:space="preserve">
+    <value>C90</value>
+  </data>
+  <data name="PARAM_QUERY92" xml:space="preserve">
+    <value>C91</value>
+  </data>
+  <data name="PARAM_QUERY93" xml:space="preserve">
+    <value>C92</value>
+  </data>
+  <data name="PARAM_QUERY94" xml:space="preserve">
+    <value>C93</value>
+  </data>
+  <data name="PARAM_QUERY95" xml:space="preserve">
+    <value>C94</value>
+  </data>
+  <data name="PARAM_QUERY96" xml:space="preserve">
+    <value>C95</value>
+  </data>
+  <data name="PARAM_QUERY97" xml:space="preserve">
+    <value>C96</value>
+  </data>
+  <data name="PARAM_QUERY98" xml:space="preserve">
+    <value>C97</value>
+  </data>
+  <data name="PARAM_QUERY99" xml:space="preserve">
+    <value>C98</value>
+  </data>
+  <data name="PARAM_STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SP_GetValuesXMLQualityControls" xml:space="preserve">
+    <value>GetValuesXMLQualityControls-100</value>
+  </data>
+</root>

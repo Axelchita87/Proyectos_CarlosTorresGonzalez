@@ -1,0 +1,301 @@
+<html xmlns:v='urn:schemas-microsoft-com:vml' xmlns:o=
+'urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word'
+xmlns:m='http://schemas.microsoft.com/office/2004/12/omml' xmlns=
+'http://www.w3.org/1999/xhtml'>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name='Generator' content='Microsoft Word 12 (filtered medium)' />
+  <!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+                                o\:* {behavior:url(#default#VML);}
+                                w\:* {behavior:url(#default#VML);}
+                                .shape {behavior:url(#default#VML);}
+                                </style><![endif]-->
+
+  <style type="text/css">
+/*<![CDATA[*/
+                                        <!
+                                        -- /* Font Definitions */ @
+                                        font-face
+                                        {
+                                            font-family: 'Cambria Math';
+                                            panose-1: 2 4 5 3 5 4 6 3 2 4;
+                                        }
+                                        @font-face
+                                        {
+                                            font-family: Calibri;
+                                            panose-1: 2 15 5 2 2 2 4 3 2 4;
+                                        }
+                                        @font-face
+                                        {
+                                            font-family: Tahoma;
+                                            panose-1: 2 11 6 4 3 5 4 4 2 4;
+                                        }
+                                        /* Style Definitions */
+                                        p.MsoNormal, li.MsoNormal, div.MsoNormal
+                                        {
+                                            margin: 0cm;
+                                            margin-bottom: .0001pt;
+                                            font-size: 11.0pt;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                        }
+                                        a:link, span.MsoHyperlink
+                                        {
+                                            mso-style-priority: 99;
+                                            color: blue;
+                                            text-decoration: underline;
+                                        }
+                                        a:visited, span.MsoHyperlinkFollowed
+                                        {
+                                            mso-style-priority: 99;
+                                            color: purple;
+                                            text-decoration: underline;
+                                        }
+                                        p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+                                        {
+                                            mso-style-priority: 99;
+                                            mso-style-link: 'Texto de globo Car';
+                                            margin: 0cm;
+                                            margin-bottom: .0001pt;
+                                            font-size: 8.0pt;
+                                            font-family: 'Tahoma' , 'sans-serif';
+                                        }
+                                        p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+                                        {
+                                            mso-style-priority: 34;
+                                            margin-top: 0cm;
+                                            margin-right: 0cm;
+                                            margin-bottom: 0cm;
+                                            margin-left: 36.0pt;
+                                            margin-bottom: .0001pt;
+                                            font-size: 11.0pt;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                        }
+                                        span.TextodegloboCar
+                                        {
+                                            mso-style-name: 'Texto de globo Car';
+                                            mso-style-priority: 99;
+                                            mso-style-link: 'Texto de globo';
+                                            font-family: 'Tahoma' , 'sans-serif';
+                                        }
+                                        span.EstiloCorreo20
+                                        {
+                                            mso-style-type: personal;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                            color: windowtext;
+                                        }
+                                        span.EstiloCorreo21
+                                        {
+                                            mso-style-type: personal;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                            color: #1F497D;
+                                        }
+                                        span.EstiloCorreo22
+                                        {
+                                            mso-style-type: personal;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                            color: #1F497D;
+                                        }
+                                        span.EstiloCorreo24
+                                        {
+                                            mso-style-type: personal-reply;
+                                            font-family: 'Calibri' , 'sans-serif';
+                                            color: #1F497D;
+                                        }
+                                        .MsoChpDefault
+                                        {
+                                            mso-style-type: export-only;
+                                            font-size: 10.0pt;
+                                        }
+                                        @page WordSection1
+                                        {
+                                            size: 612.0pt 792.0pt;
+                                            margin: 72.0pt 72.0pt 72.0pt 72.0pt;
+                                        }
+                                        div.WordSection1
+                                        {
+                                            page: WordSection1;
+                                        }
+                                        /* List Definitions */
+                                        @list@listl0{mso-list-id:298269292;mso-list-type:hybrid;mso-list-template-ids:-471421714134873103134873113134873115134873103134873113134873115134873103134873113134873115;}
+                                        @listl0:level1{mso-level-tab-stop:none;mso-level-number-position:left;margin-left:18.0pt;text-indent:-18.0pt;}
+                                        @listl0:level2{mso-level-number-format:alpha-lower;mso-level-tab-stop:none;mso-level-number-position:left;margin-left:54.0pt;text-indent:-18.0pt;}
+                                        @listl0:level3{mso-level-number-format:roman-lower;mso-level-tab-stop:none;mso-level-number-position:right;margin-left:90.0pt;text-indent:-9.0pt;}
+                                        @listl0:level4{mso-level-tab-stop:none;mso-level-number-position:left;margin-left:126.0pt;text-indent:-18.0pt;}
+                                        @listl0:level5{mso-level-number-format:alpha-lower;mso-level-tab-stop:none;mso-level-number-position:left;margin-left:162.0pt;text-indent:-18.0pt;}
+                                        @listl0:level6{mso-level-number-format:roman-lower;mso-level-tab-stop:none;mso-level-number-position:right;margin-left:198.0pt;text-indent:-9.0pt;}
+                                        @listl0:level7{mso-level-tab-stop:none;mso-level-number-position:left;margin-left:234.0pt;text-indent:-18.0pt;}
+                                        @listl0:level8{mso-level-number-format:alpha-lower;mso-level-tab-stop:none;mso-level-number-position:left;margin-left:270.0pt;text-indent:-18.0pt;}
+                                        @listl0:level9{mso-level-number-format:roman-lower;mso-level-tab-stop:none;mso-level-number-position:right;margin-left:306.0pt;text-indent:-9.0pt;}
+                                        ol
+                                        {
+                                            margin-bottom: 0cm;
+                                        }
+                                        ul
+                                        {
+                                            margin-bottom: 0cm;
+                                        }
+                                        -- >
+  /*]]>*/
+  </style><!--[if gte mso 9]><xml>
+                                <o:shapedefaults v:ext='edit' spidmax='1026' />
+                                </xml><![endif]-->
+  <!--[if gte mso 9]><xml>
+                                <o:shapelayout v:ext='edit'>
+                                <o:idmap v:ext='edit' data='1' />
+                                </o:shapelayout></xml><![endif]-->
+
+  <title></title>
+</head>
+
+<body lang='ES-MX' link='blue' vlink='purple' xml:lang="ES-MX">
+  <div class='WordSection1'>
+    <p class='MsoNormal'><img width='370' height='123' id='Imagen_x0020_1' src=
+    'http://201.149.13.14:5498/WSInterjet/CTS2012.png' name=
+    "Imagen_x0020_1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        
+  <!--      <img width='300' height='128' id='Imagen_x0020_2' src=
+    'http://201.149.13.14:5498/WSInterjet/LogoInterJet.jpg' name="Imagen_x0020_2" /></p>-->
+
+    <p class='MsoNormal'><span style='color: #1F497D'>&nbsp;</span></p><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Fecha de
+    Compra:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%BuyDate%></span>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Estatus:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                           <%Status%></span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Clave de
+    Volaris:&nbsp;&nbsp; <%VolarisPNR%></span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Clave de
+    Sabre:&nbsp;&nbsp;&nbsp;&nbsp; <%SabrePNR%></span></p>
+
+    <p class='MsoNormal' style=
+    'mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; text-align: justify; mso-line-height-alt: 10.5pt'>
+    <span style='font-size: 12.0pt; font-family: Times New Roman,serif'>La clave de
+    confirmacion es la referencia para obtener tu pase de abordar o para
+    documentarte directamente en el aeropuerto antes de la salida de tu vuelo. No olvides
+    que en cualquier momento te puede ser requerida una identificacion
+    oficial.</span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Para mas
+    informacion comunicate al 01 800 1228000.</span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>&nbsp;</span></p>
+
+    <p class='MsoNormal'><b><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>PASAJEROS</span></b></p>
+
+    <%PassangersMarkUp%>
+
+    <%FlightMarkup%>
+
+    <p class='MsoNormal'><span style=
+    'font-family: Times New Roman,serif; color: #1F497D'>&nbsp;</span></p>
+
+   <p class='MsoNormal'><span style=
+    'font-family: Times New Roman,serif; color: #1F497D'>&nbsp;</span></p>
+
+    <p class='MsoNormal'><b><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>DETALLE DE
+    PRECIOS</span></b></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Tarifa Volaris:&nbsp;
+    <%TOTALBASEPRICE%></span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Impuestos:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%TOTALTAXES%></span></p>
+
+    <p class='MsoNormal'><b><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Precio Total:&nbsp; <%TOTALPRICE%>
+    MXN(Pesos Mexicanos)</span></b></p>
+
+    <p class='MsoNormal'><b><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>&nbsp;</span></b></p>
+
+    <p class='MsoNormal'><b><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>INFORMACION DECONTACTO</span><span style=
+    'font-size: 12.0pt; font-family:Times New Roman,serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Telefono:&nbsp;&nbsp;<%TELEPHONE%></span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>Email:&nbsp;&nbsp; <a href=
+    '<%EMAIL%>'><%EMAIL%></a></span></p>
+
+    <p class='MsoNormal'><span style=
+    'font-size: 12.0pt; font-family: Times New Roman,serif'>&nbsp;</span></p>
+
+    <table class='MsoNormalTable' border='0' cellspacing='0' cellpadding='0' style=
+    'border-collapse: collapse'>
+      <tr>
+        <td colspan='10' style='padding: .75pt .75pt .75pt .75pt'>
+          <p class='MsoNormal'><b><i><span style=
+          'font-size: 15.0pt; font-family: Times New Roman,serif'>Es importante tome en
+          cuenta NO CONTESTAR A ESTE CORREO ya que es una cuenta de
+          administracion y no recibira respuesta
+          alguna.</span></i></b></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan='10' style='padding: .75pt .75pt .75pt .75pt'></td>
+      </tr>
+
+      <tr>
+        <td style='padding: .75pt .75pt .75pt .75pt'>
+          <p class='MsoNormal'><span style='font-family:'>&nbsp;</span></p>
+
+          <p class='MsoNormal'><strong><span style='font-family:'>Corporate Travel
+          Services</span></strong></p>
+        </td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+
+        <td style='padding: .75pt .75pt .75pt .75pt'></td>
+      </tr>
+
+      <tr style='height: 15.75pt'>
+        <td colspan='10' style='padding: .75pt .75pt .75pt .75pt; height: 15.75pt'>
+          <p class='MsoNormal'><span style='font-size: 10.0pt; font-family:'>Tel: +55
+          85252222</span></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan='10' style='padding: .75pt .75pt .75pt .75pt'>
+          <p class='MsoNormal'><span style='font-size: 10.0pt; font-family:'>Fax: +55
+          85252233</span></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+

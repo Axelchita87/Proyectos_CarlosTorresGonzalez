@@ -1,0 +1,26 @@
+﻿<Window x:Class="AdminEvents.Admin.Teleproceso.frmBitacora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="300" Width="418" Background="#FFD8D8D8" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="5" Margin="0,0,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                    <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                    <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="lblBitacora" Content="Bitácora" Height="26" VerticalAlignment="Top" FontFamily="Arial" FontSize="14.667" Foreground="White" Grid.Column="1" Grid.ColumnSpan="3" Margin="20,0,0,0"/>
+        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Right" Height="24" Margin="0,106,10,162" VerticalAlignment="Center" Width="66"  Click="btnBorrar_Click" Style="{DynamicResource all_butons}" RenderTransformOrigin="-0.129,0.753" />
+        <TextBox HorizontalAlignment="Left" Height="38" Margin="10,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="390"/>
+        <DataGrid HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Height="44" Width="390"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Right" Height="26" Margin="0,259,10,10" VerticalAlignment="Center" Width="66"  Click="btnGuardar_Click" Style="{DynamicResource all_butons}" RenderTransformOrigin="-0.129,0.753" />
+        <DataGrid x:Name="dgAnt" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Height="56" Width="390"/>
+        <DatePicker HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Right" Height="26" Margin="0,177,10,89" VerticalAlignment="Center" Width="66"  Click="btnAgregar_Click" Style="{DynamicResource all_butons}" RenderTransformOrigin="-0.129,0.753" />
+
+
+    </Grid>
+</Window>

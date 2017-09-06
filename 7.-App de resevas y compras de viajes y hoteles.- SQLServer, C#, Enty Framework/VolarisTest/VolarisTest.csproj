@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03EA2C8F-2443-4799-A372-9F62F9E6DEDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VolarisTest</RootNamespace>
+    <AssemblyName>VolarisTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\Lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntitiesTest\ItineraryTest.cs" />
+    <Compile Include="EntitiesTest\SegmentsTest.cs" />
+    <Compile Include="EntitiesTest\VolarisFlightTest.cs" />
+    <Compile Include="EntitiesTest\VolarisReservationTest.cs" />
+    <Compile Include="EntitiesTest\VolarisSegmentTest.cs" />
+    <Compile Include="ErrorControllerTest\AvailabilityErrorControllerMockUp.cs" />
+    <Compile Include="EntitiesTest\AvailabilityRequestTest.cs" />
+    <Compile Include="EntitiesTest\RequestedPassangersTest.cs" />
+    <Compile Include="EntitiesTest\RequestPassengerTest.cs" />
+    <Compile Include="ErrorControllerTest\AvailabilityErrorControllerTest.cs" />
+    <Compile Include="PresenterTest\AvailabilityPresenterTest.cs" />
+    <Compile Include="SegmentsTest.cs" />
+    <Compile Include="Services\LowFareAvailabilityTest.cs" />
+    <Compile Include="Services\OpenSessionTest.cs" />
+    <Compile Include="Services\VolarisAvialabiltyServiceTest.cs" />
+    <Compile Include="Start.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewTest\AvailabilityMockUpView.cs" />
+    <Compile Include="ViewTest\AvailabilityViewTest.cs" />
+    <Compile Include="ViewTest\LowFareAvailabilityContainerMockup.cs" />
+    <Compile Include="ViewTest\LowFareAvailabilityViewContainerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Components\MyCTS.Components.MySabreAPI\MyCTS.Components.MySabreAPI.vbproj">
+      <Project>{7496A612-315E-4512-B57B-DFA5962BBCAF}</Project>
+      <Name>MyCTS.Components.MySabreAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\MyCTS.Components.NullableHelper\MyCTS.Components.NullableHelper.csproj">
+      <Project>{7C5B977C-5BCB-474A-B91D-FB58624BAF1B}</Project>
+      <Name>MyCTS.Components.NullableHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\MyCTS.Business\MyCTS.Business.csproj">
+      <Project>{02F685CB-532B-44BD-8C91-65BF58CAEDF4}</Project>
+      <Name>MyCTS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\MyCTS.DataAccess\MyCTS.DataAccess.csproj">
+      <Project>{A394C9B5-4742-4410-9786-825F8E5249F1}</Project>
+      <Name>MyCTS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\MyCTS.Entities\MyCTS.Entities.csproj">
+      <Project>{AD10FAE3-774C-455C-B97D-A3BA60493F9D}</Project>
+      <Name>MyCTS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\MyCTS.Presentation\MyCTS.Presentation.csproj">
+      <Project>{B2077B2B-EF74-4FDA-9DAD-124ED896C1C7}</Project>
+      <Name>MyCTS.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\MyCTS.Services\MyCTS.Services.csproj">
+      <Project>{014E50EF-A05F-4438-81BE-BCD531C6AD90}</Project>
+      <Name>MyCTS.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\MyCTS.Forms.UI.MenuStripEnhanced\MyCTS.Forms.UI.MenuStripEnhanced.csproj">
+      <Project>{39693130-3010-4F20-A3DC-E2FC44548018}</Project>
+      <Name>MyCTS.Forms.UI.MenuStripEnhanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\MyCTS.Forms.UI.SmartTextBox.csproj">
+      <Project>{73BC7168-1C1E-4412-B786-32BDE53DB6F3}</Project>
+      <Name>MyCTS.Forms.UI.SmartTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

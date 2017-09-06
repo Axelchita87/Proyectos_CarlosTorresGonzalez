@@ -1,0 +1,635 @@
+[31-Oct-2014 19:00:32 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 19:00:32 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 19:00:32 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:15:42 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:15:42 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:15:42 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:15:43 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:15:55 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:16:03 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:16:03 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/u262662/public_html/htcvdm/2.5/class/class.altas.php on line 77
+[31-Oct-2014 23:16:12 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:16:12 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/u262662/public_html/htcvdm/2.5/class/class.altas.php on line 77
+[31-Oct-2014 23:16:37 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:16:38 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:17:08 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:17:08 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:17:08 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:17:09 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:17:12 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:17:12 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/u262662/public_html/htcvdm/2.5/class/class.altas.php on line 77
+[31-Oct-2014 23:23:53 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:23:53 America/Chicago] PHP Parse error:  syntax error, unexpected '[' in /home/u262662/public_html/htcvdm/2.5/class/class.altas.php on line 77
+[31-Oct-2014 23:25:12 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:25:29 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:25:36 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:26:13 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:26:13 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:26:13 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[31-Oct-2014 23:26:14 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[31-Oct-2014 23:31:14 America/Chicago] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/u262662/public_html/htcvdm/2.5/index.php:10) in /home/u262662/public_html/htcvdm/2.5/index.php on line 12
+[01-Nov-2014 08:12:52 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 08:12:52 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:22 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:22 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:23 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:23 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:56 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:17:56 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:32:55 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[01-Nov-2014 17:32:55 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 09:02:37 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 09:02:37 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:33 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:33 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:42 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:42 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:55 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:11:55 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:13:59 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 11:13:59 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 13:54:33 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 13:54:33 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 13:58:10 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/directivos/alta_directivo.php in /home/u262662/public_html/htcvdm/2.5/index.php on line 27
+[03-Nov-2014 13:58:10 America/Chicago] PHP Warning:  require(views/directivos/alta_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 27
+[03-Nov-2014 13:58:10 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/directivos/alta_directivo.php in /home/u262662/public_html/htcvdm/2.5/index.php on line 27
+[03-Nov-2014 13:58:10 America/Chicago] PHP Warning:  require(views/directivos/alta_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 27
+[03-Nov-2014 13:58:10 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/directivos/alta_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 27
+[03-Nov-2014 14:02:36 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 14:02:36 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 14:14:14 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 14:14:14 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 14:18:43 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 14:18:43 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 17:26:50 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 17:26:50 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 56 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 17:26:51 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_promotpr.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/index.php on line 12
+[03-Nov-2014 17:26:51 America/Chicago] PHP Warning:  require(views/promotor/header_promotpr.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/index.php on line 12
+[03-Nov-2014 17:26:51 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_promotpr.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/index.php on line 12
+[03-Nov-2014 17:26:51 America/Chicago] PHP Warning:  require(views/promotor/header_promotpr.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/index.php on line 12
+[03-Nov-2014 17:26:51 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_promotpr.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/index.php on line 12
+[03-Nov-2014 17:28:28 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/reportes_promotor.php on line 12
+[03-Nov-2014 17:28:28 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/reportes_promotor.php on line 12
+[03-Nov-2014 17:28:28 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/reportes_promotor.php on line 12
+[03-Nov-2014 17:28:28 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/reportes_promotor.php on line 12
+[03-Nov-2014 17:28:28 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/reportes_promotor.php on line 12
+[03-Nov-2014 17:33:32 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 17:33:32 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 17:33:32 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 17:33:32 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 17:33:32 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 17:45:04 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 17:45:04 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 18:54:43 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 18:54:43 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 19:00:38 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 19:00:38 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 19:01:13 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 19:01:13 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[03-Nov-2014 19:02:07 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:07 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:07 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:07 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:07 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:12 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:12 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:12 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:12 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:12 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[03-Nov-2014 19:02:16 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:35:57 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 10:35:57 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 10:36:45 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:45 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:45 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:52 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:52 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:52 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:58 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:58 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:36:58 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 20
+[04-Nov-2014 10:37:12 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 10:37:12 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 10:37:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:37:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:37:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:37:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:37:16 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 10:37:37 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 10:37:37 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 11:40:38 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:40:38 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:40:38 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:40:38 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:40:38 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:16 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:16 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:16 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:21 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:21 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:21 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:21 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:21 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:24 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:24 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:24 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:24 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:24 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:44 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:44 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:44 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:44 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:44 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:48 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:48 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:48 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access views/promotor/header_directivo.php in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:48 America/Chicago] PHP Warning:  require(views/promotor/header_directivo.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 11:43:48 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'views/promotor/header_directivo.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/promotor/fotos_promotor.php on line 12
+[04-Nov-2014 13:38:42 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 13:38:42 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 13:39:32 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 13:39:32 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 13:42:30 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 13:42:30 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 14:47:15 America/Chicago] PHP Warning:  Missing argument 1 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 14:47:15 America/Chicago] PHP Warning:  Missing argument 2 for Login::login(), called in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 59 and defined in /home/u262662/public_html/htcvdm/2.5/class/class.login.php on line 5
+[04-Nov-2014 20:10:41 America/Chicago] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: Unable to access /tmp/phpFm4NLu in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 112
+[04-Nov-2014 20:10:41 America/Chicago] PHP Warning:  imagecreatefromjpeg(/tmp/phpFm4NLu) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 112
+[04-Nov-2014 20:10:41 America/Chicago] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 113
+[04-Nov-2014 20:25:08 America/Chicago] PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: Unable to access /tmp/phpbibpW4 in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 112
+[04-Nov-2014 20:25:08 America/Chicago] PHP Warning:  imagecreatefromjpeg(/tmp/phpbibpW4) [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 112
+[04-Nov-2014 20:25:08 America/Chicago] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/u262662/public_html/htcvdm/2.5/class/class_imgUpldr.php on line 113
+[10-Dec-2014 13:19:28 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 83 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 620
+[10-Dec-2014 13:27:08 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 85 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 906
+[10-Dec-2014 13:28:29 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 85 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 906
+[10-Dec-2014 13:30:08 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 78 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 573
+[10-Dec-2014 13:32:23 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 82 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/frame.cls.php on line 594
+[10-Dec-2014 13:33:56 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 256 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 574
+[10-Dec-2014 13:40:11 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 85 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/style.cls.php on line 619
+[10-Dec-2014 13:43:08 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 81 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/frame_factory.cls.php on line 204
+[10-Dec-2014 13:44:21 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 7680 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/text_frame_reflower.cls.php(376) : runtime-created function on line 1
+[11-Dec-2014 11:29:32 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4194304 bytes) in /home/u262662/public_html/htcvdm/2.5/dompdf/include/frame_factory.cls.php on line 203
+[11-Dec-2014 15:25:49 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 523800 bytes) in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 5251
+[11-Dec-2014 15:27:08 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 256 bytes) in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 3235
+[17-Dec-2014 13:11:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u262662/public_html/htcvdm/2.5/views/directivos/imprimir_perfil_usuario.php:10) in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 7451
+[17-Dec-2014 13:11:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u262662/public_html/htcvdm/2.5/views/directivos/imprimir_perfil_usuario.php:10) in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 1736
+[26-Dec-2014 15:51:13 America/Chicago] PHP Warning:  require_once() [<a href='function.require-once'>function.require-once</a>]: Unable to access class/class.camposExtras.php in /home/u262662/public_html/htcvdm/2.5/views/directivos/form_extras.php on line 2
+[26-Dec-2014 15:51:13 America/Chicago] PHP Warning:  require_once(class/class.camposExtras.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/views/directivos/form_extras.php on line 2
+[26-Dec-2014 15:51:13 America/Chicago] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class/class.camposExtras.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/views/directivos/form_extras.php on line 2
+[05-Jan-2015 13:20:46 America/Chicago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 4544
+[15-Jan-2015 14:06:30 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[15-Jan-2015 14:06:30 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Filename cannot be empty in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[15-Jan-2015 14:06:30 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[15-Jan-2015 14:07:06 America/Chicago] PHP Parse error:  syntax error, unexpected $end, expecting T_VARIABLE or T_DOLLAR_OPEN_CURLY_BRACES or T_CURLY_OPEN in /home/u262662/public_html/htcvdm/2.5/config/index.php on line 62
+[16-Jan-2015 16:57:08 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access Array in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:08 America/Chicago] PHP Warning:  require(Array) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:08 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access Array in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:08 America/Chicago] PHP Warning:  require(Array) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:08 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'Array' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:45 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access Array in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:45 America/Chicago] PHP Warning:  require(Array) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:45 America/Chicago] PHP Warning:  require() [<a href='function.require'>function.require</a>]: Unable to access Array in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:45 America/Chicago] PHP Warning:  require(Array) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 16:57:45 America/Chicago] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'Array' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u262662/public_html/htcvdm/2.5/index.php on line 34
+[16-Jan-2015 17:00:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 35
+[16-Jan-2015 17:00:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 43
+[16-Jan-2015 17:13:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 17:13:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 17:17:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 17:17:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 17:19:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 17:19:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 19:27:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 19:27:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 19:32:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 19:32:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 19:44:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 19:44:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 20:22:45 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 20:22:45 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 20:42:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 20:42:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[16-Jan-2015 23:11:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[16-Jan-2015 23:11:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 10:26:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 10:26:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 11:24:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 11:24:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 12:07:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 12:07:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 12:41:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 12:41:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 12:43:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 12:43:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 13:29:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 13:29:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 16:26:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 16:26:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 16:27:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 16:27:30 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 16:40:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 16:40:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 16:41:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 16:41:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 17:43:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 17:43:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 17:47:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 17:47:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 18:50:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 18:50:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 18:50:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 18:50:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 19:00:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 19:00:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 19:59:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 19:59:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 19:59:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 19:59:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 20:01:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 20:01:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 20:03:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 20:03:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 20:11:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 20:11:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[17-Jan-2015 20:21:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[17-Jan-2015 20:21:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 10:21:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 10:21:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 10:43:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 10:43:19 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 10:50:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 10:50:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 10:51:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 10:51:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 11:22:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 11:22:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 11:29:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 11:29:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 12:10:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 12:10:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 12:11:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 12:11:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 13:31:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 13:31:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 14:51:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 14:51:01 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 15:37:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 15:37:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 16:14:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 16:14:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 16:26:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 16:26:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 17:34:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 17:34:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 18:10:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 18:10:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 19:09:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 19:09:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 19:48:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 19:48:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 21:01:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 21:01:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[18-Jan-2015 22:37:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[18-Jan-2015 22:37:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:26:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:26:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:26:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:26:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:27:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:27:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:28:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:28:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:29:39 America/Chicago] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/u262662/public_html/htcvdm/2.5/mpdf/mpdf.php on line 7976
+[19-Jan-2015 10:29:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:29:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:38:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:38:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 10:45:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 10:45:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 11:08:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 11:08:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 11:11:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 11:11:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 11:15:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 11:15:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 11:28:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 11:28:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 12:37:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 12:37:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:10:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:10:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:11:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:11:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:26:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:26:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:32:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:32:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:38:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:38:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 13:42:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 13:42:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 14:05:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 14:05:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 14:26:19 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 523800 bytes) in /home/u262662/public_html/htcvdm/2.5/mpdf/classes/cssmgr.php on line 1236
+[19-Jan-2015 14:35:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 14:35:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 14:44:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 14:44:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 16:45:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 16:45:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 18:23:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 18:23:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 18:35:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 18:35:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 18:38:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 18:38:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 18:56:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 18:56:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 19:04:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 19:04:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 19:17:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 19:17:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:02:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:02:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:04:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:04:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:04:45 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:04:45 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:07:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:07:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:09:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:09:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 20:11:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 20:11:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 23:03:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 23:03:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[19-Jan-2015 23:30:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[19-Jan-2015 23:30:32 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 07:49:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 07:49:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 11:17:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 11:17:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 11:31:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 11:31:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 11:51:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 11:51:17 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 12:08:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 12:08:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 12:29:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 12:29:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 12:48:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 12:48:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 13:03:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 13:03:48 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 13:07:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 13:07:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 13:10:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 13:10:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 15:11:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 15:11:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 17:23:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 17:23:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 17:23:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 17:23:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 17:30:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 17:30:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 17:49:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 17:49:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 19:24:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 19:24:25 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[20-Jan-2015 22:43:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[20-Jan-2015 22:43:47 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 10:26:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 10:26:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 10:51:15 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 10:51:15 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 10:55:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 10:55:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 10:59:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 10:59:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:09:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:09:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:10:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:10:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:47:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:47:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:48:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:48:03 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:49:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:49:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 11:49:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 11:49:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 12:43:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 12:43:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 13:54:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 13:54:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 14:35:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 14:35:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 17:39:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 17:39:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[21-Jan-2015 18:12:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[21-Jan-2015 18:12:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 11:54:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 11:54:36 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 13:28:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 13:28:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 13:41:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 13:41:27 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 16:18:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 16:18:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 17:32:31 America/Mexico_City] PHP Fatal error:  Out of memory (allocated 109051904) (tried to allocate 4128 bytes) in /home/u262662/public_html/htcvdm/2.5/reporteexcel.php on line 29
+[22-Jan-2015 17:32:31 America/Mexico_City] PHP Fatal error:  Out of memory (allocated 108265472) (tried to allocate 64 bytes) in /home/u262662/public_html/htcvdm/2.5/reporteexcel/lib/PHPExcel/PHPExcel/Cell.php on line 539
+[22-Jan-2015 17:36:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 17:36:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 18:08:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 18:08:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 18:26:47 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 4128 bytes) in /home/u262662/public_html/htcvdm/2.5/reporteexcel.php on line 29
+[22-Jan-2015 18:27:36 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 71 bytes) in /home/u262662/public_html/htcvdm/2.5/reporteexcel/lib/PHPExcel/PHPExcel/CachedObjectStorage/CacheBase.php on line 173
+[22-Jan-2015 19:53:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 19:53:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[22-Jan-2015 20:15:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[22-Jan-2015 20:15:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 01:29:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 01:29:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 03:21:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 03:21:44 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 10:26:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 10:26:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 10:36:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 10:36:50 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 12:43:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 12:43:34 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 13:50:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 13:50:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 16:36:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 16:36:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 17:53:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 17:53:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 18:30:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 18:30:52 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 19:03:23 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 19:03:23 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 19:05:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 19:05:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 19:27:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 19:27:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 22:20:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 22:20:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[23-Jan-2015 22:49:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[23-Jan-2015 22:49:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[24-Jan-2015 10:35:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[24-Jan-2015 10:35:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[24-Jan-2015 10:36:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[24-Jan-2015 10:36:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[24-Jan-2015 17:23:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[24-Jan-2015 17:23:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[24-Jan-2015 20:05:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[24-Jan-2015 20:05:39 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[24-Jan-2015 22:49:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[24-Jan-2015 22:49:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 10:25:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 10:25:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 11:57:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 11:57:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 12:41:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 12:41:02 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 13:26:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 13:26:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 13:28:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 13:28:37 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 13:47:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 13:47:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 14:46:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 14:46:35 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 16:53:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 16:53:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 17:52:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 17:52:43 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 17:53:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 17:53:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 18:18:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 18:18:26 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 18:37:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 18:37:29 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 18:37:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 18:37:38 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 18:56:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 18:56:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 19:19:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 19:19:46 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 20:56:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 20:56:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[25-Jan-2015 21:21:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[25-Jan-2015 21:21:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 10:22:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 10:22:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 10:23:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 10:23:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 10:28:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 10:28:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 10:41:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 10:41:31 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 10:48:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 10:48:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 12:02:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 12:02:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 12:11:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 12:11:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 12:24:47 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 12:24:47 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 14:11:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 14:11:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 14:36:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 14:36:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 14:47:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 14:47:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 15:17:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 15:17:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 16:45:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 16:45:22 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 18:09:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 18:09:12 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 18:35:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 18:35:49 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[26-Jan-2015 18:44:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[26-Jan-2015 18:44:21 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 00:16:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 00:16:20 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 08:18:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 08:18:08 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 10:12:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 10:12:07 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 10:39:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 10:39:54 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 10:46:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 10:46:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 10:53:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 10:53:40 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 11:07:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 11:07:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 11:15:19 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 105 bytes) in /home/u262662/public_html/htcvdm/2.5/reporteexcel/lib/PHPExcel/PHPExcel/Worksheet.php on line 1136
+[27-Jan-2015 13:41:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 13:41:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 13:51:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 13:51:14 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 13:51:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 13:51:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[27-Jan-2015 15:07:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[27-Jan-2015 15:07:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 00:07:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 00:07:56 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 00:09:47 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 00:09:47 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:27:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:27:59 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:29:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:29:11 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:30:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:30:10 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:33:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:33:58 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:45:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:45:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:46:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:46:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 08:47:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 08:47:04 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:11:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:11:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:12:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:12:28 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:50:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:50:33 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:53:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:53:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:53:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:53:57 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[28-Jan-2015 10:55:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 60
+[28-Jan-2015 10:55:09 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/u262662/public_html/htcvdm/2.5/index.php on line 67
+[07-Apr-2015 16:41:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 16:41:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 16:41:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 16:49:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 16:49:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 16:50:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:23:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:23:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:30:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:31:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:35:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:36:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 18:36:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 93
+[07-Apr-2015 19:05:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[07-Apr-2015 23:06:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[07-Apr-2015 23:41:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[08-Apr-2015 20:35:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[08-Apr-2015 20:36:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[08-Apr-2015 22:41:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[08-Apr-2015 22:47:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94
+[08-Apr-2015 22:47:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/smovilco/public_html/m2.5.1/index.php on line 94

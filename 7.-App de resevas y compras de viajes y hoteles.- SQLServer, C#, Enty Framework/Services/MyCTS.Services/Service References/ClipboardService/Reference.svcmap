@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7e7ca080-8d4b-4e15-8aac-0e0cdfaa8e75" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://201.149.13.14:5498/CTSServices/ClipboardService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClipboardService.xsd" MetadataType="Schema" ID="5cebc848-7d57-4621-82df-390c8e26bc85" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ClipboardService.disco" MetadataType="Disco" ID="d6f65384-6e67-48cf-99a6-46dd3227ca77" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?disco" />
+    <MetadataFile FileName="ClipboardService1.xsd" MetadataType="Schema" ID="df6c55bc-2438-4dcd-a977-bb4484f87c32" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClipBoardService.wsdl" MetadataType="Wsdl" ID="f3da8f98-a66b-4832-b03b-bfe1fc10ac62" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?wsdl" />
+    <MetadataFile FileName="ClipboardService2.xsd" MetadataType="Schema" ID="97be0e82-6ce3-4b05-ab48-d43f9c57cef9" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ClipboardService3.xsd" MetadataType="Schema" ID="c5203da8-1ff3-4b0b-97ff-edece3258863" SourceId="1" SourceUrl="http://201.149.13.14:5498/CTSServices/ClipboardService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="A" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="ACCOUNTING_DATA" xml:space="preserve">
+    <value>ACCOUNTING DATA</value>
+  </data>
+  <data name="ADT" xml:space="preserve">
+    <value>ADT</value>
+  </data>
+  <data name="ARUNK" xml:space="preserve">
+    <value>ARNK</value>
+  </data>
+  <data name="B" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="BASE_FARE" xml:space="preserve">
+    <value>BASE FARE</value>
+  </data>
+  <data name="CANNOT" xml:space="preserve">
+    <value>CANNOT</value>
+  </data>
+  <data name="CLIENT" xml:space="preserve">
+    <value>CLIENTE</value>
+  </data>
+  <data name="CTP_EDITS_IN_PROGRESS" xml:space="preserve">
+    <value>CTP EDITS IN PROGRESS</value>
+  </data>
+  <data name="CTS" xml:space="preserve">
+    <value>CTS</value>
+  </data>
+  <data name="CUSTOMER_NUMBER" xml:space="preserve">
+    <value>CUSTOMER NUMBER</value>
+  </data>
+  <data name="DOT_W" xml:space="preserve">
+    <value>.W</value>
+  </data>
+  <data name="DQB" xml:space="preserve">
+    <value>DQB</value>
+  </data>
+  <data name="DQB_AST_ETU" xml:space="preserve">
+    <value>DQB*ETU</value>
+  </data>
+  <data name="EQUIV_AMT" xml:space="preserve">
+    <value>EQUIV AMT</value>
+  </data>
+  <data name="FIVE" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FOUR" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="INVOICED" xml:space="preserve">
+    <value>INVOICED</value>
+  </data>
+  <data name="ITINERARY" xml:space="preserve">
+    <value>ITINERARY</value>
+  </data>
+  <data name="ITINERARY_AIR_SEGMENTS" xml:space="preserve">
+    <value>ITINERARY AIR SEGMENTS</value>
+  </data>
+  <data name="MAXIMUM" xml:space="preserve">
+    <value>MAXIMUM</value>
+  </data>
+  <data name="NBR_IN_PARTY" xml:space="preserve">
+    <value>NBR IN PARTY -</value>
+  </data>
+  <data name="NO_ITIN" xml:space="preserve">
+    <value>NO ITIN</value>
+  </data>
+  <data name="NO_NAMES" xml:space="preserve">
+    <value>NO NAMES</value>
+  </data>
+  <data name="NO_TKT_REC_EXISTS" xml:space="preserve">
+    <value>NO TKT REC EXISTS</value>
+  </data>
+  <data name="NOTHING_TO_SCROLL" xml:space="preserve">
+    <value>NOTHING TO SCROLL</value>
+  </data>
+  <data name="NUMBER_990" xml:space="preserve">
+    <value>990</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ONE" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PLUS_INFANTS" xml:space="preserve">
+    <value>PLUS INFANTS -</value>
+  </data>
+  <data name="PNR" xml:space="preserve">
+    <value>PNR</value>
+  </data>
+  <data name="PRICE_QUOTE_RECORD_DETAILS" xml:space="preserve">
+    <value>PRICE QUOTE RECORD - DETAILS</value>
+  </data>
+  <data name="RADIUS_QC_PASSED" xml:space="preserve">
+    <value>RADIUS QC PASSED</value>
+  </data>
+  <data name="REMARKS" xml:space="preserve">
+    <value>REMARKS</value>
+  </data>
+  <data name="SCROLL_CROSS_LORAINE" xml:space="preserve">
+    <value>SCROLL‡</value>
+  </data>
+  <data name="SIX" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="T_INDENT" xml:space="preserve">
+    <value>T-</value>
+  </data>
+  <data name="TA_SLASH" xml:space="preserve">
+    <value>TA/</value>
+  </data>
+  <data name="THREE" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TKT_LIST" xml:space="preserve">
+    <value>TKT LIST</value>
+  </data>
+  <data name="TKT_REC_PRINTED_DELETED" xml:space="preserve">
+    <value>TKT REC PRINTED/DELETED</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="TOTAL_DAILY_SALES" xml:space="preserve">
+    <value>TOTAL DAILY SALES</value>
+  </data>
+  <data name="TWO" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UNUSED_ELECTRONIC_TICKET" xml:space="preserve">
+    <value>UNUSED ELECTRONIC TICKET</value>
+  </data>
+  <data name="END_OF_SCROLL" xml:space="preserve">
+    <value>END OF SCROLL</value>
+  </data>
+  <data name="PCC_0AUC" xml:space="preserve">
+    <value>0AUC</value>
+  </data>
+  <data name="ETR_EXCHANGE_PROCESSED" xml:space="preserve">
+    <value>ETR EXCHANGE PROCESSED</value>
+  </data>
+  <data name="ETR_MESSAGE_PROCESSED" xml:space="preserve">
+    <value>ETR MESSAGE PROCESSED</value>
+  </data>
+  <data name="CROSS_LORAINE_FR_SLASH" xml:space="preserve">
+    <value>‡FR/</value>
+  </data>
+  <data name="FR_SLASH" xml:space="preserve">
+    <value>FR/</value>
+  </data>
+  <data name="ANY_CC_LH_FEE" xml:space="preserve">
+    <value>ANY CC</value>
+  </data>
+  <data name="FORM_PAYMENT_FEE_APPLY" xml:space="preserve">
+    <value>FORM OF PAYMENT FEES PER TICKET MAY APPLY</value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>WARNING - PNR MODIFICATION IN PROGRESS</value>
+  </data>
+  <data name="AST_SIMULTANEOUS_CHANGES" xml:space="preserve">
+    <value>* SIMULTANEOUS CHANGES TO PNR-USE IR TO IGNORE AND RETRIEVE PNR</value>
+  </data>
+  <data name="PNR_IGNORED_AND_REDISPLAYED" xml:space="preserve">
+    <value>PNR IGNORED AND REDISPLAYED DUE TO SIMULTANEOUS CHANGE</value>
+  </data>
+  <data name="SIMULTANEOUS_CHANGES" xml:space="preserve">
+    <value>SIMULTANEOUS CHANGES TO PNR-USE IR TO IGNORE AND RETRIEVE PNR</value>
+  </data>
+  <data name="SIMULTANEOUS_CHANGES_AST" xml:space="preserve">
+    <value>PNR IGNORED AND REDISPLAYED DUE TO SIMULTANEOUS CHANGE</value>
+  </data>
+  <data name="OBFCA_FEE" xml:space="preserve">
+    <value>OBFCA - ANY CC</value>
+  </data>
+  <data name="PAX_CNN" xml:space="preserve">
+    <value>CNN-</value>
+  </data>
+  <data name="PAX_INF" xml:space="preserve">
+    <value>INF-</value>
+  </data>
+  <data name="END_OF_SCROLL_PAX" xml:space="preserve">
+    <value>‡END OF SCROLL‡\n</value>
+  </data>
+  <data name="PAX_ADT" xml:space="preserve">
+    <value>ADT-</value>
+  </data>
+  <data name="OBFCA_CC" xml:space="preserve">
+    <value>OBFCA - CC NBR</value>
+  </data>
+</root>

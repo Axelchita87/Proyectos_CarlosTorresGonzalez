@@ -1,0 +1,38 @@
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.Controls.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.BR.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.DAL.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.Entity.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\Ionic.Zip.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\avisosis.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls_MarkupCompile.cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls_MarkupCompile.lref
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\avisosis.baml
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.g.resources
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.Controls.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.BR.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.DAL.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Controls\bin\Debug\ADMIN2.Entity.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.Controls.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.Controls.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.BR.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.DAL.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.Entity.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\Ionic.Zip.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.BR.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.DAL.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\bin\Debug\ADMIN2.Entity.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\avisosis.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls_MarkupCompile.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls_MarkupCompile.lref
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\avisosis.baml
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.g.resources
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Controls\obj\Debug\ADMIN2.Controls.pdb

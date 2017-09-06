@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a24d98c-aab7-4b70-99f9-4bff8bdb4168" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://201.149.13.14:5498/WSInterJet/IJSessionManager.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e63e7256-a7a0-4b7c-8dad-ebeeb1259a89" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJSessionManager.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="965e768a-d5b8-4472-913f-4d2ddd2ae09f" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJSessionManager.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="114e11bf-fd08-4b26-9933-3b7a9bd5574c" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJSessionManager.svc/mex" />
+    <MetadataFile FileName="Session.xsd" MetadataType="Schema" ID="058e1ce4-6e5b-4bdc-b70d-eba22bc55c68" SourceId="1" SourceUrl="http://201.149.13.14:5498/WSInterJet/IJSessionManager.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

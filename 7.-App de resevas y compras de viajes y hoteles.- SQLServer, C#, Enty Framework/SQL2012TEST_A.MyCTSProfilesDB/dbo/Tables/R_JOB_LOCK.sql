@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[R_JOB_LOCK] (
+    [ID_JOB_LOCK]  BIGINT   NOT NULL,
+    [ID_JOB]       INT      NULL,
+    [ID_USER]      INT      NULL,
+    [LOCK_MESSAGE] TEXT     NULL,
+    [LOCK_DATE]    DATETIME NULL,
+    PRIMARY KEY CLUSTERED ([ID_JOB_LOCK] ASC)
+);
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.wsdl" filename="PaymentRQ_v1.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/xml.xsd" filename="xml.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/xmldsig-core-schema.xsd" filename="xmldsig-core-schema.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/xlink.xsd" filename="xlink.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/wsse.xsd" filename="wsse.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/msg-header-2_0.xsd" filename="msg-header-2_0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/envelope.xsd" filename="envelope.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.xsd" filename="OTA2003B.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

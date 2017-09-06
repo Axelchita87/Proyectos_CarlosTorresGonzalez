@@ -1,0 +1,10 @@
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\bin\x86\Debug\MyCTS.Components.MySabreAPI.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\bin\x86\Debug\MyCTS.Components.MySabreAPI.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\bin\x86\Debug\MyCTS.Components.MySabreAPI.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\obj\x86\Debug\Resources.resources
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\obj\x86\Debug\MyCTS.Components.MySabreAPI.vbproj.GenerateResource.Cache
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\obj\x86\Debug\MyCTS.Components.MySabreAPI.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\obj\x86\Debug\MyCTS.Components.MySabreAPI.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\obj\x86\Debug\MyCTS.Components.MySabreAPI.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\bin\x86\Debug\MyCTS.Components.MySabreAPI.dll.CodeAnalysisLog.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\Components\MyCTS.Components.MySabreAPI\bin\x86\Debug\MyCTS.Components.MySabreAPI.dll.lastcodeanalysissucceeded

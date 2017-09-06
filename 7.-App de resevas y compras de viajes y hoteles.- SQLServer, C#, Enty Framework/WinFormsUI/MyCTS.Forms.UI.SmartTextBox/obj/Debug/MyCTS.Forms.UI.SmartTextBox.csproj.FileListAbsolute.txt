@@ -1,0 +1,6 @@
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\bin\Debug\MyCTS.Forms.UI.SmartTextBox.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\bin\Debug\MyCTS.Forms.UI.SmartTextBox.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\obj\Debug\MyCTS.Forms.UI.SmartTextBox.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\obj\Debug\MyCTS.Forms.UI.SmartTextBox.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\bin\Debug\MyCTS.Forms.UI.SmartTextBox.dll.CodeAnalysisLog.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\WinFormsUI\MyCTS.Forms.UI.SmartTextBox\bin\Debug\MyCTS.Forms.UI.SmartTextBox.dll.lastcodeanalysissucceeded

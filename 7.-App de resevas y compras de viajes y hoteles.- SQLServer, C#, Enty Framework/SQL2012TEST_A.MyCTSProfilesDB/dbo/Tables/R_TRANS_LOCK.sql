@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[R_TRANS_LOCK] (
+    [ID_TRANS_LOCK]     BIGINT   NOT NULL,
+    [ID_TRANSFORMATION] INT      NULL,
+    [ID_USER]           INT      NULL,
+    [LOCK_MESSAGE]      TEXT     NULL,
+    [LOCK_DATE]         DATETIME NULL,
+    PRIMARY KEY CLUSTERED ([ID_TRANS_LOCK] ASC)
+);
+

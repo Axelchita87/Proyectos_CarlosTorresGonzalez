@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.navitaire.com/WebServices/DataContracts/Content" elementFormDefault="qualified" targetNamespace="http://schemas.navitaire.com/WebServices/DataContracts/Content" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" />
+  <xs:complexType name="FareRuleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:base64Binary" />
+      <xs:element xmlns:q1="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="DataType" type="q1:ContentDataType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FareRuleInfo" nillable="true" type="tns:FareRuleInfo" />
+</xs:schema>

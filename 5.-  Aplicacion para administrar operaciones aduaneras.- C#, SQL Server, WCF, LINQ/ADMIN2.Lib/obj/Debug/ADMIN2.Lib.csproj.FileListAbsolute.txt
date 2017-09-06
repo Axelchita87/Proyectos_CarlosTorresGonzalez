@@ -1,0 +1,10 @@
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Lib\bin\Debug\ADMIN2.Lib.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Lib\bin\Debug\ADMIN2.Lib.pdb
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.dll
+C:\Program Files (x86)\SDICointer\Admin2\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Lib\bin\Debug\ADMIN2.Lib.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Lib\bin\Debug\ADMIN2.Lib.pdb
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.csprojResolveAssemblyReference.cache
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.dll
+C:\Users\CARLOS\Desktop\Repo\Admin2RespaldoOriginal\ADMIN2.Lib\obj\Debug\ADMIN2.Lib.pdb

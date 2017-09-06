@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CTS.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CTS.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="TiposVolaris.FlightTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OnlyTrip">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RoundTrip">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.FlightTypes" nillable="true" type="tns:TiposVolaris.FlightTypes" />
+  <xs:complexType name="ArrayOfTiposVolaris.PassengerType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TiposVolaris.PassengerType" type="tns:TiposVolaris.PassengerType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTiposVolaris.PassengerType" nillable="true" type="tns:ArrayOfTiposVolaris.PassengerType" />
+  <xs:simpleType name="TiposVolaris.PassengerType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Infant" />
+      <xs:enumeration value="Children" />
+      <xs:enumeration value="Adult" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.PassengerType" nillable="true" type="tns:TiposVolaris.PassengerType" />
+  <xs:complexType name="ArrayOfVueloDisponible">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VueloDisponible" nillable="true" type="tns:VueloDisponible" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVueloDisponible" nillable="true" type="tns:ArrayOfVueloDisponible" />
+  <xs:complexType name="VueloDisponible">
+    <xs:sequence>
+      <xs:element name="_x003C_Amount_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_ContractVersion_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_CountFares_x003E_k__BackingField" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="_x003C_FareSellKey_x003E_k__BackingField" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="_x003C_JourneySellKey_x003E_k__BackingField" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element name="_x003C_Segments_x003E_k__BackingField" nillable="true" type="tns:ArrayOfSegmentoDeVuelo" />
+      <xs:element name="_x003C_Signature_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Tax_x003E_k__BackingField" type="xs:decimal" />
+      <xs:element name="_x003C_TypeFlight_x003E_k__BackingField" type="tns:TiposVolaris.FlightFullType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VueloDisponible" nillable="true" type="tns:VueloDisponible" />
+  <xs:complexType name="ArrayOfSegmentoDeVuelo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SegmentoDeVuelo" nillable="true" type="tns:SegmentoDeVuelo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSegmentoDeVuelo" nillable="true" type="tns:ArrayOfSegmentoDeVuelo" />
+  <xs:complexType name="SegmentoDeVuelo">
+    <xs:sequence>
+      <xs:element name="_x003C_ArrivalStationDateTime_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ArrivalStation_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DepartureDateTime_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DepartureStation_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_FlightNumber_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SegmentoDeVuelo" nillable="true" type="tns:SegmentoDeVuelo" />
+  <xs:simpleType name="TiposVolaris.FlightFullType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Inbound" />
+      <xs:enumeration value="Outbound" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.FlightFullType" nillable="true" type="tns:TiposVolaris.FlightFullType" />
+  <xs:complexType name="ArrayOfPasajerosVolaris">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PasajerosVolaris" nillable="true" type="tns:PasajerosVolaris" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPasajerosVolaris" nillable="true" type="tns:ArrayOfPasajerosVolaris" />
+  <xs:complexType name="PasajerosVolaris">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Genero" type="tns:TiposVolaris.Gender" />
+      <xs:element minOccurs="0" name="Nacionalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroPasajero" type="xs:int" />
+      <xs:element minOccurs="0" name="Pais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDeViajeInfante" type="xs:int" />
+      <xs:element minOccurs="0" name="TipoPasajero" type="tns:TiposVolaris.PassengerType" />
+      <xs:element minOccurs="0" name="Titulo" type="tns:TiposVolaris.FirstTittle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PasajerosVolaris" nillable="true" type="tns:PasajerosVolaris" />
+  <xs:simpleType name="TiposVolaris.Gender">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="M" />
+      <xs:enumeration value="F" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.Gender" nillable="true" type="tns:TiposVolaris.Gender" />
+  <xs:simpleType name="TiposVolaris.FirstTittle">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MASTER" />
+      <xs:enumeration value="MR" />
+      <xs:enumeration value="MRS" />
+      <xs:enumeration value="MS" />
+      <xs:enumeration value="CHD" />
+      <xs:enumeration value="INF" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.FirstTittle" nillable="true" type="tns:TiposVolaris.FirstTittle" />
+  <xs:complexType name="ArrayOfExtrasViajeVolaris">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExtrasViajeVolaris" nillable="true" type="tns:ExtrasViajeVolaris" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExtrasViajeVolaris" nillable="true" type="tns:ArrayOfExtrasViajeVolaris" />
+  <xs:complexType name="ExtrasViajeVolaris">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoSSR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Destino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroPasajero" type="xs:int" />
+      <xs:element minOccurs="0" name="Origen" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExtrasViajeVolaris" nillable="true" type="tns:ExtrasViajeVolaris" />
+  <xs:complexType name="MetodoPagoVolaris">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BlackBox" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoPais" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoPostal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoSeguridad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoProvincia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaExpiracion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MetodoDePago" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Moneda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Monto" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NumeroAgencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroTarjeta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoMetodoPago" type="tns:TiposVolaris.PaymentMethodType" />
+      <xs:element minOccurs="0" name="TipoTarjeta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Titular" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MetodoPagoVolaris" nillable="true" type="tns:MetodoPagoVolaris" />
+  <xs:simpleType name="TiposVolaris.PaymentMethodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PrePaid" />
+      <xs:enumeration value="ExternalAccount" />
+      <xs:enumeration value="AgencyAccount" />
+      <xs:enumeration value="CreditShell" />
+      <xs:enumeration value="CreditFile" />
+      <xs:enumeration value="Voucher" />
+      <xs:enumeration value="Loyalty" />
+      <xs:enumeration value="Unmapped">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TiposVolaris.PaymentMethodType" nillable="true" type="tns:TiposVolaris.PaymentMethodType" />
+  <xs:complexType name="Contact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HomePhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinceState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contact" nillable="true" type="tns:Contact" />
+  <xs:complexType name="BookingData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Journeys" nillable="true" type="tns:ArrayOfJourney" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingData" nillable="true" type="tns:BookingData" />
+  <xs:complexType name="ArrayOfJourney">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Journey" nillable="true" type="tns:Journey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJourney" nillable="true" type="tns:ArrayOfJourney" />
+  <xs:complexType name="Journey">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Segments" nillable="true" type="tns:ArrayOfSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Journey" nillable="true" type="tns:Journey" />
+  <xs:complexType name="ArrayOfSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Segment" nillable="true" type="tns:Segment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSegment" nillable="true" type="tns:ArrayOfSegment" />
+  <xs:complexType name="Segment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fares" nillable="true" type="tns:ArrayOfFare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Segment" nillable="true" type="tns:Segment" />
+  <xs:complexType name="ArrayOfFare">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fare" nillable="true" type="tns:Fare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFare" nillable="true" type="tns:ArrayOfFare" />
+  <xs:complexType name="Fare">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PaxFares" nillable="true" type="tns:ArrayOfPaxFare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fare" nillable="true" type="tns:Fare" />
+  <xs:complexType name="ArrayOfPaxFare">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxFare" nillable="true" type="tns:PaxFare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxFare" nillable="true" type="tns:ArrayOfPaxFare" />
+  <xs:complexType name="PaxFare">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PaxType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceCharges" nillable="true" type="tns:ArrayOfBookingServiceCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxFare" nillable="true" type="tns:PaxFare" />
+  <xs:complexType name="ArrayOfBookingServiceCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingServiceCharge" nillable="true" type="tns:BookingServiceCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingServiceCharge" nillable="true" type="tns:ArrayOfBookingServiceCharge" />
+  <xs:complexType name="BookingServiceCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ChargeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeDetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChargeType" type="tns:ChargeType" />
+      <xs:element minOccurs="0" name="CollectType" type="tns:CollectType" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ForeignAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ForeignCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TicketCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingServiceCharge" nillable="true" type="tns:BookingServiceCharge" />
+  <xs:simpleType name="ChargeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FarePrice" />
+      <xs:enumeration value="Discount" />
+      <xs:enumeration value="IncludedTravelFee" />
+      <xs:enumeration value="IncludedTax" />
+      <xs:enumeration value="TravelFee" />
+      <xs:enumeration value="Tax" />
+      <xs:enumeration value="ServiceCharge" />
+      <xs:enumeration value="PromotionDiscount" />
+      <xs:enumeration value="ConnectionAdjustmentAmount" />
+      <xs:enumeration value="AddOnServicePrice" />
+      <xs:enumeration value="IncludedAddOnServiceFee" />
+      <xs:enumeration value="AddOnServiceFee" />
+      <xs:enumeration value="Calculated" />
+      <xs:enumeration value="Note" />
+      <xs:enumeration value="AddOnServiceMarkup" />
+      <xs:enumeration value="FareSurcharge" />
+      <xs:enumeration value="Loyalty" />
+      <xs:enumeration value="FarePoints" />
+      <xs:enumeration value="DiscountPoints" />
+      <xs:enumeration value="AddOnServiceCancelFee" />
+      <xs:enumeration value="Unmapped">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ChargeType" nillable="true" type="tns:ChargeType" />
+  <xs:simpleType name="CollectType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SellerChargeable" />
+      <xs:enumeration value="ExternalChargeable" />
+      <xs:enumeration value="SellerNonChargeable" />
+      <xs:enumeration value="ExternalNonChargeable" />
+      <xs:enumeration value="ExternalChargeableImmediate" />
+      <xs:enumeration value="Unmapped">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CollectType" nillable="true" type="tns:CollectType" />
+</xs:schema>

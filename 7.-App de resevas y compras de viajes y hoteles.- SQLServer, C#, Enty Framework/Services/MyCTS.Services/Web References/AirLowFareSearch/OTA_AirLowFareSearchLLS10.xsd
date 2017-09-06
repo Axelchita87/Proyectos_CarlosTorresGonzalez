@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://webservices.sabre.com/sabreXML/2003/07" elementFormDefault="qualified" targetNamespace="http://webservices.sabre.com/sabreXML/2003/07" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OTA_AirLowFareSearchRQ">
+    <xs:annotation>
+      <xs:documentation>Checks for lower fares on an existing itinerary and possibilities according to a wide variety of user-specified criteria.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="POS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Source">
+                <xs:complexType>
+                  <xs:attribute name="PseudoCityCode" type="xs:string" use="required">
+                    <xs:annotation>
+                      <xs:documentation xml:lang="en">An identification code assigned to an office/agency by a reservation system.												</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OriginDestinationInformation">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:documentation>Origin and Destination location, and time information for the request. Also includes the ability to specify a connection location for the search.									</xs:documentation>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="FlightSegment">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="OriginLocation">
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:documentation xml:lang="en">Code and optional string to describe a location point.</xs:documentation>
+                        </xs:annotation>
+                        <xs:attribute name="LocationCode" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DestinationLocation">
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:documentation xml:lang="en">Code and optional string to describe a location point.</xs:documentation>
+                        </xs:annotation>
+                        <xs:attribute name="LocationCode" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="ConnectionInd" type="xs:string" use="optional" />
+                  <xs:attribute name="DepartureDateTime" type="xs:string" use="optional" />
+                  <xs:attribute name="ResBookDesigCode" type="xs:string" use="optional">
+                    <xs:annotation>
+                      <xs:documentation> The flight number of the flight.</xs:documentation>
+                    </xs:annotation>
+                  </xs:attribute>
+                  <xs:attribute name="RPH" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="PriceRequestInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OptionalQualifiers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="FlightQualifiers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="AlternateAirports">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="Option">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="OriginLocation">
+                                        <xs:complexType>
+                                          <xs:attribute name="LocationCode" type="xs:string" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" maxOccurs="5" name="AlternateLocation">
+                                        <xs:complexType>
+                                          <xs:attribute name="LocationCode" type="xs:string" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="Mileage" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="2" name="VendorPrefs">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="20" name="Airline">
+                                  <xs:complexType>
+                                    <xs:attribute name="Code" type="xs:string" use="optional" />
+                                    <xs:attribute name="RPH" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute default="false" name="Exclude" type="xs:boolean" use="optional">
+                                <xs:annotation>
+                                  <xs:documentation xml:lang="en">Identifies a company by the company code.</xs:documentation>
+                                </xs:annotation>
+                              </xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="NumStops" type="xs:integer" use="optional" />
+                        <xs:attribute default="false" name="OnlineOnly" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="MiscQualifiers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="Indicators">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="RetainFare">
+                                  <xs:complexType>
+                                    <xs:attribute default="false" name="Ind" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="MinMaxStay">
+                                  <xs:complexType>
+                                    <xs:attribute default="false" name="Ind" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="RefundPenalty">
+                                  <xs:complexType>
+                                    <xs:attribute default="false" name="Ind" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="ResTicketing">
+                                  <xs:complexType>
+                                    <xs:attribute default="false" name="Ind" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TravelPolicy">
+                                  <xs:complexType>
+                                    <xs:attribute default="false" name="Ind" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Priority">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Price">
+                                  <xs:complexType>
+                                    <xs:attribute name="Priority" use="optional">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:pattern value="[1-4]{1}" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="DirectFlights">
+                                  <xs:complexType>
+                                    <xs:attribute name="Priority" use="optional">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:pattern value="[1-4]{1}" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Time">
+                                  <xs:complexType>
+                                    <xs:attribute name="Priority" use="optional">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:pattern value="[1-4]{1}" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Vendor">
+                                  <xs:complexType>
+                                    <xs:attribute name="Priority" use="optional">
+                                      <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                          <xs:pattern value="[1-4]{1}" />
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:attribute>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PricingQualifiers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="BuyingDate" type="xs:string" />
+                          <xs:element minOccurs="0" name="Corporate">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="4" name="ID" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute default="false" name="Force" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="FareOptions">
+                            <xs:complexType>
+                              <xs:attribute default="false" name="Public" type="xs:boolean" use="optional" />
+                              <xs:attribute default="false" name="Private" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="PassengerStatus" type="xs:string" />
+                          <xs:element maxOccurs="4" name="PassengerType">
+                            <xs:complexType>
+                              <xs:attribute name="Quantity" type="xs:integer" use="optional" />
+                              <xs:attribute name="Code" type="xs:string" use="optional" />
+                              <xs:attribute name="AlternatePassengerType" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="Taxes">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="9" name="TaxExempt">
+                                  <xs:complexType>
+                                    <xs:attribute name="Code" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" maxOccurs="9" name="TaxOverride">
+                                  <xs:complexType>
+                                    <xs:attribute name="Amount" type="xs:decimal" use="optional" />
+                                    <xs:attribute name="Code" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute default="false" name="NoTax" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="CurrencyCode" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="TimeQualifiers">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="ArrivalTime">
+                            <xs:annotation>
+                              <xs:documentation />
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:attribute name="WindowBefore" type="xs:string" use="optional" />
+                              <xs:attribute name="WindowAfter" type="xs:string" use="optional" />
+                              <xs:attribute name="RPH" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="DepartureTime">
+                            <xs:complexType>
+                              <xs:attribute name="WindowBefore" type="xs:string" use="optional" />
+                              <xs:attribute name="WindowAfter" type="xs:string" use="optional" />
+                              <xs:attribute name="RPH" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="NumHours" type="xs:integer" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="TimeStamp" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>Indicates the creation date and time of the message in UTC using the following format specified by ISO 8601; YYYY-	MM-					DDThh:mm:ssZ with time values using the 24 hour clock (e.g. 20 November 2003, 1:59:38 pm UTC becomes 2003-11-	20T13:59:38Z).						</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="Version" type="xs:string" use="required">
+        <xs:annotation>
+          <xs:documentation>For all OTA versioned messages, the version of the message is indicated by a decimal value.</xs:documentation>
+        </xs:annotation>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

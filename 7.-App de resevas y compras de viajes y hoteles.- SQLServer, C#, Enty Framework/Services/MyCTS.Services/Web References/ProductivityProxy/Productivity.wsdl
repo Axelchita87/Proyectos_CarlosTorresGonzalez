@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetServerDateTimeResult" type="s:dateTime" />
+      <s:element name="AddCommandsTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileBinaryArray" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommandsTransactionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddCommandsTransactionBySQL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sql" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCommandsTransactionBySQLResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetServerDateTimeSoapIn" />
+  <wsdl:message name="GetServerDateTimeSoapOut">
+    <wsdl:part name="GetServerDateTimeResult" element="tns:GetServerDateTimeResult" />
+  </wsdl:message>
+  <wsdl:message name="AddCommandsTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCommandsTransaction" />
+  </wsdl:message>
+  <wsdl:message name="AddCommandsTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCommandsTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCommandsTransactionBySQLSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCommandsTransactionBySQL" />
+  </wsdl:message>
+  <wsdl:message name="AddCommandsTransactionBySQLSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCommandsTransactionBySQLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProductivityService">
+    <wsdl:operation name="GetServerDateTime">
+      <wsdl:input message="tns:GetServerDateTimeSoapIn" />
+      <wsdl:output message="tns:GetServerDateTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransaction">
+      <wsdl:input message="tns:AddCommandsTransactionSoapIn" />
+      <wsdl:output message="tns:AddCommandsTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransactionBySQL">
+      <wsdl:input message="tns:AddCommandsTransactionBySQLSoapIn" />
+      <wsdl:output message="tns:AddCommandsTransactionBySQLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProductivityService" type="tns:ProductivityService">
+    <wsdl:documentation>
+      <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" />
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetServerDateTime">
+      <soap:operation soapAction="http://schemas.mycts.com/WS/GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransaction">
+      <soap:operation soapAction="http://schemas.mycts.com/WS/AddCommandsTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransactionBySQL">
+      <soap:operation soapAction="http://schemas.mycts.com/WS/AddCommandsTransactionBySQL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProductivityService1" type="tns:ProductivityService">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetServerDateTime">
+      <soap12:operation soapAction="http://schemas.mycts.com/WS/GetServerDateTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransaction">
+      <soap12:operation soapAction="http://schemas.mycts.com/WS/AddCommandsTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCommandsTransactionBySQL">
+      <soap12:operation soapAction="http://schemas.mycts.com/WS/AddCommandsTransactionBySQL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProductivityService">
+    <wsdl:port name="ProductivityService" binding="tns:ProductivityService">
+      <soap:address location="http://201.149.13.14:5498/WSProductivity/Productivity.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProductivityService1" binding="tns:ProductivityService1">
+      <soap12:address location="http://201.149.13.14:5498/WSProductivity/Productivity.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

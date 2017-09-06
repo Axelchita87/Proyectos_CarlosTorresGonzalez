@@ -1,0 +1,2604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A394C9B5-4742-4410-9786-825F8E5249F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCTS.DataAccess</RootNamespace>
+    <AssemblyName>MyCTS.DataAccess</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Lib\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Lib\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Lib\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Components\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActDHLDAL.cs" />
+    <Compile Include="ActivationFeeRuleDAL.cs" />
+    <Compile Include="Active1stLevelDAL.cs" />
+    <Compile Include="Active2ndLevelDAL.cs" />
+    <Compile Include="AddCorporateCRUDDAL.cs" />
+    <Compile Include="AddDetailsTktsLinksDAL.cs" />
+    <Compile Include="AddLinksInvoicesPerTicketDAL.cs" />
+    <Compile Include="AddNewUserDAL.cs" />
+    <Compile Include="AddRecordsContainerDAL.cs" />
+    <Compile Include="AddToolOnlineRulesDeleteDAL.cs" />
+    <Compile Include="AddToolsOnlineQueuesDAL.cs" />
+    <Compile Include="AgentPCCDAL.cs" />
+    <Compile Include="AgentsDAL.cs" />
+    <Compile Include="AirLineDAL.cs" />
+    <Compile Include="AirLineFareDAL.cs" />
+    <Compile Include="AirlineFOPDAL.cs" />
+    <Compile Include="AirLinesClassDAL.cs" />
+    <Compile Include="AirLinesFareDAL.cs" />
+    <Compile Include="AirPortCityCountryDAL.cs" />
+    <Compile Include="AirportCodesDAL.cs" />
+    <Compile Include="AirPortDAL.cs" />
+    <Compile Include="AirPortsDAL.cs" />
+    <Compile Include="ALAgreementsDAL.cs" />
+    <Compile Include="AllPCCsCompletDAL.cs" />
+    <Compile Include="AllPccsDAL.cs" />
+    <Compile Include="AssignQueueFirmDAL.cs" />
+    <Compile Include="Cat1stStarInfoByLocationDAL.cs" />
+    <Compile Include="CatAgentDAL.cs" />
+    <Compile Include="CatAirlinesDAL.cs" />
+    <Compile Include="CatAllStarsDAL.cs" />
+    <Compile Include="CatalogsDAL.cs" />
+    <Compile Include="CatBusCodesDAL.cs" />
+    <Compile Include="CatBusinessUnitsDAL.cs" />
+    <Compile Include="CatCarEquipemetCodesDAL.cs" />
+    <Compile Include="CatCarTypeCodesDAL.cs" />
+    <Compile Include="CatClientsCatalogsDAL.cs" />
+    <Compile Include="CatFareTypeCodesDAL.cs" />
+    <Compile Include="CatInterJetStateDAL.cs" />
+    <Compile Include="CatOnlineToolsPicCodesDAL.cs" />
+    <Compile Include="CatOriginSalesDAL.cs" />
+    <Compile Include="CatProfileLinesDAL.cs" />
+    <Compile Include="CatRolesDAL.cs" />
+    <Compile Include="CatSSRCodesDAL.cs" />
+    <Compile Include="CatStars1stLevelDAL.cs" />
+    <Compile Include="CatStars2ndLevelDAL.cs" />
+    <Compile Include="CatSubTypePaxDAL.cs" />
+    <Compile Include="CatTransactionDAL.cs" />
+    <Compile Include="CatValuesXMLQualityControlsClientsDAL.cs" />
+    <Compile Include="CiaDHLDAL.cs" />
+    <Compile Include="CatCitiesDAL.cs" />
+    <Compile Include="CatConfirmDKDAL.cs" />
+    <Compile Include="CatCorporativeQualityControlsDAL.cs" />
+    <Compile Include="CatCostCenterDAL.cs" />
+    <Compile Include="CatCountriesDAL.cs" />
+    <Compile Include="CatCreditCardsCodesDAL.cs" />
+    <Compile Include="CatHotelsDAL.cs" />
+    <Compile Include="CatITTourCodesDAL.cs" />
+    <Compile Include="CatLineClassesDAL.cs" />
+    <Compile Include="CatMealCodesDAL.cs" />
+    <Compile Include="catPAirlinesFareDAL.cs" />
+    <Compile Include="CatPccsDAL.cs" />
+    <Compile Include="CatQueueDAL.cs" />
+    <Compile Include="CatSeaVendorsCodesDAL.cs" />
+    <Compile Include="CatStatesUSADAL.cs" />
+    <Compile Include="CatStatusCodesDAL.cs" />
+    <Compile Include="CatValuesCorporativeQualityControlsDAL.cs" />
+    <Compile Include="CatValuesXMLQualityControlsDAL.cs" />
+    <Compile Include="CityDAL.cs" />
+    <Compile Include="ClientUsersInterjetDAL.cs" />
+    <Compile Include="DeleteSCDCVuelosDAL.cs" />
+    <Compile Include="DocsFirstLevelDA.cs" />
+    <Compile Include="DocsSecondLevelDA.cs" />
+    <Compile Include="ErrorLogServiceChargeDAL.cs" />
+    <Compile Include="GetCityNameDAL.cs" />
+    <Compile Include="GetClientCreditCardByClientDAL.cs" />
+    <Compile Include="GetEquipmentCarByCodeDAL.cs" />
+    <Compile Include="GetLCCAirlinesDAL.cs" />
+    <Compile Include="GetNationalRoutesDAL.cs" />
+    <Compile Include="GetTypesCarByCodeDAL.cs" />
+    <Compile Include="GetVendorByCodeDAL.cs" />
+    <Compile Include="ImpuestosBajoCostoDAL.cs" />
+    <Compile Include="InsertLogClipboardCTSDAL.cs" />
+    <Compile Include="InsertSCDCBoletoDAL.cs" />
+    <Compile Include="InsertSCDCResumenDAL.cs" />
+    <Compile Include="InsertSCDCVueloDAL.cs" />
+    <Compile Include="PreferencePlacesDAL.cs" />
+    <Compile Include="ClientsCatalogs_NextelCCDAL.cs" />
+    <Compile Include="ClientsCatalogs_NextelDAL.cs" />
+    <Compile Include="ConsultingFirmDAL.cs" />
+    <Compile Include="ConsultingFirmRoleDAL.cs" />
+    <Compile Include="CorporativeCRUDConsultaDAL.cs" />
+    <Compile Include="CtaDHLDAL.cs" />
+    <Compile Include="CteDHLDAL.cs" />
+    <Compile Include="DeactivatedStarsDAL.cs" />
+    <Compile Include="DeleteAllFirmModulesDAL.cs" />
+    <Compile Include="DeletePccDAL.cs" />
+    <Compile Include="DeleteToolOnlineQueuesDAL.cs" />
+    <Compile Include="DeleteToolOnlineRulesDAL.cs" />
+    <Compile Include="GetAllFirmModulesDAL.cs" />
+    <Compile Include="GetAllFirmModulesForNewUserDAL.cs" />
+    <Compile Include="GetChaincodeDAL.cs" />
+    <Compile Include="GetCreditCardsFirstLevelDAL.cs" />
+    <Compile Include="GetCreditCardsSecondLevelDAL.cs" />
+    <Compile Include="GetCxSHotelesDAL.cs" />
+    <Compile Include="GetEventCodesDAL.cs" />
+    <Compile Include="GetIdSalesOriginDAL.cs" />
+    <Compile Include="GetListUpgradeFilesSRWDAL.cs" />
+    <Compile Include="GetOnlineToolsDAL.cs" />
+    <Compile Include="GetPccDAL.cs" />
+    <Compile Include="GetPendingOnlinePayServicesDAL.cs" />
+    <Compile Include="GetStarByEmailDAL.cs" />
+    <Compile Include="InsertPccDAL.cs" />
+    <Compile Include="InterJeTaxDAL.cs" />
+    <Compile Include="InterJetPointToPointDAL.cs" />
+    <Compile Include="InterJetProfileDAL.cs" />
+    <Compile Include="LogCxSHotelDAL.cs" />
+    <Compile Include="LogInterJetDAL.cs" />
+    <Compile Include="LogNotOnlinePayServicesDAL.cs" />
+    <Compile Include="LogOnlinePayServicesDAL.cs" />
+    <Compile Include="LogTicketsDAL.cs" />
+    <Compile Include="LowFareAirLinesErrorLoggerDAL.cs" />
+    <Compile Include="OnlineToolsQueuesDAL.cs" />
+    <Compile Include="OnlyAttribute1DAL.cs" />
+    <Compile Include="ReportInterjetDAL.cs" />
+    <Compile Include="ReportVolarisDAL.cs" />
+    <Compile Include="Resources\AddCorporateCRUDResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddCorporateCRUDResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddToolOnlineRulesDeleteResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddToolOnlineRulesDeleteResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddToolsOnlineQueuesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddToolsOnlineQueuesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AssignQueueFirmResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssignQueueFirmResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatOnlineToolsPicCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatOnlineToolsPicCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatSubTypePax.Designer.cs" />
+    <Compile Include="Resources\CorporativeCRUDConsultaResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CorporativeCRUDConsultaResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeactivatedStarsResources.Designer.cs" />
+    <Compile Include="Delete1stLevelDAL.cs" />
+    <Compile Include="Delete1stLevelInfoDAL.cs" />
+    <Compile Include="Delete2ndLevelDAL.cs" />
+    <Compile Include="Delete2ndLevelInfoDAL.cs" />
+    <Compile Include="DeleteAirLinesFareDAL.cs" />
+    <Compile Include="DeleteAirPortDAL.cs" />
+    <Compile Include="DeleteAlAgreementsDAL.cs" />
+    <Compile Include="DeleteAuthCodeDAL.cs" />
+    <Compile Include="DeleteCatalogQCDAL.cs" />
+    <Compile Include="DeleteFirmRoleDAL.cs" />
+    <Compile Include="DeletePccsDAL.cs" />
+    <Compile Include="DeleteStar2DetailsDAL.cs" />
+    <Compile Include="DeleteUsersDAL.cs" />
+    <Compile Include="DocumentsDAL.cs" />
+    <Compile Include="EnableDisableFirmDAL.cs" />
+    <Compile Include="FieldsDinamicsDAL.cs" />
+    <Compile Include="Get2StarEmailDAL.cs" />
+    <Compile Include="GetAirLineAgreementsDAL.cs" />
+    <Compile Include="GetAirlineCodeByNumIDDAL.cs" />
+    <Compile Include="GetAllBanksDAL.cs" />
+    <Compile Include="GetAndSetAttribute1DAL.cs" />
+    <Compile Include="GetAndSetAttributeBackupDAL.cs" />
+    <Compile Include="GetAttribute1DAL.cs" />
+    <Compile Include="GetAuthCodeDAL.cs" />
+    <Compile Include="GetBannerImageDAL.cs" />
+    <Compile Include="GetCatCarEquCodNameDAL.cs" />
+    <Compile Include="GetCatCarTypCodDescriptionDAL.cs" />
+    <Compile Include="GetCatCarVenCodNameDAL.cs" />
+    <Compile Include="GetClientCreditCardNumberDAL.cs" />
+    <Compile Include="GetCodeMealToDIXDAL.cs" />
+    <Compile Include="GetCorporativeFeaturesDAL.cs" />
+    <Compile Include="GetCorporativeFeesRulesDAL.cs" />
+    <Compile Include="GetCountryDAL.cs" />
+    <Compile Include="GetCreditCardNumberDAL.cs" />
+    <Compile Include="GetCtrlCataloguesDAL.cs" />
+    <Compile Include="GetIDGroupDAL.cs" />
+    <Compile Include="GetIdRemarkLabelDAL.cs" />
+    <Compile Include="GetInfoFeeRuleByAttribute1DAL.cs" />
+    <Compile Include="GetInfoGroupByIDGroupDAL.cs" />
+    <Compile Include="GetInfoGroupDAL.cs" />
+    <Compile Include="GetInformationRuleAppliedDAL.cs" />
+    <Compile Include="GetLinkByTktDAL.cs" />
+    <Compile Include="GetLogNewFormatProfilesDAL.cs" />
+    <Compile Include="GetMailByUserDAL.cs" />
+    <Compile Include="GetOnlyAttribute1DAL.cs" />
+    <Compile Include="GetPromoDAL.cs" />
+    <Compile Include="GetQCbyAttribute1DAL.cs" />
+    <Compile Include="GetQCbyAttribute1_ADDAL.cs" />
+    <Compile Include="GetQCIDCtrlDAL.cs" />
+    <Compile Include="GetQualityCotrolsDAL.cs" />
+    <Compile Include="GetStar1DetailsDAL.cs" />
+    <Compile Include="GetStar1stLevelByStar2LevelDAL.cs" />
+    <Compile Include="GetStar2DetailsDAL.cs" />
+    <Compile Include="GetStarlevel1ByDKDAL.cs" />
+    <Compile Include="GetTicketsByPNRDAL.cs" />
+    <Compile Include="GetZoneByCityDAL.cs" />
+    <Compile Include="GroupCodeLabelDAL.cs" />
+    <Compile Include="InsertFirmRoleDAL.cs" />
+    <Compile Include="LogsApplicationDAL.cs" />
+    <Compile Include="MyCTSVersionDAL.cs" />
+    <Compile Include="OTATravelItineraryHotelDAL.cs" />
+    <Compile Include="ProductivityMonthsDAL.cs" />
+    <Compile Include="ProductivityPCCVsCorporativeDAL.cs" />
+    <Compile Include="ProductivityRankingPerCorporativeDAL.cs" />
+    <Compile Include="ProductivityRankingPerPCCDAL.cs" />
+    <Compile Include="ProductivityWeeksDAL.cs" />
+    <Compile Include="QCControlsClientsDAL.cs" />
+    <Compile Include="QCControlsDAL.cs" />
+    <Compile Include="QCCustomRemarksDAL.cs" />
+    <Compile Include="QCExistDAL.cs" />
+    <Compile Include="Resources\ActDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ActivationFeeRuleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivationFeeRuleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Active1stLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Active1stLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Active2ndLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Active2ndLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddDetailsTktsLinksResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddDetailsTktsLinksResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddLinksInvoicesPerTicketResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddLinksInvoicesPerTicketResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddNewUserResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddNewUserResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AddRecordsContainerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddRecordsContainerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AgentPCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentPCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AgentsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirLineFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirLineFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirlineFOPResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlineFOPResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirPortResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirPortResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirPortsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirPortsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ALAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AllPCCsCompleteResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllPCCsCompleteResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AllPccsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllPccsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AuthCodeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthCodeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Cat1stStarInfoByLocationResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cat1stStarInfoByLocationResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatAgentResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatAgentResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatAllStarsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatAllStarsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatClientsCatalogsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatClientsCatalogsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatFareTypeCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatFareTypeCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatOriginSalesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatOriginSalesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatProfileLinesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatProfileLinesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatRolesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatRolesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatSSRCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatSSRCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatStars1stLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatStars1stLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatStars2ndLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatStars2ndLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatValuesXMLQualityControlsClientsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatValuesXMLQualityControlsClientsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CiaDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CiaDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatValuesCorporativeQualityControlsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatValuesCorporativeQualityControlsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ChargePerServiceDAL.cs" />
+    <Compile Include="ComissionAgreementsDAL.cs" />
+    <Compile Include="CommandsActionsDAL.cs" />
+    <Compile Include="CommandsRestrictedDAL.cs" />
+    <Compile Include="CurrenciesCountriesDAL.cs" />
+    <Compile Include="CurrencyCountryDAL.cs" />
+    <Compile Include="CurrenciesDAL.cs" />
+    <Compile Include="DKTempDAL.cs" />
+    <Compile Include="LabelXMLRemarksDAL.cs" />
+    <Compile Include="ParameterDAL.cs" />
+    <Compile Include="Resources\AirLineClassesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirLineClassesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirLinesClassResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirLinesClassResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirPortCityCountryResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirPortCityCountryResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatAirLinesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatAirLinesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatBusCodesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatBusCodesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatBusinessUnitsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatBusinessUnitsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCarEquipemetCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCarEquipemetCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCarTypeCodesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCarTypeCodesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCitiesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCitiesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatConfirmDKResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatConfirmDKResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCorporativeQualityControlsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCorporativeQualityControlsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCostCentersResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCostCentersResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCountriesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCountriesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCreditCardsCodesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCreditCardsCodesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatHotelsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatHotelsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatPAirlinesFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatPAirlinesFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatQueueResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatQueueResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatValuesXMLQualityControlsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatValuesXMLQualityControlsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ChargePerServiceResouces.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChargePerServiceResouces.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ClientsCatalogs_NextelCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientsCatalogs_NextelCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ClientsCatalogs_NextelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientsCatalogs_NextelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ComissionAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComissionAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CommandsrestrictedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommandsrestrictedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ConsultingFirmResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultingFirmResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ConsultingFirmRoleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsultingFirmRoleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CtaDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CtaDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CteDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CteDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Delete1stLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Delete1stLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Delete2ndLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Delete2ndLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteAirLineFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteAirLineFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteAirPortResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteAirPortResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteAlAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteAlAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteAllFirmModulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteAllFirmModulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteCatalogQCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteCatalogQCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteFirmRoleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteFirmRoleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeletePccsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeletePccsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteProfilesResources.Designer.cs" />
+    <Compile Include="Resources\DeleteSCDCVueloResources.Designer.cs" />
+    <Compile Include="Resources\DeleteStar2DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteStar2DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteToolOnlineQueuesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteToolOnlineQueuesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteToolOnlineRulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteToolOnlineRulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DeleteUsersResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteUsersResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DetailsPNRHotelsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetailsPNRHotelsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DKTempResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DKTempResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatMealCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatMealCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatPccsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatPccsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatSeaVendorsCodesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatSeaVendorsCodesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatStatesUSAResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatStatesUSAResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CurrenciesCountriesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrenciesCountriesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatStatusCodesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatStatusCodesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatITTourCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatITTourCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EnableDisableFirmResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnableDisableFirmResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EventCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FieldsDynamics.Designer.cs" />
+    <Compile Include="Resources\Get2StarEmailResources.Designer.cs" />
+    <Compile Include="Resources\GetAirLineAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAirLineAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAirlineCodeByNumIDResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAirlineCodeByNumIDResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAllBanksResources.Designer.cs" />
+    <Compile Include="Resources\GetAllFirmMOdulesForNewUserResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAllFirmMOdulesForNewUserResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAllFirmModulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAllFirmModulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAndSetAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAndSetAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAndSetAttributeBackupResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAndSetAttributeBackupResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetBannerImageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetBannerImageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCatCarEquCodNameResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCatCarEquCodNameResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCatCarTypCodDescriptionResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCatCarTypCodDescriptionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCatCarVenCodNameResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCatCarVenCodNameResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetChainCodeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetChainCodeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCityNameResources.Designer.cs" />
+    <Compile Include="Resources\GetClientCreditCardNumberResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetClientCreditCardNumberResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCodeMealToDIXResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCodeMealToDIXResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCorporativeFeatures.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCorporativeFeatures.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCorporativeFeesRules.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCorporativeFeesRules.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCountryResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCountryResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCreditCardNumberResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCreditCardNumberResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCreditCardsFirstLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCreditCardsFirstLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCreditCardsSecondLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetCreditCardsSecondLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetCtrlCataloguesResources.Designer.cs" />
+    <Compile Include="Resources\GetEquipmentCarByCodeResources.Designer.cs" />
+    <Compile Include="Resources\GetIdRemarkLabelResources.Designer.cs" />
+    <Compile Include="Resources\GetIdSalesOriginResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetIdSalesOriginResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetInfoFeeRuleByAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetInfoFeeRuleByAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetInfoGroupResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetInfoGroupResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetInformationRuleAppliedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetInformationRuleAppliedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetLCCAirlines.Designer.cs" />
+    <Compile Include="Resources\GetLinkByTkt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetLinkByTkt.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetMailByUserResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetMailByUserResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetOnlineToolsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetOnlineToolsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetOnlyAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetOnlyAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetPccResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetPccResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetPromoResources.Designer.cs" />
+    <Compile Include="Resources\GetQCbyAttribute1Resources.Designer.cs" />
+    <Compile Include="Resources\GetQCbyAttribute1_ADResources.Designer.cs" />
+    <Compile Include="Resources\GetQCIDCtrlResources.Designer.cs" />
+    <Compile Include="Resources\GetQualityCotrolsResources.Designer.cs" />
+    <Compile Include="Resources\GetStar1stLevelByStar2LevelResources.Designer.cs" />
+    <Compile Include="Resources\GetStar2DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetStar2DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetStar2LevelMail.Designer.cs" />
+    <Compile Include="Resources\GetStar2ProfileByEmail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetStar2ProfileByEmail.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetStarLevel1ByDk.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetStarLevel1ByDk.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetTicketsByPNRResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetTicketsByPNRResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GetTypesCarByCodeResources.Designer.cs" />
+    <Compile Include="Resources\GetVendorByCodeResources.Designer.cs" />
+    <Compile Include="Resources\GetZoneByCityResources.Designer.cs" />
+    <Compile Include="Resources\GroupCodeLabelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupCodeLabelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InsertFirmRoleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertFirmRoleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InsertItneraryHotel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertItneraryHotel.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InsertLogClipboardCTSResources.Designer.cs" />
+    <Compile Include="Resources\InsertPccResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertPccResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\InsertSCDCBoletoResources.Designer.cs" />
+    <Compile Include="Resources\InsertSCDCResumenResources.Designer.cs" />
+    <Compile Include="Resources\InsertSCDCVueloResources.Designer.cs" />
+    <Compile Include="Resources\LabelXMLRemarksResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabelXMLRemarksResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LogCxSHotelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogCxSHotelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LogNewFormatProfilesResources.Designer.cs" />
+    <Compile Include="Resources\LogNotOnlinePayServices.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogNotOnlinePayServices.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LogOnlinePayServices.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogOnlinePayServices.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LogTicketsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogTicketsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\MyCTSVersionResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyCTSVersionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\OnlineToolsQueuesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlineToolsQueuesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\OnlyAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnlyAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ParameterResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParameterResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatCarVendorsCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatCarVendorsCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductivityMonthsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductivityMonthsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductivityPCCVsCorporativeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductivityPCCVsCorporativeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductivityRankingPerCorporativeResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductivityRankingPerCorporativeResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductivityRankingPerPCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductivityRankingPerPCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ProductivityWeeksResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductivityWeeksResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QCControlsClientsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QCControlsClientsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QCControlsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QCControlsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CatTransactionsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatTransactionsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QCCustomRemarksResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QCCustomRemarksResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QCExistResources.Designer.cs" />
+    <Compile Include="Resources\GetStar1DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetStar1DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ReportInterjetResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportInterjetResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ReportVolarisResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportVolarisResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ServicesExtrasResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicesExtrasResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetAirLineAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetAirLineAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetAirLinesFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetAirLinesFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetAirPortResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetAirPortResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetAllFirmModulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetAllFirmModulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetClientsCatalogsNextelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetClientsCatalogsNextelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetDetailsPNRResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetDetailsPNRResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetLocationDKNotAcceptedResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetLocationDKNotAcceptedResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetNewFeeRuleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetNewFeeRuleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetNewTargetFeeRuleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetNewTargetFeeRuleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetPCCsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetPCCsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetProductivityMailStatusResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetProductivityMailStatusResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetProfileChangesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetProfileChangesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetQCByAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetQCByAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetQualityCotrolsResources.Designer.cs" />
+    <Compile Include="Resources\SetStar1Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStar1Details.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetStar2DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStar2DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetStarsLevel1InfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStarsLevel1InfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetStarsLevel1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStarsLevel1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetStarsLevel2InfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStarsLevel2InfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetStarsLevel2Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetStarsLevel2Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SetTAResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetTAResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SiteDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SiteDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Star1stLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Star1stLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Star2ndLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Star2ndLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\StatusFamilyResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusFamilyResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SubDHLResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubDHLResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Update1stLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Update1stLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Update1stLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Update1stLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Update2ndLevelInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Update2ndLevelInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Update2ndLevelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Update2ndLevelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateAirLineFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAirLineFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateAirPortResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAirPortResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateAlAgreementsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAlAgreementsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateAllFirmModulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateAllFirmModulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateCorporateCRUDResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateCorporateCRUDResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateImagesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateImagesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdatePccInfoResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatePccInfoResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdatePCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatePCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdatePriorityByAttribute1Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdatePriorityByAttribute1Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateQCbyAttribute1_ADResources.Designer.cs" />
+    <Compile Include="Resources\UpdateQualityControlsResources.Designer.cs" />
+    <Compile Include="Resources\UpdateS1DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateS1DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateStar2DetailsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateStar2DetailsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateStatusAllFirmModulesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateStatusAllFirmModulesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpdateUserResources.Designer.cs" />
+    <Compile Include="Resources\UpdateUsersResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateUsersResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UpgradeFilesResources.Designer.cs" />
+    <Compile Include="Resources\UserAllAccessResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserAllAccessResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UserProductivityGenericResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserProductivityGenericResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UserProductivityPerPCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserProductivityPerPCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UserSelectByPCCResources.Designer.cs" />
+    <Compile Include="Resources\UsersSelectByPCCResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsersSelectByPCCResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ValidateConcludedPNRResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidateConcludedPNRResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SabreErrorMsgDAL.cs" />
+    <Compile Include="HotelsDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CatAirLinesClassResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatAirLinesClassResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirLinesFareResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirLinesFareResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirLinesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirLinesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AirportCodesResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirportCodesResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CurrencyCountryResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrencyCountryResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SabreErrorMsgResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SabreErrorMsgResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\HotelResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SabreMessageResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SabreMessageResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SubTypePaxResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubTypePaxResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TypePaxResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypePaxResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SabreMessagesDAL.cs" />
+    <Compile Include="Resources\SearchClientsCatalogsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchClientsCatalogsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchClientsCatalogsDAL.cs" />
+    <Compile Include="Security\ApplicationsDAL.cs" />
+    <Compile Include="GetStarLevel2ByEmailDAL.cs" />
+    <Compile Include="Security\ProfilesDAL.cs" />
+    <Compile Include="Security\RolesDAL.cs" />
+    <Compile Include="Security\UsersDAL.cs" />
+    <Compile Include="Security\UsersInRolesDAL.cs" />
+    <Compile Include="ServiceMDDAL.cs" />
+    <Compile Include="ServicesExtrasDAL.cs" />
+    <Compile Include="SetAirLineAgreementsDAL.cs" />
+    <Compile Include="SetAirLinesFareDAL.cs" />
+    <Compile Include="SetAirPortDAL.cs" />
+    <Compile Include="SetAllFirmModulesDAL.cs" />
+    <Compile Include="SetAuthCodeDAL.cs" />
+    <Compile Include="SetClientsCatalogsNextelDAL.cs" />
+    <Compile Include="SetDetailsPNRDAL.cs" />
+    <Compile Include="SetLocationDKNotAcceptedDAL.cs" />
+    <Compile Include="SetLogNewFormatProfilesDAL.cs" />
+    <Compile Include="SetNewFeeRuleDAL.cs" />
+    <Compile Include="SetNewTargetFeeRuleDAL.cs" />
+    <Compile Include="SetPCCsDAL.cs" />
+    <Compile Include="SetProductivityMailStatusDAL.cs" />
+    <Compile Include="SetProfileChangesDAL.cs" />
+    <Compile Include="SetQCByAttribute1DAL.cs" />
+    <Compile Include="SetQualityCotrolsDAL.cs" />
+    <Compile Include="SetStar1DetailsDAL.cs" />
+    <Compile Include="SetStar2DetailsDAL.cs" />
+    <Compile Include="SetStarsLevel1DAL.cs" />
+    <Compile Include="SetStarsLevel1InfoDAL.cs" />
+    <Compile Include="SetStarsLevel2DAL.cs" />
+    <Compile Include="SetStarsLevel2InfoDAL.cs" />
+    <Compile Include="SetTADAL.cs" />
+    <Compile Include="SiteDHLDAL.cs" />
+    <Compile Include="Star1stLevelInfoDAL.cs" />
+    <Compile Include="Star2ndLevelInfoDAL.cs" />
+    <Compile Include="StatusFamilyNameDAL.cs" />
+    <Compile Include="SubDHLDAL.cs" />
+    <Compile Include="SubTypePaxDAL.cs" />
+    <Compile Include="TypePaxDAL.cs" />
+    <Compile Include="CatCarVendorsCodesDAL.cs" />
+    <Compile Include="Update1stLevelDAL.cs" />
+    <Compile Include="Update1stLevelInfoDAL.cs" />
+    <Compile Include="Update2ndLevelDAL.cs" />
+    <Compile Include="Update2ndLevelInfoDAL.cs" />
+    <Compile Include="UpdateAirLineFareDAL.cs" />
+    <Compile Include="UpdateAirPortDAL.cs" />
+    <Compile Include="UpdateAlAgreementsDAL.cs" />
+    <Compile Include="UpdateAllFirmModulesDAL.cs" />
+    <Compile Include="UpdateAuthCodeDAL.cs" />
+    <Compile Include="UpdateCompleteStatusUpgradeDAL.cs" />
+    <Compile Include="UpdateCorporateCRUDDAL.cs" />
+    <Compile Include="UpdateDetailsPNRHotelDAL.cs" />
+    <Compile Include="UpdateImagesDAL.cs" />
+    <Compile Include="UpdatePCCDAL.cs" />
+    <Compile Include="UpdatePccInfoDAL.cs" />
+    <Compile Include="UpdatePriorityByAttribute1DAL.cs" />
+    <Compile Include="UpdateQCbyAttribute1_ADDAL.cs" />
+    <Compile Include="UpdateQualityControlsDAL.cs" />
+    <Compile Include="UpdateStar1DetailsDAL.cs" />
+    <Compile Include="UpdateStar2DetailsDAL.cs" />
+    <Compile Include="UpdateStatusAllFirmModulesDAL.cs" />
+    <Compile Include="UpdateTicketsLogOnlinePayServicesDAL.cs" />
+    <Compile Include="UpdateUserDAL.cs" />
+    <Compile Include="UpdateUsersDAL.cs" />
+    <Compile Include="UserAllAccessDAL.cs" />
+    <Compile Include="UserProductivityGenericDAL.cs" />
+    <Compile Include="UserProductivityPerPCCDAL.cs" />
+    <Compile Include="UserSelectByPCCDAL.cs" />
+    <Compile Include="UsersSelectByPCCDAL.cs" />
+    <Compile Include="ValidateConcludedPNRDAL.cs" />
+    <Compile Include="VolarisCountriesDAL.cs" />
+    <Compile Include="VolarisLoggerDAL.cs" />
+    <Compile Include="VolarisPointToPointDAL.cs" />
+    <Compile Include="VolarisProfileDAL.cs" />
+    <Compile Include="VolarisStateDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AddCorporateCRUDResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddCorporateCRUDResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddToolOnlineRulesDeleteResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddToolOnlineRulesDeleteResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddToolsOnlineQueuesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddToolsOnlineQueuesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AssignQueueFirmResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssignQueueFirmResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatOnlineToolsPicCodesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatOnlineToolsPicCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatSubTypePax.resx" />
+    <EmbeddedResource Include="Resources\CorporativeCRUDConsultaResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CorporativeCRUDConsultaResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeactivatedStarsResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ActDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ActivationFeeRuleResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivationFeeRuleResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Active1stLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Active1stLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Active2ndLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Active2ndLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddDetailsTktsLinksResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddDetailsTktsLinksResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddLinksInvoicesPerTicketResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddLinksInvoicesPerTicketResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddNewUserResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddNewUserResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddRecordsContainerResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddRecordsContainerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AgentPCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AgentPCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AgentsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AgentsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirLineFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirLineFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirlineFOPResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirlineFOPResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirPortResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirPortResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirPortsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirPortsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ALAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ALAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AllPCCsCompleteResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AllPCCsCompleteResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AllPccsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AllPccsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AuthCodeResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthCodeResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cat1stStarInfoByLocationResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cat1stStarInfoByLocationResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatAgentResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatAgentResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatAllStarsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatAllStarsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatClientsCatalogsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatClientsCatalogsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatFareTypeCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatFareTypeCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatOriginSalesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatOriginSalesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatProfileLinesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatProfileLinesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatRolesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatRolesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatSSRCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatSSRCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatStars1stLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatStars1stLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatStars2ndLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatStars2ndLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatValuesXMLQualityControlsClientsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatValuesXMLQualityControlsClientsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CiaDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CiaDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatValuesCorporativeQualityControlsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatValuesCorporativeQualityControlsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirLineClassesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirLineClassesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirLinesClassResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirLinesClassResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirPortCityCountryResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirPortCityCountryResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatAirLinesClassResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatAirLinesClassResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirLinesFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirLinesFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirLinesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirLinesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AirportCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AirportCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatAirLinesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatAirLinesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatBusCodesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatBusCodesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatBusinessUnitsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatBusinessUnitsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCarEquipemetCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCarEquipemetCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCarTypeCodesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCarTypeCodesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCitiesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCitiesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatConfirmDKResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatConfirmDKResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCorporativeQualityControlsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCorporativeQualityControlsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCostCentersResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCostCentersResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCountriesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCountriesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCreditCardsCodesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCreditCardsCodesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatHotelsResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatHotelsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatPAirlinesFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatPAirlinesFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatQueueResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatQueueResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatValuesXMLQualityControlsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatValuesXMLQualityControlsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ChargePerServiceResouces.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChargePerServiceResouces.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ClientsCatalogs_NextelCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClientsCatalogs_NextelCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ClientsCatalogs_NextelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClientsCatalogs_NextelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ComissionAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ComissionAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommandsrestrictedResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommandsrestrictedResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ConsultingFirmResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConsultingFirmResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ConsultingFirmRoleResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConsultingFirmRoleResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CtaDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CtaDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CteDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CteDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Delete1stLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Delete1stLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Delete2ndLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Delete2ndLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteAirLineFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteAirLineFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteAirPortResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteAirPortResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteAlAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteAlAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteAllFirmModulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteAllFirmModulesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteCatalogQCResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteCatalogQCResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteFirmRoleResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteFirmRoleResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeletePccsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeletePccsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteProfilesResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteSCDCVueloResources.resx" />
+    <EmbeddedResource Include="Resources\DeleteStar2DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteStar2DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteToolOnlineQueuesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteToolOnlineQueuesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteToolOnlineRulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteToolOnlineRulesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeleteUsersResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeleteUsersResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DetailsPNRHotelsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DetailsPNRHotelsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DKTempResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DKTempResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatMealCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatMealCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatPccsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatPccsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatSeaVendorsCodesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatSeaVendorsCodesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatStatesUSAResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatStatesUSAResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CurrenciesCountriesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CurrenciesCountriesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CurrencyCountryResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CurrencyCountryResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatStatusCodesResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatStatusCodesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatITTourCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatITTourCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EnableDisableFirmResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnableDisableFirmResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EventCodesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EventCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FieldsDynamics.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Get2StarEmailResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAirLineAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAirLineAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAirlineCodeByNumIDResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAirlineCodeByNumIDResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAllBanksResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAllFirmMOdulesForNewUserResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAllFirmMOdulesForNewUserResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAllFirmModulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAllFirmModulesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAndSetAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAndSetAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAndSetAttributeBackupResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAndSetAttributeBackupResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetBannerImageResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetBannerImageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCatCarEquCodNameResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCatCarEquCodNameResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCatCarTypCodDescriptionResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCatCarTypCodDescriptionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCatCarVenCodNameResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCatCarVenCodNameResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetChainCodeResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetChainCodeResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCityNameResources.resx" />
+    <EmbeddedResource Include="Resources\GetClientCreditCardNumberResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetClientCreditCardNumberResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCodeMealToDIXResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCodeMealToDIXResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCorporativeFeatures.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCorporativeFeatures.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCorporativeFeesRules.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCorporativeFeesRules.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCountryResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCountryResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCreditCardNumberResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCreditCardNumberResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCreditCardsFirstLevelResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCreditCardsFirstLevelResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCreditCardsSecondLevelResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetCreditCardsSecondLevelResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetCtrlCataloguesResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetEquipmentCarByCodeResources.resx" />
+    <EmbeddedResource Include="Resources\GetIdRemarkLabelResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetIdSalesOriginResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetIdSalesOriginResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetInfoFeeRuleByAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetInfoFeeRuleByAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetInfoGroupResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetInfoGroupResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetInformationRuleAppliedResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetInformationRuleAppliedResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetLCCAirlines.resx" />
+    <EmbeddedResource Include="Resources\GetLinkByTkt.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetLinkByTkt.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetMailByUserResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetMailByUserResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetOnlineToolsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetOnlineToolsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetOnlyAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetOnlyAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetPccResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetPccResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetPromoResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetQCbyAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetQCbyAttribute1_ADResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetQCIDCtrlResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetQualityCotrolsResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStar1stLevelByStar2LevelResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStar2DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetStar2DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStar2LevelMail.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStar2ProfileByEmail.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetStar2ProfileByEmail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStarLevel1ByDk.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetStarLevel1ByDk.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetTicketsByPNRResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetTicketsByPNRResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetTypesCarByCodeResources.resx" />
+    <EmbeddedResource Include="Resources\GetVendorByCodeResources.resx" />
+    <EmbeddedResource Include="Resources\GroupCodeLabelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GroupCodeLabelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\InsertFirmRoleResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InsertFirmRoleResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\InsertItneraryHotel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InsertItneraryHotel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\InsertLogClipboardCTSResources.resx" />
+    <EmbeddedResource Include="Resources\InsertPccResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InsertPccResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\InsertSCDCBoletoResources.resx" />
+    <EmbeddedResource Include="Resources\InsertSCDCResumenResources.resx" />
+    <EmbeddedResource Include="Resources\InsertSCDCVueloResources.resx" />
+    <EmbeddedResource Include="Resources\LabelXMLRemarksResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LabelXMLRemarksResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogCxSHotelResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogCxSHotelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogNewFormatProfilesResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogNotOnlinePayServices.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogNotOnlinePayServices.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogOnlinePayServices.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogOnlinePayServices.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LogTicketsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogTicketsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MyCTSVersionResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyCTSVersionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\OnlineToolsQueuesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OnlineToolsQueuesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\OnlyAttribute1Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>OnlyAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ParameterResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParameterResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductivityMonthsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductivityMonthsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductivityPCCVsCorporativeResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductivityPCCVsCorporativeResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductivityRankingPerCorporativeResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductivityRankingPerCorporativeResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductivityRankingPerPCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductivityRankingPerPCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ProductivityWeeksResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProductivityWeeksResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QCControlsClientsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QCControlsClientsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QCControlsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QCControlsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatTransactionsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatTransactionsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QCCustomRemarksResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QCCustomRemarksResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QCExistResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GetStar1DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetStar1DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReportInterjetResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportInterjetResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReportVolarisResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReportVolarisResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SabreErrorMsgResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SabreErrorMsgResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HotelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>HotelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SabreMessageResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SabreMessageResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ServicesExtrasResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ServicesExtrasResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetAirLineAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetAirLineAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetAirLinesFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetAirLinesFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetAirPortResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetAirPortResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetAllFirmModulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetAllFirmModulesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetClientsCatalogsNextelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetClientsCatalogsNextelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetDetailsPNRResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetDetailsPNRResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetLocationDKNotAcceptedResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetLocationDKNotAcceptedResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetNewFeeRuleResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetNewFeeRuleResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetNewTargetFeeRuleResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetNewTargetFeeRuleResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetPCCsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetPCCsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetProductivityMailStatusResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetProductivityMailStatusResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetProfileChangesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetProfileChangesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetQCByAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetQCByAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetQualityCotrolsResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStar1Details.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStar1Details.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStar2DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStar2DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStarsLevel1InfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStarsLevel1InfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStarsLevel1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStarsLevel1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStarsLevel2InfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStarsLevel2InfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetStarsLevel2Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetStarsLevel2Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SetTAResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetTAResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SiteDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SiteDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Star1stLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Star1stLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Star2ndLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Star2ndLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StatusFamilyResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusFamilyResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SubDHLResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SubDHLResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SubTypePaxResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SubTypePaxResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TypePaxResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TypePaxResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CatCarVendorsCodesResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CatCarVendorsCodesResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SearchClientsCatalogsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SearchClientsCatalogsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Update1stLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Update1stLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Update1stLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Update1stLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Update2ndLevelInfoResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Update2ndLevelInfoResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Update2ndLevelResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Update2ndLevelResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateAirLineFareResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateAirLineFareResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateAirPortResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateAirPortResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateAlAgreementsResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateAlAgreementsResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateAllFirmModulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateAllFirmModulesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateCorporateCRUDResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateCorporateCRUDResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateImagesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateImagesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdatePccInfoResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdatePccInfoResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdatePCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdatePCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdatePriorityByAttribute1Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdatePriorityByAttribute1Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateQCbyAttribute1_ADResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateQualityControlsResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateS1DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateS1DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateStar2DetailsResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateStar2DetailsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateStatusAllFirmModulesResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateStatusAllFirmModulesResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateUserResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpdateUsersResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UpdateUsersResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpgradeFilesResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UserAllAccessResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserAllAccessResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UserProductivityGenericResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserProductivityGenericResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UserProductivityPerPCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserProductivityPerPCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UserSelectByPCCResources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UsersSelectByPCCResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UsersSelectByPCCResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ValidateConcludedPNRResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidateConcludedPNRResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\MyCTS.Components.NullableHelper\MyCTS.Components.NullableHelper.csproj">
+      <Project>{7C5B977C-5BCB-474A-B91D-FB58624BAF1B}</Project>
+      <Name>MyCTS.Components.NullableHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyCTS.EventsManager\MyCTS.EventsManager.csproj">
+      <Project>{37D95FC1-9BC2-47C7-B3FA-B7CB6D658B58}</Project>
+      <Name>MyCTS.EventsManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCTS.Entities\MyCTS.Entities.csproj">
+      <Project>{AD10FAE3-774C-455C-B97D-A3BA60493F9D}</Project>
+      <Name>MyCTS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

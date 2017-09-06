@@ -1,0 +1,82 @@
+﻿<control:BaseWindow x:Class="ADMIN2.Clientes.FrmEntidades"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      Title="" Height="272.466" Width="528.94"
+        xmlns:control="clr-namespace:ADMIN2.Controls;assembly=ADMIN2.Controls"
+        xmlns:my="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+        WindowStyle="None" ResizeMode="NoResize" BorderThickness="2" BorderBrush="#D0A82D" Background="#FFd6d6d6" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid Margin="0,0,0,5">
+        <Rectangle Height="28" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7C4D09" Offset="0.464"/>
+                    <GradientStop Color="#FFA87C05" Offset="0.916"/>
+                    <GradientStop Color="#FF7E4F08" Offset="0.284"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Style="{DynamicResource labe_cabecera}" Content="Búsqueda de Dirección" Margin="10,0,42,0" Grid.ColumnSpan="2"/>
+        <Button Name="btnCerrar" Click="BtnCerrarClick" Style="{DynamicResource close_boton}" Margin="499,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" IsCancel="True" RenderTransformOrigin="5.423,0.69"/>
+        <GroupBox Header="" BorderBrush="#D0A82D" BorderThickness="2" Margin="6,30,0,30" HorizontalAlignment="Left" Width="509">
+            <StackPanel Margin="0,0,-2,0">
+                <Grid Height="183" x:Name="GridBotones">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44*" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="11,3,0,0" Text="Entidad Federativa:" x:Name="lblr" />
+                    <TextBox x:Name="TxtEstado" Margin="125,3,0,0"  TabIndex="1"
+                		HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Template="{StaticResource TextBoxBaseControlTemplate}"
+                		Width="364" Height="22"/>
+                    <TextBlock Height="Auto" Width="74" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="11,69,0,0" Text="Colonia:" x:Name="lblsub"/>
+
+                    <Button Height="16"  HorizontalAlignment="Left" x:Name="BtnEstado" VerticalAlignment="Top" Width="16" Style="{DynamicResource buscar2}" Margin="468,5,0,0" 
+                		Cursor="Hand"  ToolTip="Clic para buscar en las Entidades Federarivas" Click="BtnEntidad" RenderTransformOrigin="29.451,0.877" />
+                    <TextBlock Height="Auto" Width="74" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="11,34,0,0" Text="Municipio:" x:Name="lblsub_Copy"/>
+                    <control:NumericTextBox x:Name="TxtCP" MaxLength="4" IsEnabled="False"
+                		HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top"
+                		Width="58" Margin="125,101,0,0" Height="22" 
+                                            Template="{StaticResource TextBoxBaseControlTemplate}" TabIndex="4" />
+                    <TextBlock Height="Auto" Width="93" HorizontalAlignment="Left" VerticalAlignment="Top"
+                		Style="{DynamicResource estilo_labels}" Margin="11,103,0,0" Text="Código Postal:" x:Name="lblsub_Copy1"/>
+                    <TextBox x:Name="TxtColonia" Margin="125,69,0,0"  TabIndex="3"
+                    	HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"
+                    	Template="{StaticResource TextBoxBaseControlTemplate}"
+                    	Width="364" Height="22"/>
+                    <TextBox x:Name="TxtMunicipio" Margin="125,34,0,0"  TabIndex="2"
+                    	HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"
+                    	Template="{StaticResource TextBoxBaseControlTemplate}"
+                    	Width="364" Height="22"/>
+                    <Button Height="16"  HorizontalAlignment="Left" x:Name="BtnMunicipio" VerticalAlignment="Top" Width="16" Style="{DynamicResource buscar2}" Margin="468,37,0,0" 
+                    	Cursor="Hand"  ToolTip="Clic para buscar en los Municipios" RenderTransformOrigin="0.51,0.127" Click="BtnMunicipio_Click" />
+                    <Button Height="16"  HorizontalAlignment="Left" x:Name="BtnColinia" VerticalAlignment="Top" Width="16" Style="{DynamicResource buscar2}" Margin="468,72,0,0" 
+                    	Cursor="Hand"  ToolTip="Clic para buscar en las Colonias" RenderTransformOrigin="0.51,0.127" Click="BtnColinia_Click" />
+                    <CheckBox x:Name="ChbAplica" Content="Iguala"  HorizontalAlignment="Left" VerticalAlignment="Top" Style="{DynamicResource CheckBoxStyle}" RenderTransformOrigin="0.749,0.51" 
+                    	TabIndex="4" Width="28" Margin="125,138,0,0"/>
+                    <TextBlock Height="54" Width="94" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"
+                    	Style="{DynamicResource estilo_labels}" Margin="10,129,0,0" Text="Aplicar misma dirección para datos de envió:" x:Name="LblAplica"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <Grid x:Name="GridBotones2" HorizontalAlignment="Left" Height="45" Margin="10,227,0,-9" VerticalAlignment="Top" Width="505">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnAceptar" Height="25" Cursor="Arrow" Click="btnAceptar_Click"
+        		Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Top" TabIndex="4"
+        		Width="100" Margin="0,10,88,0" Style="{DynamicResource btn_gen_naranja}" Foreground="Black" RenderTransformOrigin="0.97,0.32"/>
+            <Button x:Name="btnCancelar" Height="25" Cursor="Arrow" TabIndex="5" Click="btnCancelClick"
+            	Content="Cancelar" HorizontalAlignment="Right" VerticalAlignment="Top" 
+            	Width="100" Style="{DynamicResource btn_gen_naranja}" Foreground="Black" Grid.ColumnSpan="2" Margin="0,10,0,0"/>
+        </Grid>
+    </Grid>
+</control:BaseWindow>
+

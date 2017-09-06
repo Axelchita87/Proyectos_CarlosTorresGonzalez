@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IJSessionManager" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IIJSessionManager_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices/DataContracts/Session" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIJSessionManager_CloseSession_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseSession" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_CloseSession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_GetSessionID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSessionID" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_GetSessionID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSessionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Logon_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logon" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Logon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IIJSessionManager_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIJSessionManager">
+    <wsdl:operation name="CloseSession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJSessionManager/CloseSession" message="tns:IIJSessionManager_CloseSession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJSessionManager/CloseSessionResponse" message="tns:IIJSessionManager_CloseSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSessionID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJSessionManager/GetSessionID" message="tns:IIJSessionManager_GetSessionID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJSessionManager/GetSessionIDResponse" message="tns:IIJSessionManager_GetSessionID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJSessionManager/Test" message="tns:IIJSessionManager_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJSessionManager/TestResponse" message="tns:IIJSessionManager_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJSessionManager/Logon" message="tns:IIJSessionManager_Logon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJSessionManager/LogonResponse" message="tns:IIJSessionManager_Logon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJSessionManager/Logout" message="tns:IIJSessionManager_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJSessionManager/LogoutResponse" message="tns:IIJSessionManager_Logout_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIJSessionManager" type="tns:IIJSessionManager">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IIJSessionManager_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CloseSession">
+      <soap:operation soapAction="http://tempuri.org/IIJSessionManager/CloseSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSessionID">
+      <soap:operation soapAction="http://tempuri.org/IIJSessionManager/GetSessionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/IIJSessionManager/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logon">
+      <soap:operation soapAction="http://tempuri.org/IIJSessionManager/Logon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/IIJSessionManager/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IJSessionManager">
+    <wsdl:port name="BasicHttpBinding_IIJSessionManager" binding="tns:BasicHttpBinding_IIJSessionManager">
+      <soap:address location="http://pc4037:5498/WSInterJet/IJSessionManager.svc/SessionManager" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

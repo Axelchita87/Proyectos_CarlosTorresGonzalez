@@ -1,0 +1,1176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="ACTIVE_OPTIONAL" xml:space="preserve">
+    <value>A1</value>
+  </data>
+  <data name="ACTIVE_STRONG" xml:space="preserve">
+    <value>A2</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>rdoAdd</value>
+  </data>
+  <data name="ARRAY_NAME_ARRAY_VALUES" xml:space="preserve">
+    <value>arrayValues</value>
+  </data>
+  <data name="ARRAY_NAME_CHARGE_PER_SERVICE" xml:space="preserve">
+    <value>chargePerService</value>
+  </data>
+  <data name="ARRAY_NAME_PAX_POSITION_VALUES" xml:space="preserve">
+    <value>passengerPositionValues</value>
+  </data>
+  <data name="ARRAY_NAME_REMARKS_INTEGRA" xml:space="preserve">
+    <value>remarksIntegra</value>
+  </data>
+  <data name="ARRAY_NAME_WORKER_NUMBER" xml:space="preserve">
+    <value>workerNumberArray</value>
+  </data>
+  <data name="AST" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="AT" xml:space="preserve">
+    <value>@</value>
+  </data>
+  <data name="CASH" xml:space="preserve">
+    <value>CASH</value>
+  </data>
+  <data name="COMBOBOX_FIRST_ITEM_TEXT" xml:space="preserve">
+    <value>Seleccione el valor deseado:</value>
+  </data>
+  <data name="COMMADNS_DOT_SLASH" xml:space="preserve">
+    <value>./</value>
+  </data>
+  <data name="COMMADS_END_IT_FIVE_SLASH" xml:space="preserve">
+    <value>Σ5/</value>
+  </data>
+  <data name="COMMANDS_5_CC_INDENT" xml:space="preserve">
+    <value>5.CC-</value>
+  </data>
+  <data name="COMMANDS_5_CD_INDENT" xml:space="preserve">
+    <value>5.CD-</value>
+  </data>
+  <data name="COMMANDS_5_CE_INDENT" xml:space="preserve">
+    <value>5.CE-</value>
+  </data>
+  <data name="COMMANDS_5_CF_INDENT" xml:space="preserve">
+    <value>5.CF-</value>
+  </data>
+  <data name="COMMANDS_5_CG_INDENT" xml:space="preserve">
+    <value>5.CG-</value>
+  </data>
+  <data name="COMMANDS_5_CH_INDENT" xml:space="preserve">
+    <value>5.CH-</value>
+  </data>
+  <data name="COMMANDS_5_CS01_INDENT" xml:space="preserve">
+    <value>5.CS01-</value>
+  </data>
+  <data name="COMMANDS_5_CS02_INDENT" xml:space="preserve">
+    <value>5.CS02-</value>
+  </data>
+  <data name="COMMANDS_5_CS03_INDENT" xml:space="preserve">
+    <value>5.CS03-</value>
+  </data>
+  <data name="COMMANDS_5_CS04_INDENT" xml:space="preserve">
+    <value>5.CS04-</value>
+  </data>
+  <data name="COMMANDS_5_CS05_INDENT" xml:space="preserve">
+    <value>5.CS05-</value>
+  </data>
+  <data name="COMMANDS_5_CS06_INDENT" xml:space="preserve">
+    <value>5.CS06-</value>
+  </data>
+  <data name="COMMANDS_5_CS07_INDENT" xml:space="preserve">
+    <value>5.CS07-</value>
+  </data>
+  <data name="COMMANDS_5_CS08_INDENT" xml:space="preserve">
+    <value>5.CS08-</value>
+  </data>
+  <data name="COMMANDS_5_CS09_INDENT" xml:space="preserve">
+    <value>5.CS09-</value>
+  </data>
+  <data name="COMMANDS_5_DOT" xml:space="preserve">
+    <value>5.</value>
+  </data>
+  <data name="COMMANDS_5_DOT_CS_AGENT_AGENT" xml:space="preserve">
+    <value>5.CS{0}-{1}</value>
+  </data>
+  <data name="COMMANDS_5_DOT_CS0_AGENT_AGENT" xml:space="preserve">
+    <value>5.CS0{0}-{1}</value>
+  </data>
+  <data name="COMMANDS_5_DOT_TL_INDENT_N_AGENT_SLASH_AGENT" xml:space="preserve">
+    <value>5.TL-N{0}/{1}</value>
+  </data>
+  <data name="COMMANDS_5_DOT_TL_INDENT_N0_AGENT_SLASH_AGENT" xml:space="preserve">
+    <value>5.TL-N0{0}/{1}</value>
+  </data>
+  <data name="COMMANDS_5_S_AST_FB" xml:space="preserve">
+    <value>5.S*FB</value>
+  </data>
+  <data name="COMMANDS_5_S_AST_FF" xml:space="preserve">
+    <value>5.S*FF</value>
+  </data>
+  <data name="COMMANDS_5_S_AST_FJ" xml:space="preserve">
+    <value>5.S*FJ</value>
+  </data>
+  <data name="COMMANDS_5_S_AST_FM" xml:space="preserve">
+    <value>5.S*FM</value>
+  </data>
+  <data name="COMMANDS_5_S_AST_LF" xml:space="preserve">
+    <value>5.S*LF</value>
+  </data>
+  <data name="COMMANDS_5_U99_INDENT_RC_SLASH" xml:space="preserve">
+    <value>5.U99-RC/</value>
+  </data>
+  <data name="COMMANDS_5H_NO_DETERMINO_TARIFA_BUSINESS_AST" xml:space="preserve">
+    <value>5H-NO SE DETERMINO TARIFA BUSINESS *</value>
+  </data>
+  <data name="COMMANDS_5H_NO_DETERMINO_TARIFA_ESPECIFICA_AST" xml:space="preserve">
+    <value>5H-NO SE DETERMINO TARIFA ESPECIFICA *</value>
+  </data>
+  <data name="COMMANDS_5H_NO_DETERMINO_TARIFA_ESTANDAR_AST" xml:space="preserve">
+    <value>5H-NO SE DETERMINO TARIFA ESTANDAR *</value>
+  </data>
+  <data name="COMMANDS_5H_NO_DETERMINO_TARIFA_MAS_BAJA_DISPONIBLE_WPNC_AST" xml:space="preserve">
+    <value>5H-NO SE DETERMINO TARIFA MAS BAJA DISPONIBLE WPNC *</value>
+  </data>
+  <data name="COMMANDS_5H_NO_DETERMINO_TARIFA_MAS_BAJA_NO_DISPONIBLE_WPNCS_AST" xml:space="preserve">
+    <value>5H-NO SE DETERMINO TARIFA MAS BAJA NO DISPONIBLE WPNCS *</value>
+  </data>
+  <data name="COMMANDS_5H_NO_SE_PUDO_CALC_TARIFA_AUTO" xml:space="preserve">
+    <value>5H-NO SE PUDO CALCULAR LA TARIFA AUTOMATICAMENTE</value>
+  </data>
+  <data name="COMMANDS_5S_AST_LC" xml:space="preserve">
+    <value>5.S*LC</value>
+  </data>
+  <data name="COMMANDS_AC" xml:space="preserve">
+    <value>AC</value>
+  </data>
+  <data name="COMMANDS_AC_AT_ALL" xml:space="preserve">
+    <value>AC@ALL</value>
+  </data>
+  <data name="COMMANDS_AC_CHANGE" xml:space="preserve">
+    <value>AC¤</value>
+  </data>
+  <data name="COMMANDS_AST_A" xml:space="preserve">
+    <value>*A</value>
+  </data>
+  <data name="COMMANDS_AST_AST_W" xml:space="preserve">
+    <value>**W</value>
+  </data>
+  <data name="COMMANDS_AST_BA" xml:space="preserve">
+    <value>*BA</value>
+  </data>
+  <data name="COMMANDS_AST_CROSSLORAINE" xml:space="preserve">
+    <value>*‡</value>
+  </data>
+  <data name="COMMANDS_AST_E" xml:space="preserve">
+    <value>*E</value>
+  </data>
+  <data name="COMMANDS_AST_I" xml:space="preserve">
+    <value>*I</value>
+  </data>
+  <data name="COMMANDS_AST_IAB" xml:space="preserve">
+    <value>*IAB</value>
+  </data>
+  <data name="COMMANDS_AST_N_AST_IA" xml:space="preserve">
+    <value>*N*IA</value>
+  </data>
+  <data name="COMMANDS_AST_N_AST_IA_AST_INDENT" xml:space="preserve">
+    <value>*N*IA*-</value>
+  </data>
+  <data name="COMMANDS_AST_P5" xml:space="preserve">
+    <value>*P5</value>
+  </data>
+  <data name="COMMANDS_AST_P6" xml:space="preserve">
+    <value>*P6</value>
+  </data>
+  <data name="COMMANDS_AST_PAC" xml:space="preserve">
+    <value>*PAC</value>
+  </data>
+  <data name="COMMANDS_AST_PDK" xml:space="preserve">
+    <value>*PDK</value>
+  </data>
+  <data name="COMMANDS_AST_POINT" xml:space="preserve">
+    <value>*.</value>
+  </data>
+  <data name="COMMANDS_AST_PQ" xml:space="preserve">
+    <value>*PQ</value>
+  </data>
+  <data name="COMMANDS_AST_Q_CROSSLORRAINE" xml:space="preserve">
+    <value>*Q‡</value>
+  </data>
+  <data name="COMMANDS_AST_S" xml:space="preserve">
+    <value>*S</value>
+  </data>
+  <data name="COMMANDS_AST_SLASH" xml:space="preserve">
+    <value>*/</value>
+  </data>
+  <data name="COMMANDS_AST_T" xml:space="preserve">
+    <value>*T</value>
+  </data>
+  <data name="COMMANDS_AST_Z" xml:space="preserve">
+    <value>*Z</value>
+  </data>
+  <data name="COMMANDS_BOLETIN" xml:space="preserve">
+    <value>BOLETIN</value>
+  </data>
+  <data name="COMMANDS_CHANGE" xml:space="preserve">
+    <value>@</value>
+  </data>
+  <data name="COMMANDS_CORREO" xml:space="preserve">
+    <value>CORREO</value>
+  </data>
+  <data name="COMMANDS_CROSLORAINE_F" xml:space="preserve">
+    <value>‡F</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_A" xml:space="preserve">
+    <value>‡A</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_AC" xml:space="preserve">
+    <value>‡AC</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_AC_AST" xml:space="preserve">
+    <value>‡AC*</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_C" xml:space="preserve">
+    <value>‡C</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_DPB" xml:space="preserve">
+    <value>‡DPB</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_DPE" xml:space="preserve">
+    <value>‡DPE</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_ED_SLASH" xml:space="preserve">
+    <value>‡ED/</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_ETR_CROSSLORAINE_DPB" xml:space="preserve">
+    <value>‡ETR‡DPB</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_ETR_CROSSLORAINE_DPE" xml:space="preserve">
+    <value>‡ETR‡DPE</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_I" xml:space="preserve">
+    <value>‡I</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_KP" xml:space="preserve">
+    <value>‡KP</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_L" xml:space="preserve">
+    <value>‡L</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_N" xml:space="preserve">
+    <value>‡N</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_P" xml:space="preserve">
+    <value>‡P</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_Q" xml:space="preserve">
+    <value>‡Q</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_S" xml:space="preserve">
+    <value>‡S</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_T" xml:space="preserve">
+    <value>‡T</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_U" xml:space="preserve">
+    <value>‡U</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_XO" xml:space="preserve">
+    <value>‡XO</value>
+  </data>
+  <data name="COMMANDS_DES01_IDENT" xml:space="preserve">
+    <value>DES01-</value>
+  </data>
+  <data name="COMMANDS_DES02_INDENT" xml:space="preserve">
+    <value>DES02-</value>
+  </data>
+  <data name="COMMANDS_DIN" xml:space="preserve">
+    <value>DIN</value>
+  </data>
+  <data name="COMMANDS_DQB_AST" xml:space="preserve">
+    <value>DQB*</value>
+  </data>
+  <data name="COMMANDS_DQB_AST_ETU" xml:space="preserve">
+    <value>DQB*ETU</value>
+  </data>
+  <data name="COMMANDS_E" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="COMMANDS_ENDIT_5_DES02_INDENT" xml:space="preserve">
+    <value>Σ5.DES02-</value>
+  </data>
+  <data name="COMMANDS_ENDITEM_5_S_AST_TT_INDENT_B" xml:space="preserve">
+    <value>§5.S*TT-B</value>
+  </data>
+  <data name="COMMANDS_ENDITEM_5_S_AST_TT_INDENT_C" xml:space="preserve">
+    <value>§5.S*TT-C</value>
+  </data>
+  <data name="COMMANDS_FIVE" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="COMMANDS_FIVE_CROSS_LORAINE_S" xml:space="preserve">
+    <value>5¥S</value>
+  </data>
+  <data name="COMMANDS_FIVE_CROSSLORAINE" xml:space="preserve">
+    <value>5‡</value>
+  </data>
+  <data name="COMMANDS_FIVE_DOT_OV_INDENT" xml:space="preserve">
+    <value>5.OV-</value>
+  </data>
+  <data name="COMMANDS_FIVE_DOT_UN_INDENT" xml:space="preserve">
+    <value>5.UN-</value>
+  </data>
+  <data name="COMMANDS_FIVE_POINT" xml:space="preserve">
+    <value>5.</value>
+  </data>
+  <data name="COMMANDS_FIVE_SLASH" xml:space="preserve">
+    <value>5/</value>
+  </data>
+  <data name="COMMANDS_LORRAINE_CROSS_TE_INDENT" xml:space="preserve">
+    <value>‡TE-</value>
+  </data>
+  <data name="COMMANDS_LORRAINE_CROSS_TXN" xml:space="preserve">
+    <value>‡TXN</value>
+  </data>
+  <data name="COMMANDS_MD" xml:space="preserve">
+    <value>MD</value>
+  </data>
+  <data name="COMMANDS_MPCA_AST" xml:space="preserve">
+    <value>MPCA*</value>
+  </data>
+  <data name="COMMANDS_MS" xml:space="preserve">
+    <value>MS</value>
+  </data>
+  <data name="COMMANDS_N" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="COMMANDS_PD" xml:space="preserve">
+    <value>PD</value>
+  </data>
+  <data name="COMMANDS_POINT_END_IT_FIVE_SLASH" xml:space="preserve">
+    <value>.Σ5/</value>
+  </data>
+  <data name="COMMANDS_POLEM" xml:space="preserve">
+    <value>POLEM</value>
+  </data>
+  <data name="COMMANDS_PTR_AST_DQB_AST" xml:space="preserve">
+    <value>PTR*DQB*</value>
+  </data>
+  <data name="COMMANDS_PTRDQB_AST" xml:space="preserve">
+    <value>PTRDQB*</value>
+  </data>
+  <data name="COMMANDS_QR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="COMMANDS_QXI" xml:space="preserve">
+    <value>QXI</value>
+  </data>
+  <data name="COMMANDS_RECO" xml:space="preserve">
+    <value>RECO</value>
+  </data>
+  <data name="COMMANDS_RH" xml:space="preserve">
+    <value>RH</value>
+  </data>
+  <data name="COMMANDS_S" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="COMMANDS_SLASH_PD" xml:space="preserve">
+    <value>/PD</value>
+  </data>
+  <data name="COMMANDS_SLASH_TE" xml:space="preserve">
+    <value>/TE</value>
+  </data>
+  <data name="COMMANDS_TARIFA_BASE_BUSINESS" xml:space="preserve">
+    <value>-TARIFA BASE BUSINESS</value>
+  </data>
+  <data name="COMMANDS_TARIFA_BASE_ESPECIFICA" xml:space="preserve">
+    <value>-TARIFA BASE ESPECIFICA</value>
+  </data>
+  <data name="COMMANDS_TARIFA_BASE_ESTANDAR" xml:space="preserve">
+    <value>-TARIFA BASE ESTANDAR</value>
+  </data>
+  <data name="COMMANDS_TARIFA_MAS_ECONOMICA_DISPONIBLE" xml:space="preserve">
+    <value>-TARIFA MAS ECONOMICA DISPONIBLE</value>
+  </data>
+  <data name="COMMANDS_TARIFA_MAS_ECONOMICA_NO_DISPONIBLE" xml:space="preserve">
+    <value>-TARIFA MAS ECONOMICA NO DISPONIBLE</value>
+  </data>
+  <data name="COMMANDS_THREE" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="COMMANDS_TN" xml:space="preserve">
+    <value>TN</value>
+  </data>
+  <data name="COMMANDS_TXN_AST_MX" xml:space="preserve">
+    <value>TXN*MX</value>
+  </data>
+  <data name="COMMANDS_W" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="COMMANDS_W_CROSSLORAINE_C" xml:space="preserve">
+    <value>W‡C</value>
+  </data>
+  <data name="COMMANDS_W_CROSSLORAINE_D" xml:space="preserve">
+    <value>W‡D</value>
+  </data>
+  <data name="COMMANDS_W_CROSSLORAINE_I" xml:space="preserve">
+    <value>W‡I</value>
+  </data>
+  <data name="COMMANDS_WP" xml:space="preserve">
+    <value>WP</value>
+  </data>
+  <data name="COMMANDS_WPNC" xml:space="preserve">
+    <value>WPNC</value>
+  </data>
+  <data name="COMMANDS_WPNCS" xml:space="preserve">
+    <value>WPNCS</value>
+  </data>
+  <data name="COMMANDS_WPNCS_CROSSLORAINE_S1_INDENT_16" xml:space="preserve">
+    <value>WPNCS‡S1-16</value>
+  </data>
+  <data name="COMMANDS_WPOC_B" xml:space="preserve">
+    <value>WPOC-B</value>
+  </data>
+  <data name="COMMANDS_XPG" xml:space="preserve">
+    <value>XPG</value>
+  </data>
+  <data name="COMMANDS_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="COMMANDS_ZERO" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CONSOLID" xml:space="preserve">
+    <value>CON</value>
+  </data>
+  <data name="CONTROL_NAME_QC_EIGHT" xml:space="preserve">
+    <value>txtC8</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FIVE" xml:space="preserve">
+    <value>txtC5</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY" xml:space="preserve">
+    <value>txtC40</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_EIGHT" xml:space="preserve">
+    <value>txtC48</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_FIVE" xml:space="preserve">
+    <value>txtC45</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_ONE" xml:space="preserve">
+    <value>txtC41</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_SEVEN" xml:space="preserve">
+    <value>txtC47</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_SIX" xml:space="preserve">
+    <value>txtC46</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_THREE" xml:space="preserve">
+    <value>txtC43</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FORTY_TWO" xml:space="preserve">
+    <value>txtC42</value>
+  </data>
+  <data name="CONTROL_NAME_QC_FOUR" xml:space="preserve">
+    <value>txtC4</value>
+  </data>
+  <data name="CONTROL_NAME_QC_NINE" xml:space="preserve">
+    <value>txtC9</value>
+  </data>
+  <data name="CONTROL_NAME_QC_ONE" xml:space="preserve">
+    <value>txtC1</value>
+  </data>
+  <data name="CONTROL_NAME_QC_SEVEN" xml:space="preserve">
+    <value>txtC7</value>
+  </data>
+  <data name="CONTROL_NAME_QC_SIX" xml:space="preserve">
+    <value>txtC6</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TEN" xml:space="preserve">
+    <value>cmbC10</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_EIGHT" xml:space="preserve">
+    <value>cmbC38</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_FIVE" xml:space="preserve">
+    <value>cmbC35</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_FOUR" xml:space="preserve">
+    <value>cmbC34</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_NINE" xml:space="preserve">
+    <value>txtC39</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_ONE" xml:space="preserve">
+    <value>txtC31</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_SEVEN" xml:space="preserve">
+    <value>cmbC37</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_SIX" xml:space="preserve">
+    <value>cmbC36</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_THREE" xml:space="preserve">
+    <value>cmbC33</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THIRTY_TWO" xml:space="preserve">
+    <value>txtC32</value>
+  </data>
+  <data name="CONTROL_NAME_QC_THREE" xml:space="preserve">
+    <value>txtC3</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_FIVE" xml:space="preserve">
+    <value>txtC25</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_FOUR" xml:space="preserve">
+    <value>txtC24</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_NINE" xml:space="preserve">
+    <value>txtC29</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_ONE" xml:space="preserve">
+    <value>cmbC21</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_SEVEN" xml:space="preserve">
+    <value>txtC27</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_SIX" xml:space="preserve">
+    <value>txtC26</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_THREE" xml:space="preserve">
+    <value>txtC23</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWENTY_TWO" xml:space="preserve">
+    <value>cmbC22</value>
+  </data>
+  <data name="CONTROL_NAME_QC_TWO" xml:space="preserve">
+    <value>txtC2</value>
+  </data>
+  <data name="CORPORATIVE_CFE" xml:space="preserve">
+    <value>CFE100</value>
+  </data>
+  <data name="CORPORATIVEID_CFE2" xml:space="preserve">
+    <value>DKP990</value>
+  </data>
+  <data name="CORPORATIVEID_DANONE" xml:space="preserve">
+    <value>DME100</value>
+  </data>
+  <data name="CORPORATIVEID_DANONE2" xml:space="preserve">
+    <value>NUM100</value>
+  </data>
+  <data name="CORPORATIVEID_DHL" xml:space="preserve">
+    <value>DHL140</value>
+  </data>
+  <data name="CORPORATIVEID_MOVISTAR" xml:space="preserve">
+    <value>ACT100</value>
+  </data>
+  <data name="CORPORATIVEID_NATURA" xml:space="preserve">
+    <value>NCS100</value>
+  </data>
+  <data name="CORPORATIVEID_NEXTEL" xml:space="preserve">
+    <value>CNM100</value>
+  </data>
+  <data name="CORPORATIVEID_NEXTEL2" xml:space="preserve">
+    <value>LNK100</value>
+  </data>
+  <data name="CORPORATIVEID_RADIUS" xml:space="preserve">
+    <value>RADIUS</value>
+  </data>
+  <data name="CORPORATIVEID_SERFSANT" xml:space="preserve">
+    <value>BSS100</value>
+  </data>
+  <data name="CREDIT_CARD_MANUAL" xml:space="preserve">
+    <value>Tarjeta de crédito (Aut. Manual).</value>
+  </data>
+  <data name="CREDIT_CARD_SYSTEM" xml:space="preserve">
+    <value>Tarjeta de crédito (Aut. Sistema).</value>
+  </data>
+  <data name="CROSS_LORAINE" xml:space="preserve">
+    <value>‡</value>
+  </data>
+  <data name="CTS" xml:space="preserve">
+    <value>CTS</value>
+  </data>
+  <data name="DK_CTS_API_100" xml:space="preserve">
+    <value>API100</value>
+  </data>
+  <data name="DK_DESARROLLO_SAB001" xml:space="preserve">
+    <value>SAB001</value>
+  </data>
+  <data name="DOT_ONE" xml:space="preserve">
+    <value>.1</value>
+  </data>
+  <data name="EFECTIVO" xml:space="preserve">
+    <value>Efectivo</value>
+  </data>
+  <data name="END_ITEM" xml:space="preserve">
+    <value>§</value>
+  </data>
+  <data name="ENDIT" xml:space="preserve">
+    <value>Σ</value>
+  </data>
+  <data name="EX" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="GENERATING_FILE_EXCEL" xml:space="preserve">
+    <value>Generando Archivo Excel.........</value>
+  </data>
+  <data name="INACTIVE" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="INDENT" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="JUSTIFICATIONS_OF" xml:space="preserve">
+    <value>Justificaciones</value>
+  </data>
+  <data name="LABEL_GENERIC_NAME" xml:space="preserve">
+    <value>lblQualityControl</value>
+  </data>
+  <data name="LABEL_QUALITY_CONTROL_TEXT" xml:space="preserve">
+    <value>Ingrese la Información requerida para el pasajero {0}:</value>
+  </data>
+  <data name="LABEL_TITLE_TEXT" xml:space="preserve">
+    <value>Controles de Calidad del Corporativo</value>
+  </data>
+  <data name="LORRAINE_CROSS_ED" xml:space="preserve">
+    <value>‡ED</value>
+  </data>
+  <data name="LORRAINE_CROSS_EO_SLASH" xml:space="preserve">
+    <value>‡EO/</value>
+  </data>
+  <data name="MESSAGE_DK_INTEGRA_NONE" xml:space="preserve">
+    <value>REMARKS INTEGRA NO APLICABLES PARA ESTE DK. COMUNICARSE CON SISTEMAS</value>
+  </data>
+  <data name="MESSAGE_INACTIVE" xml:space="preserve">
+    <value>INACTIVO</value>
+  </data>
+  <data name="MESSAGE_ISSUE" xml:space="preserve">
+    <value>EMITIDO</value>
+  </data>
+  <data name="MESSAGE_LOCATION_VALIDATION" xml:space="preserve">
+    <value>VALIDANDO LOCATION. ESPERE POR FAVOR...</value>
+  </data>
+  <data name="MESSAGE_NO_EXISTE_LOCATION" xml:space="preserve">
+    <value>NO EXISTE LOCATION</value>
+  </data>
+  <data name="MESSAGE_QUALITY_CONTROL_VALIDATION" xml:space="preserve">
+    <value>VALIDANDO QUALITY CONTROLS ESPERE POR FAVOR...</value>
+  </data>
+  <data name="MINUS_ONE" xml:space="preserve">
+    <value>-1</value>
+  </data>
+  <data name="MISCELANEA" xml:space="preserve">
+    <value>Miscelaneo o  Electrónico</value>
+  </data>
+  <data name="MXN" xml:space="preserve">
+    <value>MXN</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NO_EXISTE_DQB_AST_ETU" xml:space="preserve">
+    <value>NO EXISTEN REGISTROS PARA LAS ENTRADAS SELECCIONADAS</value>
+  </data>
+  <data name="NO_HAY_REGISTROS" xml:space="preserve">
+    <value>NO EXISTES REGISTROS  PARA LA FECHA SELECCIONADA</value>
+  </data>
+  <data name="NORMAL" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="NORMAL_TICKET" xml:space="preserve">
+    <value>rdoNormalTicket</value>
+  </data>
+  <data name="ONE" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PAGO_MIXTO" xml:space="preserve">
+    <value>Pago Mixto</value>
+  </data>
+  <data name="PAYMENT_AMERICANEXPRESS" xml:space="preserve">
+    <value>rdoAmericanExpress</value>
+  </data>
+  <data name="PAYMENT_CASH" xml:space="preserve">
+    <value>rdoCash</value>
+  </data>
+  <data name="PAYMENT_CREDITCARD" xml:space="preserve">
+    <value>rdoCreditCard</value>
+  </data>
+  <data name="PAYMENT_MISCELANEOUS" xml:space="preserve">
+    <value>rdoMiscelaneous</value>
+  </data>
+  <data name="PAYMENT_MIXPAYMENT" xml:space="preserve">
+    <value>rdoMixPayment</value>
+  </data>
+  <data name="PCC_3L64" xml:space="preserve">
+    <value>3L64</value>
+  </data>
+  <data name="PERCENTAGE" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="PHASE_35_OR_375" xml:space="preserve">
+    <value>Fase 3.5 o 3.75</value>
+  </data>
+  <data name="PHASE_IV" xml:space="preserve">
+    <value>Fase IV</value>
+  </data>
+  <data name="PHASE35375" xml:space="preserve">
+    <value>rdoPhase35375</value>
+  </data>
+  <data name="PHASEIV" xml:space="preserve">
+    <value>rdoPhaseIV</value>
+  </data>
+  <data name="PLUS" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="POINT" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_ACCOUNT" xml:space="preserve">
+    <value>CtaDHLBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_ACTIVITY" xml:space="preserve">
+    <value>ActDHLBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_BUSINESSUNITS" xml:space="preserve">
+    <value>CatBusinessUnitsBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_CLIENT" xml:space="preserve">
+    <value>CteDHLBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_COMPANY" xml:space="preserve">
+    <value>CiaDHLBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_JUSTIFICATIONS" xml:space="preserve">
+    <value>DKTempBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_SALEORIGIN" xml:space="preserve">
+    <value>SaleOrigin</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_SITE" xml:space="preserve">
+    <value>SiteDHLBL</value>
+  </data>
+  <data name="QC_CATALOGUE_NAME_SUBACTIVITY" xml:space="preserve">
+    <value>SubDHLBL</value>
+  </data>
+  <data name="QC_CONTROL_TYPE_CHECKBOX" xml:space="preserve">
+    <value>Checkbox</value>
+  </data>
+  <data name="QC_CONTROL_TYPE_COMBOBOX" xml:space="preserve">
+    <value>Combobox</value>
+  </data>
+  <data name="QC_CONTROL_TYPE_LABEL" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="QC_CONTROL_TYPE_TEXTBOX" xml:space="preserve">
+    <value>Textbox</value>
+  </data>
+  <data name="QC_ID_C10" xml:space="preserve">
+    <value>C10</value>
+  </data>
+  <data name="QC_ID_C23" xml:space="preserve">
+    <value>C23</value>
+  </data>
+  <data name="QC_ID_C29" xml:space="preserve">
+    <value>C29</value>
+  </data>
+  <data name="QC_ID_C3" xml:space="preserve">
+    <value>C3</value>
+  </data>
+  <data name="QC_ID_C6" xml:space="preserve">
+    <value>C6</value>
+  </data>
+  <data name="QC_MESSAGE_VALIDATION" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN LA SECCIÓN {0}</value>
+  </data>
+  <data name="QC_TEN_DANONE_CHK_TEXT" xml:space="preserve">
+    <value>¿Es una clase Business o Primera?</value>
+  </data>
+  <data name="SALE_ORIGIN_COMBO_ITEM_FIVE" xml:space="preserve">
+    <value>Recursos Humanos</value>
+  </data>
+  <data name="SALE_ORIGIN_COMBO_ITEM_FOUR" xml:space="preserve">
+    <value>Recomendación cliente</value>
+  </data>
+  <data name="SALE_ORIGIN_COMBO_ITEM_ONE" xml:space="preserve">
+    <value>Política de la Empresa</value>
+  </data>
+  <data name="SALE_ORIGIN_COMBO_ITEM_THREE" xml:space="preserve">
+    <value>Correo Electronico</value>
+  </data>
+  <data name="SALE_ORIGIN_COMBO_ITEM_TWO" xml:space="preserve">
+    <value>Anuncio Boletín Turistico</value>
+  </data>
+  <data name="SLASH" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="SPACE" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="STRING_CONTAINS_L" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="STRING_CONTAINS_TAX" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="STRING_CONTAINS_TAXQUANTITY" xml:space="preserve">
+    <value>txtTaxQuantity</value>
+  </data>
+  <data name="STRING_CONTAINS_TXTFAREBASISL" xml:space="preserve">
+    <value>txtFareBasisL</value>
+  </data>
+  <data name="STRING_CONTAINS_TXTLUGGAGEL" xml:space="preserve">
+    <value>txtLuggageL</value>
+  </data>
+  <data name="STRING_CONTAINS_TXTMAXL" xml:space="preserve">
+    <value>txtMaxL</value>
+  </data>
+  <data name="TICKET_EMISSION_MESSAGE" xml:space="preserve">
+    <value>SE ESTA EMITIENDO EL BOLETO. ESPERA POR FAVOR...</value>
+  </data>
+  <data name="TKT_EMISSION_TIME" xml:space="preserve">
+    <value>TktCommandTime</value>
+  </data>
+  <data name="TRUE" xml:space="preserve">
+    <value>TRUE</value>
+  </data>
+  <data name="TRUE_VALUE" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="UC_ALL_QUALITY_CONTROLS" xml:space="preserve">
+    <value>ucAllQualityControls</value>
+  </data>
+  <data name="UC_ARMED_COMMANDS" xml:space="preserve">
+    <value>ucArmedCommands</value>
+  </data>
+  <data name="UC_CHARGESERVICE" xml:space="preserve">
+    <value>ucChargeService</value>
+  </data>
+  <data name="UC_COMPARING_FARES" xml:space="preserve">
+    <value>ucComparingFares</value>
+  </data>
+  <data name="UC_COMPARISON_RATES" xml:space="preserve">
+    <value>ucComparisonRates</value>
+  </data>
+  <data name="UC_COSTCENTER" xml:space="preserve">
+    <value>ucCostCenter</value>
+  </data>
+  <data name="UC_CREATE_PHASE_IV" xml:space="preserve">
+    <value>ucCreatePhaseIV</value>
+  </data>
+  <data name="UC_DBQ_REPORT" xml:space="preserve">
+    <value>ucDBQReport</value>
+  </data>
+  <data name="UC_DELETE_ACCOUNT_LINE_COMMAND" xml:space="preserve">
+    <value>ucDeleteAccountLineCommand</value>
+  </data>
+  <data name="UC_DELETEACCOUNTLINE" xml:space="preserve">
+    <value>ucDeleteAccountLine</value>
+  </data>
+  <data name="UC_FARE_SOLD_JUSTIFICATION" xml:space="preserve">
+    <value>ucFareSoldJustification</value>
+  </data>
+  <data name="UC_GENERATING_ACCOUNTABLE_REMARK" xml:space="preserve">
+    <value>ucGeneratingAccountableRemark</value>
+  </data>
+  <data name="UC_PHASEIV_BREAKDOWN" xml:space="preserve">
+    <value>ucPhaseIVBreakDown</value>
+  </data>
+  <data name="UC_PHASEIV_BY_SEGMENTS" xml:space="preserve">
+    <value>ucPhaseIVBySegments</value>
+  </data>
+  <data name="UC_PHASEIV_CALCULATION_LINE" xml:space="preserve">
+    <value>ucPhaseIVCalculationLine</value>
+  </data>
+  <data name="UC_PHASEIV_CALCULATION_LINE_RWD" xml:space="preserve">
+    <value>ucPhaseIVCalculationLine_RVW</value>
+  </data>
+  <data name="UC_PHASEIV_DELETE_MASK" xml:space="preserve">
+    <value>ucPhaseIVDeleteMask</value>
+  </data>
+  <data name="UC_PHASEIV_DELETE_MASK_CONFIRMATION" xml:space="preserve">
+    <value>ucPhaseIVDeleteMaskConfirmation</value>
+  </data>
+  <data name="UC_PHASEIV_FIRST_STEPS" xml:space="preserve">
+    <value>ucPhaseIVFirstSteps</value>
+  </data>
+  <data name="UC_PHASEIV_SELECT_MASK" xml:space="preserve">
+    <value>ucPhaseIVSelectMask</value>
+  </data>
+  <data name="UC_PHASEIV_SEND_COMMANDS" xml:space="preserve">
+    <value>ucPhaseIVSendCommands</value>
+  </data>
+  <data name="UC_QUALITIES_BY_PAX" xml:space="preserve">
+    <value>ucQualitiesByPax</value>
+  </data>
+  <data name="UC_QUALITY_CONTROLS" xml:space="preserve">
+    <value>ucQualityControls</value>
+  </data>
+  <data name="UC_RATING_ACTUAL_FARE" xml:space="preserve">
+    <value>ucRatingActualFare</value>
+  </data>
+  <data name="UC_REMOVEREMARKS" xml:space="preserve">
+    <value>ucRemoveRemarks</value>
+  </data>
+  <data name="UC_SEND_TICKET_INVOICE" xml:space="preserve">
+    <value>ucSendTicketInvoice</value>
+  </data>
+  <data name="UC_TICKETEMISSION_CONFIRMATION" xml:space="preserve">
+    <value>ucTicketEmissionConfirmation</value>
+  </data>
+  <data name="UC_TICKETS_JUSTIFICATIONS" xml:space="preserve">
+    <value>ucTicketsJustifications</value>
+  </data>
+  <data name="UC_TOUR_CODE" xml:space="preserve">
+    <value>ucTourCode</value>
+  </data>
+  <data name="UCBILLINGADRESS" xml:space="preserve">
+    <value>ucBillingAdressEmission</value>
+  </data>
+  <data name="UCBUSINESSUNIT" xml:space="preserve">
+    <value>ucBusinessUnit</value>
+  </data>
+  <data name="UCCALCULATESERVICECHARGE" xml:space="preserve">
+    <value>ucCalculateServiceCharge</value>
+  </data>
+  <data name="UCDEFINITIONTARGETELEMENTS" xml:space="preserve">
+    <value>ucDefinitionTargetElements</value>
+  </data>
+  <data name="UCDEFINITIONTARGETELEMENTS2" xml:space="preserve">
+    <value>ucDefinitionTargetElements2</value>
+  </data>
+  <data name="UCDQBETU_REPORT" xml:space="preserve">
+    <value>ucDQBETUReport</value>
+  </data>
+  <data name="UCFIRST_VALIDATIONS" xml:space="preserve">
+    <value>ucFirstValidations</value>
+  </data>
+  <data name="UCFORMPAYMENT" xml:space="preserve">
+    <value>ucFormPayment</value>
+  </data>
+  <data name="UCPHASE_35375_TICKETS" xml:space="preserve">
+    <value>ucPhase35375Tickets</value>
+  </data>
+  <data name="UCPRESENT_RECORD" xml:space="preserve">
+    <value>ucPresentRecord</value>
+  </data>
+  <data name="UCQC_PER_CLIENT" xml:space="preserve">
+    <value>ucQCperClient</value>
+  </data>
+  <data name="UCREMARKS_CLASS" xml:space="preserve">
+    <value>ucRemarksClass</value>
+  </data>
+  <data name="UCREMARKTOCFE" xml:space="preserve">
+    <value>ucRemarkToCFE</value>
+  </data>
+  <data name="UCSENDTICKETPRINTER" xml:space="preserve">
+    <value>ucSendTicketPrinter</value>
+  </data>
+  <data name="UCTAXES" xml:space="preserve">
+    <value>ucTaxes</value>
+  </data>
+  <data name="UCTICKETEMISSIONBUILDCOMMAND" xml:space="preserve">
+    <value>ucTicketEmissionBuildCommand</value>
+  </data>
+  <data name="UCTICKETSEMISSIONINSTRUCTIONS" xml:space="preserve">
+    <value>ucTicketsEmissionInstructions</value>
+  </data>
+  <data name="X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="XML_C29_BEGIN" xml:space="preserve">
+    <value>&lt;/C29*</value>
+  </data>
+  <data name="XML_C29_END" xml:space="preserve">
+    <value>/&gt;</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="Zero" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CORPORATIVEID_TLM" xml:space="preserve">
+    <value>TLM100</value>
+  </data>
+  <data name="COMMAND_DC_USD_MXN" xml:space="preserve">
+    <value>DC‡USD1/MXN*</value>
+  </data>
+  <data name="DECLINED" xml:space="preserve">
+    <value>DECLINED</value>
+  </data>
+  <data name="INCORRECT_CARD" xml:space="preserve">
+    <value>INCORRECT CARD</value>
+  </data>
+  <data name="INVALID" xml:space="preserve">
+    <value>INVALID</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="PROCESSING_ERROR" xml:space="preserve">
+    <value>PROCESSING ERROR</value>
+  </data>
+  <data name="REFERRAL" xml:space="preserve">
+    <value>REFERRAL</value>
+  </data>
+  <data name="UC_PROMO" xml:space="preserve">
+    <value>ucPromo</value>
+  </data>
+  <data name="ATTRIBUTE1_CFE100" xml:space="preserve">
+    <value>CFE100</value>
+  </data>
+  <data name="UC_QC_HOTELS" xml:space="preserve">
+    <value>ucQCHotels</value>
+  </data>
+  <data name="UC_PLACE_RECORD_QUEUE" xml:space="preserve">
+    <value>ucPlaceRecordQueue</value>
+  </data>
+  <data name="COMMANDS_AST_N" xml:space="preserve">
+    <value>*N</value>
+  </data>
+  <data name="PLEASE_WAIT" xml:space="preserve">
+    <value>PLEASE WAIT FOR RESPONSE</value>
+  </data>
+  <data name="UCSERVICESFEEPAYAPPLY" xml:space="preserve">
+    <value>ucServicesFeePayApply</value>
+  </data>
+  <data name="UCUSEINDEPENDENTCHARGESERVICE" xml:space="preserve">
+    <value>ucUseIndependentChargeService</value>
+  </data>
+  <data name="uc_DQB_ReportInterjet" xml:space="preserve">
+    <value>ucDQBReportInterjet</value>
+  </data>
+  <data name="uc_DQB_ReportVolaris" xml:space="preserve">
+    <value>ucDQBReportVolaris</value>
+  </data>
+  <data name="NO_HAY_DISPONIBILIDAD_SEGEMENTO" xml:space="preserve">
+    <value>NO EXISTEN CLASES DISPONIBLES.</value>
+  </data>
+  <data name="QC_CATALOGUE_EVENT_CODE" xml:space="preserve">
+    <value>EventCode</value>
+  </data>
+</root>

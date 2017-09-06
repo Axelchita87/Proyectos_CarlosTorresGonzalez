@@ -1,0 +1,1857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.navitaire.com/WebServices/DataContracts/Booking" elementFormDefault="qualified" targetNamespace="http://schemas.navitaire.com/WebServices/DataContracts/Booking" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd5" namespace="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd7" namespace="http://schemas.navitaire.com/WebServices/DataContracts/Common" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://pc4037:5498/CTSServices/InterJet.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfAvailabilityRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AvailabilityRequest" nillable="true" type="tns:AvailabilityRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAvailabilityRequest" nillable="true" type="tns:ArrayOfAvailabilityRequest" />
+  <xs:complexType name="AvailabilityRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BeginDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CarrierCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FlightNumber" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FlightType" type="q1:FlightType" />
+      <xs:element minOccurs="0" name="PaxCount" type="xs:short" />
+      <xs:element xmlns:q2="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Dow" type="q2:DOW" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DiscountCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PromotionCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="AvailabilityType" type="q3:AvailabilityType" />
+      <xs:element minOccurs="0" name="SourceOrganization" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaximumConnectingFlights" type="xs:short" />
+      <xs:element xmlns:q4="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="AvailabilityFilter" type="q4:AvailabilityFilter" />
+      <xs:element xmlns:q5="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FareClassControl" type="q5:FareClassControl" />
+      <xs:element minOccurs="0" name="MinimumFarePrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MaximumFarePrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProductClassCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="SSRCollectionsMode" type="q6:SSRCollectionsMode" />
+      <xs:element xmlns:q7="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="InboundOutbound" type="q7:InboundOutbound" />
+      <xs:element minOccurs="0" name="NightsStay" type="xs:int" />
+      <xs:element minOccurs="0" name="IncludeAllotments" type="xs:boolean" />
+      <xs:element minOccurs="0" name="BeginTime" nillable="true" type="tns:Time" />
+      <xs:element minOccurs="0" name="EndTime" nillable="true" type="tns:Time" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DepartureStations" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ArrivalStations" nillable="true" type="q9:ArrayOfstring" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FareTypes" nillable="true" type="q10:ArrayOfstring" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ProductClasses" nillable="true" type="q11:ArrayOfstring" />
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FareClasses" nillable="true" type="q12:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PaxPriceTypes" nillable="true" type="tns:ArrayOfPaxPriceType" />
+      <xs:element xmlns:q13="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="JourneySortKeys" nillable="true" type="q13:ArrayOfJourneySortKey" />
+      <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TravelClassCodes" nillable="true" type="q14:ArrayOfchar" />
+      <xs:element minOccurs="0" name="IncludeTaxesAndFees" type="xs:boolean" />
+      <xs:element xmlns:q15="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FareRuleFilter" type="q15:FareRuleFilter" />
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations" minOccurs="0" name="LoyaltyFilter" type="q16:LoyaltyFilter" />
+      <xs:element minOccurs="0" name="PaxResidentCountry" nillable="true" type="xs:string" />
+      <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TravelClassCodeList" nillable="true" type="q17:ArrayOfstring" />
+      <xs:element minOccurs="0" name="SystemCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvailabilityRequest" nillable="true" type="tns:AvailabilityRequest" />
+  <xs:complexType name="Time">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TotalMinutes" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Time" nillable="true" type="tns:Time" />
+  <xs:complexType name="ArrayOfPaxPriceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxPriceType" nillable="true" type="tns:PaxPriceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxPriceType" nillable="true" type="tns:ArrayOfPaxPriceType" />
+  <xs:complexType name="PaxPriceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PaxType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaxDiscountCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxPriceType" nillable="true" type="tns:PaxPriceType" />
+  <xs:complexType name="TripAvailabilityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Schedules" nillable="true" type="tns:ArrayOfArrayOfJourneyDateMarket" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TripAvailabilityResponse" nillable="true" type="tns:TripAvailabilityResponse" />
+  <xs:complexType name="ServiceMessage">
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="OtherServiceInfoList" nillable="true" type="q18:ArrayOfOtherServiceInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceMessage" nillable="true" type="tns:ServiceMessage" />
+  <xs:complexType name="SSRAvailabilityForBookingResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SSRSegmentList" nillable="true" type="tns:ArrayOfSSRSegment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SSRAvailabilityForBookingResponse" nillable="true" type="tns:SSRAvailabilityForBookingResponse" />
+  <xs:complexType name="ArrayOfSSRSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SSRSegment" nillable="true" type="tns:SSRSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSSRSegment" nillable="true" type="tns:ArrayOfSSRSegment" />
+  <xs:complexType name="SSRSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LegKey" nillable="true" type="tns:LegKey" />
+      <xs:element minOccurs="0" name="AvailablePaxSSRList" nillable="true" type="tns:ArrayOfAvailablePaxSSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SSRSegment" nillable="true" type="tns:SSRSegment" />
+  <xs:complexType name="LegKey">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q19:FlightDesignator">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LegKey" nillable="true" type="tns:LegKey" />
+  <xs:complexType name="ArrayOfAvailablePaxSSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AvailablePaxSSR" nillable="true" type="tns:AvailablePaxSSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAvailablePaxSSR" nillable="true" type="tns:ArrayOfAvailablePaxSSR" />
+  <xs:complexType name="AvailablePaxSSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SSRCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InventoryControlled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NonInventoryControlled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SeatDependent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NonSeatDependent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Available" type="xs:short" />
+      <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PassengerNumberList" nillable="true" type="q20:ArrayOfshort" />
+      <xs:element minOccurs="0" name="PaxSSRPriceList" nillable="true" type="tns:ArrayOfPaxSSRPrice" />
+      <xs:element minOccurs="0" name="SSRLegList" nillable="true" type="tns:ArrayOfSSRLeg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvailablePaxSSR" nillable="true" type="tns:AvailablePaxSSR" />
+  <xs:complexType name="ArrayOfPaxSSRPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxSSRPrice" nillable="true" type="tns:PaxSSRPrice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxSSRPrice" nillable="true" type="tns:ArrayOfPaxSSRPrice" />
+  <xs:complexType name="PaxSSRPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PaxFee" nillable="true" type="tns:PassengerFee" />
+      <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PassengerNumberList" nillable="true" type="q21:ArrayOfshort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxSSRPrice" nillable="true" type="tns:PaxSSRPrice" />
+  <xs:complexType name="PassengerFee">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q22:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeNumber" type="xs:short" />
+          <xs:element xmlns:q23="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FeeType" type="q23:FeeType" />
+          <xs:element minOccurs="0" name="FeeOverride" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FlightReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SSRCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SSRNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="PaymentNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="ServiceCharges" nillable="true" type="tns:ArrayOfBookingServiceCharge" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsProtected" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerFee" nillable="true" type="tns:PassengerFee" />
+  <xs:complexType name="LegNest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q24:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassNest" type="xs:short" />
+          <xs:element minOccurs="0" name="Lid" type="xs:short" />
+          <xs:element minOccurs="0" name="AdjustedCapacity" type="xs:short" />
+          <xs:element minOccurs="0" name="TravelClassCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q25="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="NestType" type="q25:NestType" />
+          <xs:element minOccurs="0" name="LegClasses" nillable="true" type="tns:ArrayOfLegClass" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LegNest" nillable="true" type="tns:LegNest" />
+  <xs:complexType name="ArrayOfLegClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LegClass" nillable="true" type="tns:LegClass" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLegClass" nillable="true" type="tns:ArrayOfLegClass" />
+  <xs:complexType name="LegClass">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q26:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassNest" type="xs:short" />
+          <xs:element minOccurs="0" name="ClassOfService" nillable="true" type="xs:string" />
+          <xs:element xmlns:q27="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Status" type="q27:ClassStatus" />
+          <xs:element minOccurs="0" name="ClassType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClassAllotted" type="xs:short" />
+          <xs:element minOccurs="0" name="ClassRank" type="xs:short" />
+          <xs:element minOccurs="0" name="ClassAU" type="xs:short" />
+          <xs:element minOccurs="0" name="ClassSold" type="xs:short" />
+          <xs:element minOccurs="0" name="NonStopSold" type="xs:short" />
+          <xs:element minOccurs="0" name="ThruSold" type="xs:short" />
+          <xs:element minOccurs="0" name="CnxSold" type="xs:short" />
+          <xs:element minOccurs="0" name="LatestAdvRes" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LegClass" nillable="true" type="tns:LegClass" />
+  <xs:complexType name="BookingName">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q28:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingName" nillable="true" type="tns:BookingName" />
+  <xs:complexType name="PassengerInfant">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q29:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+          <xs:element xmlns:q30="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Gender" type="q30:Gender" />
+          <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResidentCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Names" nillable="true" type="tns:ArrayOfBookingName" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerInfant" nillable="true" type="tns:PassengerInfant" />
+  <xs:complexType name="ArrayOfBookingName">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingName" nillable="true" type="tns:BookingName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingName" nillable="true" type="tns:ArrayOfBookingName" />
+  <xs:complexType name="Passenger">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q31:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerPrograms" nillable="true" type="tns:ArrayOfPassengerProgram" />
+          <xs:element minOccurs="0" name="CustomerNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="FamilyNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="PaxDiscountCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Names" nillable="true" type="tns:ArrayOfBookingName" />
+          <xs:element minOccurs="0" name="Infant" nillable="true" type="tns:PassengerInfant" />
+          <xs:element minOccurs="0" name="PassengerInfo" nillable="true" type="tns:PassengerInfo" />
+          <xs:element minOccurs="0" name="PassengerProgram" nillable="true" type="tns:PassengerProgram" />
+          <xs:element minOccurs="0" name="PassengerFees" nillable="true" type="tns:ArrayOfPassengerFee" />
+          <xs:element minOccurs="0" name="PassengerAddresses" nillable="true" type="tns:ArrayOfPassengerAddress" />
+          <xs:element minOccurs="0" name="PassengerTravelDocuments" nillable="true" type="tns:ArrayOfPassengerTravelDocument" />
+          <xs:element minOccurs="0" name="PassengerBags" nillable="true" type="tns:ArrayOfPassengerBag" />
+          <xs:element minOccurs="0" name="PassengerID" type="xs:long" />
+          <xs:element minOccurs="0" name="PassengerTypeInfos" nillable="true" type="tns:ArrayOfPassengerTypeInfo" />
+          <xs:element minOccurs="0" name="PassengerInfos" nillable="true" type="tns:ArrayOfPassengerInfo" />
+          <xs:element minOccurs="0" name="PassengerInfants" nillable="true" type="tns:ArrayOfPassengerInfant" />
+          <xs:element minOccurs="0" name="PseudoPassenger" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PassengerTypeInfo" nillable="true" type="tns:PassengerTypeInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Passenger" nillable="true" type="tns:Passenger" />
+  <xs:complexType name="ArrayOfPassengerProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerProgram" nillable="true" type="tns:PassengerProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerProgram" nillable="true" type="tns:ArrayOfPassengerProgram" />
+  <xs:complexType name="PassengerProgram">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q32:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProgramCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgramLevelCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgramNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerProgram" nillable="true" type="tns:PassengerProgram" />
+  <xs:complexType name="PaxTicketUpdate">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q33="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q33:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="TicketIndicator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InfantTicketNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxTicketUpdate" nillable="true" type="tns:PaxTicketUpdate" />
+  <xs:complexType name="PaxTicket">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q34:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="TicketIndicator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InfantTicketNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxTicket" nillable="true" type="tns:PaxTicket" />
+  <xs:complexType name="BookingServiceCharge">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q35="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q35:StateMessage">
+        <xs:sequence>
+          <xs:element xmlns:q36="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChargeType" type="q36:ChargeType" />
+          <xs:element xmlns:q37="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="CollectType" type="q37:CollectType" />
+          <xs:element minOccurs="0" name="ChargeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ChargeDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ForeignCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ForeignAmount" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingServiceCharge" nillable="true" type="tns:BookingServiceCharge" />
+  <xs:complexType name="Journey">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q38:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NotForGeneralUse" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Segments" nillable="true" type="tns:ArrayOfSegment" />
+          <xs:element minOccurs="0" name="JourneySellKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Journey" nillable="true" type="tns:Journey" />
+  <xs:complexType name="ArrayOfSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Segment" nillable="true" type="tns:Segment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSegment" nillable="true" type="tns:ArrayOfSegment" />
+  <xs:complexType name="Segment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q39="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q39:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CabinOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangeReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorityCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SegmentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="International" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FlightDesignator" nillable="true" type="q39:FlightDesignator" />
+          <xs:element minOccurs="0" name="XrefFlightDesignator" nillable="true" type="q39:FlightDesignator" />
+          <xs:element minOccurs="0" name="Fares" nillable="true" type="tns:ArrayOfFare" />
+          <xs:element minOccurs="0" name="Legs" nillable="true" type="tns:ArrayOfLeg" />
+          <xs:element minOccurs="0" name="PaxBags" nillable="true" type="tns:ArrayOfPaxBag" />
+          <xs:element minOccurs="0" name="PaxSeats" nillable="true" type="tns:ArrayOfPaxSeat" />
+          <xs:element minOccurs="0" name="PaxSSRs" nillable="true" type="tns:ArrayOfPaxSSR" />
+          <xs:element minOccurs="0" name="PaxSegments" nillable="true" type="tns:ArrayOfPaxSegment" />
+          <xs:element minOccurs="0" name="PaxTickets" nillable="true" type="tns:ArrayOfPaxTicket" />
+          <xs:element minOccurs="0" name="PaxSeatPreferences" nillable="true" type="tns:ArrayOfPaxSeatPreference" />
+          <xs:element minOccurs="0" name="SalesDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SegmentSellKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaxScores" nillable="true" type="tns:ArrayOfPaxScore" />
+          <xs:element xmlns:q40="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChannelType" type="q40:ChannelType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Segment" nillable="true" type="tns:Segment" />
+  <xs:complexType name="ArrayOfFare">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fare" nillable="true" type="tns:Fare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFare" nillable="true" type="tns:ArrayOfFare" />
+  <xs:complexType name="Fare">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q41="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q41:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClassType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RuleTariff" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CarrierCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RuleNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareBasisCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareSequence" type="xs:short" />
+          <xs:element minOccurs="0" name="FareClassOfService" nillable="true" type="xs:string" />
+          <xs:element xmlns:q42="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FareStatus" type="q42:FareStatus" />
+          <xs:element xmlns:q43="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FareApplicationType" type="q43:FareApplicationType" />
+          <xs:element minOccurs="0" name="OriginalClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="XrefClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaxFares" nillable="true" type="tns:ArrayOfPaxFare" />
+          <xs:element minOccurs="0" name="ProductClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAllotmentMarketFare" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TravelClassCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareSellKey" nillable="true" type="xs:string" />
+          <xs:element xmlns:q44="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="InboundOutbound" type="q44:InboundOutbound" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Fare" nillable="true" type="tns:Fare" />
+  <xs:complexType name="ArrayOfPaxFare">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxFare" nillable="true" type="tns:PaxFare" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxFare" nillable="true" type="tns:ArrayOfPaxFare" />
+  <xs:complexType name="PaxFare">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q45="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q45:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PaxType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaxDiscountCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareDiscountCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceCharges" nillable="true" type="tns:ArrayOfBookingServiceCharge" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxFare" nillable="true" type="tns:PaxFare" />
+  <xs:complexType name="ArrayOfBookingServiceCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingServiceCharge" nillable="true" type="tns:BookingServiceCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingServiceCharge" nillable="true" type="tns:ArrayOfBookingServiceCharge" />
+  <xs:complexType name="AvailableFare">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Fare">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AvailableCount" type="xs:short" />
+          <xs:element xmlns:q46="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Status" type="q46:ClassStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AvailableFare" nillable="true" type="tns:AvailableFare" />
+  <xs:complexType name="Leg">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q47="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q47:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FlightDesignator" nillable="true" type="q47:FlightDesignator" />
+          <xs:element minOccurs="0" name="LegInfo" nillable="true" type="tns:LegInfo" />
+          <xs:element minOccurs="0" name="OperationsInfo" nillable="true" type="tns:OperationsInfo" />
+          <xs:element minOccurs="0" name="InventoryLegID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Leg" nillable="true" type="tns:Leg" />
+  <xs:complexType name="LegInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q48="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q48:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdjustedCapacity" type="xs:short" />
+          <xs:element minOccurs="0" name="EquipmentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EquipmentTypeSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalTerminal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrvLTV" type="xs:short" />
+          <xs:element minOccurs="0" name="Capacity" type="xs:short" />
+          <xs:element minOccurs="0" name="CodeShareIndicator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureTerminal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeptLTV" type="xs:short" />
+          <xs:element minOccurs="0" name="ETicket" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FlifoUpdated" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IROP" type="xs:boolean" />
+          <xs:element xmlns:q49="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Status" type="q49:LegStatus" />
+          <xs:element minOccurs="0" name="Lid" type="xs:short" />
+          <xs:element minOccurs="0" name="OnTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaxSTA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PaxSTD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PRBCCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleServiceType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sold" type="xs:short" />
+          <xs:element minOccurs="0" name="OutMoveDays" type="xs:short" />
+          <xs:element minOccurs="0" name="BackMoveDays" type="xs:short" />
+          <xs:element minOccurs="0" name="LegNests" nillable="true" type="tns:ArrayOfLegNest" />
+          <xs:element minOccurs="0" name="LegSSRs" nillable="true" type="tns:ArrayOfLegSSR" />
+          <xs:element minOccurs="0" name="OperatingFlightNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OperatedByText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OperatingCarrier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OperatingOpSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubjectToGovtApproval" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MarketingCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangeOfDirection" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MarketingOverride" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LegInfo" nillable="true" type="tns:LegInfo" />
+  <xs:complexType name="ArrayOfLegNest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LegNest" nillable="true" type="tns:LegNest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLegNest" nillable="true" type="tns:ArrayOfLegNest" />
+  <xs:complexType name="ArrayOfLegSSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LegSSR" nillable="true" type="tns:LegSSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLegSSR" nillable="true" type="tns:ArrayOfLegSSR" />
+  <xs:complexType name="LegSSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SSRNestCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSRLid" type="xs:short" />
+      <xs:element minOccurs="0" name="SSRSold" type="xs:short" />
+      <xs:element minOccurs="0" name="SSRValueSold" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LegSSR" nillable="true" type="tns:LegSSR" />
+  <xs:complexType name="OperationsInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q50="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q50:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActualArrivalGate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ActualDepartureGate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ActualOffBlockTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActualOnBlockTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActualTouchDownTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AirborneTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ArrivalGate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalNote" nillable="true" type="xs:string" />
+          <xs:element xmlns:q51="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ArrivalStatus" type="q51:ArrivalStatus" />
+          <xs:element minOccurs="0" name="BaggageClaim" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureGate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureNote" nillable="true" type="xs:string" />
+          <xs:element xmlns:q52="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="DepartureStatus" type="q52:DepartureStatus" />
+          <xs:element minOccurs="0" name="ETA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ETD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TailNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationsInfo" nillable="true" type="tns:OperationsInfo" />
+  <xs:complexType name="PaxBag">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q53="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q53:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element xmlns:q54="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="BaggageStatus" type="q54:BaggageStatus" />
+          <xs:element minOccurs="0" name="CompartmentID" type="xs:short" />
+          <xs:element minOccurs="0" name="OSTag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OSTagDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxBag" nillable="true" type="tns:PaxBag" />
+  <xs:complexType name="PaxSeat">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q55="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q55:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitDesignator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompartmentDesignator" nillable="true" type="xs:string" />
+          <xs:element xmlns:q56="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="SeatPreference" type="q56:SeatPreference" />
+          <xs:element minOccurs="0" name="Penalty" type="xs:int" />
+          <xs:element minOccurs="0" name="SeatTogetherPreference" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PaxSeatInfo" nillable="true" type="tns:PaxSeatInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxSeat" nillable="true" type="tns:PaxSeat" />
+  <xs:complexType name="PaxSeatInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SeatSet" type="xs:short" />
+      <xs:element minOccurs="0" name="Deck" type="xs:short" />
+      <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="Properties" nillable="true" type="q57:ArrayOfKeyValuePairOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxSeatInfo" nillable="true" type="tns:PaxSeatInfo" />
+  <xs:complexType name="PaxSSR">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q58="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q58:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="SSRCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SSRNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="SSRDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FeeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SSRValue" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxSSR" nillable="true" type="tns:PaxSSR" />
+  <xs:complexType name="PaxSegment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q59="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q59:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BoardingSequence" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element xmlns:q60="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="LiftStatus" type="q60:LiftStatus" />
+          <xs:element minOccurs="0" name="OverBookIndicator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="PriorityDate" type="xs:dateTime" />
+          <xs:element xmlns:q61="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="TripType" type="q61:TripType" />
+          <xs:element minOccurs="0" name="TimeChanged" type="xs:boolean" />
+          <xs:element minOccurs="0" name="POS" nillable="true" type="q59:PointOfSale" />
+          <xs:element minOccurs="0" name="SourcePOS" nillable="true" type="q59:PointOfSale" />
+          <xs:element minOccurs="0" name="VerifiedTravelDocs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActivityDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BaggageAllowanceWeight" type="xs:short" />
+          <xs:element xmlns:q62="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="BaggageAllowanceWeightType" type="q62:WeightType" />
+          <xs:element minOccurs="0" name="BaggageAllowanceUsed" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaxSegment" nillable="true" type="tns:PaxSegment" />
+  <xs:complexType name="BookingQueueInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q63="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q63:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PassengerID" type="xs:long" />
+          <xs:element minOccurs="0" name="WatchListID" type="xs:long" />
+          <xs:element minOccurs="0" name="QueueCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element xmlns:q64="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="QueueEventType" type="q64:QueueEventType" />
+          <xs:element minOccurs="0" name="QueueName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q65="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="QueueAction" type="q65:QueueAction" />
+          <xs:element xmlns:q66="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="QueueMode" type="q66:QueueMode" />
+          <xs:element minOccurs="0" name="BookingQueueID" type="xs:long" />
+          <xs:element minOccurs="0" name="BookingID" type="xs:long" />
+          <xs:element minOccurs="0" name="SegmentKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubQueueCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingQueueInfo" nillable="true" type="tns:BookingQueueInfo" />
+  <xs:complexType name="BookingInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q67="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q67:StateMessage">
+        <xs:sequence>
+          <xs:element xmlns:q68="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="BookingStatus" type="q68:BookingStatus" />
+          <xs:element minOccurs="0" name="BookingType" nillable="true" type="xs:string" />
+          <xs:element xmlns:q69="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChannelType" type="q69:ChannelType" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExpiredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element xmlns:q70="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="PriceStatus" type="q70:PriceStatus" />
+          <xs:element xmlns:q71="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ProfileStatus" type="q71:BookingProfileStatus" />
+          <xs:element minOccurs="0" name="ChangeAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CreatedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="ModifiedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="BookingDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OwningCarrierCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q72="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="PaidStatus" type="q72:PaidStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingInfo" nillable="true" type="tns:BookingInfo" />
+  <xs:complexType name="TypeOfSale">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q73="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q73:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PaxResidentCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PromotionCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FareTypes" nillable="true" type="q74:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TypeOfSale" nillable="true" type="tns:TypeOfSale" />
+  <xs:complexType name="BookingHold">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q75="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q75:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HoldDateTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingHold" nillable="true" type="tns:BookingHold" />
+  <xs:complexType name="ReceivedByInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q76="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q76:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReceivedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReceivedReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferralCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LatestReceivedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LatestReceivedReference" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReceivedByInfo" nillable="true" type="tns:ReceivedByInfo" />
+  <xs:complexType name="PassengerInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q77="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q77:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BalanceDue" type="xs:decimal" />
+          <xs:element xmlns:q78="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Gender" type="q78:Gender" />
+          <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResidentCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TotalCost" type="xs:decimal" />
+          <xs:element xmlns:q79="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="WeightCategory" type="q79:WeightCategory" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerInfo" nillable="true" type="tns:PassengerInfo" />
+  <xs:complexType name="PassengerAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q80="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q80:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProvinceState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerAddress" nillable="true" type="tns:PassengerAddress" />
+  <xs:complexType name="PassengerTravelDocument">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q81="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q81:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DocTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssuedByCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocSuffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DocNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+          <xs:element xmlns:q82="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Gender" type="q82:Gender" />
+          <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Names" nillable="true" type="tns:ArrayOfBookingName" />
+          <xs:element minOccurs="0" name="BirthCountry" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssuedDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerTravelDocument" nillable="true" type="tns:PassengerTravelDocument" />
+  <xs:complexType name="PassengerBag">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q83="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q83:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BaggageID" type="xs:long" />
+          <xs:element minOccurs="0" name="OSTag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OSTagDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Weight" type="xs:short" />
+          <xs:element xmlns:q84="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="WeightType" type="q84:WeightType" />
+          <xs:element minOccurs="0" name="TaggedToStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaggedToFlightNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LRTIndicator" type="xs:boolean" />
+          <xs:element minOccurs="0" name="BaggageType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaggedToCarrierCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PassengerBag" nillable="true" type="tns:PassengerBag" />
+  <xs:complexType name="BookingComment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q85="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q85:StateMessage">
+        <xs:sequence>
+          <xs:element xmlns:q86="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="CommentType" type="q86:CommentType" />
+          <xs:element minOccurs="0" name="CommentText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PointOfSale" nillable="true" type="q85:PointOfSale" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingComment" nillable="true" type="tns:BookingComment" />
+  <xs:complexType name="PriceJourney">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q87="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q87:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Segments" nillable="true" type="tns:ArrayOfPriceSegment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceJourney" nillable="true" type="tns:PriceJourney" />
+  <xs:complexType name="ArrayOfPriceSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PriceSegment" nillable="true" type="tns:PriceSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPriceSegment" nillable="true" type="tns:ArrayOfPriceSegment" />
+  <xs:complexType name="PriceSegment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q88="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q88:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CabinOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangeReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorityCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SegmentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FlightDesignator" nillable="true" type="q88:FlightDesignator" />
+          <xs:element minOccurs="0" name="XrefFlightDesignator" nillable="true" type="q88:FlightDesignator" />
+          <xs:element minOccurs="0" name="Fare" nillable="true" type="tns:SellFare" />
+          <xs:element minOccurs="0" name="PriceLegs" nillable="true" type="tns:ArrayOfPriceLeg" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceSegment" nillable="true" type="tns:PriceSegment" />
+  <xs:complexType name="SellFare">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q89="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q89:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClassType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RuleTariff" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CarrierCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RuleNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareBasisCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FareSequence" type="xs:short" />
+          <xs:element minOccurs="0" name="FareClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="XrefClassOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAllotmentMarketFare" type="xs:boolean" />
+          <xs:element xmlns:q90="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="FareApplicationType" type="q90:FareApplicationType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SellFare" nillable="true" type="tns:SellFare" />
+  <xs:complexType name="BookingContact">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q91="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q91:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Names" nillable="true" type="tns:ArrayOfBookingName" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HomePhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WorkPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProvinceState" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CultureCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q92="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="DistributionOption" type="q92:DistributionOption" />
+          <xs:element minOccurs="0" name="CustomerNumber" nillable="true" type="xs:string" />
+          <xs:element xmlns:q93="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="NotificationPreference" type="q93:NotificationPreference" />
+          <xs:element minOccurs="0" name="SourceOrganization" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingContact" nillable="true" type="tns:BookingContact" />
+  <xs:complexType name="Payment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q94="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q94:StateMessage">
+        <xs:sequence>
+          <xs:element xmlns:q95="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ReferenceType" type="q95:PaymentReferenceType" />
+          <xs:element minOccurs="0" name="ReferenceID" type="xs:long" />
+          <xs:element xmlns:q96="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="PaymentMethodType" type="q96:PaymentMethodType" />
+          <xs:element minOccurs="0" name="PaymentMethodCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CollectedCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CollectedAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QuotedCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QuotedAmount" type="xs:decimal" />
+          <xs:element xmlns:q97="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="Status" type="q97:BookingPaymentStatus" />
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNumberID" type="xs:long" />
+          <xs:element minOccurs="0" name="Expiration" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AuthorizationCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q98="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="AuthorizationStatus" type="q98:AuthorizationStatus" />
+          <xs:element minOccurs="0" name="ParentPaymentID" type="xs:long" />
+          <xs:element minOccurs="0" name="Transferred" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ReconcilliationID" type="xs:long" />
+          <xs:element minOccurs="0" name="FundedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Installments" type="xs:short" />
+          <xs:element minOccurs="0" name="PaymentText" nillable="true" type="xs:string" />
+          <xs:element xmlns:q99="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChannelType" type="q99:ChannelType" />
+          <xs:element minOccurs="0" name="PaymentNumber" type="xs:short" />
+          <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourcePointOfSale" nillable="true" type="q94:PointOfSale" />
+          <xs:element minOccurs="0" name="PointOfSale" nillable="true" type="q94:PointOfSale" />
+          <xs:element minOccurs="0" name="PaymentID" type="xs:long" />
+          <xs:element minOccurs="0" name="Deposit" type="xs:boolean" />
+          <xs:element minOccurs="0" name="AccountID" type="xs:long" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountTransactionCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VoucherID" type="xs:long" />
+          <xs:element minOccurs="0" name="VoucherTransactionID" type="xs:long" />
+          <xs:element minOccurs="0" name="OverrideVoucherRestrictions" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideAmount" type="xs:boolean" />
+          <xs:element minOccurs="0" name="RecordLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentAddedToState" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DCC" nillable="true" type="tns:DCC" />
+          <xs:element minOccurs="0" name="ThreeDSecure" nillable="true" type="tns:ThreeDSecure" />
+          <xs:element minOccurs="0" name="PaymentFields" nillable="true" type="tns:ArrayOfPaymentField" />
+          <xs:element minOccurs="0" name="PaymentAddresses" nillable="true" type="tns:ArrayOfPaymentAddress" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="BinRange" type="xs:int" />
+          <xs:element minOccurs="0" name="ApprovalDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Payment" nillable="true" type="tns:Payment" />
+  <xs:complexType name="DCC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DCCRateID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q100="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="DCCStatus" type="q100:DCCStatus" />
+      <xs:element minOccurs="0" name="ValidationDCCApplicable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ValidationDCCRateValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValidationDCCCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationDCCAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ValidationDCCPutInState" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCC" nillable="true" type="tns:DCC" />
+  <xs:complexType name="ThreeDSecure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BrowserUserAgent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BrowserAccept" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RemoteIpAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TermUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProxyVia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSApplicable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ValidationTDSPaReq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSAcsUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSPaRes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ValidationTDSAuthResult" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSCavv" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSCavvAlgorithm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSEci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidationTDSXid" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ThreeDSecure" nillable="true" type="tns:ThreeDSecure" />
+  <xs:complexType name="ArrayOfPaymentField">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentField" nillable="true" type="tns:PaymentField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentField" nillable="true" type="tns:ArrayOfPaymentField" />
+  <xs:complexType name="PaymentField">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FieldName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FieldValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentField" nillable="true" type="tns:PaymentField" />
+  <xs:complexType name="ArrayOfPaymentAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentAddress" nillable="true" type="tns:PaymentAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentAddress" nillable="true" type="tns:ArrayOfPaymentAddress" />
+  <xs:complexType name="PaymentAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PaymentID" type="xs:long" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinceState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentAddress" nillable="true" type="tns:PaymentAddress" />
+  <xs:complexType name="BookingComponent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q101="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q101:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookingID" type="xs:long" />
+          <xs:element minOccurs="0" name="BookingComponentID" type="xs:long" />
+          <xs:element minOccurs="0" name="OrderID" type="ser:guid" />
+          <xs:element minOccurs="0" name="ItemSequence" type="xs:short" />
+          <xs:element minOccurs="0" name="SupplierCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SupplierRecordLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SystemCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SystemRecordLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecordReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemTypeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BeginDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BeginLocationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndLocationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PassengerID" type="xs:long" />
+          <xs:element minOccurs="0" name="CreatedAgentCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedOrganizationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDomainCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedLocationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceAgentCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceOrganizationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceDomainCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SourceLocationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModifiedAgentID" type="xs:long" />
+          <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BookingComponentCharges" nillable="true" type="tns:ArrayOfBookingComponentCharge" />
+          <xs:element minOccurs="0" name="Historical" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OrderItem" nillable="true" type="tns:OrderItem" />
+          <xs:element minOccurs="0" name="DeclinedText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CultureCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherServiceInfo" nillable="true" type="q101:OtherServiceInformation" />
+          <xs:element minOccurs="0" name="TravelCommerceOrderItem" nillable="true" type="q101:TCOrderItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingComponent" nillable="true" type="tns:BookingComponent" />
+  <xs:complexType name="ArrayOfBookingComponentCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingComponentCharge" nillable="true" type="tns:BookingComponentCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingComponentCharge" nillable="true" type="tns:ArrayOfBookingComponentCharge" />
+  <xs:complexType name="BookingComponentCharge">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q102="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q102:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookingComponentID" type="xs:long" />
+          <xs:element minOccurs="0" name="ChargeNumber" type="xs:short" />
+          <xs:element xmlns:q103="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChargeType" type="q103:ChargeType" />
+          <xs:element minOccurs="0" name="ChargeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketCode" nillable="true" type="xs:string" />
+          <xs:element xmlns:q104="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="CollectType" type="q104:CollectType" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChargeAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ChargeDetail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ForeignCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ForeignAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedAgentID" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookingComponentCharge" nillable="true" type="tns:BookingComponentCharge" />
+  <xs:complexType name="PriceLeg">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q105="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q105:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FlightDesignator" nillable="true" type="q105:FlightDesignator" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceLeg" nillable="true" type="tns:PriceLeg" />
+  <xs:complexType name="SellJourney">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q106="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q106:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NotForGeneralUse" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Segments" nillable="true" type="tns:ArrayOfSellSegment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SellJourney" nillable="true" type="tns:SellJourney" />
+  <xs:complexType name="ArrayOfSellSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SellSegment" nillable="true" type="tns:SellSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSellSegment" nillable="true" type="tns:ArrayOfSellSegment" />
+  <xs:complexType name="SellSegment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q107="http://schemas.navitaire.com/WebServices/DataContracts/Common" base="q107:StateMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CabinOfService" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangeReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorityCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SegmentType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FlightDesignator" nillable="true" type="q107:FlightDesignator" />
+          <xs:element minOccurs="0" name="XrefFlightDesignator" nillable="true" type="q107:FlightDesignator" />
+          <xs:element minOccurs="0" name="Fare" nillable="true" type="tns:SellFare" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SellSegment" nillable="true" type="tns:SellSegment" />
+  <xs:complexType name="OrderItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OrderItemData" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderItem" nillable="true" type="tns:OrderItem" />
+  <xs:complexType name="ArrayOfPriceLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PriceLeg" nillable="true" type="tns:PriceLeg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPriceLeg" nillable="true" type="tns:ArrayOfPriceLeg" />
+  <xs:complexType name="ArrayOfLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Leg" nillable="true" type="tns:Leg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeg" nillable="true" type="tns:ArrayOfLeg" />
+  <xs:complexType name="ArrayOfPaxBag">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxBag" nillable="true" type="tns:PaxBag" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxBag" nillable="true" type="tns:ArrayOfPaxBag" />
+  <xs:complexType name="ArrayOfPaxSeat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxSeat" nillable="true" type="tns:PaxSeat" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxSeat" nillable="true" type="tns:ArrayOfPaxSeat" />
+  <xs:complexType name="ArrayOfPaxSSR">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxSSR" nillable="true" type="tns:PaxSSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxSSR" nillable="true" type="tns:ArrayOfPaxSSR" />
+  <xs:complexType name="ArrayOfPaxSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxSegment" nillable="true" type="tns:PaxSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxSegment" nillable="true" type="tns:ArrayOfPaxSegment" />
+  <xs:complexType name="ArrayOfPaxTicket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxTicket" nillable="true" type="tns:PaxTicket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxTicket" nillable="true" type="tns:ArrayOfPaxTicket" />
+  <xs:complexType name="ArrayOfPaxSeatPreference">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxSeatPreference" nillable="true" type="tns:PaxSeatPreference" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxSeatPreference" nillable="true" type="tns:ArrayOfPaxSeatPreference" />
+  <xs:complexType name="PaxSeatPreference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+      <xs:element minOccurs="0" name="PropertyTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PropertyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Met" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxSeatPreference" nillable="true" type="tns:PaxSeatPreference" />
+  <xs:complexType name="ArrayOfPaxScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaxScore" nillable="true" type="tns:PaxScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaxScore" nillable="true" type="tns:ArrayOfPaxScore" />
+  <xs:complexType name="PaxScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Score" type="xs:int" />
+      <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+      <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GuestValueCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaxScore" nillable="true" type="tns:PaxScore" />
+  <xs:complexType name="ArrayOfPassengerFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerFee" nillable="true" type="tns:PassengerFee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerFee" nillable="true" type="tns:ArrayOfPassengerFee" />
+  <xs:complexType name="ArrayOfPassengerAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerAddress" nillable="true" type="tns:PassengerAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerAddress" nillable="true" type="tns:ArrayOfPassengerAddress" />
+  <xs:complexType name="ArrayOfPassengerTravelDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerTravelDocument" nillable="true" type="tns:PassengerTravelDocument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerTravelDocument" nillable="true" type="tns:ArrayOfPassengerTravelDocument" />
+  <xs:complexType name="ArrayOfPassengerBag">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerBag" nillable="true" type="tns:PassengerBag" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerBag" nillable="true" type="tns:ArrayOfPassengerBag" />
+  <xs:complexType name="ArrayOfPassengerTypeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerTypeInfo" nillable="true" type="tns:PassengerTypeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerTypeInfo" nillable="true" type="tns:ArrayOfPassengerTypeInfo" />
+  <xs:complexType name="PassengerTypeInfo">
+    <xs:sequence>
+      <xs:element xmlns:q108="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="State" type="q108:MessageState" />
+      <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PaxType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PassengerTypeInfo" nillable="true" type="tns:PassengerTypeInfo" />
+  <xs:complexType name="ArrayOfPassengerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerInfo" nillable="true" type="tns:PassengerInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerInfo" nillable="true" type="tns:ArrayOfPassengerInfo" />
+  <xs:complexType name="ArrayOfPassengerInfant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PassengerInfant" nillable="true" type="tns:PassengerInfant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassengerInfant" nillable="true" type="tns:ArrayOfPassengerInfant" />
+  <xs:complexType name="ArrayOfSSRLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SSRLeg" nillable="true" type="tns:SSRLeg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSSRLeg" nillable="true" type="tns:ArrayOfSSRLeg" />
+  <xs:complexType name="SSRLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LegKey" nillable="true" type="tns:LegKey" />
+      <xs:element minOccurs="0" name="Available" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SSRLeg" nillable="true" type="tns:SSRLeg" />
+  <xs:complexType name="SeatAvailabilityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EquipmentInfos" nillable="true" type="tns:ArrayOfEquipmentInfo" />
+          <xs:element minOccurs="0" name="SeatGroupPassengerFees" nillable="true" type="tns:ArrayOfSeatGroupPassengerFee" />
+          <xs:element minOccurs="0" name="Legs" nillable="true" type="tns:ArrayOfSeatAvailabilityLeg" />
+          <xs:element minOccurs="0" name="PropertyTypeCodesLookup" nillable="true" type="tns:EquipmentPropertyTypeCodesLookup" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SeatAvailabilityResponse" nillable="true" type="tns:SeatAvailabilityResponse" />
+  <xs:complexType name="ArrayOfEquipmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentInfo" nillable="true" type="tns:EquipmentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentInfo" nillable="true" type="tns:ArrayOfEquipmentInfo" />
+  <xs:complexType name="EquipmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentTypeSuffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AvailableUnits" type="xs:int" />
+      <xs:element minOccurs="0" name="Compartments" nillable="true" type="tns:ArrayOfCompartmentInfo" />
+      <xs:element xmlns:q109="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="EquipmentCategory" type="q109:EquipmentCategory" />
+      <xs:element minOccurs="0" name="PropertyList" nillable="true" type="tns:ArrayOfEquipmentProperty" />
+      <xs:element xmlns:q110="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyBits" nillable="true" type="q110:ArrayOfunsignedInt" />
+      <xs:element xmlns:q111="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyInts" nillable="true" type="q111:ArrayOfint" />
+      <xs:element xmlns:q112="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyBitsInUse" nillable="true" type="q112:ArrayOfunsignedInt" />
+      <xs:element xmlns:q113="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyIntsInUse" nillable="true" type="q113:ArrayOfunsignedInt" />
+      <xs:element xmlns:q114="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SSRBitsInUse" nillable="true" type="q114:ArrayOfunsignedInt" />
+      <xs:element minOccurs="0" name="MarketingCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PropertyTimestamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentInfo" nillable="true" type="tns:EquipmentInfo" />
+  <xs:complexType name="ArrayOfCompartmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CompartmentInfo" nillable="true" type="tns:CompartmentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompartmentInfo" nillable="true" type="tns:ArrayOfCompartmentInfo" />
+  <xs:complexType name="CompartmentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompartmentDesignator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deck" type="xs:short" />
+      <xs:element minOccurs="0" name="Length" type="xs:int" />
+      <xs:element minOccurs="0" name="Width" type="xs:int" />
+      <xs:element minOccurs="0" name="AvailableUnits" type="xs:int" />
+      <xs:element minOccurs="0" name="Orientation" type="xs:short" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:short" />
+      <xs:element minOccurs="0" name="Seats" nillable="true" type="tns:ArrayOfSeatInfo" />
+      <xs:element minOccurs="0" name="PropertyList" nillable="true" type="tns:ArrayOfEquipmentProperty" />
+      <xs:element xmlns:q115="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyBits" nillable="true" type="q115:ArrayOfunsignedInt" />
+      <xs:element xmlns:q116="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyInts" nillable="true" type="q116:ArrayOfint" />
+      <xs:element minOccurs="0" name="PropertyTimestamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompartmentInfo" nillable="true" type="tns:CompartmentInfo" />
+  <xs:complexType name="ArrayOfSeatInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SeatInfo" nillable="true" type="tns:SeatInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeatInfo" nillable="true" type="tns:ArrayOfSeatInfo" />
+  <xs:complexType name="SeatInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Assignable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CabotageLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="CarAvailableUnits" type="xs:int" />
+      <xs:element minOccurs="0" name="CompartmentDesignator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeatSet" type="xs:int" />
+      <xs:element minOccurs="0" name="CriterionWeight" type="xs:int" />
+      <xs:element minOccurs="0" name="SeatSetAvailableUnits" type="xs:int" />
+      <xs:element minOccurs="0" name="SSRSeatMapCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeatAngle" type="xs:short" />
+      <xs:element xmlns:q117="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="SeatAvailability" type="q117:SeatAvailability" />
+      <xs:element minOccurs="0" name="SeatDesignator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeatType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="X" type="xs:short" />
+      <xs:element minOccurs="0" name="Y" type="xs:short" />
+      <xs:element minOccurs="0" name="PropertyList" nillable="true" type="tns:ArrayOfEquipmentProperty" />
+      <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SSRPermissions" nillable="true" type="q118:ArrayOfstring" />
+      <xs:element xmlns:q119="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SSRPermissionBits" nillable="true" type="q119:ArrayOfunsignedInt" />
+      <xs:element xmlns:q120="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyBits" nillable="true" type="q120:ArrayOfunsignedInt" />
+      <xs:element xmlns:q121="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PropertyInts" nillable="true" type="q121:ArrayOfint" />
+      <xs:element minOccurs="0" name="TravelClassCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PropertyTimestamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SeatGroup" type="xs:short" />
+      <xs:element minOccurs="0" name="Zone" type="xs:short" />
+      <xs:element minOccurs="0" name="Height" type="xs:short" />
+      <xs:element minOccurs="0" name="Width" type="xs:short" />
+      <xs:element minOccurs="0" name="Priority" type="xs:short" />
+      <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ODPenalty" type="xs:int" />
+      <xs:element minOccurs="0" name="TerminalDisplayCharacter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PremiumSeatIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SeatInfo" nillable="true" type="tns:SeatInfo" />
+  <xs:complexType name="ArrayOfEquipmentProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentProperty" nillable="true" type="tns:EquipmentProperty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentProperty" nillable="true" type="tns:ArrayOfEquipmentProperty" />
+  <xs:complexType name="EquipmentProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentProperty" nillable="true" type="tns:EquipmentProperty" />
+  <xs:complexType name="ArrayOfSeatGroupPassengerFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SeatGroupPassengerFee" nillable="true" type="tns:SeatGroupPassengerFee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeatGroupPassengerFee" nillable="true" type="tns:ArrayOfSeatGroupPassengerFee" />
+  <xs:complexType name="SeatGroupPassengerFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SeatGroup" type="xs:short" />
+      <xs:element minOccurs="0" name="PassengerFee" nillable="true" type="tns:PassengerFee" />
+      <xs:element minOccurs="0" name="PassengerNumber" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SeatGroupPassengerFee" nillable="true" type="tns:SeatGroupPassengerFee" />
+  <xs:complexType name="ArrayOfSeatAvailabilityLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SeatAvailabilityLeg" nillable="true" type="tns:SeatAvailabilityLeg" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSeatAvailabilityLeg" nillable="true" type="tns:ArrayOfSeatAvailabilityLeg" />
+  <xs:complexType name="SeatAvailabilityLeg">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+      <xs:element xmlns:q122="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="FlightDesignator" nillable="true" type="q122:FlightDesignator" />
+      <xs:element minOccurs="0" name="AircraftType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AircraftTypeSuffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EquipmentIndex" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SeatAvailabilityLeg" nillable="true" type="tns:SeatAvailabilityLeg" />
+  <xs:complexType name="EquipmentPropertyTypeCodesLookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BooleanPropertyTypes" nillable="true" type="tns:ArrayOfEquipmentProperty" />
+      <xs:element xmlns:q123="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="NumericPropertyTypeCodes" nillable="true" type="q123:ArrayOfstring" />
+      <xs:element xmlns:q124="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SSRCodes" nillable="true" type="q124:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentPropertyTypeCodesLookup" nillable="true" type="tns:EquipmentPropertyTypeCodesLookup" />
+  <xs:complexType name="CommitRequestData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Booking" nillable="true" type="tns:Booking" />
+          <xs:element minOccurs="0" name="RestrictionOverride" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ChangeHoldDateTime" type="xs:boolean" />
+          <xs:element minOccurs="0" name="WaiveNameChangeFee" type="xs:boolean" />
+          <xs:element minOccurs="0" name="WaivePenaltyFee" type="xs:boolean" />
+          <xs:element minOccurs="0" name="WaiveSpoilageFee" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DistributeToContacts" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CommitRequestData" nillable="true" type="tns:CommitRequestData" />
+  <xs:complexType name="Booking">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element xmlns:q125="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="State" type="q125:MessageState" />
+          <xs:element minOccurs="0" name="RecordLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaxCount" type="xs:short" />
+          <xs:element minOccurs="0" name="SystemCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookingID" type="xs:long" />
+          <xs:element minOccurs="0" name="BookingParentID" type="xs:long" />
+          <xs:element minOccurs="0" name="ParentRecordLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookingChangeCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookingInfo" nillable="true" type="tns:BookingInfo" />
+          <xs:element xmlns:q126="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="POS" nillable="true" type="q126:PointOfSale" />
+          <xs:element xmlns:q127="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="SourcePOS" nillable="true" type="q127:PointOfSale" />
+          <xs:element minOccurs="0" name="TypeOfSale" nillable="true" type="tns:TypeOfSale" />
+          <xs:element minOccurs="0" name="BookingHold" nillable="true" type="tns:BookingHold" />
+          <xs:element minOccurs="0" name="BookingSum" nillable="true" type="tns:BookingSum" />
+          <xs:element minOccurs="0" name="ReceivedBy" nillable="true" type="tns:ReceivedByInfo" />
+          <xs:element xmlns:q128="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="RecordLocators" nillable="true" type="q128:ArrayOfRecordLocator" />
+          <xs:element minOccurs="0" name="Passengers" nillable="true" type="tns:ArrayOfPassenger" />
+          <xs:element minOccurs="0" name="Journeys" nillable="true" type="tns:ArrayOfJourney" />
+          <xs:element minOccurs="0" name="BookingComments" nillable="true" type="tns:ArrayOfBookingComment" />
+          <xs:element minOccurs="0" name="BookingQueueInfos" nillable="true" type="tns:ArrayOfBookingQueueInfo" />
+          <xs:element minOccurs="0" name="BookingContacts" nillable="true" type="tns:ArrayOfBookingContact" />
+          <xs:element minOccurs="0" name="Payments" nillable="true" type="tns:ArrayOfPayment" />
+          <xs:element minOccurs="0" name="BookingComponents" nillable="true" type="tns:ArrayOfBookingComponent" />
+          <xs:element minOccurs="0" name="NumericRecordLocator" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Booking" nillable="true" type="tns:Booking" />
+  <xs:complexType name="BookingSum">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BalanceDue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AuthorizedBalanceDue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SegmentCount" type="xs:short" />
+      <xs:element minOccurs="0" name="PassiveSegmentCount" type="xs:short" />
+      <xs:element minOccurs="0" name="TotalCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PointsBalanceDue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalPointCost" type="xs:decimal" />
+      <xs:element minOccurs="0" name="AlternateCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AlternateCurrencyBalanceDue" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingSum" nillable="true" type="tns:BookingSum" />
+  <xs:complexType name="ArrayOfPassenger">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Passenger" nillable="true" type="tns:Passenger" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPassenger" nillable="true" type="tns:ArrayOfPassenger" />
+  <xs:complexType name="ArrayOfJourney">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Journey" nillable="true" type="tns:Journey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJourney" nillable="true" type="tns:ArrayOfJourney" />
+  <xs:complexType name="ArrayOfBookingComment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingComment" nillable="true" type="tns:BookingComment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingComment" nillable="true" type="tns:ArrayOfBookingComment" />
+  <xs:complexType name="ArrayOfBookingQueueInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingQueueInfo" nillable="true" type="tns:BookingQueueInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingQueueInfo" nillable="true" type="tns:ArrayOfBookingQueueInfo" />
+  <xs:complexType name="ArrayOfBookingContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingContact" nillable="true" type="tns:BookingContact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingContact" nillable="true" type="tns:ArrayOfBookingContact" />
+  <xs:complexType name="ArrayOfPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Payment" nillable="true" type="tns:Payment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPayment" nillable="true" type="tns:ArrayOfPayment" />
+  <xs:complexType name="ArrayOfBookingComponent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingComponent" nillable="true" type="tns:BookingComponent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingComponent" nillable="true" type="tns:ArrayOfBookingComponent" />
+  <xs:complexType name="AvailabilityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Schedule" nillable="true" type="tns:ArrayOfJourneyDateMarket" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AvailabilityResponse" nillable="true" type="tns:AvailabilityResponse" />
+  <xs:complexType name="ArrayOfJourneyDateMarket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JourneyDateMarket" nillable="true" type="tns:JourneyDateMarket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJourneyDateMarket" nillable="true" type="tns:ArrayOfJourneyDateMarket" />
+  <xs:complexType name="JourneyDateMarket">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Journeys" nillable="true" type="tns:ArrayOfJourney" />
+      <xs:element minOccurs="0" name="IncludesTaxesAndFees" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JourneyDateMarket" nillable="true" type="tns:JourneyDateMarket" />
+  <xs:complexType name="SSRAvailabilityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Legs" nillable="true" type="tns:ArrayOfLeg" />
+          <xs:element minOccurs="0" name="SegmentSSRs" nillable="true" type="tns:ArrayOfInventorySegmentSSRNest" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SSRAvailabilityResponse" nillable="true" type="tns:SSRAvailabilityResponse" />
+  <xs:complexType name="ArrayOfInventorySegmentSSRNest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InventorySegmentSSRNest" nillable="true" type="tns:InventorySegmentSSRNest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInventorySegmentSSRNest" nillable="true" type="tns:ArrayOfInventorySegmentSSRNest" />
+  <xs:complexType name="InventorySegmentSSRNest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SSRNestCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinLegLid" type="xs:short" />
+      <xs:element minOccurs="0" name="MinLegAvailable" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InventorySegmentSSRNest" nillable="true" type="tns:InventorySegmentSSRNest" />
+  <xs:complexType name="UpgradeAvailabilityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UpgradeSegments" nillable="true" type="tns:ArrayOfUpgradeSegment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpgradeAvailabilityResponse" nillable="true" type="tns:UpgradeAvailabilityResponse" />
+  <xs:complexType name="ArrayOfUpgradeSegment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UpgradeSegment" nillable="true" type="tns:UpgradeSegment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUpgradeSegment" nillable="true" type="tns:ArrayOfUpgradeSegment" />
+  <xs:complexType name="UpgradeSegment">
+    <xs:sequence>
+      <xs:element xmlns:q129="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="FlightDesignator" nillable="true" type="q129:FlightDesignator" />
+      <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Upgrades" nillable="true" type="tns:ArrayOfUpgrade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpgradeSegment" nillable="true" type="tns:UpgradeSegment" />
+  <xs:complexType name="ArrayOfUpgrade">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Upgrade" nillable="true" type="tns:Upgrade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUpgrade" nillable="true" type="tns:ArrayOfUpgrade" />
+  <xs:complexType name="Upgrade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OriginalClassOfService" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpgradeClassOfService" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Available" type="xs:short" />
+      <xs:element minOccurs="0" name="PassengerFee" nillable="true" type="tns:PassengerFee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Upgrade" nillable="true" type="tns:Upgrade" />
+  <xs:complexType name="EquipmentListResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EquipmentResponses" nillable="true" type="tns:ArrayOfEquipmentResponse" />
+          <xs:element minOccurs="0" name="PropertyTypeCodesLookup" nillable="true" type="tns:EquipmentPropertyTypeCodesLookup" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EquipmentListResponse" nillable="true" type="tns:EquipmentListResponse" />
+  <xs:complexType name="ArrayOfEquipmentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentResponse" nillable="true" type="tns:EquipmentResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentResponse" nillable="true" type="tns:ArrayOfEquipmentResponse" />
+  <xs:complexType name="EquipmentResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EquipmentInfo" nillable="true" type="tns:EquipmentInfo" />
+          <xs:element minOccurs="0" name="FlightKey" nillable="true" type="tns:LegKey" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EquipmentResponse" nillable="true" type="tns:EquipmentResponse" />
+  <xs:complexType name="AddPaymentToBookingResponseData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ValidationPayment" nillable="true" type="tns:ValidationPayment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddPaymentToBookingResponseData" nillable="true" type="tns:AddPaymentToBookingResponseData" />
+  <xs:complexType name="ValidationPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Payment" nillable="true" type="tns:Payment" />
+      <xs:element minOccurs="0" name="PaymentValidationErrors" nillable="true" type="tns:ArrayOfPaymentValidationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationPayment" nillable="true" type="tns:ValidationPayment" />
+  <xs:complexType name="ArrayOfPaymentValidationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentValidationError" nillable="true" type="tns:PaymentValidationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentValidationError" nillable="true" type="tns:ArrayOfPaymentValidationError" />
+  <xs:complexType name="PaymentValidationError">
+    <xs:sequence>
+      <xs:element xmlns:q130="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ErrorType" type="q130:PaymentValidationErrorType" />
+      <xs:element minOccurs="0" name="ErrorDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AttributeName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentValidationError" nillable="true" type="tns:PaymentValidationError" />
+  <xs:complexType name="FindBookingResponseData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Records" type="xs:int" />
+          <xs:element minOccurs="0" name="EndingID" type="xs:long" />
+          <xs:element minOccurs="0" name="FindBookingDataList" nillable="true" type="tns:ArrayOfFindBookingData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FindBookingResponseData" nillable="true" type="tns:FindBookingResponseData" />
+  <xs:complexType name="ArrayOfFindBookingData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FindBookingData" nillable="true" type="tns:FindBookingData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFindBookingData" nillable="true" type="tns:ArrayOfFindBookingData" />
+  <xs:complexType name="FindBookingData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FlightDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FromCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ToCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordLocator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookingID" type="xs:long" />
+      <xs:element minOccurs="0" name="PassengerID" type="xs:long" />
+      <xs:element xmlns:q131="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="BookingStatus" type="q131:BookingStatus" />
+      <xs:element minOccurs="0" name="FlightNumber" nillable="true" type="xs:string" />
+      <xs:element xmlns:q132="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="ChannelType" type="q132:ChannelType" />
+      <xs:element minOccurs="0" name="SourceOrganizationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceDomainCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceAgentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Editable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="tns:BookingName" />
+      <xs:element minOccurs="0" name="ExpiredDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AllowedToModifyGDSBooking" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SystemCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FindBookingData" nillable="true" type="tns:FindBookingData" />
+  <xs:complexType name="ArrayOfArrayOfJourneyDateMarket">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfJourneyDateMarket" nillable="true" type="tns:ArrayOfJourneyDateMarket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArrayOfJourneyDateMarket" nillable="true" type="tns:ArrayOfArrayOfJourneyDateMarket" />
+  <xs:complexType name="ItineraryPriceRequest">
+    <xs:sequence>
+      <xs:element xmlns:q133="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" minOccurs="0" name="PriceItineraryBy" type="q133:PriceItineraryBy" />
+      <xs:element minOccurs="0" name="TypeOfSale" nillable="true" type="tns:TypeOfSale" />
+      <xs:element minOccurs="0" name="SSRRequest" nillable="true" type="tns:SSRRequest" />
+      <xs:element minOccurs="0" name="SellByKeyRequest" nillable="true" type="tns:SellJourneyByKeyRequestData" />
+      <xs:element minOccurs="0" name="PriceJourneyWithLegsRequest" nillable="true" type="tns:PriceJourneyRequestData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItineraryPriceRequest" nillable="true" type="tns:ItineraryPriceRequest" />
+  <xs:complexType name="SSRRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SegmentSSRRequests" nillable="true" type="tns:ArrayOfSegmentSSRRequest" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CancelFirstSSR" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SSRFeeForceWaiveOnSell" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SSRRequest" nillable="true" type="tns:SSRRequest" />
+  <xs:complexType name="ArrayOfSegmentSSRRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SegmentSSRRequest" nillable="true" type="tns:SegmentSSRRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSegmentSSRRequest" nillable="true" type="tns:ArrayOfSegmentSSRRequest" />
+  <xs:complexType name="SegmentSSRRequest">
+    <xs:sequence>
+      <xs:element xmlns:q134="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="FlightDesignator" nillable="true" type="q134:FlightDesignator" />
+      <xs:element minOccurs="0" name="STD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ArrivalStation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaxSSRs" nillable="true" type="tns:ArrayOfPaxSSR" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SegmentSSRRequest" nillable="true" type="tns:SegmentSSRRequest" />
+  <xs:complexType name="SellJourneyByKeyRequestData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionStatusCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JourneySellKeys" nillable="true" type="tns:ArrayOfSellKeyList" />
+      <xs:element minOccurs="0" name="PaxPriceType" nillable="true" type="tns:ArrayOfPaxPriceType" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q135="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="SourcePOS" nillable="true" type="q135:PointOfSale" />
+      <xs:element minOccurs="0" name="PaxCount" type="xs:short" />
+      <xs:element minOccurs="0" name="TypeOfSale" nillable="true" type="tns:TypeOfSale" />
+      <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations" minOccurs="0" name="LoyaltyFilter" type="q136:LoyaltyFilter" />
+      <xs:element minOccurs="0" name="IsAllotmentMarketFare" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SellJourneyByKeyRequestData" nillable="true" type="tns:SellJourneyByKeyRequestData" />
+  <xs:complexType name="ArrayOfSellKeyList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SellKeyList" nillable="true" type="tns:SellKeyList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSellKeyList" nillable="true" type="tns:ArrayOfSellKeyList" />
+  <xs:complexType name="SellKeyList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JourneySellKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FareSellKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StandbyPriorityCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SellKeyList" nillable="true" type="tns:SellKeyList" />
+  <xs:complexType name="PriceJourneyRequestData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PriceJourneys" nillable="true" type="tns:ArrayOfPriceJourney" />
+      <xs:element minOccurs="0" name="PaxCount" type="xs:short" />
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q137="http://schemas.navitaire.com/WebServices/DataContracts/Common" minOccurs="0" name="SourcePOS" nillable="true" type="q137:PointOfSale" />
+      <xs:element minOccurs="0" name="TypeOfSale" nillable="true" type="tns:TypeOfSale" />
+      <xs:element minOccurs="0" name="Passengers" nillable="true" type="tns:ArrayOfPassenger" />
+      <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations" minOccurs="0" name="LoyaltyFilter" type="q138:LoyaltyFilter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PriceJourneyRequestData" nillable="true" type="tns:PriceJourneyRequestData" />
+  <xs:complexType name="ArrayOfPriceJourney">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PriceJourney" nillable="true" type="tns:PriceJourney" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPriceJourney" nillable="true" type="tns:ArrayOfPriceJourney" />
+</xs:schema>

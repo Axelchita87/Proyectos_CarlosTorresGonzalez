@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PARAM_AIRSEGMENT1" xml:space="preserve">
+    <value>AirSegment1</value>
+  </data>
+  <data name="PARAM_AIRSEGMENT2" xml:space="preserve">
+    <value>AirSegment2</value>
+  </data>
+  <data name="PARAM_AIRSEGMENTPRODUCTIVITY" xml:space="preserve">
+    <value>AirSegmentProductivity</value>
+  </data>
+  <data name="PARAM_AIRSEGMENTPRODUCTIVITY1" xml:space="preserve">
+    <value>AirSegmentProductivity1</value>
+  </data>
+  <data name="PARAM_AIRSEGMENTPRODUCTIVITY2" xml:space="preserve">
+    <value>AirSegmentProductivity2</value>
+  </data>
+  <data name="PARAM_AUTOSEGMENT1" xml:space="preserve">
+    <value>AutoSegment1</value>
+  </data>
+  <data name="PARAM_AUTOSEGMENT2" xml:space="preserve">
+    <value>AutoSegment2</value>
+  </data>
+  <data name="PARAM_AUTOSEGMENTPRODUCTIVITY" xml:space="preserve">
+    <value>AutoSegmentProductivity</value>
+  </data>
+  <data name="PARAM_AUTOSEGMENTPRODUCTIVITY1" xml:space="preserve">
+    <value>AutoSegmentProductivity1</value>
+  </data>
+  <data name="PARAM_AUTOSEGMENTPRODUCTIVITY2" xml:space="preserve">
+    <value>AutoSegmentProductivity2</value>
+  </data>
+  <data name="PARAM_AVBRECORDVSTICKET1" xml:space="preserve">
+    <value>AvgRecordVsTicket1</value>
+  </data>
+  <data name="PARAM_AVBRECORDVSTICKET2" xml:space="preserve">
+    <value>AvgRecordVsTicket2</value>
+  </data>
+  <data name="PARAM_AVGAIRSEGMENT1" xml:space="preserve">
+    <value>AvgAirSegment1</value>
+  </data>
+  <data name="PARAM_AVGAIRSEGMENT2" xml:space="preserve">
+    <value>AvgAirSegment2</value>
+  </data>
+  <data name="PARAM_AVGAUTOSEGMENT1" xml:space="preserve">
+    <value>AvgAutoSegment1</value>
+  </data>
+  <data name="PARAM_AVGAUTOSEGMENT2" xml:space="preserve">
+    <value>AvgAutoSegment2</value>
+  </data>
+  <data name="PARAM_AVGCANCELLEDRECORDS1" xml:space="preserve">
+    <value>AvgCancelledRecords1</value>
+  </data>
+  <data name="PARAM_AVGCANCELLEDRECORDS2" xml:space="preserve">
+    <value>AvgCancelledRecords2</value>
+  </data>
+  <data name="PARAM_AVGCANCELLEDTKT1" xml:space="preserve">
+    <value>AvgCancelledTKT1</value>
+  </data>
+  <data name="PARAM_AVGCANCELLEDTKT2" xml:space="preserve">
+    <value>AvgCancelledTKT2</value>
+  </data>
+  <data name="PARAM_AVGEMITTEDTKT1" xml:space="preserve">
+    <value>AvgEmittedTKT1</value>
+  </data>
+  <data name="PARAM_AVGEMITTEDTKT2" xml:space="preserve">
+    <value>AvgEmittedTKT2</value>
+  </data>
+  <data name="PARAM_AVGHOTELSEGMENT1" xml:space="preserve">
+    <value>AvgHotelSegment1</value>
+  </data>
+  <data name="PARAM_AVGHOTELSEGMENT2" xml:space="preserve">
+    <value>AvgHotelSegment2</value>
+  </data>
+  <data name="PARAM_AVGRECORDS1" xml:space="preserve">
+    <value>AvgRecords1</value>
+  </data>
+  <data name="PARAM_AVGRECORDS2" xml:space="preserve">
+    <value>AvgRecords2</value>
+  </data>
+  <data name="PARAM_AVGRECORDSVSTICKET1" xml:space="preserve">
+    <value>AvgRecordVsTicket1</value>
+  </data>
+  <data name="PARAM_AVGRECORDSVSTICKET2" xml:space="preserve">
+    <value>AvgRecordVsTicket2</value>
+  </data>
+  <data name="PARAM_AVGSCANAVGPERRECORD1" xml:space="preserve">
+    <value>AvgScanAvgPerRecord1</value>
+  </data>
+  <data name="PARAM_AVGSCANAVGPERRECORD2" xml:space="preserve">
+    <value>AvgScanAvgPerRecord2</value>
+  </data>
+  <data name="PARAM_AVGSCANPERRECORDPRODUCTIVITY1" xml:space="preserve">
+    <value>AvgScanPerRecordProductivity1</value>
+  </data>
+  <data name="PARAM_AVGSCANPERRECORDPRODUCTIVITY2" xml:space="preserve">
+    <value>AvgScanPerRecordProductivity2</value>
+  </data>
+  <data name="PARAM_AVGTOTALSEGMENT1" xml:space="preserve">
+    <value>AvgTotalSegment1</value>
+  </data>
+  <data name="PARAM_AVGTOTALSEGMENT2" xml:space="preserve">
+    <value>AvgTotalSegment2</value>
+  </data>
+  <data name="PARAM_CANCELLEDPNR1" xml:space="preserve">
+    <value>CancelledPNR1</value>
+  </data>
+  <data name="PARAM_CANCELLEDPNR2" xml:space="preserve">
+    <value>CancelledPNR2</value>
+  </data>
+  <data name="PARAM_CANCELLEDRECORDSPRODUCTIVITY" xml:space="preserve">
+    <value>CancelledRecordsProductivity</value>
+  </data>
+  <data name="PARAM_CANCELLEDRECORDSPRODUCTIVITY1" xml:space="preserve">
+    <value>CancelledRecordsProductivity1</value>
+  </data>
+  <data name="PARAM_CANCELLEDRECORDSPRODUCTIVITY2" xml:space="preserve">
+    <value>CancelledRecordsProductivity2</value>
+  </data>
+  <data name="PARAM_CANCELLEDTKT1" xml:space="preserve">
+    <value>CancelledTKT1</value>
+  </data>
+  <data name="PARAM_CANCELLEDTKT2" xml:space="preserve">
+    <value>CancelledTKT2</value>
+  </data>
+  <data name="PARAM_CANCELLEDTKTPRODUCTIVITY" xml:space="preserve">
+    <value>CancelledTKTProductivity</value>
+  </data>
+  <data name="PARAM_CANCELLEDTKTPRODUCTIVITY1" xml:space="preserve">
+    <value>CancelledTKTProductivity1</value>
+  </data>
+  <data name="PARAM_CANCELLEDTKTPRODUCTIVITY2" xml:space="preserve">
+    <value>CancelledTKTProductivity2</value>
+  </data>
+  <data name="PARAM_EMITTEDTKT1" xml:space="preserve">
+    <value>EmittedTKT1</value>
+  </data>
+  <data name="PARAM_EMITTEDTKT2" xml:space="preserve">
+    <value>EmittedTKT2</value>
+  </data>
+  <data name="PARAM_EMITTEDTKTPRODUCTIVITY" xml:space="preserve">
+    <value>EmittedTKTProductivity</value>
+  </data>
+  <data name="PARAM_EMITTEDTKTPRODUCTIVITY1" xml:space="preserve">
+    <value>EmittedTKTProductivity1</value>
+  </data>
+  <data name="PARAM_EMITTEDTKTPRODUCTIVITY2" xml:space="preserve">
+    <value>EmittedTKTProductivity2</value>
+  </data>
+  <data name="PARAM_FAMILYNAME" xml:space="preserve">
+    <value>FamilyName</value>
+  </data>
+  <data name="PARAM_FINALDATE1" xml:space="preserve">
+    <value>FinalDate1</value>
+  </data>
+  <data name="PARAM_FINALDATE2" xml:space="preserve">
+    <value>FinalDate2</value>
+  </data>
+  <data name="PARAM_HOTELSEGMENT1" xml:space="preserve">
+    <value>HotelSegment1</value>
+  </data>
+  <data name="PARAM_HOTELSEGMENT2" xml:space="preserve">
+    <value>HotelSegment2</value>
+  </data>
+  <data name="PARAM_HOTELSEGMENTPRODUCTIVITY" xml:space="preserve">
+    <value>HotelSegmentProductivity</value>
+  </data>
+  <data name="PARAM_HOTELSEGMENTPRODUCTIVITY1" xml:space="preserve">
+    <value>HotelSegmentProductivity1</value>
+  </data>
+  <data name="PARAM_HOTELSEGMENTPRODUCTIVITY2" xml:space="preserve">
+    <value>HotelSegmentProductivity2</value>
+  </data>
+  <data name="PARAM_INITIALDATE1" xml:space="preserve">
+    <value>InitialDate1</value>
+  </data>
+  <data name="PARAM_INITIALDATE2" xml:space="preserve">
+    <value>InitialDate2</value>
+  </data>
+  <data name="PARAM_LABOURDAYS1" xml:space="preserve">
+    <value>LabourDays1</value>
+  </data>
+  <data name="PARAM_LABOURDAYS2" xml:space="preserve">
+    <value>LabourDays2</value>
+  </data>
+  <data name="PARAM_QUERY" xml:space="preserve">
+    <value>Agent</value>
+  </data>
+  <data name="PARAM_QUERY2" xml:space="preserve">
+    <value>ProductivityDate</value>
+  </data>
+  <data name="PARAM_RECORDSPRODUCTIVITY1" xml:space="preserve">
+    <value>RecordsProductivity1</value>
+  </data>
+  <data name="PARAM_RECORDSPRODUCTIVITY2" xml:space="preserve">
+    <value>RecordsProductivity2</value>
+  </data>
+  <data name="PARAM_RECORDSVSTICKET1" xml:space="preserve">
+    <value>RecordVsTicket1</value>
+  </data>
+  <data name="PARAM_RECORDSVSTICKET2" xml:space="preserve">
+    <value>RecordVsTicket2</value>
+  </data>
+  <data name="PARAM_RECORDSVSTKTPRODUCTIVITY" xml:space="preserve">
+    <value>RecordVsTicketProductivity</value>
+  </data>
+  <data name="PARAM_REPORTDATE" xml:space="preserve">
+    <value>ReportDate</value>
+  </data>
+  <data name="PARAM_SCANSAVERAGE1" xml:space="preserve">
+    <value>ScansAverage1</value>
+  </data>
+  <data name="PARAM_SCANSAVERAGE2" xml:space="preserve">
+    <value>ScansAverage2</value>
+  </data>
+  <data name="PARAM_SCANSAVERAGEPRODUCTIVITY" xml:space="preserve">
+    <value>ScansAverageProductivity</value>
+  </data>
+  <data name="PARAM_TOTALPNR1" xml:space="preserve">
+    <value>TotalPNR1</value>
+  </data>
+  <data name="PARAM_TOTALPNR2" xml:space="preserve">
+    <value>TotalPNR2</value>
+  </data>
+  <data name="PARAM_TOTALRECORDSPRODUCTIVITY" xml:space="preserve">
+    <value>TotalRecordsProductivity</value>
+  </data>
+  <data name="PARAM_TOTALRECORDSVSTKTPRODUCTIVITY1" xml:space="preserve">
+    <value>TotalRecordVsTKTProductivity1</value>
+  </data>
+  <data name="PARAM_TOTALRECORDSVSTKTPRODUCTIVITY2" xml:space="preserve">
+    <value>TotalRecordVsTKTProductivity2</value>
+  </data>
+  <data name="PARAM_TOTALSEGMENT1" xml:space="preserve">
+    <value>TotalSegment1</value>
+  </data>
+  <data name="PARAM_TOTALSEGMENT2" xml:space="preserve">
+    <value>TotalSegment2</value>
+  </data>
+  <data name="PARAM_TOTALSEGMENTPRODUCTIVITY" xml:space="preserve">
+    <value>TotalSegmentProductivity</value>
+  </data>
+  <data name="PARAM_TOTALSEGMENTPRODUCTIVITY1" xml:space="preserve">
+    <value>TotalSegmentProductivity1</value>
+  </data>
+  <data name="PARAM_TOTALSEGMENTPRODUCTIVITY2" xml:space="preserve">
+    <value>TotalSegmentProductivity2</value>
+  </data>
+  <data name="SP_GetUserProductivityAccumulated" xml:space="preserve">
+    <value>GetUserProductivityAccumulated</value>
+  </data>
+  <data name="SP_GetUserProductivityPerMonth" xml:space="preserve">
+    <value>GetUserProductivityPerMonth</value>
+  </data>
+  <data name="SP_GetUserProductivityPerWeek" xml:space="preserve">
+    <value>GetUserProductivityPerWeek</value>
+  </data>
+</root>

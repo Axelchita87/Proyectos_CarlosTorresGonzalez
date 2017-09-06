@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ed0aa6e9-9b81-4eb0-97e3-7d969f34fc41" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://ijtestr3xapi.navitaire.com/ContentManager.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ContentManager.xsd" MetadataType="Schema" ID="f95bd701-d3b6-44de-b0a5-96ba89e93047" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd4" />
+    <MetadataFile FileName="ContentManager1.xsd" MetadataType="Schema" ID="f1cc629e-23e7-4406-b26e-c1297a000af2" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd3" />
+    <MetadataFile FileName="ContentManager2.xsd" MetadataType="Schema" ID="34020639-998b-40a6-a98b-589f35b5f0d9" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd6" />
+    <MetadataFile FileName="ContentManager.disco" MetadataType="Disco" ID="204e801c-d069-43b2-bab2-cec78c1f425c" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?disco" />
+    <MetadataFile FileName="ContentManager.wsdl" MetadataType="Wsdl" ID="c3936a9d-7122-4225-9126-b494557ab0e2" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?wsdl" />
+    <MetadataFile FileName="ContentManager3.xsd" MetadataType="Schema" ID="bd938e37-93a1-4f3c-b04b-02a15c3536eb" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd5" />
+    <MetadataFile FileName="ContentManager4.xsd" MetadataType="Schema" ID="718f041d-3b69-4e5f-a0ad-e9b757a16aac" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd0" />
+    <MetadataFile FileName="ContentManager5.xsd" MetadataType="Schema" ID="f486dc70-cd46-40c2-af11-36fe87ed69f6" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd7" />
+    <MetadataFile FileName="ContentManager6.xsd" MetadataType="Schema" ID="598b72e0-d0d5-40d5-b3d4-efd578d489fc" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContentManager7.xsd" MetadataType="Schema" ID="b03124ea-2cec-4cba-b33e-baaa117eee79" SourceId="1" SourceUrl="https://ijtestr3xapi.navitaire.com/ContentManager.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

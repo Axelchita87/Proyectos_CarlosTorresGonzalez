@@ -1,0 +1,1371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADMINPROD" xml:space="preserve">
+    <value>[adminprod]</value>
+  </data>
+  <data name="AIRLINE_INITIAL_TEXT" xml:space="preserve">
+    <value>Selecciona Aerolínea para Validar Cotización</value>
+  </data>
+  <data name="AMERICAN_AIRLINES_CODE" xml:space="preserve">
+    <value>AA</value>
+  </data>
+  <data name="AST" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="AVAILABILITY" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BANNER_FONT_COLOR" xml:space="preserve">
+    <value>Navy</value>
+  </data>
+  <data name="BANNER_FONT_SIZE" xml:space="preserve">
+    <value>9.75</value>
+  </data>
+  <data name="BANNER_TEXT" xml:space="preserve">
+    <value>Bienvenido a MyCTS</value>
+  </data>
+  <data name="CALENDAR_BLUE" xml:space="preserve">
+    <value>192</value>
+  </data>
+  <data name="CALENDAR_GREEN" xml:space="preserve">
+    <value>255</value>
+  </data>
+  <data name="CALENDAR_RED" xml:space="preserve">
+    <value>255</value>
+  </data>
+  <data name="CHANGE" xml:space="preserve">
+    <value>¤</value>
+  </data>
+  <data name="CHOOSES_INF" xml:space="preserve">
+    <value>INF</value>
+  </data>
+  <data name="COMMADS_W_SLASH_INDENT_AL" xml:space="preserve">
+    <value>W/-AL</value>
+  </data>
+  <data name="COMMANDS_0A" xml:space="preserve">
+    <value>0A</value>
+  </data>
+  <data name="COMMANDS_3FOID_SLASH_CC" xml:space="preserve">
+    <value>3FOID/CC</value>
+  </data>
+  <data name="COMMANDS_3FOID_SLASH_PP" xml:space="preserve">
+    <value>3FOID/PP</value>
+  </data>
+  <data name="COMMANDS_3INFT_SLASH" xml:space="preserve">
+    <value>3INFT/</value>
+  </data>
+  <data name="COMMANDS_3OSI" xml:space="preserve">
+    <value>3OSI</value>
+  </data>
+  <data name="COMMANDS_3PCTC" xml:space="preserve">
+    <value>3PCTC</value>
+  </data>
+  <data name="COMMANDS_4_PSPT" xml:space="preserve">
+    <value>4PSPT</value>
+  </data>
+  <data name="COMMANDS_4G" xml:space="preserve">
+    <value>4G</value>
+  </data>
+  <data name="COMMANDS_4INFT_SLASH" xml:space="preserve">
+    <value>4INFT/</value>
+  </data>
+  <data name="COMMANDS_4OSI" xml:space="preserve">
+    <value>4OSI</value>
+  </data>
+  <data name="COMMANDS_4PCTC" xml:space="preserve">
+    <value>4PCTC</value>
+  </data>
+  <data name="COMMANDS_5U99_CC_SLASH" xml:space="preserve">
+    <value>5U99-CC/</value>
+  </data>
+  <data name="COMMANDS_5U99_HF_SLASH" xml:space="preserve">
+    <value>5U99-HF/</value>
+  </data>
+  <data name="COMMANDS_5U99_LF_SLASH" xml:space="preserve">
+    <value>5U99-LF/</value>
+  </data>
+  <data name="COMMANDS_5U99_RC_SLASH" xml:space="preserve">
+    <value>5U99-RC/</value>
+  </data>
+  <data name="COMMANDS_6_NAME" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="COMMANDS_6CHANGE_TA_SLASH" xml:space="preserve">
+    <value>6¤TA/</value>
+  </data>
+  <data name="COMMANDS_7TAW" xml:space="preserve">
+    <value>7TAW</value>
+  </data>
+  <data name="COMMANDS_AAA" xml:space="preserve">
+    <value>AAA</value>
+  </data>
+  <data name="COMMANDS_AAA0WY5" xml:space="preserve">
+    <value>AAA0WY5</value>
+  </data>
+  <data name="COMMANDS_AAA3L64" xml:space="preserve">
+    <value>AAA3L64</value>
+  </data>
+  <data name="COMMANDS_AC_CHANGE" xml:space="preserve">
+    <value>AC¤</value>
+  </data>
+  <data name="COMMANDS_APD" xml:space="preserve">
+    <value>APD</value>
+  </data>
+  <data name="COMMANDS_AST_A" xml:space="preserve">
+    <value>*A</value>
+  </data>
+  <data name="COMMANDS_AST_B" xml:space="preserve">
+    <value>*B</value>
+  </data>
+  <data name="COMMANDS_AST_H" xml:space="preserve">
+    <value>*H</value>
+  </data>
+  <data name="COMMANDS_AST_I" xml:space="preserve">
+    <value>*I</value>
+  </data>
+  <data name="COMMANDS_AST_IA" xml:space="preserve">
+    <value>*IA</value>
+  </data>
+  <data name="COMMANDS_AST_IA_AST_S_CROSSLORAINE_AST_B" xml:space="preserve">
+    <value>*IA*S‡*B</value>
+  </data>
+  <data name="COMMANDS_AST_IAB" xml:space="preserve">
+    <value>*IAB</value>
+  </data>
+  <data name="COMMANDS_AST_IC_AST_CROSSLORAINE" xml:space="preserve">
+    <value>*IC*‡</value>
+  </data>
+  <data name="COMMANDS_AST_IH_AST_CROSSLORAINE" xml:space="preserve">
+    <value>*IH*‡</value>
+  </data>
+  <data name="COMMANDS_AST_INDENT" xml:space="preserve">
+    <value>*-</value>
+  </data>
+  <data name="COMMANDS_AST_IO" xml:space="preserve">
+    <value>*IO</value>
+  </data>
+  <data name="COMMANDS_AST_N" xml:space="preserve">
+    <value>*N</value>
+  </data>
+  <data name="COMMANDS_AST_N_AST_I" xml:space="preserve">
+    <value>*N*I</value>
+  </data>
+  <data name="COMMANDS_AST_N_AST_IA" xml:space="preserve">
+    <value>*N*IA</value>
+  </data>
+  <data name="COMMANDS_AST_P3_AST_P4" xml:space="preserve">
+    <value>*P3*P4</value>
+  </data>
+  <data name="COMMANDS_AST_P5" xml:space="preserve">
+    <value>*P5</value>
+  </data>
+  <data name="COMMANDS_AST_P6" xml:space="preserve">
+    <value>*P6</value>
+  </data>
+  <data name="COMMANDS_AST_P7" xml:space="preserve">
+    <value>*P7</value>
+  </data>
+  <data name="COMMANDS_AST_P9" xml:space="preserve">
+    <value>*P9</value>
+  </data>
+  <data name="COMMANDS_AST_PAC" xml:space="preserve">
+    <value>*PAC</value>
+  </data>
+  <data name="COMMANDS_AST_PAD" xml:space="preserve">
+    <value>*PAD</value>
+  </data>
+  <data name="COMMANDS_AST_PDK" xml:space="preserve">
+    <value>*PDK</value>
+  </data>
+  <data name="COMMANDS_AST_PE" xml:space="preserve">
+    <value>*PE</value>
+  </data>
+  <data name="COMMANDS_AST_POINT" xml:space="preserve">
+    <value>*.</value>
+  </data>
+  <data name="COMMANDS_AST_PQ" xml:space="preserve">
+    <value>*PQ</value>
+  </data>
+  <data name="COMMANDS_AST_Q" xml:space="preserve">
+    <value>*Q</value>
+  </data>
+  <data name="COMMANDS_AST_QH" xml:space="preserve">
+    <value>*QH</value>
+  </data>
+  <data name="COMMANDS_AST_S_AST_P" xml:space="preserve">
+    <value>*S*P</value>
+  </data>
+  <data name="COMMANDS_AST_T" xml:space="preserve">
+    <value>*T</value>
+  </data>
+  <data name="COMMANDS_AST_T_AST_HT" xml:space="preserve">
+    <value>*T*HT</value>
+  </data>
+  <data name="COMMANDS_AST_TKT" xml:space="preserve">
+    <value>*TKT</value>
+  </data>
+  <data name="COMMANDS_AT" xml:space="preserve">
+    <value>@</value>
+  </data>
+  <data name="COMMANDS_AT_A" xml:space="preserve">
+    <value>@A</value>
+  </data>
+  <data name="COMMANDS_AT_B" xml:space="preserve">
+    <value>@B</value>
+  </data>
+  <data name="COMMANDS_AT_C" xml:space="preserve">
+    <value>@C</value>
+  </data>
+  <data name="COMMANDS_AT_D" xml:space="preserve">
+    <value>@D</value>
+  </data>
+  <data name="COMMANDS_AT_E" xml:space="preserve">
+    <value>@E</value>
+  </data>
+  <data name="COMMANDS_AT_F" xml:space="preserve">
+    <value>@F</value>
+  </data>
+  <data name="COMMANDS_AT_MD" xml:space="preserve">
+    <value>@MD</value>
+  </data>
+  <data name="COMMANDS_AT_MU" xml:space="preserve">
+    <value>@MU</value>
+  </data>
+  <data name="COMMANDS_AT_Q" xml:space="preserve">
+    <value>@Q</value>
+  </data>
+  <data name="COMMANDS_B" xml:space="preserve">
+    <value>B</value>
+  </data>
+  <data name="COMMANDS_CH" xml:space="preserve">
+    <value>CH</value>
+  </data>
+  <data name="COMMANDS_CHANGE_ALL" xml:space="preserve">
+    <value>@ALL</value>
+  </data>
+  <data name="COMMANDS_COMA_APD" xml:space="preserve">
+    <value>,APD</value>
+  </data>
+  <data name="COMMANDS_COMA_B" xml:space="preserve">
+    <value>,B</value>
+  </data>
+  <data name="COMMANDS_COMA_X" xml:space="preserve">
+    <value>,X</value>
+  </data>
+  <data name="COMMANDS_COMMA" xml:space="preserve">
+    <value>,</value>
+  </data>
+  <data name="COMMANDS_CONTACT" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_A" xml:space="preserve">
+    <value>‡A</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_AC_AST" xml:space="preserve">
+    <value>‡AC*</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_AST" xml:space="preserve">
+    <value>‡*</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_AT" xml:space="preserve">
+    <value>‡AT</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_CLIENT_SLA_11" xml:space="preserve">
+    <value>¥{0}/11</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_I" xml:space="preserve">
+    <value>‡I</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_M_AGENT" xml:space="preserve">
+    <value>‡M{0}</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_N" xml:space="preserve">
+    <value>‡N</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_P" xml:space="preserve">
+    <value>‡P</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_PL" xml:space="preserve">
+    <value>‡PL</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_PV" xml:space="preserve">
+    <value>‡PV</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_RE" xml:space="preserve">
+    <value>¥RE</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_S" xml:space="preserve">
+    <value>‡S</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_Z19" xml:space="preserve">
+    <value>‡Z19</value>
+  </data>
+  <data name="COMMANDS_D" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="COMMANDS_DC_CROSS_USD1_MXN" xml:space="preserve">
+    <value>DC‡USD1/MXN</value>
+  </data>
+  <data name="COMMANDS_DC_CROSS_USD1_SLAHS_MXN_" xml:space="preserve">
+    <value>DC¥USD1/MXN/</value>
+  </data>
+  <data name="COMMANDS_DC_CROSSLORAINE_USD1_SLASH_MXN_AST" xml:space="preserve">
+    <value>DC‡USD1/MXN*</value>
+  </data>
+  <data name="COMMANDS_DIN" xml:space="preserve">
+    <value>DIN</value>
+  </data>
+  <data name="COMMANDS_DK" xml:space="preserve">
+    <value>DK</value>
+  </data>
+  <data name="COMMANDS_DPONE_SLASH_THREE" xml:space="preserve">
+    <value>DP1/3</value>
+  </data>
+  <data name="COMMANDS_DQB_AST" xml:space="preserve">
+    <value>DQB*</value>
+  </data>
+  <data name="COMMANDS_DSIV" xml:space="preserve">
+    <value>DSIV</value>
+  </data>
+  <data name="COMMANDS_DSNO" xml:space="preserve">
+    <value>DSNO</value>
+  </data>
+  <data name="COMMANDS_DWLIST" xml:space="preserve">
+    <value>DWLIST</value>
+  </data>
+  <data name="COMMANDS_EC" xml:space="preserve">
+    <value>EC</value>
+  </data>
+  <data name="COMMANDS_EMR" xml:space="preserve">
+    <value>EMR</value>
+  </data>
+  <data name="COMMANDS_EMXR" xml:space="preserve">
+    <value>EMXR</value>
+  </data>
+  <data name="COMMANDS_END_IT_5U99_ID_SLASH" xml:space="preserve">
+    <value>§5U99-ID/</value>
+  </data>
+  <data name="COMMANDS_END_IT_6" xml:space="preserve">
+    <value>§6</value>
+  </data>
+  <data name="COMMANDS_END_IT_PDT" xml:space="preserve">
+    <value>§PDT</value>
+  </data>
+  <data name="COMMANDS_ER" xml:space="preserve">
+    <value>ER</value>
+  </data>
+  <data name="COMMANDS_ET" xml:space="preserve">
+    <value>ET</value>
+  </data>
+  <data name="COMMANDS_EWR" xml:space="preserve">
+    <value>EWR</value>
+  </data>
+  <data name="COMMANDS_F" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="COMMANDS_FF" xml:space="preserve">
+    <value>FF</value>
+  </data>
+  <data name="COMMANDS_I" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="COMMANDS_IC" xml:space="preserve">
+    <value>IC</value>
+  </data>
+  <data name="COMMANDS_IR" xml:space="preserve">
+    <value>IR</value>
+  </data>
+  <data name="COMMANDS_M" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="COMMANDS_MD" xml:space="preserve">
+    <value>MD</value>
+  </data>
+  <data name="COMMANDS_MD_SLASH" xml:space="preserve">
+    <value>MD/</value>
+  </data>
+  <data name="COMMANDS_MU" xml:space="preserve">
+    <value>MU</value>
+  </data>
+  <data name="COMMANDS_N" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="COMMANDS_N_AST" xml:space="preserve">
+    <value>N*</value>
+  </data>
+  <data name="COMMANDS_N_AST_AST_O" xml:space="preserve">
+    <value>N**O</value>
+  </data>
+  <data name="COMMANDS_N_AST_ENDIT_NM" xml:space="preserve">
+    <value>N*@ΣNM</value>
+  </data>
+  <data name="COMMANDS_N_AST_NM" xml:space="preserve">
+    <value>N*@ΣNM</value>
+  </data>
+  <data name="COMMANDS_NI" xml:space="preserve">
+    <value>*N*I</value>
+  </data>
+  <data name="COMMANDS_NLIST_SLA" xml:space="preserve">
+    <value>NLIST/</value>
+  </data>
+  <data name="COMMANDS_NLIST_SLA_ALL" xml:space="preserve">
+    <value>NLIST/ALL</value>
+  </data>
+  <data name="COMMANDS_NM" xml:space="preserve">
+    <value>NM</value>
+  </data>
+  <data name="COMMANDS_NO_REMARK" xml:space="preserve">
+    <value>5.S*MX-</value>
+  </data>
+  <data name="COMMANDS_NU" xml:space="preserve">
+    <value>NU</value>
+  </data>
+  <data name="COMMANDS_ONE_AST" xml:space="preserve">
+    <value>1*</value>
+  </data>
+  <data name="COMMANDS_ONE_AST_C" xml:space="preserve">
+    <value>1*C</value>
+  </data>
+  <data name="COMMANDS_ONE_AST_OA" xml:space="preserve">
+    <value>1*OA</value>
+  </data>
+  <data name="COMMANDS_ONE_AST_R" xml:space="preserve">
+    <value>1*R</value>
+  </data>
+  <data name="COMMANDS_PD" xml:space="preserve">
+    <value>PD</value>
+  </data>
+  <data name="COMMANDS_PDT" xml:space="preserve">
+    <value>PDT</value>
+  </data>
+  <data name="COMMANDS_PPO" xml:space="preserve">
+    <value>PPO</value>
+  </data>
+  <data name="COMMANDS_PPS" xml:space="preserve">
+    <value>PPS</value>
+  </data>
+  <data name="COMMANDS_PPS4" xml:space="preserve">
+    <value>PPS4</value>
+  </data>
+  <data name="COMMANDS_PPS5" xml:space="preserve">
+    <value>PPS5</value>
+  </data>
+  <data name="COMMANDS_PQ" xml:space="preserve">
+    <value>PQ</value>
+  </data>
+  <data name="COMMANDS_PQM" xml:space="preserve">
+    <value>PQM</value>
+  </data>
+  <data name="COMMANDS_PT_AST" xml:space="preserve">
+    <value>PT*</value>
+  </data>
+  <data name="COMMANDS_PTR_AST_A_AST_AST_B_FF_AST_T" xml:space="preserve">
+    <value>PTR*A*B*FF*T</value>
+  </data>
+  <data name="COMMANDS_PTR_AST_PQ" xml:space="preserve">
+    <value>PTR*PQ</value>
+  </data>
+  <data name="COMMANDS_PTR_SLASH" xml:space="preserve">
+    <value>PTR/</value>
+  </data>
+  <data name="COMMANDS_PTR_SLASH_END" xml:space="preserve">
+    <value>PTR/END</value>
+  </data>
+  <data name="COMMANDS_QP_SLA" xml:space="preserve">
+    <value>QP/</value>
+  </data>
+  <data name="COMMANDS_QP_SLA_AGENT_SLA_11" xml:space="preserve">
+    <value>QP/{0}/11</value>
+  </data>
+  <data name="COMMANDS_REMARK" xml:space="preserve">
+    <value>5{0}@</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_B" xml:space="preserve">
+    <value>RL/B</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_B_CLEAR" xml:space="preserve">
+    <value>RL/B CLEAR</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_B_HOLD" xml:space="preserve">
+    <value>RL/B HOLD</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_B_STATUS" xml:space="preserve">
+    <value>RL/B STATUS</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_I" xml:space="preserve">
+    <value>RL/I</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_I_CLEAR" xml:space="preserve">
+    <value>RL/I CLEAR</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_I_HOLD" xml:space="preserve">
+    <value>RL/I HOLD</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_I_STATUS" xml:space="preserve">
+    <value>RL/I STATUS</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_P" xml:space="preserve">
+    <value>RL/P</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_P_CLEAR" xml:space="preserve">
+    <value>RL/P CLEAR</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_P_HOLD" xml:space="preserve">
+    <value>RL/P HOLD</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_P_STATUS" xml:space="preserve">
+    <value>RL/P STATUS</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_T" xml:space="preserve">
+    <value>RL/T</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_T_CLEAR" xml:space="preserve">
+    <value>RL/T CLEAR</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_T_HOLD" xml:space="preserve">
+    <value>RL/T HOLD</value>
+  </data>
+  <data name="COMMANDS_RL_SLASH_T_STATUS" xml:space="preserve">
+    <value>RL/T STATUS</value>
+  </data>
+  <data name="COMMANDS_S" xml:space="preserve">
+    <value>S</value>
+  </data>
+  <data name="COMMANDS_SEGMENT_PROTECTION" xml:space="preserve">
+    <value>0OTHAAGK1MEX{0}-SEGMENTO DE PROTECCION</value>
+  </data>
+  <data name="COMMANDS_SLA_A" xml:space="preserve">
+    <value>/A</value>
+  </data>
+  <data name="COMMANDS_SLA_D" xml:space="preserve">
+    <value>/D</value>
+  </data>
+  <data name="COMMANDS_SLA_K" xml:space="preserve">
+    <value>/K</value>
+  </data>
+  <data name="COMMANDS_SLAHS_CLM" xml:space="preserve">
+    <value>/CLM</value>
+  </data>
+  <data name="COMMANDS_SLASH_AST" xml:space="preserve">
+    <value>/*</value>
+  </data>
+  <data name="COMMANDS_SLASH_END_IT_6" xml:space="preserve">
+    <value>/§6</value>
+  </data>
+  <data name="COMMANDS_SLASH_ENDIT_6_NAME" xml:space="preserve">
+    <value>/§6{0}</value>
+  </data>
+  <data name="COMMANDS_SLASH_SLASH_DA" xml:space="preserve">
+    <value>//DA</value>
+  </data>
+  <data name="COMMANDS_SLASH_SLASH_DP" xml:space="preserve">
+    <value>//DP</value>
+  </data>
+  <data name="COMMANDS_THREE_DOCO" xml:space="preserve">
+    <value>3DOCO</value>
+  </data>
+  <data name="COMMANDS_W_AST_MX" xml:space="preserve">
+    <value>W*MX</value>
+  </data>
+  <data name="COMMANDS_W_AST_NO" xml:space="preserve">
+    <value>W*NO</value>
+  </data>
+  <data name="COMMANDS_W_CROSSLORAINE_RG" xml:space="preserve">
+    <value>W¥RG</value>
+  </data>
+  <data name="COMMANDS_W_SLASH_AST" xml:space="preserve">
+    <value>W/*</value>
+  </data>
+  <data name="COMMANDS_W_SLASH_EQ_AST" xml:space="preserve">
+    <value>W/EQ*</value>
+  </data>
+  <data name="COMMANDS_W_SLASH_INDENT_AT" xml:space="preserve">
+    <value>W/-AT</value>
+  </data>
+  <data name="COMMANDS_W_SLASH_INDENT_CY" xml:space="preserve">
+    <value>W/-CY</value>
+  </data>
+  <data name="COMMANDS_W_SLASH_TATKT" xml:space="preserve">
+    <value>W/TATKT</value>
+  </data>
+  <data name="COMMANDS_WC" xml:space="preserve">
+    <value>WC</value>
+  </data>
+  <data name="COMMANDS_WC_CROSSLORAINE" xml:space="preserve">
+    <value>WC‡</value>
+  </data>
+  <data name="COMMANDS_WETP_AST" xml:space="preserve">
+    <value>WETP*</value>
+  </data>
+  <data name="COMMANDS_WETR_AST" xml:space="preserve">
+    <value>WETR*</value>
+  </data>
+  <data name="COMMANDS_WETR_AST_T" xml:space="preserve">
+    <value>WETR*T</value>
+  </data>
+  <data name="COMMANDS_WETRV" xml:space="preserve">
+    <value>WETRV</value>
+  </data>
+  <data name="COMMANDS_WP" xml:space="preserve">
+    <value>WP</value>
+  </data>
+  <data name="COMMANDS_WPA" xml:space="preserve">
+    <value>WPA</value>
+  </data>
+  <data name="COMMANDS_WPDF" xml:space="preserve">
+    <value>WPDF</value>
+  </data>
+  <data name="COMMANDS_WPNC" xml:space="preserve">
+    <value>WPNC</value>
+  </data>
+  <data name="COMMANDS_WPNCB" xml:space="preserve">
+    <value>WPNCB</value>
+  </data>
+  <data name="COMMANDS_WPNCS" xml:space="preserve">
+    <value>WPNCS</value>
+  </data>
+  <data name="COMMANDS_WPNCS_CROSSLORAINE_MMXN" xml:space="preserve">
+    <value>WPNCS‡MMXN</value>
+  </data>
+  <data name="COMMANDS_WPNI" xml:space="preserve">
+    <value>WPNI</value>
+  </data>
+  <data name="COMMANDS_WPOC_BY" xml:space="preserve">
+    <value>WPOC-BY</value>
+  </data>
+  <data name="COMMANDS_WPQ" xml:space="preserve">
+    <value>WPQ</value>
+  </data>
+  <data name="COMMANDS_WPRQ" xml:space="preserve">
+    <value>WPRQ</value>
+  </data>
+  <data name="COMMANDS_WV" xml:space="preserve">
+    <value>WV</value>
+  </data>
+  <data name="COMMANDS_WV_AST" xml:space="preserve">
+    <value>WV*</value>
+  </data>
+  <data name="COMMANDS_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="COMMANDS_XI" xml:space="preserve">
+    <value>XI</value>
+  </data>
+  <data name="COMMANDS_YY" xml:space="preserve">
+    <value>YY</value>
+  </data>
+  <data name="CROSSLORAINE" xml:space="preserve">
+    <value>‡</value>
+  </data>
+  <data name="DB_MyCTSSecurityDb" xml:space="preserve">
+    <value>MyCTSSecurityDb</value>
+  </data>
+  <data name="DOUBLEZERO" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="E_TICKET" xml:space="preserve">
+    <value>/E</value>
+  </data>
+  <data name="END_ITEM" xml:space="preserve">
+    <value>§</value>
+  </data>
+  <data name="END_ITEM_FIVE" xml:space="preserve">
+    <value>§5</value>
+  </data>
+  <data name="END_ITEM_FIVE_CROSLORAINE" xml:space="preserve">
+    <value>§5‡</value>
+  </data>
+  <data name="END_ITEM_FIVE_H_INDENT" xml:space="preserve">
+    <value>§5H-</value>
+  </data>
+  <data name="END_ITEM_INDENT" xml:space="preserve">
+    <value>§-</value>
+  </data>
+  <data name="ENDIT" xml:space="preserve">
+    <value>Σ</value>
+  </data>
+  <data name="ENDIT_NINE" xml:space="preserve">
+    <value>Σ9</value>
+  </data>
+  <data name="FILE_MYSABRE_PROPERTIES" xml:space="preserve">
+    <value>\emulator.properties</value>
+  </data>
+  <data name="FIVE" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FIVE_CROSLORAINE" xml:space="preserve">
+    <value>5‡</value>
+  </data>
+  <data name="FIVE_H_INDENT" xml:space="preserve">
+    <value>5H-</value>
+  </data>
+  <data name="FOUR" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="IDENT_IDENT" xml:space="preserve">
+    <value>--</value>
+  </data>
+  <data name="IDENT_IDENT_IDENT" xml:space="preserve">
+    <value>---</value>
+  </data>
+  <data name="IGNORE" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="INDENT" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="INGRESA_PERFIL_IMPRESION" xml:space="preserve">
+    <value>Ingresa el perfil de impresión</value>
+  </data>
+  <data name="INGRESA_TA_BOLETOS" xml:space="preserve">
+    <value>Ingresa la TA de boletos</value>
+  </data>
+  <data name="INGRESA_TA_HARDCOPY" xml:space="preserve">
+    <value>Ingresa la TA de HardCopy</value>
+  </data>
+  <data name="INGRESA_TA_ITINERARIO_FACT" xml:space="preserve">
+    <value>Ingresa la TA de Itinerario/Factura</value>
+  </data>
+  <data name="MYCTS" xml:space="preserve">
+    <value>MyCTS</value>
+  </data>
+  <data name="MYSABRE_ENABLE_API" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="MYSABRE_ENABLE_SEAT" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="MYSABRE_PROPERTY_KEY" xml:space="preserve">
+    <value>enableEmuAPI</value>
+  </data>
+  <data name="MYSABRE_SEAT_KEY" xml:space="preserve">
+    <value>graphicalSeatmapOn</value>
+  </data>
+  <data name="NINE" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ONE" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PASSTYPE_INITIAL_TEXT" xml:space="preserve">
+    <value>Selecciona tipo de tarifa o tipo de pasajero:</value>
+  </data>
+  <data name="PATH_MYSABRE" xml:space="preserve">
+    <value>sabre\apps\emulator\users\</value>
+  </data>
+  <data name="PATH_TA_FILE" xml:space="preserve">
+    <value>sabre\apps\turbo\7.0\app\qik.properties</value>
+  </data>
+  <data name="PATH_TURBO_FILE" xml:space="preserve">
+    <value>sabre\apps\Turbo\7.0\app\QikDesktop.exe</value>
+  </data>
+  <data name="PCC_0WY5" xml:space="preserve">
+    <value>0WY5</value>
+  </data>
+  <data name="PCC_3L64" xml:space="preserve">
+    <value>3L64</value>
+  </data>
+  <data name="QNEGOCIATED_INITAL_TXT" xml:space="preserve">
+    <value>Selecciona tipo de tarifa:</value>
+  </data>
+  <data name="SALIDA" xml:space="preserve">
+    <value>SALIDA</value>
+  </data>
+  <data name="SLASH" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="SLASH_V_SLASH" xml:space="preserve">
+    <value>/V/</value>
+  </data>
+  <data name="TASEARCH" xml:space="preserve">
+    <value>hostaccess.sabre.commlink.jsapi.lineiata=(.*?)</value>
+  </data>
+  <data name="TEXT" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="TEXTBOX_DEFAULT_COLOR" xml:space="preserve">
+    <value>Beige</value>
+  </data>
+  <data name="TEXTBOX_ENTER_COLOR" xml:space="preserve">
+    <value>PaleGoldenrod</value>
+  </data>
+  <data name="TEXTBOX_LEAVE_COLOR" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="THREE" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TRIPLEZERO" xml:space="preserve">
+    <value>000</value>
+  </data>
+  <data name="TRUE" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="TURBOEXENAME" xml:space="preserve">
+    <value>temp.txt</value>
+  </data>
+  <data name="UC_CHANGE_CLASS_SERVICE" xml:space="preserve">
+    <value>ucChangeClassService</value>
+  </data>
+  <data name="UC_CHANGE_SEGMENT_STATUS" xml:space="preserve">
+    <value>ucChangeSegmentStatus</value>
+  </data>
+  <data name="UC_CONCLUDERESERVATION" xml:space="preserve">
+    <value>ucConcludeReservation</value>
+  </data>
+  <data name="UC_CONECTIONTIMEDIFERENTAIRPORTS" xml:space="preserve">
+    <value>ucConectionTimeDiferentAirports</value>
+  </data>
+  <data name="UC_CONNECTIONTIME" xml:space="preserve">
+    <value>ucConnectionTime</value>
+  </data>
+  <data name="UC_FARE_CONSULT_BY_PAX" xml:space="preserve">
+    <value>ucFareConsultByPax</value>
+  </data>
+  <data name="UC_FARE_CONSULT_BY_RATE" xml:space="preserve">
+    <value>ucFareConsultByRate</value>
+  </data>
+  <data name="UC_FRECUENT_FLIGHER" xml:space="preserve">
+    <value>ucFrecuentFligher</value>
+  </data>
+  <data name="UC_GET_INVOICE" xml:space="preserve">
+    <value>ucGetInvoice</value>
+  </data>
+  <data name="UC_INTERNATIONAL_PAX_INFO" xml:space="preserve">
+    <value>ucInternationalPaxInfo</value>
+  </data>
+  <data name="UC_ORDER_SEGMENTS" xml:space="preserve">
+    <value>ucOrderSegments</value>
+  </data>
+  <data name="UC_OSI_MESSAGE_FOID" xml:space="preserve">
+    <value>ucOSIMessageFOID</value>
+  </data>
+  <data name="UC_SPECIAL_SERVICES_INFO" xml:space="preserve">
+    <value>ucSpecialServicesInfo</value>
+  </data>
+  <data name="UC_SPECIAL_SERVICES_SSR" xml:space="preserve">
+    <value>ucSpecialServicesSSR</value>
+  </data>
+  <data name="UC_SPLIT_CONFIRMATION" xml:space="preserve">
+    <value>ucSplitConfirmation</value>
+  </data>
+  <data name="UC_SPLIT_RECORD" xml:space="preserve">
+    <value>ucSplitRecord</value>
+  </data>
+  <data name="UC_TIMECONNECTIONTOCURRENTITINERARY" xml:space="preserve">
+    <value>ucTimeConnectionToCurrentItinerary</value>
+  </data>
+  <data name="UCACCOUNTINGINFORMATION" xml:space="preserve">
+    <value>ucAccountingInformation</value>
+  </data>
+  <data name="UCACTIVATIONFEERULE" xml:space="preserve">
+    <value>ucActivationFeeRule</value>
+  </data>
+  <data name="UCADD_DATA_PASSENGER" xml:space="preserve">
+    <value>ucAddDataPassenger</value>
+  </data>
+  <data name="UCADD_DATA_PASSENGER2" xml:space="preserve">
+    <value>ucAddDataPassenger2</value>
+  </data>
+  <data name="UCADD_MORE_PASSENGER" xml:space="preserve">
+    <value>ucAddMorePassenger</value>
+  </data>
+  <data name="UCADDACCOUNTINGREMARKS" xml:space="preserve">
+    <value>ucAddAccountingRemarks</value>
+  </data>
+  <data name="UCADDASSOCIATESEGMENTREMARKS" xml:space="preserve">
+    <value>ucAddAssociateSegmentRemarks</value>
+  </data>
+  <data name="UCADDGENERICSREMARKS" xml:space="preserve">
+    <value>ucAddGenericsRemarks</value>
+  </data>
+  <data name="UCADDHITORICALREMARKS" xml:space="preserve">
+    <value>ucAddHistoricalRemarks</value>
+  </data>
+  <data name="UCADDITINERARYREMARKS" xml:space="preserve">
+    <value>ucAddItineraryRemarks</value>
+  </data>
+  <data name="UCAIR_RATE" xml:space="preserve">
+    <value>ucAirRate</value>
+  </data>
+  <data name="UCAIRACCOUNTINGLINE" xml:space="preserve">
+    <value>ucAirAccountingLine</value>
+  </data>
+  <data name="UCAPISPASSPORTMESSAGE" xml:space="preserve">
+    <value>ucAPISPassportMessage</value>
+  </data>
+  <data name="UCAPISRESIDENCEDESTINATION" xml:space="preserve">
+    <value>ucAPISResidenceDestination</value>
+  </data>
+  <data name="UCASSIGN_OR_NOT_PRINTERS" xml:space="preserve">
+    <value>ucAssignOrNotPrinters</value>
+  </data>
+  <data name="UCAVAILABILITY" xml:space="preserve">
+    <value>ucAvailability</value>
+  </data>
+  <data name="UCBILLINGADRESS" xml:space="preserve">
+    <value>ucBillingAdress</value>
+  </data>
+  <data name="UCBOLETAGE_DATE" xml:space="preserve">
+    <value>ucBoletageDate</value>
+  </data>
+  <data name="UCBOLETAGE_DATEANDRECEIVED" xml:space="preserve">
+    <value>ucBoletageDateAndReceived</value>
+  </data>
+  <data name="UCBOLETAGE_RECEIVED" xml:space="preserve">
+    <value>ucBoletageReceived</value>
+  </data>
+  <data name="UCBOLETAGEDATE" xml:space="preserve">
+    <value>ucBoletageDate</value>
+  </data>
+  <data name="UCBOLETAGERECEIVED" xml:space="preserve">
+    <value>ucBoletageReceived</value>
+  </data>
+  <data name="UCCANCEL_SEGMENTS" xml:space="preserve">
+    <value>ucCancelSegments</value>
+  </data>
+  <data name="UCCANCEL_TICKET" xml:space="preserve">
+    <value>ucCancelTicket</value>
+  </data>
+  <data name="UCCANCEL_TICKETDQB" xml:space="preserve">
+    <value>ucCancelTicketDQB</value>
+  </data>
+  <data name="UCCHANGE_TYPE" xml:space="preserve">
+    <value>ucChangeType</value>
+  </data>
+  <data name="UCCHARGESERVICE" xml:space="preserve">
+    <value>ucChargeService</value>
+  </data>
+  <data name="UCCLAIM_IT_LASTNAME" xml:space="preserve">
+    <value>ucClaimItLastName</value>
+  </data>
+  <data name="UCCLAIM_IT_RECORD" xml:space="preserve">
+    <value>ucClaimItRecordLoalizer</value>
+  </data>
+  <data name="UCCODE_DECODE" xml:space="preserve">
+    <value>ucCode_Decode</value>
+  </data>
+  <data name="UCDECREASESINCREASES" xml:space="preserve">
+    <value>ucDecreasesIncreases</value>
+  </data>
+  <data name="UCDEFINE_PASSENGER_TYPE" xml:space="preserve">
+    <value>ucDefinePassengerType</value>
+  </data>
+  <data name="UCDELETEREMARKS" xml:space="preserve">
+    <value>ucDeleteRemarks</value>
+  </data>
+  <data name="UCDELETESPECIALREQUERIMENTS" xml:space="preserve">
+    <value>ucDeleteSpecialRequirements</value>
+  </data>
+  <data name="UCDETAILSAVAILABILITY" xml:space="preserve">
+    <value>ucDetailsAvailability</value>
+  </data>
+  <data name="UCDKCLIENT" xml:space="preserve">
+    <value>ucDKClient</value>
+  </data>
+  <data name="UCDWLIST" xml:space="preserve">
+    <value>ucDWLIST</value>
+  </data>
+  <data name="UCENDRESERVATION" xml:space="preserve">
+    <value>ucEndReservation</value>
+  </data>
+  <data name="UCFLIGHTINFORMATION" xml:space="preserve">
+    <value>ucFlightInformation</value>
+  </data>
+  <data name="UCFLIGHTNUMBER" xml:space="preserve">
+    <value>ucFlightNumber</value>
+  </data>
+  <data name="UCGETDIX" xml:space="preserve">
+    <value>ucGetDIX</value>
+  </data>
+  <data name="UCHISTORICRULES" xml:space="preserve">
+    <value>ucHistoricRules</value>
+  </data>
+  <data name="UCIGNORE_RECORD" xml:space="preserve">
+    <value>ucIgnoreRecord</value>
+  </data>
+  <data name="UCINF_PASSENGER_TYPE" xml:space="preserve">
+    <value>ucINFPassengerType</value>
+  </data>
+  <data name="UCJUSTIFICATIONS" xml:space="preserve">
+    <value>ucJustifications</value>
+  </data>
+  <data name="UCLANDACCOUNTINGLINE" xml:space="preserve">
+    <value>ucLandAccountingLine</value>
+  </data>
+  <data name="UCMANUAL_RATE" xml:space="preserve">
+    <value>ucManualRate</value>
+  </data>
+  <data name="UCMCOPTAACCOUNTINGLINE" xml:space="preserve">
+    <value>ucMCO_PTAAccountingLine</value>
+  </data>
+  <data name="UCMESSAGEAPIVISA" xml:space="preserve">
+    <value>ucMessageAPIVisa</value>
+  </data>
+  <data name="UCNEWFEERULE" xml:space="preserve">
+    <value>ucNewFeeRule</value>
+  </data>
+  <data name="UCOUPON_REEXPEDITION" xml:space="preserve">
+    <value>ucCouponReexpedition</value>
+  </data>
+  <data name="UCPCC" xml:space="preserve">
+    <value>ucPCC</value>
+  </data>
+  <data name="UCPHASE_35375" xml:space="preserve">
+    <value>ucPhase35375</value>
+  </data>
+  <data name="UCPREAIRACCOUNTINGLINE" xml:space="preserve">
+    <value>ucPreAirAccountingLine</value>
+  </data>
+  <data name="UCPRODUCTIVITYPCC" xml:space="preserve">
+    <value>ucProductivityPCCManager</value>
+  </data>
+  <data name="UCPRODUCTIVITYPCCVSCOPORATIVE" xml:space="preserve">
+    <value>ucProductivityPCCVsCorporative</value>
+  </data>
+  <data name="UCPRODUCTIVITYRANKING" xml:space="preserve">
+    <value>ucProductivityRanking</value>
+  </data>
+  <data name="UCPRODUCTIVITYRANKINGPERPCC" xml:space="preserve">
+    <value>ucProductivityRankingPerPCC</value>
+  </data>
+  <data name="UCPRODUCTIVITYREPORT" xml:space="preserve">
+    <value>ucProductivityReportManager</value>
+  </data>
+  <data name="UCRATEAVOBE" xml:space="preserve">
+    <value>ucRateAvobe</value>
+  </data>
+  <data name="UCRECORDSELECT" xml:space="preserve">
+    <value>ucRecordSelect</value>
+  </data>
+  <data name="UCRECOVERRECORD" xml:space="preserve">
+    <value>ucRecoverRecord</value>
+  </data>
+  <data name="UCSABANAGROUP" xml:space="preserve">
+    <value>ucSabanaGroup</value>
+  </data>
+  <data name="UCSEARCH_OTHER_FLIGHTS" xml:space="preserve">
+    <value>ucSearchFlights</value>
+  </data>
+  <data name="UCSELL_AIR_SEGMENT" xml:space="preserve">
+    <value>ucSellAirSegment</value>
+  </data>
+  <data name="UCSELL_OPTION" xml:space="preserve">
+    <value>ucSellOption</value>
+  </data>
+  <data name="UCSETS_MAP" xml:space="preserve">
+    <value>ucSetsMap</value>
+  </data>
+  <data name="UCSHOW_RATE" xml:space="preserve">
+    <value>ucShowRate</value>
+  </data>
+  <data name="UCSTATUSETKT" xml:space="preserve">
+    <value>ucStatusEtkt</value>
+  </data>
+  <data name="UCSTATUSPRINTER" xml:space="preserve">
+    <value>ucStatusPrinter</value>
+  </data>
+  <data name="UCTELEPHONE" xml:space="preserve">
+    <value>ucTelephone</value>
+  </data>
+  <data name="UCWELCOME" xml:space="preserve">
+    <value>ucWelcome</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ZERO" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UCSECUREPASSENGERFLIGHT" xml:space="preserve">
+    <value>ucSecureFlightPassengerData</value>
+  </data>
+  <data name="UC_REGENERATEINVOICE" xml:space="preserve">
+    <value>ucRegenerateInvoice</value>
+  </data>
+  <data name="UCUPDATEIMAGES" xml:space="preserve">
+    <value>ucUpdateImages</value>
+  </data>
+  <data name="COMMANDS_QSORT_AST" xml:space="preserve">
+    <value>QSORT*</value>
+  </data>
+  <data name="COMMANDS_QSORT_SLASH" xml:space="preserve">
+    <value>QSORT/-</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>NONE</value>
+  </data>
+  <data name="COMMANDS_AAAX3YC" xml:space="preserve">
+    <value>AAAX3YC</value>
+  </data>
+  <data name="COMMANDS_PPS1" xml:space="preserve">
+    <value>PPS1</value>
+  </data>
+  <data name="PCC_X3YC" xml:space="preserve">
+    <value>X3YC</value>
+  </data>
+  <data name="COMMANDS_ITIN_HOTEL" xml:space="preserve">
+    <value>*IH</value>
+  </data>
+  <data name="COMMANDS_NOTHING" xml:space="preserve">
+    <value>NOTHING</value>
+  </data>
+  <data name="COMMANDS_NOT_ITINERARY" xml:space="preserve">
+    <value>‡NO ITIN‡</value>
+  </data>
+  <data name="COMMANDS_PDK" xml:space="preserve">
+    <value>*PDK</value>
+  </data>
+  <data name="NO_CHANGE_IGNORE_RECEIVED" xml:space="preserve">
+    <value>NO HA REALIZADO CAMBIOS, IGNORE O AGREGUE RECIBIDO PARA CERRAR</value>
+  </data>
+  <data name="UC_CANCEL_AUTH_PENDING" xml:space="preserve">
+    <value>ucCancelAuthPending</value>
+  </data>
+  <data name="UCINDEPENDENTCHARGESERVICE" xml:space="preserve">
+    <value>ucIndependentChargeService</value>
+  </data>
+  <data name="CORPORATE_CRUD_HIGH" xml:space="preserve">
+    <value>Alta</value>
+  </data>
+  <data name="CORPORATE_CRUD_MODIFICATION" xml:space="preserve">
+    <value>Modificar</value>
+  </data>
+  <data name="CORPORAT_CRUD_DROP" xml:space="preserve">
+    <value>Baja</value>
+  </data>
+  <data name="ACTIVE_AGENTE" xml:space="preserve">
+    <value>REQUIERE ACTIVAR AL SUPERVISOR</value>
+  </data>
+  <data name="ELIMINAR" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="HUBO_UN_ERROR_AL_INGRESAR_DATOS" xml:space="preserve">
+    <value>HUBO UN ERROR AL INGRESAR LOS DATOS FAVOR DE REALIZAR OTRA VEZ LA OPERACION</value>
+  </data>
+  <data name="INGRESE_DATOS_SUPERVISOR" xml:space="preserve">
+    <value>INGRESE LOS DATOS DEL SUPERVISOR</value>
+  </data>
+  <data name="INGRESE_CORPORATIVO" xml:space="preserve">
+    <value>INGRESE EL CORPORATIVO</value>
+  </data>
+  <data name="INGRESE_DK_CORPORATIVO" xml:space="preserve">
+    <value>INGRESE EL DK</value>
+  </data>
+  <data name="INGRESE_DK_VALIDO" xml:space="preserve">
+    <value>INGRESE UN DK VALIDO</value>
+  </data>
+  <data name="INGRESE_HERRAMIENTA" xml:space="preserve">
+    <value>INGRESE LA HERRAMIENTA</value>
+  </data>
+  <data name="INGRESE_SUPERVISOR" xml:space="preserve">
+    <value>INGRESE EL SUPERVISOR</value>
+  </data>
+  <data name="UC_CORPORATE_CRUD" xml:space="preserve">
+    <value>ucCorporateCRUD</value>
+  </data>
+  <data name="YA_EXISTE_DK" xml:space="preserve">
+    <value>YA EXISTEN DATOS DEL DK INGRESADO</value>
+  </data>
+  <data name="HA_OCURRIDO_ERROR_MODIFICA" xml:space="preserve">
+    <value>HA OCURRIDO UN ERROR AL TRATAR DE  MODIFICAR</value>
+  </data>
+  <data name="INGRESA_CODIGO_CONSULTOR" xml:space="preserve">
+    <value>INGRESE EL CODIGO DEL CONSULTOR</value>
+  </data>
+  <data name="ADMINISTRACION_CONSULTORES" xml:space="preserve">
+    <value>Administración de Consultores</value>
+  </data>
+  <data name="CAMBIOS_SOLICITADOS_SATISFACTORIOS" xml:space="preserve">
+    <value>LOS CAMBIOS SOLICITADOS SE APLICARON SATISFACORIAMENTE</value>
+  </data>
+  <data name="CORPORATECONSULTINGALL" xml:space="preserve">
+    <value>Consultar_Todo</value>
+  </data>
+  <data name="CORPORATECONSULTINGASIGNADO" xml:space="preserve">
+    <value>Consultar_Asignado</value>
+  </data>
+  <data name="CORPORATE_CONSULTA_CAMBIOS_ASIGNADO" xml:space="preserve">
+    <value>Consulta_Cambios_Asignado</value>
+  </data>
+  <data name="CORPORATIVO_REGISTRADO" xml:space="preserve">
+    <value>EL CORPORATIVO HA SIDO REGISTRADO EXITOSAMENTE</value>
+  </data>
+  <data name="ELIMINACION_SOLICITADA_SATISFACTORIA" xml:space="preserve">
+    <value>SE ELIMINO SATISFACTORIAMENTE EL REGISTRO</value>
+  </data>
+  <data name="HA_CORRUDIO_UN_ERRO_ELIMINAR" xml:space="preserve">
+    <value>HA OCURRIDO UN ERROR AL TRATAR DE ELIMINAR EL CORPORATIVO</value>
+  </data>
+  <data name="MENSAJE_EMILINACION" xml:space="preserve">
+    <value>¿ESTAS SEGURO QUE DESEAS ELIMINARLO?</value>
+  </data>
+  <data name="UCADMINQUEUESPROCES" xml:space="preserve">
+    <value>ucAdminQueuesProceso</value>
+  </data>
+  <data name="UC_CORPORATECONSULTING" xml:space="preserve">
+    <value>ucCorporateConsulting</value>
+  </data>
+  <data name="ALTA_QUEUE_ADMIN" xml:space="preserve">
+    <value>LA QUEUE HA SIDO REGISTRADA SATISFACTORIAMENTE</value>
+  </data>
+  <data name="INGRESA_PCC" xml:space="preserve">
+    <value>INGRESE PCC</value>
+  </data>
+  <data name="INGRESE_EL_PCC" xml:space="preserve">
+    <value>DEBES INGRESAR LA INFORMACIÓN DEL PCC</value>
+  </data>
+  <data name="INGRESE_EL_PICCODE" xml:space="preserve">
+    <value>DEBES INGRESAR LA INFORMACIÓN DEL PIC CODE</value>
+  </data>
+  <data name="INGRESE_LA_QUEUE" xml:space="preserve">
+    <value>DEBES INGRESAR LA INFORMACIÓN DE LA QUEUE</value>
+  </data>
+  <data name="CORPORATIVO_INGRESADO_NO_ENCONTRADO" xml:space="preserve">
+    <value>EL CORPORATIVO INGRESADO SE ENCUENTRA ASIGNADO A OTRO SUPERVISOR</value>
+  </data>
+  <data name="CORPORATIVO_INGRESADO_NO_HA_SIDO_DADO_DE_ALTA" xml:space="preserve">
+    <value>EL CORPORATIVO INGRESADO NO SE ENCUENTRA DADO DE ALTA DENTRO DE LAS REGLAS DE DISTRIBUCION DE QUEUE</value>
+  </data>
+  <data name="DK_INGRESADO_NO_CORRESPONDE_CORPORATIVO" xml:space="preserve">
+    <value>EL DK INGRESADO NO CORRESPONDE A UN DK CORPORATIVO</value>
+  </data>
+  <data name="LA_FIRMA_INGRESADA_ENCUENTRA_INACTIVA" xml:space="preserve">
+    <value>LA FIRMA INGRESADA SE ENCUENTRA INACTIVA</value>
+  </data>
+  <data name="LA_FIRMA_INGRESADA_NO_EXISTE" xml:space="preserve">
+    <value>LA FIRMA INGRESADA NO EXISTE</value>
+  </data>
+  <data name="REQUIERE_INGRESE_NOMBRE" xml:space="preserve">
+    <value>REQUIERE INGRESE NOMBRE</value>
+  </data>
+  <data name="EL_DK_INGRESADO_NO_EXISTE" xml:space="preserve">
+    <value>EL DK INGRESADO NO EXISTE</value>
+  </data>
+  <data name="UCHOTELCHARGESERVICE" xml:space="preserve">
+    <value>ucHotelChargeService</value>
+  </data>
+  <data name="COMMANDS_ITIN_CAR" xml:space="preserve">
+    <value>*IC</value>
+  </data>
+  <data name="UCCARCHARGESERVICE" xml:space="preserve">
+    <value>ucCarChargeService</value>
+  </data>
+</root>

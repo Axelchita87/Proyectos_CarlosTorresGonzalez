@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AST" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="COMMANDS_AST_Q" xml:space="preserve">
+    <value>*Q</value>
+  </data>
+  <data name="COMMANDS_CROSSLORAINE_NM_INDENT" xml:space="preserve">
+    <value>‡NM-</value>
+  </data>
+  <data name="COMMANDS_E" xml:space="preserve">
+    <value>E</value>
+  </data>
+  <data name="COMMANDS_EWL" xml:space="preserve">
+    <value>EWL</value>
+  </data>
+  <data name="COMMANDS_H" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="COMMANDS_H_SLASH_A" xml:space="preserve">
+    <value>H/A</value>
+  </data>
+  <data name="COMMANDS_H_SLASH_A_COMMA_S" xml:space="preserve">
+    <value>H/A,S</value>
+  </data>
+  <data name="COMMANDS_H_SLASH_S" xml:space="preserve">
+    <value>H/S</value>
+  </data>
+  <data name="COMMANDS_I" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="COMMANDS_Q" xml:space="preserve">
+    <value>Q</value>
+  </data>
+  <data name="COMMANDS_Q_AST" xml:space="preserve">
+    <value>Q*</value>
+  </data>
+  <data name="COMMANDS_Q_SLAHS" xml:space="preserve">
+    <value>Q/</value>
+  </data>
+  <data name="COMMANDS_Q_SLASH" xml:space="preserve">
+    <value>Q/</value>
+  </data>
+  <data name="COMMANDS_QBE" xml:space="preserve">
+    <value>QBE</value>
+  </data>
+  <data name="COMMANDS_QBI" xml:space="preserve">
+    <value>QBI</value>
+  </data>
+  <data name="COMMANDS_QBR" xml:space="preserve">
+    <value>QBR</value>
+  </data>
+  <data name="COMMANDS_QC_SLASH" xml:space="preserve">
+    <value>QC/</value>
+  </data>
+  <data name="COMMANDS_QH" xml:space="preserve">
+    <value>QH</value>
+  </data>
+  <data name="COMMANDS_QI_AST" xml:space="preserve">
+    <value>QI*</value>
+  </data>
+  <data name="COMMANDS_QI_AST_S_AST" xml:space="preserve">
+    <value>QI*S*</value>
+  </data>
+  <data name="COMMANDS_QI_SLASH" xml:space="preserve">
+    <value>QI/</value>
+  </data>
+  <data name="COMMANDS_QMOV_SLASH" xml:space="preserve">
+    <value>QMOV/</value>
+  </data>
+  <data name="COMMANDS_QP_SLASH" xml:space="preserve">
+    <value>QP/</value>
+  </data>
+  <data name="COMMANDS_QR" xml:space="preserve">
+    <value>QR</value>
+  </data>
+  <data name="COMMANDS_QXE" xml:space="preserve">
+    <value>QXE</value>
+  </data>
+  <data name="COMMANDS_QXER" xml:space="preserve">
+    <value>QXER</value>
+  </data>
+  <data name="COMMANDS_QXI" xml:space="preserve">
+    <value>QXI</value>
+  </data>
+  <data name="COMMANDS_QXIR" xml:space="preserve">
+    <value>QXIR</value>
+  </data>
+  <data name="COMMANDS_QXR" xml:space="preserve">
+    <value>QXR</value>
+  </data>
+  <data name="COMMANDS_SLASH_A_INDENT" xml:space="preserve">
+    <value>/A-</value>
+  </data>
+  <data name="COMMANDS_SLASH_C_INDENT" xml:space="preserve">
+    <value>/C-</value>
+  </data>
+  <data name="COMMANDS_SLASH_DELETE" xml:space="preserve">
+    <value>/DELETE</value>
+  </data>
+  <data name="COMMANDS_SLASH_L" xml:space="preserve">
+    <value>/L</value>
+  </data>
+  <data name="COMMANDS_SYS" xml:space="preserve">
+    <value>SYS</value>
+  </data>
+  <data name="DOT" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="INDENT" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="LORRAINE_CROSS" xml:space="preserve">
+    <value>‡</value>
+  </data>
+  <data name="QUEUE_511" xml:space="preserve">
+    <value>511</value>
+  </data>
+  <data name="SLASH" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="UC_ACCOUNTS_RECORD_QUEUES" xml:space="preserve">
+    <value>ucAccountsRecordQueues</value>
+  </data>
+  <data name="UC_ADVANCE_PNR_QUEUE" xml:space="preserve">
+    <value>ucAdvancePNRQueue</value>
+  </data>
+  <data name="UC_ENTER_TO_QUEUE" xml:space="preserve">
+    <value>ucEnterToQueue</value>
+  </data>
+  <data name="UC_EXIT_FROM_QUEUE" xml:space="preserve">
+    <value>ucExitFromQueue</value>
+  </data>
+  <data name="UC_HISTORY_RECORD_IN_QUEUE" xml:space="preserve">
+    <value>ucHistoryRecordInQueue</value>
+  </data>
+  <data name="UC_HISTORY_RECORD_QUEUE" xml:space="preserve">
+    <value>ucHistoryRecordQueue</value>
+  </data>
+  <data name="UC_LIST_RECORDS_QUEUE" xml:space="preserve">
+    <value>ucListRecordsQueue</value>
+  </data>
+  <data name="UC_MOVE_RECORDS_TWEEN_QUEUES" xml:space="preserve">
+    <value>ucMoveRecordsTweenQueues</value>
+  </data>
+  <data name="UC_PLACE_RECORD_QUEUE" xml:space="preserve">
+    <value>ucPlaceRecordQueue</value>
+  </data>
+  <data name="UC_WORKING_PNR_IN_QUEUE" xml:space="preserve">
+    <value>ucWorkingPNRinQueue</value>
+  </data>
+</root>

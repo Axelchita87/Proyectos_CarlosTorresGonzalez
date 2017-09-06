@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PARAM_Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="PARAM_CadHotel1" xml:space="preserve">
+    <value>CadHotel1</value>
+  </data>
+  <data name="PARAM_CadHotel2" xml:space="preserve">
+    <value>CadHotel2</value>
+  </data>
+  <data name="PARAM_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="PARAM_Colony" xml:space="preserve">
+    <value>Colony</value>
+  </data>
+  <data name="PARAM_Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="PARAM_CreditCar" xml:space="preserve">
+    <value>CreditCar</value>
+  </data>
+  <data name="PARAM_DirectPhone" xml:space="preserve">
+    <value>DirectPhone</value>
+  </data>
+  <data name="PARAM_DirectPhoneCode" xml:space="preserve">
+    <value>DirectPhoneCode</value>
+  </data>
+  <data name="PARAM_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PARAM_Estate" xml:space="preserve">
+    <value>Estate</value>
+  </data>
+  <data name="PARAM_Ext" xml:space="preserve">
+    <value>Ext</value>
+  </data>
+  <data name="PARAM_Family1" xml:space="preserve">
+    <value>Family1</value>
+  </data>
+  <data name="PARAM_Family2" xml:space="preserve">
+    <value>Family2</value>
+  </data>
+  <data name="PARAM_Family3" xml:space="preserve">
+    <value>Family3</value>
+  </data>
+  <data name="PARAM_Family4" xml:space="preserve">
+    <value>Family4</value>
+  </data>
+  <data name="PARAM_Family5" xml:space="preserve">
+    <value>Family5</value>
+  </data>
+  <data name="PARAM_Family6" xml:space="preserve">
+    <value>Family6</value>
+  </data>
+  <data name="PARAM_FrequentFlyer1" xml:space="preserve">
+    <value>FrequentFlyer1</value>
+  </data>
+  <data name="PARAM_FrequentFlyer2" xml:space="preserve">
+    <value>FrequentFlyer2</value>
+  </data>
+  <data name="PARAM_FrequentFlyer3" xml:space="preserve">
+    <value>FrequentFlyer3</value>
+  </data>
+  <data name="PARAM_FrequentFlyer4" xml:space="preserve">
+    <value>FrequentFlyer4</value>
+  </data>
+  <data name="PARAM_FrequentFlyer5" xml:space="preserve">
+    <value>FrequentFlyer5</value>
+  </data>
+  <data name="PARAM_HotelCreditCar" xml:space="preserve">
+    <value>HotelCreditCar</value>
+  </data>
+  <data name="PARAM_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="PARAM_ImmigrationForm" xml:space="preserve">
+    <value>ImmigrationForm</value>
+  </data>
+  <data name="PARAM_LastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="PARAM_LastName2" xml:space="preserve">
+    <value>LastName2</value>
+  </data>
+  <data name="PARAM_Level1" xml:space="preserve">
+    <value>Level1</value>
+  </data>
+  <data name="PARAM_Level2" xml:space="preserve">
+    <value>Level2</value>
+  </data>
+  <data name="PARAM_Maternal" xml:space="preserve">
+    <value>Maternal</value>
+  </data>
+  <data name="PARAM_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PARAM_Name2" xml:space="preserve">
+    <value>Name2</value>
+  </data>
+  <data name="PARAM_Occupation" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="PARAM_OfficePhone" xml:space="preserve">
+    <value>OfficePhone</value>
+  </data>
+  <data name="PARAM_OfficePhoneCode" xml:space="preserve">
+    <value>OfficePhoneCode</value>
+  </data>
+  <data name="PARAM_Passport" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="PARAM_Paternal" xml:space="preserve">
+    <value>Paternal</value>
+  </data>
+  <data name="PARAM_PersonalCar" xml:space="preserve">
+    <value>PersonalCar</value>
+  </data>
+  <data name="PARAM_PostalCode" xml:space="preserve">
+    <value>PostalCode</value>
+  </data>
+  <data name="PARAM_RFC" xml:space="preserve">
+    <value>RFC</value>
+  </data>
+  <data name="PARAM_Seat" xml:space="preserve">
+    <value>Seat</value>
+  </data>
+  <data name="PARAM_StreetAndNumber" xml:space="preserve">
+    <value>StreetAndNumber</value>
+  </data>
+  <data name="PARAM_Visa" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="SP_GetStar2Details" xml:space="preserve">
+    <value>GetStar2Details</value>
+  </data>
+</root>

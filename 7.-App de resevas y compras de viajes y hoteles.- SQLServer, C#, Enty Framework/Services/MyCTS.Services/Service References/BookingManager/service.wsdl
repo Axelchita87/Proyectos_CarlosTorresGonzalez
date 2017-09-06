@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="IJBookingManager" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IIJBookingManager_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices/ServiceContracts/BookingService" />
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices/DataContracts/Booking" />
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations" />
+      <xsd:import namespace="http://schemas.navitaire.com/WebServices/DataContracts/Common" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAvailabilityRequest">
+    <wsdl:part xmlns:q1="http://schemas.navitaire.com/WebServices/ServiceContracts/BookingService" name="parameters" element="q1:GetAvailabilityRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailabilityRequest_Headers">
+    <wsdl:part xmlns:q2="http://schemas.navitaire.com/WebServices" name="ContractVersion" element="q2:ContractVersion" />
+    <wsdl:part xmlns:q3="http://schemas.navitaire.com/WebServices" name="Signature" element="q3:Signature" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailabilityResponse">
+    <wsdl:part xmlns:q4="http://schemas.navitaire.com/WebServices/ServiceContracts/BookingService" name="parameters" element="q4:GetAvailabilityByTripResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetPriceItinerary_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceItinerary" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetPriceItinerary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriceItineraryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBooking" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Sell_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sell" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Sell_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SellResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Commit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Commit" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Commit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CommitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Clear_InputMessage">
+    <wsdl:part name="parameters" element="tns:Clear" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_Clear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_AddPaymentToBooking_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPaymentToBooking" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_AddPaymentToBooking_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPaymentToBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetItineraryPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetItineraryPrice" />
+  </wsdl:message>
+  <wsdl:message name="IIJBookingManager_GetItineraryPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetItineraryPriceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIJBookingManager">
+    <wsdl:operation name="GetAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/GetAvailability" name="GetAvailabilityRequest" message="tns:GetAvailabilityRequest" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/GetAvailabilityResponse" name="GetAvailabilityResponse" message="tns:GetAvailabilityResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceItinerary">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/GetPriceItinerary" message="tns:IIJBookingManager_GetPriceItinerary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/GetPriceItineraryResponse" message="tns:IIJBookingManager_GetPriceItinerary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/GetBooking" message="tns:IIJBookingManager_GetBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/GetBookingResponse" message="tns:IIJBookingManager_GetBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sell">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/Sell" message="tns:IIJBookingManager_Sell_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/SellResponse" message="tns:IIJBookingManager_Sell_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Commit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/Commit" message="tns:IIJBookingManager_Commit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/CommitResponse" message="tns:IIJBookingManager_Commit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/Clear" message="tns:IIJBookingManager_Clear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/ClearResponse" message="tns:IIJBookingManager_Clear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPaymentToBooking">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/AddPaymentToBooking" message="tns:IIJBookingManager_AddPaymentToBooking_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/AddPaymentToBookingResponse" message="tns:IIJBookingManager_AddPaymentToBooking_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItineraryPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IIJBookingManager/GetItineraryPrice" message="tns:IIJBookingManager_GetItineraryPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IIJBookingManager/GetItineraryPriceResponse" message="tns:IIJBookingManager_GetItineraryPrice_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IIJBookingManager" type="tns:IIJBookingManager">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IIJBookingManager_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAvailability">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/GetAvailability" style="document" />
+      <wsdl:input name="GetAvailabilityRequest">
+        <soap:header message="tns:GetAvailabilityRequest_Headers" part="ContractVersion" use="literal" />
+        <soap:header message="tns:GetAvailabilityRequest_Headers" part="Signature" use="literal" />
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetAvailabilityResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPriceItinerary">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/GetPriceItinerary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooking">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/GetBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sell">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/Sell" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Commit">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/Commit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Clear">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/Clear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPaymentToBooking">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/AddPaymentToBooking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItineraryPrice">
+      <soap:operation soapAction="http://tempuri.org/IIJBookingManager/GetItineraryPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IJBookingManager">
+    <wsdl:port name="BasicHttpBinding_IIJBookingManager" binding="tns:BasicHttpBinding_IIJBookingManager">
+      <soap:address location="http://pc4037:5498/WSInterJet/IJBookingManager.svc/BookingManager" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

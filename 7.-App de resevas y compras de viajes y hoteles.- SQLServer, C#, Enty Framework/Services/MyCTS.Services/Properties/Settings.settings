@@ -1,0 +1,150 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyCTS.Services.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MyCTS_Services_com_sabre_webservices_SessionCreateRQService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices1_SessionCloseRQService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices_AirAva_OTA_AirAvailService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices2_OTA_TravelItineraryService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_ProductivityProxy_ProductivityService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.149.13.14:5498/WSProductivity/Productivity.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_ProductivityProxyDev_ProductivityService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.52.81.200:5498/WSProductivity/Productivity.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_MyCTSOracleConnection_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.149.13.14:5498/MyCTSOracleConnection/Service1.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_MyCTSOracleConnectionDev_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.52.81.200:5498/MyCTSOracleConnections_Deploy/Service1.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices_SabreCommand_SabreCommandLLSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_MyCTSGEAComunicationBackUp_GEAComunication" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.159.131.108/GeaWebService/GeaComunication.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_BuildElectronicTicketCFE_PDFGeneratorCFEWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.149.13.14:5498/PDFGeneratorCFE/PDFGeneratorCFEWS.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_SessionCreateTest_SessionCreateRQService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_LowFareSearchTest_OTA_AirLowFareSearchService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirPriceTest_OTA_AirPriceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_TravelItineraryAddInfoTest_TravelItineraryAddInfoService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_SpecialServiceTest_SpecialService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_EndTransactionTest_EndTransactionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_IgnoreTransanctionTest_IgnoreTransactionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_SessionCloseTest_SessionCloseRQService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_SabreCommandTest_SabreCommandLLSService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_DesignatePrinterTest_DesignatePrinterService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirTicketTest_AirTicketService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_TravelItineraryTest_TravelItineraryReadService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_FraudCheckTest_FraudCheckServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AddRemarkTest_AddRemarkService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_PaymentTest_PaymentServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirLowFareSearch_OTA_AirLowFareSearchService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirBookTest_OTA_AirBookService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirBookProduction_OTA_AirBookService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirPriceProduction_OTA_AirPriceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_TravelItineraryAddInfoProduction_TravelItineraryAddInfoService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_SpecialServiceProduction_SpecialService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_EndTransactionProduction_EndTransactionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_DesignatePrinterProduction_DesignatePrinterService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_TravelItineraryProduction_TravelItineraryReadService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AirTicketProduction_AirTicketService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_PaymentProduction_PaymentServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_FraudCheckProduction_FraudCheckServiceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_AddRemarkProduction_AddRemarkService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_IgnoreTransactionProduction_IgnoreTransactionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_PagosMIT_TransaccionesTarjetaNPService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.53.149.68/Portal/MyCTSSecureServices/TransaccionesTarjetaNPService.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_ValidateDKsAndCreditCards_WsMyCTS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.149.13.14:5498/ValidationsDKsWS/wsMyCTS.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices_TravelItinerary2_TravelItineraryReadService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://webservices.sabre.com/websvc</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_BuildElectronicTicketDev_MailProvider" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.52.81.200:5498/BuildPDFDocuments/MailProvider.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_MyCTSGEAComunication_GEAComunication" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.52.81.206/GeaWebService/GeaComunication.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_BuildElectronicTicket_MailProvider" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://201.149.13.14:5498/MailProvider/Mailprovider.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_PrintVoucher_Voucher" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://200.53.149.68/Portal/MyCTSSecureServices/Voucher.asmx</Value>
+    </Setting>
+    <Setting Name="MyCTS_Services_com_sabre_webservices_TravelItinerary2_dev_TravelItineraryReadService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://sws-crt.cert.sabre.com/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

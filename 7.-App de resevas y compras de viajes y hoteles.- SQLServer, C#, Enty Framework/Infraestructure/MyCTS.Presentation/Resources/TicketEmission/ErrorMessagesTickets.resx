@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_ASTERIKS_PAC_VERIFY_CORRECT_NBR" xml:space="preserve">
+    <value>*PAC TO VERIFY CORRECT NBR OF ACCTG LINES</value>
+  </data>
+  <data name="ALL_PASSENGERS_MUST_BE_TICKETED_TOGETHER" xml:space="preserve">
+    <value>ALL PASSENGERS MUST BE TICKETED TOGETHER</value>
+  </data>
+  <data name="ASSIGN_ETR_PRINTER_FIRST" xml:space="preserve">
+    <value>ASSIGN ETR PRINTER FIRST</value>
+  </data>
+  <data name="AUTHORIZATION_CODE_REQUIRED" xml:space="preserve">
+    <value>AUTHORIZATION CODE REQUIRED</value>
+  </data>
+  <data name="AUX_SVC" xml:space="preserve">
+    <value>AUX SVC</value>
+  </data>
+  <data name="CARDHOLDER_NAME_REQUIRED" xml:space="preserve">
+    <value>CARDHOLDER NAME REQUIRED FOR ETR</value>
+  </data>
+  <data name="CARRIER_NOT_ALLOW_MULTIPLE_FORM_PAYMENT" xml:space="preserve">
+    <value>CARRIER DOES NOT ALLOW MULTIPLE FORM OF PAYMENT FOR ETR</value>
+  </data>
+  <data name="CARRIER_NOT_ALLOWED" xml:space="preserve">
+    <value>CARRIER DOES NOT ALLOW INFANTS FOR ETR</value>
+  </data>
+  <data name="CARRIER_REQUIRES_CREDIT_CARD_PAYMENT" xml:space="preserve">
+    <value>CARRIER REQUIRES CREDIT CARD PAYMENT FOR ETR</value>
+  </data>
+  <data name="CHECK_ENTRY_COMMENCING_WITH" xml:space="preserve">
+    <value>CHECK ENTRY COMMENCING WITH</value>
+  </data>
+  <data name="CHECK_ITIN" xml:space="preserve">
+    <value>CHECK ITIN -1 OR MORE SEGMENTS NOT VALID FOR INTERLINE ETR</value>
+  </data>
+  <data name="CHECK_ITIN_ADVANCE_BOARDING" xml:space="preserve">
+    <value>CHECK ITIN-ADVANCE BOARDING PASS NOT ALLOWED WITH ETR</value>
+  </data>
+  <data name="CHECK_ITINERARY_MORE_SEGMENTS_NOT_VALID" xml:space="preserve">
+    <value>CHECK ITINERARY-1 OR MORE SEGMENTS ARE NOT VALID FOR ETR</value>
+  </data>
+  <data name="CHECK_ITINERARY_SEGMENTS_NOT_VALID" xml:space="preserve">
+    <value>CHECK ITINERARY-1 OR MORE SEGMENTS NOT VALID FOR ETR</value>
+  </data>
+  <data name="CODE_HX_SEG_STATUS_NOT_ALLOWED" xml:space="preserve">
+    <value>CODE - HX SEG STATUS NOT ALLOWED</value>
+  </data>
+  <data name="CONTINUITY_OF_FLATS" xml:space="preserve">
+    <value>CONTINUITY OF FLTS</value>
+  </data>
+  <data name="CREDIT_CARD_AUTH_DECLINED" xml:space="preserve">
+    <value>CREDIT CARD AUTH DECLINED</value>
+  </data>
+  <data name="CROSSLORAINE_AUTH_CARRIER_INVLD" xml:space="preserve">
+    <value>‡AUTH CARRIER INVLD</value>
+  </data>
+  <data name="CROSSLORAINE_NEED_COMMISSION" xml:space="preserve">
+    <value>‡NEED COMMISSION</value>
+  </data>
+  <data name="CROSSLORAINE_NO_FARES" xml:space="preserve">
+    <value>‡NO COMBINABLE FARES FOR CLASS USED</value>
+  </data>
+  <data name="ELECTRONIC_TICKET_MUST_BE_ISSUED" xml:space="preserve">
+    <value>ELECTRONIC TICKET MUST BE ISSUED ON TRANSPORTING CARRIER</value>
+  </data>
+  <data name="ELECTRONIC_TICKETING_HOST_UNAVAILABLE" xml:space="preserve">
+    <value>ELECTRONIC TICKETING HOST UNAVAILABLE-RETRY LATER</value>
+  </data>
+  <data name="ELECTRONIC_TICKETING_NOT_ALLOWED" xml:space="preserve">
+    <value>ELECTRONIC TICKETING NOT ALLOWED THIS LOCATION</value>
+  </data>
+  <data name="END_OR_IGNORE_PNR" xml:space="preserve">
+    <value>END OR IGNORE PNR-0070</value>
+  </data>
+  <data name="ENTRY_REQUIRES_PNR" xml:space="preserve">
+    <value>ENTRY REQUIRES PNR-DISPLAY PNR AND RETRY</value>
+  </data>
+  <data name="EQUIVALENT_AMOUNT_TOO_LARGE" xml:space="preserve">
+    <value>EQUIVALENT AMOUNT TOO LARGE - ISSUE TICKET MANUALLY</value>
+  </data>
+  <data name="ETR_NOT_ALLOWED" xml:space="preserve">
+    <value>ETR NOT ALLOWED IN FORMAT</value>
+  </data>
+  <data name="ETR_NOT_ALLOWED_WITHIN_ONE_HOUR" xml:space="preserve">
+    <value>ETR NOT ALLOWED WITHIN 1 HOUR OF DEPARTURE</value>
+  </data>
+  <data name="ETR_RESTRICTED" xml:space="preserve">
+    <value>ETR RESTRICTED</value>
+  </data>
+  <data name="EXCEEDS_FBL_LIMIT" xml:space="preserve">
+    <value>EXCEEDS FBL LIMIT</value>
+  </data>
+  <data name="FORMAT" xml:space="preserve">
+    <value>FORMAT</value>
+  </data>
+  <data name="IATA_NUMBER_NOT_VALID" xml:space="preserve">
+    <value>IATA NUMBER NOT VALID</value>
+  </data>
+  <data name="INCORRECT_CARD_NUMBER" xml:space="preserve">
+    <value>INCORRECT CARD NUMBER</value>
+  </data>
+  <data name="INCORRECT_ENTRY_VERIFY_AND_REENTER" xml:space="preserve">
+    <value>INCORRECT ENTRY-VERIFY AND REENTER</value>
+  </data>
+  <data name="INFANT_PSGR_TYPE_NOT_VALID" xml:space="preserve">
+    <value>INFANT PSGR TYPE NOT VALID FOR ETR</value>
+  </data>
+  <data name="INVALID_COUPON_NUMBER" xml:space="preserve">
+    <value>INVALID COUPON NUMBER</value>
+  </data>
+  <data name="INVALID_EXPIRATION_DATE" xml:space="preserve">
+    <value>INVALID EXPIRATION DATE</value>
+  </data>
+  <data name="ITEM_NR" xml:space="preserve">
+    <value>ITEM NR</value>
+  </data>
+  <data name="MANDATORY_EDITS" xml:space="preserve">
+    <value>*MANDATORY EDITS*</value>
+  </data>
+  <data name="MAXIMUM_FOUR_SEGMENTS_EXCEEDED" xml:space="preserve">
+    <value>MAXIMUM 4 SEGMENTS EXCEEDED</value>
+  </data>
+  <data name="MAXIMUM_SEGMENTS_EXCEED" xml:space="preserve">
+    <value>MAXIMUM SEGMENTS EXCEEDED</value>
+  </data>
+  <data name="MAXIMUM_TWO_PASSENGER_TYPES" xml:space="preserve">
+    <value>MAXIMUM TWO PASSENGER TYPES FOR CARRIER</value>
+  </data>
+  <data name="MINI_ITIN_PRINTER_NO_ASSIGNED" xml:space="preserve">
+    <value>MINI ITIN PRINTER NO ASSIGNED</value>
+  </data>
+  <data name="MULTIPLE_NAMES_NOT_ALLOWED" xml:space="preserve">
+    <value>MULTIPLE NAMES NOT ALLOWED FOR ETR-USE NAME SELECT</value>
+  </data>
+  <data name="ND_T_FIELD_OR_DELETE_TKT" xml:space="preserve">
+    <value>ND T FIELD OR DELETE TKT RCDS-0008</value>
+  </data>
+  <data name="NEED_AIRLINE_PNR_LOCATOR" xml:space="preserve">
+    <value>NEED AIRLINE PNR LOCATOR</value>
+  </data>
+  <data name="NEED_FOP" xml:space="preserve">
+    <value>NEED FOP</value>
+  </data>
+  <data name="NEED_MORE_PSGR_TYPES_OR_NAMES" xml:space="preserve">
+    <value>NEED MORE PSGR TYPES OR NAME SELECT</value>
+  </data>
+  <data name="NEED_PNR" xml:space="preserve">
+    <value>NEED PNR</value>
+  </data>
+  <data name="NO_FARE_FOR_CLASS_USED" xml:space="preserve">
+    <value>NO FARE FOR CLASS USED</value>
+  </data>
+  <data name="NO_PRICE_RETENTION" xml:space="preserve">
+    <value>NO PRICE RETENTION</value>
+  </data>
+  <data name="NO_PSGR_DATA" xml:space="preserve">
+    <value>NO PSGR DATA</value>
+  </data>
+  <data name="NO_REPLY_FROM_SERVER" xml:space="preserve">
+    <value>NO REPLY FROM SERVER</value>
+  </data>
+  <data name="NO_RETAINED_FARE_EXISTS" xml:space="preserve">
+    <value>NO RETAINED FARE EXISTS</value>
+  </data>
+  <data name="NO_TKT_REC_EXIST" xml:space="preserve">
+    <value>NO TKT REC EXIST</value>
+  </data>
+  <data name="NOT_ENOUGH_STOCK_IN_PNR" xml:space="preserve">
+    <value>NOT ENOUGH STOCK IN PTR</value>
+  </data>
+  <data name="ONE_CONFIRMED_AIR_SEGMENT_FOR_ETR" xml:space="preserve">
+    <value>ONE CONFIRMED AIR SEGMENT REQUIRED FOR ETR</value>
+  </data>
+  <data name="ONE_OR_MORE_COUPONS_UNABLE_TO_VOID" xml:space="preserve">
+    <value>1 OR MORE COUPONS UNABLE TO VOID</value>
+  </data>
+  <data name="ONE_OR_MORE_SEGMENTS_NOT_VALID" xml:space="preserve">
+    <value>ONE OR MORE SEGMENTS NOT VALID FOR ETR</value>
+  </data>
+  <data name="PASSENGER_MUST_HAVE_SSR_FOID" xml:space="preserve">
+    <value>EACH PASSENGER MUST HAVE SSR FOID</value>
+  </data>
+  <data name="PNR_HAS_BEEN_UPDATED" xml:space="preserve">
+    <value>PNR HAS BEEN UPDATED-IGN AND RETRY</value>
+  </data>
+  <data name="PNR_UPDATED" xml:space="preserve">
+    <value>PNR HAS BEEN UPDATED-IGN AND RETRY</value>
+  </data>
+  <data name="SEGMENT_SELECT_NOT_ALLOWED" xml:space="preserve">
+    <value>SEGMENT SELECT NOT ALLOWED</value>
+  </data>
+  <data name="SIMULTANEOUS_CHANGES_TO_PNR" xml:space="preserve">
+    <value>SIMULTANEOUS CHANGES TO PNR</value>
+  </data>
+  <data name="TICKET_HAS_BEEN_ISSUED" xml:space="preserve">
+    <value>TICKET HAS BEEN ISSUED - USE DIN¥DPI TO REQUEST ITIN</value>
+  </data>
+  <data name="TKT_PTR_NOT_ASSIGNED" xml:space="preserve">
+    <value>TKT PRT NOT ASSIGNED</value>
+  </data>
+  <data name="TKT_RECORD_DOES_NOT_EXIST" xml:space="preserve">
+    <value>TKT RECORD DOES NOT EXIST</value>
+  </data>
+  <data name="TOO_MANY_PSGR_TYPES" xml:space="preserve">
+    <value>TOO MANY PSGR TYPES</value>
+  </data>
+  <data name="UNABLE_PAST_DATE_SEGMENT" xml:space="preserve">
+    <value>UNABLE PAST DATE SEGMENT USE SEGMENT SELECT</value>
+  </data>
+  <data name="UNABLE_TO_ISSUE_PARTIAL_CONNECTION_TKT" xml:space="preserve">
+    <value>UNABLE TO ISSUE PARTIAL CONNECTION-TKT</value>
+  </data>
+  <data name="UNABLE_TO_PROCESS_ETR" xml:space="preserve">
+    <value>UNABLE TO PROCESS ETR-TICKET DOCUMENT ISSUED</value>
+  </data>
+  <data name="UNABLE_TO_PROCESS_ETR_CORRECT" xml:space="preserve">
+    <value>UNABLE TO PROCESS ETR-CORRECT/RETRY OR ISSUE PAPER TICKET</value>
+  </data>
+  <data name="UNABLE_TO_TICKET" xml:space="preserve">
+    <value>UNABLE TO TICKET</value>
+  </data>
+  <data name="UNABLE_TO_VOID" xml:space="preserve">
+    <value>UNABLE TO VOID - RETRY IN 5 MINUTES</value>
+  </data>
+  <data name="UPDATE_TKT_RECORD" xml:space="preserve">
+    <value>UPDATE TKT RECORD</value>
+  </data>
+  <data name="VENDOR_PROCESSING_ERROR_SLASH_CALL" xml:space="preserve">
+    <value>VENDOR PROCESSING ERROR/CALL</value>
+  </data>
+  <data name="VERIFY_CITY_PAIR_AUTHORIZED_FOR_ET" xml:space="preserve">
+    <value>VERIFY CITY PAIR AUTHORIZED FOR ELECTRONIC TICKETING</value>
+  </data>
+  <data name="VERIFY_NAME_SELECTION" xml:space="preserve">
+    <value>VERIFY NAME SELECTION-MUST TICKET ALL PSGRS WITHIN A NAME</value>
+  </data>
+  <data name="VOID_ENTRY_BY_PSEUDO_CITY" xml:space="preserve">
+    <value>VOID ENTRY MUST BE MADE BY PSEUDO CITY OF ORIGINAL ETR</value>
+  </data>
+  <data name="VOID_RESTRICTED" xml:space="preserve">
+    <value>VOID RESTRICTED-TICKET NUMBER PREVIOUSLY VOIDED</value>
+  </data>
+  <data name="XF" xml:space="preserve">
+    <value>XF</value>
+  </data>
+  <data name="XT_IN_TX_BOX" xml:space="preserve">
+    <value>XT IN TAX BOX</value>
+  </data>
+  <data name="PASSENGER_SECURITY_IDENTIFICATION" xml:space="preserve">
+    <value>PASSENGER SECURITY IDENTIFICATION</value>
+  </data>
+</root>

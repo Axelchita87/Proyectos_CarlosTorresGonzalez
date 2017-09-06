@@ -1,0 +1,38 @@
+% PlotFigThrougRuns
+% Script to plot all the figures from the different runs
+
+clear
+clc
+
+
+corrida = 30;
+
+
+%load the file with the names of the TS to use
+load TS.mat
+
+pathExp = pwd;        %main dir for this Exp.
+cd('..');
+cd('FunsMatlab'); cd('LinuxOrWindows')
+%use adecuate paht
+slash2use = isLinOrWin();
+cd('..');
+cd('..');
+
+path1 = pwd;        %main dir
+
+%add path for used funtions
+addpath([path1,slash2use,'FunsMatlab',slash2use,'recuperateInfoCpp']);
+
+
+sizeTS = size(TS,2)
+
+for TSdir = 1:sizeTS
+    cd([pathExp,slash2use,TS{1,TSdir}]);
+    %display the name of the TS that is extracting the values
+    TS{1,TSdir}
+    
+    run recuperateInfoC
+    
+    cd('../');
+end

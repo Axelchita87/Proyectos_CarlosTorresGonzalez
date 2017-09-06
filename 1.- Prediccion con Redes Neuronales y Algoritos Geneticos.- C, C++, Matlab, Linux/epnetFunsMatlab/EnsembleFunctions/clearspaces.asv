@@ -1,0 +1,5 @@
+function [ensembleBlank] = clearspaces(ensemble,var)
+    ensemble.Average.Pred = zeros(1,var.Pred_stepAhead);
+    ensemble.Average.NRMSE = 0;
+    ensemble.Average.accuracyPoint = zeros(1,var.Pred_stepAhead);
+    ensemble.Average.accuracy = 0; 

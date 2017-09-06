@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" elementFormDefault="qualified" targetNamespace="http://schemas.navitaire.com/WebServices/DataContracts/Common/Enumerations" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="ContentDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="Text" />
+      <xs:enumeration value="RichTextFormat" />
+      <xs:enumeration value="ImageJPG" />
+      <xs:enumeration value="ImageGIF" />
+      <xs:enumeration value="ImageBMP" />
+      <xs:enumeration value="ImagePNG" />
+      <xs:enumeration value="WordDoc" />
+      <xs:enumeration value="HTML" />
+      <xs:enumeration value="PDF" />
+      <xs:enumeration value="URI" />
+      <xs:enumeration value="Unmapped">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContentDataType" nillable="true" type="tns:ContentDataType" />
+</xs:schema>

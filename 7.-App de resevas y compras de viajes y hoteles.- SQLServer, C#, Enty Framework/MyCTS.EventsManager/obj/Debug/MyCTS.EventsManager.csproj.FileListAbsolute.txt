@@ -1,0 +1,9 @@
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.EventsManager.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.EventsManager.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.Entities.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.Entities.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\obj\Debug\MyCTS.EventsManager.csprojResolveAssemblyReference.cache
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\obj\Debug\MyCTS.EventsManager.dll
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\obj\Debug\MyCTS.EventsManager.pdb
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.EventsManager.dll.CodeAnalysisLog.xml
+C:\TFS\MyCTS\Main\SolutionMyCTSV2\MyCTS.EventsManager\bin\Debug\MyCTS.EventsManager.dll.lastcodeanalysissucceeded

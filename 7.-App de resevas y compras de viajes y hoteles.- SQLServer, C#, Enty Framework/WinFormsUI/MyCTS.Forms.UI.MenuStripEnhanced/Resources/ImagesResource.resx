@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wallet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>wallet-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_accountingairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_accountingairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_accountinglines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_accountinglines.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_accountingmcoptaline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_accountingmcoptaline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_accountiongsegmets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_accountiongsegmets.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_activationfeerule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_activationfeerule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addaccountingremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addaccountingremarks.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addalagreements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addalagreements.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addassociatesegmentsremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addassociatesegmentsremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addcatalogqc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addcatalogqc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_adddeletekeywords" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_adddeletekeywords.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addgenericsremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addgenericsremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addhistoricalremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addhistoricalremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_additineraryremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_additineraryremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addmessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addmessage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addnewqc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addnewqc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addpcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addpcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_addrecordqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_addrecordqueue.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_admin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_adqcbyattribute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_adqcbyattribute.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_adqcbyattribute1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_adqcbyattribute1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_airline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_airline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_airport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_airport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_airrate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_airrate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_alagreements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_alagreements.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_americanairline1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_americanairline1.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_assignedsits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_assignedsits.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_assignprinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_assignprinter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_assignqueuesignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_assignqueuesignature.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_assignseats" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_assignseats.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_assigntemporalpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_assigntemporalpass.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_associatesegmentd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_associatesegmentd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_billingadress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_billingadress.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_calendar.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_calendartime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_calendartime.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_canceledtickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_canceledtickets.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cancelqueuesignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cancelqueuesignature.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cancelsegments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cancelsegments.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cancelticketlarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cancelticketlarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cancelticketslist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cancelticketslist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cancelticketvoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cancelticketvoid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_car.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changeagentcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changeagentcode.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changeclass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changeclass.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changedutycode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changedutycode.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changefirmmycts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changefirmmycts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changename.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changenumbrerpx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changenumbrerpx.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_changesegstate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_changesegstate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_chargeforservice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_chargeforservice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_chargeservice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_chargeservice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_chatonline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_chatonline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cleansignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cleansignature.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_clientiddk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_clientiddk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_closegroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_closegroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_closerec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_closerec.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_closerecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_closerecord.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_closereservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_closereservation.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_codedecode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_codedecode.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_connectiontime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_connectiontime.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultfarebypax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultfarebypax.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultfarebyrate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultfarebyrate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultfares" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultfares.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingalagreements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingalagreements.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingfirmrole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingfirmrole.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingpcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingpcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingqc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingqc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultingqcbyattribute1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultingqcbyattribute1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_consultsignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_consultsignature.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_couponreexpedition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_couponreexpedition.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_createphasefour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_createphasefour.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_createsignature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_createsignature.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_currentitinerary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_currentitinerary.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_cutrecordqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_cutrecordqueue.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_datedesc16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_datedesc16.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_definegroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_definegroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deleteairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deleteairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deleteairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deleteairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletealagreements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletealagreements.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletecatalogqc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletecatalogqc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletefirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletefirm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletefirmrole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletefirmrole.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletemessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletemessage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletepcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletepcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deletephaseiv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deletephaseiv.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_deleteremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_deleteremarks.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_detailsavailability" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_detailsavailability.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_detailsitinerary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_detailsitinerary.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_diferentairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_diferentairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_displayrecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_displayrecord.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_dividerecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_dividerecord.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_dix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_dix.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_edition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_edition.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_email" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_email.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_enabledisablefirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_enabledisablefirm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_entertoqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_entertoqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_etktstatus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_etktstatus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_exittoqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_exittoqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_fastguides" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_fastguides.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_flightinformation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_flightinformation.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_flightinformation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_flightinformation1.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_flightnumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_flightnumber.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_flightsandfares3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_flightsandfares3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_formatfinger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_formatfinger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_frecuentfligher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_frecuentfligher.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_genericremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_genericremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_group.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_hardcopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_hardcopy.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_hardcopyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_hardcopyt.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_historicalsegments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_historicalsegments.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_historicrules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_historicrules.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_historyrules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_historyrules.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_hotel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ignore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_ignore.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_index.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_insertdatapassenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_insertdatapassenger.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_insertfirmrole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_insertfirmrole.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_intflightpaxinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_intflightpaxinfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_itinerary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_itinerary.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_itineraryp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_itineraryp.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_itineraryremarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_itineraryremarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_lastname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_lastname.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_linerate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_linerate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_list.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_listfirm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_listfirm.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_locator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_locator.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_messageapivisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_messageapivisa.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_messagefoid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_messagefoid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_money.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_moneyexchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_moneyexchange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_moverecordsqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_moverecordsqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_mpdvirtual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_mpdvirtual.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_mycts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_mycts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_newfeerule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_newfeerule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_nextpnr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_nextpnr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_options.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ordersegments" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_ordersegments.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_osimessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_osimessage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_osissr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_osissr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_otherairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_otherairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_otherservicesinfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_otherservicesinfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_passenger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_passenger.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_passengers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_passengers.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_passportmessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_passportmessage.JPG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_pastrates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_pastrates.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_pccs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_pccs.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_personalproductivity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_personalproductivity.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_phasefour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_phasefour.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_phaseivrwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_phaseivrwd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_phones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_phones.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_piccoderefferences" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_piccoderefferences.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_plane.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_preview.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_print.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_printercontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_printercontrol.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_productivitypcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_productivitypcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_productivitypccvscorporative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_productivitypccvscorporative.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_productivityreport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_productivityreport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_profiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_profiles.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_qualitycontrols" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_qualitycontrols.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_queryrules" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_queryrules.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_queues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_queues.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_queueslist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_queueslist.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_quoteretained" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_quoteretained.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_rankingproductivitypercorporative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_rankingproductivitypercorporative.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_rankingproductivityperpcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_rankingproductivityperpcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_rateavobe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_rateavobe.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_record" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_record.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_recordaccounts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_recordaccounts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_recordhistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_recordhistory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_recordhistoryqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_recordhistoryqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_recordlistqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_recordlistqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_recovergroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_recovergroup.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_regenerateinvoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_regenerateinvoice.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_remarks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_remarks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_reportdqb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_reportdqb.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_reports.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_reservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_reservation.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_rulebycategory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_rulebycategory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_sabanagrupo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_sabanagrupo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_salesreportdbq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_salesreportdbq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_sameairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_sameairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_schedule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_schedule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_securepassengerflight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_securepassengerflight.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seeagentcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seeagentcode.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seecontablelines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seecontablelines.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seerecordhistory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seerecordhistory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seerecordtickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seerecordtickets.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seestatusetkt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seestatusetkt.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_seeticketnumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_seeticketnumber.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_segmentprotection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_segmentprotection.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_sellsegmentgk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_sellsegmentgk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_sendqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_sendqueue.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_sendticketprinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_sendticketprinter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_serchrecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_serchrecord.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_showassignprinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_showassignprinter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_showprinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_showprinter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_signatures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_signatures.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_specialservices" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_specialservices.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_splitrecord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_splitrecord.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_splittedfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_splittedfile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_statuseticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_statuseticket.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_statusprinter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_statusprinter.GIF;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_taxesanddetails" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_taxesanddetails.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ticketemission" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_ticketemission.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_tickets.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ticketsnotused" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_ticketsnotused.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ticketsstock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_ticketsstock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_timelimit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_timelimit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_timereservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_timereservation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_traffic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_traffic.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updateairline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updateairline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updateairport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updateairport.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updatealagreements" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updatealagreements.Png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updateimages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updateimages.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updatepcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updatepcc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_updateqc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_updateqc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_workinginqueue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_workinginqueue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_commisionboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_commisionboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_fulladminonline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_fulladminonline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_superadminonline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_superadminonline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

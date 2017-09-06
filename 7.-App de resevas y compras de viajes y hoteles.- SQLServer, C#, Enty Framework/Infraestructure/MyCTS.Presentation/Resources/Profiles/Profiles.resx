@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CAMPO_COLONIA_NO_INGRESADO" xml:space="preserve">
+    <value>EL CAMPO COLONIA NO HA SIDO INGRESADO</value>
+  </data>
+  <data name="DEBES_INGRESAR_APELLIDO" xml:space="preserve">
+    <value>DEBES INGRESAR EL APELLIDO</value>
+  </data>
+  <data name="DEBES_INGRESAR_NOMBRE" xml:space="preserve">
+    <value>DEBES INGRESAR EL NOMBRE</value>
+  </data>
+  <data name="DEBES_INGRESAR_NUMERO_TELEFONICO" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO TELEFÓNICO DE LA EMPRESA</value>
+  </data>
+  <data name="DEBES_INGRESAR_PCC" xml:space="preserve">
+    <value>DEBES INGRESAR EL PCC</value>
+  </data>
+  <data name="FORMATO_CORREO_ELECT_INCORRECTO" xml:space="preserve">
+    <value>EL FORMATO DE CORREO ELECTRÓNICO ES INCORRECTO</value>
+  </data>
+  <data name="INGRESA_AEROLINEA_FF_NOMBRE" xml:space="preserve">
+    <value>DEBES INGRESAR AEREOLINEA, NUMERO VIAJERO FRECUENTE Y NOMBRE</value>
+  </data>
+  <data name="INGRESA_CAMPO_CALLE" xml:space="preserve">
+    <value>EL CAMPO CALLE NO HA SIDO INGRESADO</value>
+  </data>
+  <data name="INGRESA_CAMPO_CIUDAD" xml:space="preserve">
+    <value>EL CAMPO CIUDAD NO HA SIDO INGRESADO</value>
+  </data>
+  <data name="INGRESA_CAMPO_CREADO_POR" xml:space="preserve">
+    <value>DEBES INGRESAR DATOS EN EL CAMPO CREADO POR</value>
+  </data>
+  <data name="INGRESA_CAMPO_ESTADO" xml:space="preserve">
+    <value>EL CAMPO ESTADO NO HA SIDO INGRESADO</value>
+  </data>
+  <data name="INGRESA_CAMPOS_DIRECCION_PERSONAL" xml:space="preserve">
+    <value>DEBES INGRESAR TODOS LOS CAMPOS DE LA DIRECCIÓN PERSONAL</value>
+  </data>
+  <data name="INGRESA_COD_LOCATION_EMPRESA" xml:space="preserve">
+    <value>INGRESA EL CÓDIGO LOCATION O DK DE LA EMPRESA</value>
+  </data>
+  <data name="INGRESA_CODIGO_ARRENDADORA" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO Y NÚMERO DE ARRENDADORA</value>
+  </data>
+  <data name="INGRESA_CODIGO_HOTEL" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO Y NÚMERO DE HOTEL</value>
+  </data>
+  <data name="INGRESA_DATOS_TARJETA_CLIENTE" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO, NÚMERO, VIGENCIA Y APELLIDO DE LA TARJETA DE CREDITO DEL CLIENTE</value>
+  </data>
+  <data name="INGRESA_DATOS_TARJETA_CREDITO" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO, NÚMERO Y VIGENCIA DE LA TARJETA DE CREDITO</value>
+  </data>
+  <data name="INGRESA_DATOS_TARJETA_CREDITO_CLIENTE" xml:space="preserve">
+    <value>DEBES INGRESAR CÓDIGO, NÚMERO Y VIGENCIA DE LA TARJETA DE CREDITO DEL CLIENTE</value>
+  </data>
+  <data name="INGRESA_DEL_O_MUNICIPIO" xml:space="preserve">
+    <value>INGRESA DELEGACIÓN O MUNICIPIO</value>
+  </data>
+  <data name="INGRESA_FECHA_NACIMIENTO" xml:space="preserve">
+    <value>INGRESA DIA, MES Y AÑO DE LA FECHA DE NACIMIENTO</value>
+  </data>
+  <data name="INGRESA_FECHA_VIGENCIA_PASAPORTE" xml:space="preserve">
+    <value>INGRESA FECHA DE VIGENCIA DEL NÚMERO DE PASAPORTE</value>
+  </data>
+  <data name="INGRESA_FECHA_VIGENCIA_VISA" xml:space="preserve">
+    <value>INGRESA FECHA DE VIGENCIA DEL NÚMERO DE VISA</value>
+  </data>
+  <data name="INGRESA_MINIMO_NOMBRE_APELLIDO" xml:space="preserve">
+    <value>DEBES INGRESAR POR LO MENOS NOMBRE Y APELLIDO PATERNO</value>
+  </data>
+  <data name="INGRESA_NOMBRE_CONTACTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL NOMBRE DEL CONTACTO EN LA EMPRESA</value>
+  </data>
+  <data name="INGRESA_NOMBRE_EMPRESA" xml:space="preserve">
+    <value>DEBES INGRESAR EL NOMBRE DE LA EMPRESA</value>
+  </data>
+  <data name="INGRESA_NOMBRE_PERFIL" xml:space="preserve">
+    <value>INGRESA EL NOMBRE DEL PERFIL</value>
+  </data>
+  <data name="INGRESA_NOMBRE_PERFIL_1ER_NIVEL" xml:space="preserve">
+    <value>INGRESA EL NOMBRE DEL PERFIL DE PRIMER NIVEL</value>
+  </data>
+  <data name="INGRESA_NOMBRE_PERFIL_2DO_NIVEL" xml:space="preserve">
+    <value>INGRESA EL NOMBRE DEL PERFIL DEL EMPLEADO</value>
+  </data>
+  <data name="INGRESA_NUEVO_NOMBRE_PRIMER_NIVEL" xml:space="preserve">
+    <value>INGRESAR EL NUEVO NOMBRE DEL PERFIL DE PRIMER NIVEL</value>
+  </data>
+  <data name="INGRESA_NUEVO_NOMBRE_SEGUNDO_NIVEL" xml:space="preserve">
+    <value>INGRESAR EL NUEVO NOMBRE DEL PERFIL DE SEGUNDO NIVEL</value>
+  </data>
+  <data name="INGRESA_RAZON_SOCIAL" xml:space="preserve">
+    <value>INGRESA LA RAZON SOCIAL</value>
+  </data>
+  <data name="INGRESA_RFC_COMPLETO" xml:space="preserve">
+    <value>INGRESA RFC CON TODOS SUS CAMPOS</value>
+  </data>
+  <data name="INGRESA_TELEFONO_EMPRESA" xml:space="preserve">
+    <value>DEBES INGRESAR EL NÚMERO TELEFÓNICO DE LA EMPRESA</value>
+  </data>
+  <data name="NOMBRE_PERFIL_EXISTENTE" xml:space="preserve">
+    <value>EL NOMBRE DE PERFIL YA EXISTE</value>
+  </data>
+  <data name="PERFIL_EMPLEADO_DEBE_CONTENER_DIAGONAL" xml:space="preserve">
+    <value>EL NOMBRE DEL PERFIL DEL EMPLEADO DEBE TENER UNA DIAGONAL INTERMEDIA</value>
+  </data>
+  <data name="PERFIL_EMPLEADO_EXISTENTE" xml:space="preserve">
+    <value>EL NOMBRE DEL PERFIL DEL EMPLEADO YA EXISTE</value>
+  </data>
+  <data name="PROPORCIONA_CODIGO_POSTAL" xml:space="preserve">
+    <value>PROPORCIONA EL CÓDIGO POSTAL</value>
+  </data>
+  <data name="PROPORCIONA_DATO_A_INGRESAR_PERFIL" xml:space="preserve">
+    <value>PROPORCIONA EL DATO QUE DESEAS INGRESAR AL PERFIL</value>
+  </data>
+  <data name="PROPORCIONA_NUMERO_EXT" xml:space="preserve">
+    <value>PROPORCIONA EL NÚMERO EXTERIOR</value>
+  </data>
+  <data name="SELECCIONA_TIPO_LINEA" xml:space="preserve">
+    <value>SELECCIONA EL TIPO DE LÍNEA A INGRESAR</value>
+  </data>
+  <data name="DIRECCION_EMAIL_NO_VALIDA" xml:space="preserve">
+    <value>LA DIRECCION DE EMAIL NO ESTA EN UN FORMATO VALIDO</value>
+  </data>
+  <data name="INGRESA_ANIO_NACIMIENTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL AÑO DE NACIMIENTO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_DIA_NACIMIENTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL DIA DE NACIMIENTO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_EMAIL_CONTACTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL EMAIL DEL CONTACTO</value>
+  </data>
+  <data name="INGRESA_EMAIL_PASAJERO" xml:space="preserve">
+    <value>DEBES INGRESAR EL EMAIL DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_MES_NACIMIENTO" xml:space="preserve">
+    <value>DEBES INGRESAR EL MES DE NACIMIENTO DEL PASAJERO</value>
+  </data>
+  <data name="INGRESA_TIPO_TELEFONO" xml:space="preserve">
+    <value>DEBES INGRESAR EL TIPO DE TELÉFONO</value>
+  </data>
+  <data name="INGRESA_PASSWORD" xml:space="preserve">
+    <value>DEBES DE INGRESAR EL PASSWORD</value>
+  </data>
+</root>

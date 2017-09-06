@@ -1,0 +1,1 @@
+<div id="pie" class="fondo_mate text-left text-success">MenaCorp &reg; 2015 <span class="contLogo"><img class="logo" src="images/logoP_w.png"  width="100px"></span></div>

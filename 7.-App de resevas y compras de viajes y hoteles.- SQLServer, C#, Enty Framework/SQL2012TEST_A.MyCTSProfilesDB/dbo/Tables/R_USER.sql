@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[R_USER] (
+    [ID_USER]     BIGINT        NOT NULL,
+    [LOGIN]       VARCHAR (255) NULL,
+    [PASSWORD]    VARCHAR (255) NULL,
+    [NAME]        VARCHAR (255) NULL,
+    [DESCRIPTION] VARCHAR (255) NULL,
+    [ENABLED]     CHAR (1)      NULL,
+    PRIMARY KEY CLUSTERED ([ID_USER] ASC)
+);
+

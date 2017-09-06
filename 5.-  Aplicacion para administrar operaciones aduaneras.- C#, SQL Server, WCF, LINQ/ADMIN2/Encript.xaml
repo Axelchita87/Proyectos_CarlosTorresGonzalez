@@ -1,0 +1,12 @@
+﻿<Window x:Class="ADMIN2.Encript"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Encript" Height="296" Width="509">
+    <Grid>
+        <TextBox x:Name="txtEncriptar" HorizontalAlignment="Left" Height="73" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="481"/>
+        <Button x:Name="btnEncript" Content="Encriptar" HorizontalAlignment="Left" Margin="42,88,0,0" VerticalAlignment="Top" Width="75" Click="btnEncript_Click"/>
+        <Button x:Name="btnDeEncript" Content="Desencriptar" HorizontalAlignment="Left" Margin="134,88,0,0" VerticalAlignment="Top" Width="75" Click="btnDeEncript_Click"/>
+        <TextBox x:Name="txtDesenc" HorizontalAlignment="Left" Height="123" Margin="10,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="481"/>
+
+    </Grid>
+</Window>

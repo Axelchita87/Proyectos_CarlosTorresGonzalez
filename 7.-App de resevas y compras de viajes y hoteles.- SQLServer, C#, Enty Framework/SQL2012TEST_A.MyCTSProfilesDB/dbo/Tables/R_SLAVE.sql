@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[R_SLAVE] (
+    [ID_SLAVE]        BIGINT        NOT NULL,
+    [NAME]            VARCHAR (255) NULL,
+    [HOST_NAME]       VARCHAR (255) NULL,
+    [PORT]            VARCHAR (255) NULL,
+    [WEB_APP_NAME]    VARCHAR (255) NULL,
+    [USERNAME]        VARCHAR (255) NULL,
+    [PASSWORD]        VARCHAR (255) NULL,
+    [PROXY_HOST_NAME] VARCHAR (255) NULL,
+    [PROXY_PORT]      VARCHAR (255) NULL,
+    [NON_PROXY_HOSTS] VARCHAR (255) NULL,
+    [MASTER]          CHAR (1)      NULL,
+    PRIMARY KEY CLUSTERED ([ID_SLAVE] ASC)
+);
+

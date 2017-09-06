@@ -1,0 +1,157 @@
+% obtainIMFNnormalizedallTS.m
+% This script will be used to load the data, normalize it and then
+% calculate the IMFs. 
+%Created: 11/02/10
+
+
+% The output will be separated in different folders and the predicted with
+% the EPNet64 separately
+
+%% the first part is to normalize, then IMF
+% clear
+% clc
+% 
+% load datainput.txt
+% 
+% data = datainput(1:2000,:)';
+% [datan,ps] = mapminmax1(data);
+% 
+% IMFn = emd(datan');
+% 
+% %save at hand each IMf in each directory
+% file = [];
+% file = IMFn(7,:); 
+% save ('dataInputN.txt', 'file', '-ascii', '-tabs');
+
+
+%% This part it to obtain IMFs then normalize
+% clear
+% clc
+% 
+% load datainput.txt     %data no normalized
+% 
+% data = datainput(1:2000,:)';
+% IMF = emd(data');
+% 
+% for i=1:size(IMF,1)
+%     [IMFn(i,:), PSDinN] = mapminmax1(IMF(i,:));
+% end
+% 
+% 
+% 
+% 
+% 
+% %save at hand each IMf in each directory
+% file = [];
+% file = IMFn(7,:); 
+% save ('dataInputN.txt', 'file', '-ascii', '-tabs');
+
+
+%%% Run the file from the path of this file 
+
+clear
+clc
+
+%% ...........Parameters to set up at hand .................%
+baseDir{1,1} = 'TSEPnet63v1';      %(A)
+
+%range to normalize
+rmin = -0.7;
+rmax = 0.7;
+
+%How many TS to analyse 1:30
+TS2analyse = 20;
+
+%max data to calculate the IMFs
+maxdata = 2000;
+%steps to predict
+predhoriz = 30;    %so I will create 2 sets to obtain the imf, one of size
+                    %maxdata - predhoriz*2 (set inside) and
+                    %maxdata - predhoriz (set out side epnet)
+                    
+NoIMFs = 'all';     % could be 'all' or '50up' or '50down'
+
+%.......Finish parameters to set up at hand ..............%
+
+%Section to determinate with OS is running 
+cd('..');  cd('LinuxOrWindows')
+%use adecuate paht
+slash2use = isLinOrWin();
+cd('..');
+cd('Normalize');
+path1 = pwd;
+addpath(path1);
+
+cd('..'); cd('..');
+
+baseDir{1,2} = pwd;         %main dir for all exps
+cd(baseDir{1,1});
+
+load TSv1.mat;
+
+%% Start to do the purpose of the file
+
+for i=1:TS2analyse      %to enter in each TS
+    cd(TS{1,i});
+    
+    %clear variables
+    datainput = [];
+    dataInputN = [];
+    inSetN = [];
+    outSetN = [];
+    
+    load txtFiles/datainput.txt      %I am assuming that the input is a column vector
+    
+    %limit to the maximum data that the epnet will use
+    if (size(datainput,1) > maxdata)
+        datainput = datainput(1:maxdata,:);
+    end
+    
+    %Normalize the data
+    dataInputN = mapminmax1(datainput', rmin, rmax);
+    dataInputN = dataInputN';
+    
+    %Create both sets (inside and outside)
+    inSetN = dataInputN(1:size(dataInputN,1) -(predhoriz*2),:);
+    outSetN = dataInputN(1:size(dataInputN,1)-predhoriz,:);
+          
+    %Obtain IMFs from the normalized data
+    inIMFn = emd(inSetN);
+    outIMFn = emd(outSetN);
+    
+    %accomodate all in a variable to save all this all in a file
+    inSetN(:,2:size(inIMFn,1)+1) = inIMFn';
+    outSetN(:,2:size(outIMFn,1)+1) = outIMFn';
+    
+    %obtain how many colums the file has
+    cols(1,1) = size(inSetN,2);
+    col(1,2) = size(outSetN,2);
+    
+    %If there are more IMFs in one or in other, calculate the energy and
+    %then left them of the same size
+    
+    if(col)
+    
+    
+    %determinate the number of IMF to take
+%     if (IMF == 'all')
+%         if(columns(1,1) ~= columns(1,2))
+%             %delete the fisrt IMF of the biger until they are of the same
+%             %size
+%             [C, I] = max(columns);  %index I form the bigger
+%             
+%     elseif (IMF == '50up')
+%     elseif (IMF == '50down')
+    
+    
+    
+    %now save the files to be read by the epnet
+    save ('txtFiles/dInputIMFin.txt', 'inSet', '-ascii', '-tabs');
+    save ('txtFiles/dInputIMFout.txt', 'outSet', '-ascii', '-tabs');
+    save ('txtFiles/columnsIMF.txt', 'columns', '-ascii', '-tabs');
+    
+    cd('..')    %exit TS dir
+end
+
+
+

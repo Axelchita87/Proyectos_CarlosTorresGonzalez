@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="BuildPDFDocuments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticketNumber" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlVirtuallyThere" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="airline" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuildPDFDocumentsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInfoTicketByTicketNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticketNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoTicketByTicketNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoTicketByTicketNumberResult" type="tns:TicketInformationObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TicketInformationObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="listItineraryInfo" type="tns:ArrayOfInformationSegment" />
+          <s:element minOccurs="0" maxOccurs="1" name="taxesList" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="taxesList1" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Response" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecLoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NameReference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Iata" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FormOfPayment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FormOfPaymentToTicketPrinter" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassengerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassengerNameToElectronicTKT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationDK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AgencyCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFCAirline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PCC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Agent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TourCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="BaseFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalTaxes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Total" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCodeBaseFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCodeTotal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FareCalculation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquivFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCodeEquivFare" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PaymentForm" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="RFCAirline1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PassengerNameCoupon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PNR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IATANumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BaseFare1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquivFare1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TotalFare" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Origin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APVL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FareCalculation1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketMode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConjunctiveTicketNumbers" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Flight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxBreak" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaxDown" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformationSegment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformationSegment" nillable="true" type="tns:InformationSegment" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformationSegment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="cuponNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codeAirline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="origin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="destination" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timeDeparture" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dateDeparture" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="flightNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="resBookDesigCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codeStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fareBasis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="flightType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInfoPassengerByTicketNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticketNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoPassengerByTicketNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoPassengerByTicketNumberResult" type="tns:ObjectTicketByPNR" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ObjectTicketByPNR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="listItineraryInfo" type="tns:ArrayOfInfoByItinerary" />
+          <s:element minOccurs="0" maxOccurs="1" name="namePassengerList" type="tns:ArrayOfInformationPassenger" />
+          <s:element minOccurs="0" maxOccurs="1" name="phaseIVList" type="tns:ArrayOfPhaseIV" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Response" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CCAirlinefee" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CCAirline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PCC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Agent" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Commission" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerIdentifier" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInfoByItinerary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InfoByItinerary" nillable="true" type="tns:InfoByItinerary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InfoByItinerary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="airlineRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="marketingAirline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="timeArrival" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fligthNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="origin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="destination" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="operatingAirline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="departureTerminal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="arrivalTerminal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="seatsNumber" type="tns:ArrayOfInformationSeatsPassenger" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformationSeatsPassenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformationSeatsPassenger" nillable="true" type="tns:InformationSeatsPassenger" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformationSeatsPassenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="paxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="seatNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformationPassenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformationPassenger" nillable="true" type="tns:InformationPassenger" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformationPassenger">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="paxNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="paxName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="paxTicket" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPhaseIV">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PhaseIV" nillable="true" type="tns:PhaseIV" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PhaseIV">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="bags" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dateValid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="flightNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="origin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="resBookDesigCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dateFlight" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInfoPassengerByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sRecLoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoPassengerByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoPassengerByPNRResult" type="tns:ObjectTicketByPNR" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketsByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sRecLoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketsByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketsByPNRResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="document" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isHTMLFormat" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendPDFDocuments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlVirtuallyThere" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="displayName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendPDFDocumentsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Encrypt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EncryptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EncryptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Decrypt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DecryptResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DecryptResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PNR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WSTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BuildPDFDocumentsSoapIn">
+    <wsdl:part name="parameters" element="tns:BuildPDFDocuments" />
+  </wsdl:message>
+  <wsdl:message name="BuildPDFDocumentsSoapOut">
+    <wsdl:part name="parameters" element="tns:BuildPDFDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoTicketByTicketNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoTicketByTicketNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoTicketByTicketNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoTicketByTicketNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoPassengerByTicketNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoPassengerByTicketNumber" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoPassengerByTicketNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoPassengerByTicketNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoPassengerByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoPassengerByPNR" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoPassengerByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoPassengerByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketsByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketsByPNR" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketsByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketsByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendPDFDocumentsSoapIn">
+    <wsdl:part name="parameters" element="tns:SendPDFDocuments" />
+  </wsdl:message>
+  <wsdl:message name="SendPDFDocumentsSoapOut">
+    <wsdl:part name="parameters" element="tns:SendPDFDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="EncryptSoapIn">
+    <wsdl:part name="parameters" element="tns:Encrypt" />
+  </wsdl:message>
+  <wsdl:message name="EncryptSoapOut">
+    <wsdl:part name="parameters" element="tns:EncryptResponse" />
+  </wsdl:message>
+  <wsdl:message name="DecryptSoapIn">
+    <wsdl:part name="parameters" element="tns:Decrypt" />
+  </wsdl:message>
+  <wsdl:message name="DecryptSoapOut">
+    <wsdl:part name="parameters" element="tns:DecryptResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSTestSoapIn">
+    <wsdl:part name="parameters" element="tns:WSTest" />
+  </wsdl:message>
+  <wsdl:message name="WSTestSoapOut">
+    <wsdl:part name="parameters" element="tns:WSTestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MailProviderSoap">
+    <wsdl:operation name="BuildPDFDocuments">
+      <wsdl:input message="tns:BuildPDFDocumentsSoapIn" />
+      <wsdl:output message="tns:BuildPDFDocumentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoTicketByTicketNumber">
+      <wsdl:input message="tns:GetInfoTicketByTicketNumberSoapIn" />
+      <wsdl:output message="tns:GetInfoTicketByTicketNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByTicketNumber">
+      <wsdl:input message="tns:GetInfoPassengerByTicketNumberSoapIn" />
+      <wsdl:output message="tns:GetInfoPassengerByTicketNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByPNR">
+      <wsdl:input message="tns:GetInfoPassengerByPNRSoapIn" />
+      <wsdl:output message="tns:GetInfoPassengerByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketsByPNR">
+      <wsdl:input message="tns:GetTicketsByPNRSoapIn" />
+      <wsdl:output message="tns:GetTicketsByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input message="tns:SendEmailSoapIn" />
+      <wsdl:output message="tns:SendEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendPDFDocuments">
+      <wsdl:input message="tns:SendPDFDocumentsSoapIn" />
+      <wsdl:output message="tns:SendPDFDocumentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Encrypt">
+      <wsdl:input message="tns:EncryptSoapIn" />
+      <wsdl:output message="tns:EncryptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Decrypt">
+      <wsdl:input message="tns:DecryptSoapIn" />
+      <wsdl:output message="tns:DecryptSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSTest">
+      <wsdl:input message="tns:WSTestSoapIn" />
+      <wsdl:output message="tns:WSTestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MailProviderSoap" type="tns:MailProviderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuildPDFDocuments">
+      <soap:operation soapAction="http://tempuri.org/BuildPDFDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoTicketByTicketNumber">
+      <soap:operation soapAction="http://tempuri.org/GetInfoTicketByTicketNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByTicketNumber">
+      <soap:operation soapAction="http://tempuri.org/GetInfoPassengerByTicketNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByPNR">
+      <soap:operation soapAction="http://tempuri.org/GetInfoPassengerByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketsByPNR">
+      <soap:operation soapAction="http://tempuri.org/GetTicketsByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap:operation soapAction="http://tempuri.org/SendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPDFDocuments">
+      <soap:operation soapAction="http://tempuri.org/SendPDFDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Encrypt">
+      <soap:operation soapAction="http://tempuri.org/Encrypt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decrypt">
+      <soap:operation soapAction="http://tempuri.org/Decrypt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSTest">
+      <soap:operation soapAction="http://tempuri.org/WSTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MailProviderSoap12" type="tns:MailProviderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BuildPDFDocuments">
+      <soap12:operation soapAction="http://tempuri.org/BuildPDFDocuments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoTicketByTicketNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoTicketByTicketNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByTicketNumber">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoPassengerByTicketNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoPassengerByPNR">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoPassengerByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketsByPNR">
+      <soap12:operation soapAction="http://tempuri.org/GetTicketsByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap12:operation soapAction="http://tempuri.org/SendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendPDFDocuments">
+      <soap12:operation soapAction="http://tempuri.org/SendPDFDocuments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Encrypt">
+      <soap12:operation soapAction="http://tempuri.org/Encrypt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Decrypt">
+      <soap12:operation soapAction="http://tempuri.org/Decrypt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSTest">
+      <soap12:operation soapAction="http://tempuri.org/WSTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MailProvider">
+    <wsdl:port name="MailProviderSoap" binding="tns:MailProviderSoap">
+      <soap:address location="http://201.149.13.14:5498/MailProvider/Mailprovider.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MailProviderSoap12" binding="tns:MailProviderSoap12">
+      <soap12:address location="http://201.149.13.14:5498/MailProvider/Mailprovider.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

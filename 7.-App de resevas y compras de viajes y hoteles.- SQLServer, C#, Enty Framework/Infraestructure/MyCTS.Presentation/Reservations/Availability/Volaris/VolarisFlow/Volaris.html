@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" language="JavaScript" src="https://ci-mpsnare.iovation.com/snare.js"> </script>
+    <script type="text/javascript">
+        //------------- Basic configuration BlackBox ----------------------------------------------//
+        var io_install_flash = false; // do not install Flash
+        var io_install_stm = false; // do not require install of Active X
+        var io_exclude_stm = 12; // do not run Active X under IE 8 platforms
+        var io_enable_rip = true; // collect Real IP information
+
+        //------------- Get BlackBox --------------------------------------------------------------//
+        var io_bb_callback = function (bb, isComplete) { // populate hidden form fields in both forms
+            debugger;
+            var login_field = document.getElementById('txtMessage');
+            if (login_field) {
+                login_field.value = bb;
+            }
+        };
+    </script>
+    <script>
+        function GetFingerPrint() {
+            return txtMessage.value
+        }
+
+    </script>
+    <div id="div1">
+        <input type="hidden" id="txtMessage" />
+    </div>
+</body>
+</html>

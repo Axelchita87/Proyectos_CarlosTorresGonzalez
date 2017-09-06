@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02F685CB-532B-44BD-8C91-65BF58CAEDF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCTS.Business</RootNamespace>
+    <AssemblyName>MyCTS.Business</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActDHLBL.cs" />
+    <Compile Include="ActivationFeeRuleBL.cs" />
+    <Compile Include="Active1stLevelBL.cs" />
+    <Compile Include="Active2ndLevelBL.cs" />
+    <Compile Include="AddCorporateCRUDBL.cs" />
+    <Compile Include="AddDetailsTktsLinksBL.cs" />
+    <Compile Include="AddLinksInvoicesPerTicketBL.cs" />
+    <Compile Include="AddNewUserBL.cs" />
+    <Compile Include="AddRecordsContainerBL.cs" />
+    <Compile Include="AddToolOnlineRulesDeleteBL.cs" />
+    <Compile Include="AddToolsOnlineQueuesBL.cs" />
+    <Compile Include="AgentPCCBL.cs" />
+    <Compile Include="AgentsBL.cs" />
+    <Compile Include="AirLineFareBL.cs" />
+    <Compile Include="AirlineFOPBL.cs" />
+    <Compile Include="AirLinesBL.cs" />
+    <Compile Include="AirLinesClassBL.cs" />
+    <Compile Include="AirLinesFareBL.cs" />
+    <Compile Include="AirPortBL.cs" />
+    <Compile Include="AirPortCityCountryBL.cs" />
+    <Compile Include="AirportCodesBL.cs" />
+    <Compile Include="AirPortsBL.cs" />
+    <Compile Include="ALAgreementsBL.cs" />
+    <Compile Include="AllPccsBL.cs" />
+    <Compile Include="AllPCCsCompletBL.cs" />
+    <Compile Include="AssignQueueFirmBL.cs" />
+    <Compile Include="Cat1stStarInfoByLocationBL.cs" />
+    <Compile Include="CatAgentBL.cs" />
+    <Compile Include="CatAirlinesBL.cs" />
+    <Compile Include="CatAllStarsBL.cs" />
+    <Compile Include="CatalogsBL.cs" />
+    <Compile Include="CatBusCodesBL.cs" />
+    <Compile Include="CatBusinessUnitsBL.cs" />
+    <Compile Include="CatCarEquipemetCodesBL.cs" />
+    <Compile Include="CatCarTypeCodesBL.cs" />
+    <Compile Include="CatClientsCatalogsBL.cs" />
+    <Compile Include="CatEventCodeBL.cs" />
+    <Compile Include="CatFareTypeCodesBL.cs" />
+    <Compile Include="CatInterJetStateBL.cs" />
+    <Compile Include="CatOnlineToolsPicCodesBL.cs" />
+    <Compile Include="CatOriginSalesBL.cs" />
+    <Compile Include="CatProfileLinesBL.cs" />
+    <Compile Include="CatRolesBL.cs" />
+    <Compile Include="CatSSRCodesBL.cs" />
+    <Compile Include="CatStars1stLevelBL.cs" />
+    <Compile Include="CatStars2ndLevelBL.cs" />
+    <Compile Include="CatSubTypePaxBL.cs" />
+    <Compile Include="CatTransactionBL.cs" />
+    <Compile Include="CatValuesXMLQualityControlsClientsBL.cs" />
+    <Compile Include="CiaDHLBL.cs" />
+    <Compile Include="CatCitiesBL.cs" />
+    <Compile Include="CatConfirmDKBL.cs" />
+    <Compile Include="CatCorporativeQualityControlsBL.cs" />
+    <Compile Include="CatCostCenterBL.cs" />
+    <Compile Include="CatCountriesBL.cs" />
+    <Compile Include="CatCreditCardsCodesBL.cs" />
+    <Compile Include="CatHotelsBL.cs" />
+    <Compile Include="CatITTourCodesBL.cs" />
+    <Compile Include="CatLineClassesBL.cs" />
+    <Compile Include="CatMealCodesBL.cs" />
+    <Compile Include="CatPAirlinesFareBL.cs" />
+    <Compile Include="CatPccsBL.cs" />
+    <Compile Include="CatQueueBL.cs" />
+    <Compile Include="CatSeaVendorsCodesBL.cs" />
+    <Compile Include="CatStatesUSABL.cs" />
+    <Compile Include="CatStatusCodesBL.cs" />
+    <Compile Include="CatValuesCorporativeQualityControlsBL.cs" />
+    <Compile Include="CatValuesXMLQualityControlsBL.cs" />
+    <Compile Include="ChargePerServiceBL.cs" />
+    <Compile Include="CityBL.cs" />
+    <Compile Include="ClientsCatalogs_NextelBL.cs" />
+    <Compile Include="ClientsCatalogs_NextelCCBL.cs" />
+    <Compile Include="ClientUserInterjetBL.cs" />
+    <Compile Include="ComissionAgreementsBL.cs" />
+    <Compile Include="CommandsActionsBL.cs" />
+    <Compile Include="CommandsRestrictedBL.cs" />
+    <Compile Include="ConsultingFirmBL.cs" />
+    <Compile Include="ConsultingFirmRoleBL.cs" />
+    <Compile Include="CorporativeCRUDConsultaBL.cs" />
+    <Compile Include="CtaDHLBL.cs" />
+    <Compile Include="CteDHLBL.cs" />
+    <Compile Include="CurrenciesCountriesBL.cs" />
+    <Compile Include="CurrenciesBL.cs" />
+    <Compile Include="CurrencyCountryBL.cs" />
+    <Compile Include="Delete1stLevelBL.cs" />
+    <Compile Include="Delete1stLevelInfoBL.cs" />
+    <Compile Include="Delete2ndLevelBL.cs" />
+    <Compile Include="Delete2ndLevelInfoBL.cs" />
+    <Compile Include="DeleteAirLinesFareBL.cs" />
+    <Compile Include="DeleteAirPortBL.cs" />
+    <Compile Include="DeleteAlAgreementsBL.cs" />
+    <Compile Include="DeleteAllFirmModulesBL.cs" />
+    <Compile Include="DeleteAuthCodeBL.cs" />
+    <Compile Include="DeleteFirmRoleBL.cs" />
+    <Compile Include="DeletePccBL.cs" />
+    <Compile Include="DeletePccsBL.cs" />
+    <Compile Include="DeleteStar2DetailsBL.cs" />
+    <Compile Include="DeleteToolOnlineQueuesBL.cs" />
+    <Compile Include="DeleteToolOnlineRulesBL.cs" />
+    <Compile Include="DeleteUsersBL.cs" />
+    <Compile Include="DKTempBL.cs" />
+    <Compile Include="DeleteCatalogQCBL.cs" />
+    <Compile Include="DocsFirstLevelBL.cs" />
+    <Compile Include="DocsSecondLevelBL.cs" />
+    <Compile Include="DocumentsBL.cs" />
+    <Compile Include="EnableDisableFirmBL.cs" />
+    <Compile Include="ErrorLogServiceChargeBL.cs" />
+    <Compile Include="FieldsDynamicsBL.cs" />
+    <Compile Include="Get2StarEmailBL.cs" />
+    <Compile Include="GetAirLineAgreementsBL.cs" />
+    <Compile Include="GetAirlineCodeByNumIDBL.cs" />
+    <Compile Include="GetAllBanksBL.cs" />
+    <Compile Include="GetAllFirmModulesBL.cs" />
+    <Compile Include="GetAllFirmModulesForNewUserBL.cs" />
+    <Compile Include="GetAndSetAttribute1BL.cs" />
+    <Compile Include="GetAndSetAttributeBackupBL.cs" />
+    <Compile Include="GetAttribute1BL.cs" />
+    <Compile Include="GetAuthCodeBL.cs" />
+    <Compile Include="GetBannerImageBL.cs" />
+    <Compile Include="GetCatCarEquCodNameBL.cs" />
+    <Compile Include="GetCatCarTypCodDescriptionBL.cs" />
+    <Compile Include="GetCatCarVenCodNameBL.cs" />
+    <Compile Include="GetChainCodeBL.cs" />
+    <Compile Include="GetCityNameBL.cs" />
+    <Compile Include="GetClientCreditCardNumberBL.cs" />
+    <Compile Include="GetCodeMealToDIXBL.cs" />
+    <Compile Include="GetCorporativeFeaturesBL.cs" />
+    <Compile Include="GetCorporativeFeesRulesBL.cs" />
+    <Compile Include="GetCountryBL.cs" />
+    <Compile Include="GetCreditCardNumberBL.cs" />
+    <Compile Include="GetCreditCardsFirstLevelBL.cs" />
+    <Compile Include="GetCreditCardsSecondLevelBL.cs" />
+    <Compile Include="GetCtrlCataloguesBL.cs" />
+    <Compile Include="GetCxSHotelbyPNRBL.cs" />
+    <Compile Include="GetCxSHotelesBL.cs" />
+    <Compile Include="GetDeactivatedStarsBL.cs" />
+    <Compile Include="GetEquipmentCarByCodeBL.cs" />
+    <Compile Include="GetIDGroupBL.cs" />
+    <Compile Include="GetIdRemarkLabelBL.cs" />
+    <Compile Include="GetIdSalesOriginBL.cs" />
+    <Compile Include="GetInfoFeeRuleByAttribute1BL.cs" />
+    <Compile Include="GetInfoGroupBL.cs" />
+    <Compile Include="GetInfoGrupoByIDGroupBL.cs" />
+    <Compile Include="GetInformationRuleAppliedBL.cs" />
+    <Compile Include="GetLCCAirlinesBL.cs" />
+    <Compile Include="GetLinkByTktBL.cs" />
+    <Compile Include="GetListUpgradeFilesSRWBL.cs" />
+    <Compile Include="GetLogNewFormatProfilesBL.cs" />
+    <Compile Include="GetMailByUserBL.cs" />
+    <Compile Include="GetNationalRoutesBL.cs" />
+    <Compile Include="GetOnlineToolsBL.cs" />
+    <Compile Include="GetOnlyAttribute1BL.cs" />
+    <Compile Include="GetPccBL.cs" />
+    <Compile Include="GetPendingOnlinePayServicesBL.cs" />
+    <Compile Include="GetPromoBL.cs" />
+    <Compile Include="GetQCbyAttribute1BL.cs" />
+    <Compile Include="GetQCbyAttribute1_ADBL.cs" />
+    <Compile Include="GetQCIDCtrlBL.cs" />
+    <Compile Include="GetQualityCotrolsBL.cs" />
+    <Compile Include="GetStar1DetailsBL.cs" />
+    <Compile Include="GetStar1ProfileByDkBL.cs" />
+    <Compile Include="GetStar1stLevelByStar2LevelBL.cs" />
+    <Compile Include="GetStar2DetailsBL.cs" />
+    <Compile Include="GetStar2ProfileByEmailBL.cs" />
+    <Compile Include="GetStarByEmailBL.cs" />
+    <Compile Include="GetTicketsByPNRBL.cs" />
+    <Compile Include="GetTypesCarByCodeBL.cs" />
+    <Compile Include="GetVendorByCodeBL.cs" />
+    <Compile Include="GetZoneByCityBL.cs" />
+    <Compile Include="GroupCodeLabelBL.cs" />
+    <Compile Include="ImpuestosBajoCostoBL.cs" />
+    <Compile Include="InsertFirmRoleBL.cs" />
+    <Compile Include="InsertLogClipboardCTSBL.cs" />
+    <Compile Include="InsertPccBL.cs" />
+    <Compile Include="InsertSCDCBoletoBL.cs" />
+    <Compile Include="InsertSCDCResumenBL.cs" />
+    <Compile Include="InterJetFlightController.cs" />
+    <Compile Include="InterJetPointToPointBL.cs" />
+    <Compile Include="InterJetProfileBL.cs" />
+    <Compile Include="InterJetTaxBL.cs" />
+    <Compile Include="LabelXMLRemarksBL.cs" />
+    <Compile Include="LogCxSHotelBL.cs" />
+    <Compile Include="LogInterJetBL.cs" />
+    <Compile Include="LogNotOnlinePayServicesBL.cs" />
+    <Compile Include="LogOnlinePayServicesBL.cs" />
+    <Compile Include="LogsApplicationBL.cs" />
+    <Compile Include="LogTicketsBL.cs" />
+    <Compile Include="LowFareAirLinesErrorLogger.cs" />
+    <Compile Include="MyCTSVersionBL.cs" />
+    <Compile Include="NewFeeRuleBL.cs" />
+    <Compile Include="ObjectsBL.cs" />
+    <Compile Include="OnlineToolsQueuesBL.cs" />
+    <Compile Include="OnlyAttribute1BL.cs" />
+    <Compile Include="OTATravelItineraryHotelsBL.cs" />
+    <Compile Include="ParameterBL.cs" />
+    <Compile Include="PreferencePlacesBL.cs" />
+    <Compile Include="ProductivityMonthsBL.cs" />
+    <Compile Include="ProductivityPCCVsCorporativeBL.cs" />
+    <Compile Include="ProductivityRankingPerCorporativeBL.cs" />
+    <Compile Include="ProductivityRankingPerPCCBL.cs" />
+    <Compile Include="ProductivityWeeksBL.cs" />
+    <Compile Include="QCControlsBL.cs" />
+    <Compile Include="QCControlsClientsBL.cs" />
+    <Compile Include="QCCustomRemarksBL.cs" />
+    <Compile Include="QCExistBL.cs" />
+    <Compile Include="ReportInterjetBL.cs" />
+    <Compile Include="ReportVolarisBL.cs" />
+    <Compile Include="SabreErrorMsgBL.cs" />
+    <Compile Include="HotelsBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SabreMessagesBL.cs" />
+    <Compile Include="SearchClientsCatalogsBL.cs" />
+    <Compile Include="Security\ApplicationsBL.cs" />
+    <Compile Include="Security\ProfileBL.cs" />
+    <Compile Include="Security\RolesBL.cs" />
+    <Compile Include="Security\UsersBL.cs" />
+    <Compile Include="Security\UsersInRolesBL.cs" />
+    <Compile Include="ServiceMDBL.cs" />
+    <Compile Include="ServicesExtrasBL.cs" />
+    <Compile Include="SetAirLineAgreementsBL.cs" />
+    <Compile Include="SetAirLinesFareBL.cs" />
+    <Compile Include="SetAirPortBL.cs" />
+    <Compile Include="SetAllFirmModulesBL.cs" />
+    <Compile Include="SetAuthCodeBL.cs" />
+    <Compile Include="SetClientsCatalogsNextelBL.cs" />
+    <Compile Include="SetDetailsPNRBL.cs" />
+    <Compile Include="SetLocationDKNotAcceptedBL.cs" />
+    <Compile Include="SetLogNewFormatProfilesBL.cs" />
+    <Compile Include="SetNewTargetFeeRuleBL.cs" />
+    <Compile Include="SetPCCsBL.cs" />
+    <Compile Include="SetProductivityMailStatusBL.cs" />
+    <Compile Include="SetProfileChangesBL.cs" />
+    <Compile Include="SetQCByAttribute1BL.cs" />
+    <Compile Include="SetQualityCotrolsBL.cs" />
+    <Compile Include="SetStar1DetailsBL.cs" />
+    <Compile Include="SetStar2DetailsBL.cs" />
+    <Compile Include="SetStarsLevel1BL.cs" />
+    <Compile Include="SetStarsLevel1InfoBL.cs" />
+    <Compile Include="SetStarsLevel2BL.cs" />
+    <Compile Include="SetStarsLevel2InfoBL.cs" />
+    <Compile Include="SetTABL.cs" />
+    <Compile Include="SiteDHLBL.cs" />
+    <Compile Include="Star1stLevelInfoBL.cs" />
+    <Compile Include="Star2ndLevelInfoBL.cs" />
+    <Compile Include="StatusFamilyNameBL.cs" />
+    <Compile Include="SubDHLBL.cs" />
+    <Compile Include="SubTypePaxBL.cs" />
+    <Compile Include="TypePaxBL.cs" />
+    <Compile Include="CatCarVendorsCodesBL.cs" />
+    <Compile Include="Update1stLevelBL.cs" />
+    <Compile Include="Update1stLevelInfoBL.cs" />
+    <Compile Include="Update2ndLevelBL.cs" />
+    <Compile Include="Update2ndLevelInfoBL.cs" />
+    <Compile Include="UpdateAirLineFareBL.cs" />
+    <Compile Include="UpdateAirPortBL.cs" />
+    <Compile Include="UpdateAlAgreementsBL.cs" />
+    <Compile Include="UpdateAllFirmModulesBL.cs" />
+    <Compile Include="UpdateAuthCodeBL.cs" />
+    <Compile Include="UpdateCompleteStatusUpgradeBL.cs" />
+    <Compile Include="UpdateCoporateCRUDBL.cs" />
+    <Compile Include="UpdateDetailPNRHotelsBL.cs" />
+    <Compile Include="UpdateImagesBL.cs" />
+    <Compile Include="UpdatePCCBL.cs" />
+    <Compile Include="UpdatePccInfoBL.cs" />
+    <Compile Include="UpdatePriorityByAttribute1BL.cs" />
+    <Compile Include="UpdateQCbyAttribute1_ADBL.cs" />
+    <Compile Include="UpdateQualityControlsBL.cs" />
+    <Compile Include="UpdateStar1DetailsBL.cs" />
+    <Compile Include="UpdateStar2DetailsBL.cs" />
+    <Compile Include="UpdateStatusAllFirmModulesBL.cs" />
+    <Compile Include="UpdateTicketsLogOnlinePayServicesBL.cs" />
+    <Compile Include="UpdateUserBL.cs" />
+    <Compile Include="UpdateUsersBL.cs" />
+    <Compile Include="UserAllAccessBL.cs" />
+    <Compile Include="UserProductivityGenericBL.cs" />
+    <Compile Include="UserProductivityPerPCCBL.cs" />
+    <Compile Include="UserSelectByPCCBL.cs" />
+    <Compile Include="UsersSelectByPCCBL.cs" />
+    <Compile Include="ValidateConcludedPNRBL.cs" />
+    <Compile Include="VolarisCountriesBL.cs" />
+    <Compile Include="VolarisLogger.cs" />
+    <Compile Include="VolarisPointToPointBL.cs" />
+    <Compile Include="VolarisProfileBL.cs" />
+    <Compile Include="VolarisStateBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\MyCTS.Components.NullableHelper\MyCTS.Components.NullableHelper.csproj">
+      <Project>{7C5B977C-5BCB-474A-B91D-FB58624BAF1B}</Project>
+      <Name>MyCTS.Components.NullableHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MyCTS.EventsManager\MyCTS.EventsManager.csproj">
+      <Project>{37D95FC1-9BC2-47C7-B3FA-B7CB6D658B58}</Project>
+      <Name>MyCTS.EventsManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCTS.DataAccess\MyCTS.DataAccess.csproj">
+      <Project>{A394C9B5-4742-4410-9786-825F8E5249F1}</Project>
+      <Name>MyCTS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCTS.Entities\MyCTS.Entities.csproj">
+      <Project>{AD10FAE3-774C-455C-B97D-A3BA60493F9D}</Project>
+      <Name>MyCTS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{014E50EF-A05F-4438-81BE-BCD531C6AD90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyCTS.Services</RootNamespace>
+    <AssemblyName>MyCTS.Services</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VOLARIS_PRODUCTION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;VOLARIS_PRODUCTION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;VOLARIS_PRODUCTION</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;VOLARIS_PRODUCTION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\AirAvail.cs" />
+    <Compile Include="Contracts\AirLowFareSearch.cs" />
+    <Compile Include="Contracts\BuildElectronicTicketCFEContract.cs" />
+    <Compile Include="Contracts\BuildElectronicTicketContract.cs" />
+    <Compile Include="Contracts\ClipboardService.cs" />
+    <Compile Include="Contracts\GetInfoPassengerByPNR.cs" />
+    <Compile Include="Contracts\GetInfoPassengerByTicketNumber.cs" />
+    <Compile Include="Contracts\GetInformationToDIX.cs" />
+    <Compile Include="Contracts\GetInfoTicketByTicketNumber.cs" />
+    <Compile Include="Contracts\GetTicketsByPNR.cs" />
+    <Compile Include="Contracts\IAvailabilitySearchable.cs" />
+    <Compile Include="Contracts\InterJetServiceManager.cs" />
+    <Compile Include="Contracts\InterJetAvailability.cs" />
+    <Compile Include="Contracts\ISabreService.cs" />
+    <Compile Include="Contracts\IService.cs" />
+    <Compile Include="Contracts\IServiceHandler.cs" />
+    <Compile Include="Contracts\MailProvider.cs" />
+    <Compile Include="Contracts\OracleConnection.cs" />
+    <Compile Include="Contracts\OTATravelItinerary.cs" />
+    <Compile Include="Contracts\OTATravelItineraryFlights.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Contracts\OTATravelItineraryHotels.cs" />
+    <Compile Include="Contracts\Productivity.cs" />
+    <Compile Include="Contracts\SabreCommandServiceManager.cs" />
+    <Compile Include="Contracts\VolarisAvailability.cs" />
+    <Compile Include="Contracts\Volaris\AddRemarksService.cs" />
+    <Compile Include="Contracts\Volaris\AirBookService.cs" />
+    <Compile Include="Contracts\Volaris\AirPriceService.cs" />
+    <Compile Include="Contracts\Volaris\AirTicketPaymentService.cs" />
+    <Compile Include="Contracts\Volaris\AssignatePrinterService.cs" />
+    <Compile Include="Contracts\Volaris\CloseSessionService.cs" />
+    <Compile Include="Contracts\Volaris\EventArguments\OnReservationCompletedEventArg.cs" />
+    <Compile Include="Contracts\Volaris\EventArguments\OnWebServiceCallCompletedEventArg.cs" />
+    <Compile Include="Contracts\Volaris\EventArguments\OnWebServiceCallStartEventArg.cs" />
+    <Compile Include="Contracts\Volaris\FraudCheckService.cs" />
+    <Compile Include="Contracts\Volaris\ItineraryReadService.cs" />
+    <Compile Include="Contracts\Volaris\PaymentRQService.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisAddRemarkResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisAirBookingResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisAirPricingResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisAirTicketResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisDesignatePrinterResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisEndTransactionResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisFraudCheckResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisItineraryReadResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisOpenSessionResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisPaymentChain.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisPaymentRQResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisReservationChain.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisSabreCommandResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisSessionCloseResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisSpecialServiceResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\ResponsabilityChain\VolarisTravelItineraryAddInformationResponsabilityHandler.cs" />
+    <Compile Include="Contracts\Volaris\SabreCommandService.cs" />
+    <Compile Include="Contracts\Volaris\Serializer.cs" />
+    <Compile Include="Contracts\Volaris\TransactionService.cs" />
+    <Compile Include="Contracts\Volaris\IgnoreTransaction.cs" />
+    <Compile Include="Contracts\Volaris\OpenSessionService.cs" />
+    <Compile Include="Contracts\Volaris\SpecialServiceRequestService.cs" />
+    <Compile Include="Contracts\Volaris\TravelItineraryAddInfo.cs" />
+    <Compile Include="Contracts\Volaris\VolarisAvialabiltyService.cs" />
+    <Compile Include="Contracts\Volaris\VolarisResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VolarisResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\Volaris\VolarisServiceManager.cs" />
+    <Compile Include="Logging.cs" />
+    <Compile Include="Service References\APIInterJet\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\APIVolaris\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BookingManagerTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BookingManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClipboardService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ContentManagerTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ContentManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SessionManagerTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SessionManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AddRemarkProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AddRemarkTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirBookProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirBookTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirLowFareSearch\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirPriceProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirPriceTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirTicketProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AirTicketTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BuildElectronicTicketCFE\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BuildElectronicTicketDev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\BuildElectronicTicket\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices.SabreCommand\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices.TravelItinerary2.dev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices.TravelItinerary2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DesignatePrinterProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DesignatePrinterTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EndTransactionProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\EndTransactionTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FraudCheckProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FraudCheckTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\IgnoreTransactionProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\IgnoreTransanctionTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LowFareSearchTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MyCTSGEAComunicationBackUp\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MyCTSGEAComunication\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MyCTSOracleConnectionDev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MyCTSOracleConnection\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PagosMIT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PaymentTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\PrintVoucher\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProductivityProxyDev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ProductivityProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SabreCommandTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SessionCloseTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SessionCreateTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SpecialServiceProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SpecialServiceTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TravelItineraryAddInfoProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TravelItineraryAddInfoTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TravelItineraryProduction\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TravelItineraryTest\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ValidateDKsAndCreditCards\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WSSessionSabre.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices.AirAva\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sabre.webservices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.78.60.11/ServicioGEATest/TransaccionesTarjetaNPService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PagosMIT\</RelPath>
+      <UpdateFromURL>http://10.78.60.11/ServicioGEATest/TransaccionesTarjetaNPService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_PagosMIT_TransaccionesTarjetaNPService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://200.53.149.68/Portal/MyCTSSecureServices/Voucher.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PrintVoucher\</RelPath>
+      <UpdateFromURL>http://200.53.149.68/Portal/MyCTSSecureServices/Voucher.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_PrintVoucher_Voucher</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.149.13.14:5498/MailProvider/Mailprovider.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BuildElectronicTicket\</RelPath>
+      <UpdateFromURL>http://201.149.13.14:5498/MailProvider/Mailprovider.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_BuildElectronicTicket_MailProvider</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://200.52.81.200:5498/BuildPDFDocuments/MailProvider.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BuildElectronicTicketDev\</RelPath>
+      <UpdateFromURL>http://200.52.81.200:5498/BuildPDFDocuments/MailProvider.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_BuildElectronicTicketDev_MailProvider</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://200.52.81.206/GeaWebService/GeaComunication.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyCTSGEAComunication\</RelPath>
+      <UpdateFromURL>http://200.52.81.206/GeaWebService/GeaComunication.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_MyCTSGEAComunication_GEAComunication</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.149.13.14:5498/PDFGeneratorCFE/PDFGeneratorCFEWS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BuildElectronicTicketCFE\</RelPath>
+      <UpdateFromURL>http://201.149.13.14:5498/PDFGeneratorCFE/PDFGeneratorCFEWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_BuildElectronicTicketCFE_PDFGeneratorCFEWS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.149.13.14:5498/ValidationsDKsWS/wsMyCTS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ValidateDKsAndCreditCards\</RelPath>
+      <UpdateFromURL>http://201.149.13.14:5498/ValidationsDKsWS/wsMyCTS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_ValidateDKsAndCreditCards_WsMyCTS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.159.131.108/GeaWebService/GeaComunication.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyCTSGEAComunicationBackUp\</RelPath>
+      <UpdateFromURL>http://201.159.131.108/GeaWebService/GeaComunication.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_MyCTSGEAComunicationBackUp_GEAComunication</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://200.52.81.200:5498/MyCTSOracleConnections_Deploy/Service1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyCTSOracleConnectionDev\</RelPath>
+      <UpdateFromURL>http://200.52.81.200:5498/MyCTSOracleConnections_Deploy/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_MyCTSOracleConnectionDev_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.149.13.14:5498/MyCTSOracleConnection/Service1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyCTSOracleConnection\</RelPath>
+      <UpdateFromURL>http://201.149.13.14:5498/MyCTSOracleConnection/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_MyCTSOracleConnection_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://200.52.81.200:5498/WSProductivity/Productivity.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProductivityProxyDev\</RelPath>
+      <UpdateFromURL>http://200.52.81.200:5498/WSProductivity/Productivity.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_ProductivityProxyDev_ProductivityService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://201.149.13.14:5498/WSProductivity/Productivity.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProductivityProxy\</RelPath>
+      <UpdateFromURL>http://201.149.13.14:5498/WSProductivity/Productivity.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_ProductivityProxy_ProductivityService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/FraudCheckRQ_v1.0.0.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FraudCheckProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/FraudCheckRQ_v1.0.0.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_FraudCheckProduction_FraudCheckServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_PaymentProduction_PaymentServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/AddRemarkLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AddRemarkProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/AddRemarkLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AddRemarkProduction_AddRemarkService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/AirTicketLLS1.9.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirTicketProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/AirTicketLLS1.9.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirTicketProduction_AirTicketService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/DesignatePrinterLLS1.2.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DesignatePrinterProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/DesignatePrinterLLS1.2.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_DesignatePrinterProduction_DesignatePrinterService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/EndTransactionLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EndTransactionProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/EndTransactionLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_EndTransactionProduction_EndTransactionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/IgnoreTransactionLLSRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\IgnoreTransactionProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/IgnoreTransactionLLSRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_IgnoreTransactionProduction_IgnoreTransactionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirAvailLLS1.9.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices.AirAva\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirAvailLLS1.9.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices_AirAva_OTA_AirAvailService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirBookLLS1.6.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirBookProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirBookLLS1.6.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirBookProduction_OTA_AirBookService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirLowFareSearchLLS1.13.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirLowFareSearch\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirLowFareSearchLLS1.13.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirLowFareSearch_OTA_AirLowFareSearchService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirPriceLLS1.16.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirPriceProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_AirPriceLLS1.16.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirPriceProduction_OTA_AirPriceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_TravelItineraryReadLLS1.14.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices.TravelItinerary\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/OTA_TravelItineraryReadLLS1.14.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices2_OTA_TravelItineraryService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/SabreCommandLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices.SabreCommand\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/SabreCommandLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices_SabreCommand_SabreCommandLLSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/SpecialServiceLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SpecialServiceProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/SpecialServiceLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_SpecialServiceProduction_SpecialService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/TravelItineraryAddInfoLLS1.10.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TravelItineraryAddInfoProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/TravelItineraryAddInfoLLS1.10.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_TravelItineraryAddInfoProduction_TravelItineraryAddInfoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/TravelItineraryReadLLS1.1.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TravelItineraryProduction\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/tpf/TravelItineraryReadLLS1.1.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_TravelItineraryProduction_TravelItineraryReadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices1\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCloseRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices1_SessionCloseRQService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/sabreXML1.0.00/usg/SessionCreateRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices_SessionCreateRQService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://webservices.sabre.com/wsdl/tpfc/TravelItineraryReadLLS2.2.0RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices.TravelItinerary2\</RelPath>
+      <UpdateFromURL>http://webservices.sabre.com/wsdl/tpfc/TravelItineraryReadLLS2.2.0RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices_TravelItinerary2_TravelItineraryReadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/Payment/FraudCheckRQ_v1.0.0.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FraudCheckTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/Payment/FraudCheckRQ_v1.0.0.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_FraudCheckTest_FraudCheckServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/Payment/PaymentRQ_v1.3.0.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_PaymentTest_PaymentServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/AddRemarkLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AddRemarkTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/AddRemarkLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AddRemarkTest_AddRemarkService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/AirTicketLLS1.9.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirTicketTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/AirTicketLLS1.9.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirTicketTest_AirTicketService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/DesignatePrinterLLS1.2.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DesignatePrinterTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/DesignatePrinterLLS1.2.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_DesignatePrinterTest_DesignatePrinterService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/EndTransactionLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EndTransactionTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/EndTransactionLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_EndTransactionTest_EndTransactionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/IgnoreTransactionLLSRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\IgnoreTransanctionTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/IgnoreTransactionLLSRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_IgnoreTransanctionTest_IgnoreTransactionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirBookLLS1.6.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirBookTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirBookLLS1.6.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirBookTest_OTA_AirBookService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirLowFareSearchLLS1.14.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LowFareSearchTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirLowFareSearchLLS1.14.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_LowFareSearchTest_OTA_AirLowFareSearchService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirPriceLLS1.16.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AirPriceTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/OTA_AirPriceLLS1.16.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_AirPriceTest_OTA_AirPriceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/SabreCommandLLS1.6.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SabreCommandTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/SabreCommandLLS1.6.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_SabreCommandTest_SabreCommandLLSService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/SpecialServiceLLS1.4.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SpecialServiceTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/SpecialServiceLLS1.4.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_SpecialServiceTest_SpecialService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/TravelItineraryAddInfoLLS1.10.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TravelItineraryAddInfoTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/TravelItineraryAddInfoLLS1.10.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_TravelItineraryAddInfoTest_TravelItineraryAddInfoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/TravelItineraryReadLLS1.1.1RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TravelItineraryTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/tpf/TravelItineraryReadLLS1.1.1RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_TravelItineraryTest_TravelItineraryReadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/usg/SessionCloseRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SessionCloseTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/usg/SessionCloseRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_SessionCloseTest_SessionCloseRQService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/usg/SessionCreateRQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SessionCreateTest\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/sabreXML1.0.00/usg/SessionCreateRQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_SessionCreateTest_SessionCreateRQService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wsdl-crt.cert.sabre.com/wsdl/tpfc/TravelItineraryReadLLS2.2.0RQ.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sabre.webservices.TravelItinerary2.dev\</RelPath>
+      <UpdateFromURL>http://wsdl-crt.cert.sabre.com/wsdl/tpfc/TravelItineraryReadLLS2.2.0RQ.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyCTS_Services_com_sabre_webservices_TravelItinerary2_dev_TravelItineraryReadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet1.wsdl" />
+    <None Include="Service References\APIInterJet\InterJet13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet2.wsdl" />
+    <None Include="Service References\APIInterJet\InterJet2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\InterJet21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIInterJet\MyCTS.Services.APIInterJet.AssignSeatsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIInterJet\MyCTS.Services.APIInterJet.Booking1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIInterJet\MyCTS.Services.APIInterJet.GetSeatAvailabilityResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIInterJet\MyCTS.Services.APIInterJet.TripAvailabilityResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIVolaris\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\Arrays2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\CTS.Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\CTS.Entities2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\MyCTS.Services.APIVolaris.BookingData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIVolaris\MyCTS.Services.APIVolaris.VueloDisponible.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\APIVolaris\service.wsdl" />
+    <None Include="Service References\APIVolaris\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\service2.wsdl" />
+    <None Include="Service References\APIVolaris\service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\APIVolaris\service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\Booking.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\BookingService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\Enumerations.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\MyCTS.Services.BookingManager.AddPaymentToBookingResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManager\MyCTS.Services.BookingManager.Booking.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManager\MyCTS.Services.BookingManager.BookingUpdateResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManager\MyCTS.Services.BookingManager.TripAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManager\Navitaire.NewSkies.WebServices.DataContracts.Common.Enumerations.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\service.wsdl" />
+    <None Include="Service References\BookingManager\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\System.Collections.Generic.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BookingManager\WebServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClipboardService\ClipBoardService.wsdl" />
+    <None Include="Service References\ClipboardService\ClipboardService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClipboardService\ClipboardService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClipboardService\ClipboardService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClipboardService\ClipboardService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContentManager\Booking.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContentManager\Content.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContentManager\Enumerations.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContentManager\MyCTS.Services.ContentManager.FareRuleInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ContentManager\service.wsdl" />
+    <None Include="Service References\ContentManager\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ContentManager\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionManager\service.wsdl" />
+    <None Include="Service References\SessionManager\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionManager\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionManager\Session.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\env.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\envelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\msg-header-2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\OTA_AirAvailLLS1.wsdl" />
+    <None Include="Web References\com.sabre.webservices.AirAva\OTA_AirAvailLLS1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\OTA_AirAvailLLS10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\OTA_AirAvailLLS11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\OTA_AirAvailRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\wsse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.AirAva\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\envelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\msg-header-2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\STL_For_SabreProtocol_v.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\STL_Header_v.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\sws_common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\TravelItineraryReadLLS2.wsdl" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\TravelItineraryReadLLS2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\TravelItineraryReadLLS20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\TravelItineraryReadLLS21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\TravelItineraryReadRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\wsse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2.dev\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\envelope.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\msg-header-2_0.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\STL_For_SabreProtocol_v.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\STL_Header_v.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\sws_common.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\TravelItineraryReadLLS2.wsdl" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\TravelItineraryReadLLS2.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\TravelItineraryReadLLS20.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\TravelItineraryReadLLS21.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\TravelItineraryReadRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\wsse.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\xlink.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\xml.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary2\xmldsig-core-schema.xsd" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryRS1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\envelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\msg-header-2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\SessionCloseRQ.wsdl" />
+    <None Include="Web References\com.sabre.webservices1\SessionCloseRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\SessionCloseRQRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\SessionCloseRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\SessionCloseRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\wsse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices1\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\envelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\msg-header-2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryReadLLS1.wsdl" />
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryReadLLS1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryReadLLS10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\OTA_TravelItineraryReadLLS11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\wsse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices.TravelItinerary\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\env.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\envelope.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\msg-header-2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices\SessionCreateRQ.wsdl" />
+    <None Include="Web References\com.sabre.webservices\SessionCreateRQ.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\SessionCreateRQRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\SessionCreateRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices\SessionCreateRS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\wsse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\xlink.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.sabre.webservices\xmldsig-core-schema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\PagosMIT\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PagosMIT\TransaccionesEntities1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PagosMIT\TransaccionesRespuestasEntities.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PagosMIT\TransaccionesTarjetaNPService.wsdl" />
+    <None Include="Web References\PagosMIT\UsuarioTransaccionesEntities.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\Cat1stStarInfoByLocation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\CatCorporativeQualityControls.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\CatStars1stLevel.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\ClientCreditCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\GetAttribute1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\GetOnlyAttribute1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\GetTranferCheckNumber.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\InterJetProfile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\InterJetProfileCreditCard.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\SetQCByAttribute1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\Star1stLevelInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\VolarisProfile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ValidateDKsAndCreditCards\WsMyCTS.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infraestructure\MyCTS.Business\MyCTS.Business.csproj">
+      <Project>{02F685CB-532B-44BD-8C91-65BF58CAEDF4}</Project>
+      <Name>MyCTS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Infraestructure\MyCTS.Entities\MyCTS.Entities.csproj">
+      <Project>{AD10FAE3-774C-455C-B97D-A3BA60493F9D}</Project>
+      <Name>MyCTS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ProductivityProxy\Productivity.disco" />
+    <None Include="Web References\ProductivityProxy\Productivity.wsdl" />
+    <None Include="Web References\ProductivityProxy\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ProductivityProxyDev\Productivity.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ProductivityProxyDev\Productivity.disco" />
+    <None Include="Web References\ProductivityProxyDev\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\MyCTSOracleConnectionDev\Service1.wsdl" />
+    <None Include="Web References\MyCTSOracleConnection\Cat1stStarInfoByLocation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MyCTSOracleConnection\GetAttribute1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MyCTSOracleConnection\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MyCTSOracleConnection\Service1.disco" />
+    <None Include="Web References\MyCTSOracleConnection\Service1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\MyCTSOracleConnectionDev\Cat1stStarInfoByLocation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MyCTSOracleConnectionDev\GetAttribute1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MyCTSOracleConnectionDev\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MyCTSOracleConnectionDev\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\com.sabre.webservices.SabreCommand\env.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\envelope.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\msg-header-2_0.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sabre.webservices.SabreCommand\SabreCommandLLS1.wsdl" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\SabreCommandLLS1.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\SabreCommandLLS10.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\SabreCommandLLS11.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\SabreCommandLLSRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.sabre.webservices.SabreCommand\wsse.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\xlink.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\xml.xsd" />
+    <None Include="Web References\com.sabre.webservices.SabreCommand\xmldsig-core-schema.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\MyCTSGEAComunicationBackUp\GeaComunication.disco" />
+    <None Include="Web References\MyCTSGEAComunicationBackUp\GeaComunication.wsdl" />
+    <None Include="Web References\MyCTSGEAComunicationBackUp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\BuildElectronicTicketCFE\PDFGeneratorCFEWS.disco" />
+    <None Include="Web References\BuildElectronicTicketCFE\PDFGeneratorCFEWS.wsdl" />
+    <None Include="Web References\BuildElectronicTicketCFE\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\APIInterJet\" />
+    <WCFMetadataStorage Include="Service References\APIVolaris\" />
+    <WCFMetadataStorage Include="Service References\BookingManagerTest\" />
+    <WCFMetadataStorage Include="Service References\BookingManager\" />
+    <WCFMetadataStorage Include="Service References\ClipboardService\" />
+    <WCFMetadataStorage Include="Service References\ContentManagerTest\" />
+    <WCFMetadataStorage Include="Service References\ContentManager\" />
+    <WCFMetadataStorage Include="Service References\SessionManagerTest\" />
+    <WCFMetadataStorage Include="Service References\SessionManager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManagerTest\BookingManager.disco" />
+    <None Include="Service References\BookingManagerTest\BookingManager.wsdl" />
+    <None Include="Service References\BookingManagerTest\BookingManager.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager1.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager2.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager3.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager4.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager5.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager6.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager7.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager8.xsd" />
+    <None Include="Service References\BookingManagerTest\BookingManager9.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManagerTest\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManagerTest\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.AddPaymentToBookingResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.AvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.Booking.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.BookingUpdateResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.CaptureBaggageEventResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.EquipmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.FindBaggageEventResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.FindBookingResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.GetBookingHistoryResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.GetBookingPaymentResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.MoveAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.MoveFeePriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.MoveJourneyBookingsResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.PassengerBag.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.PassengerScoresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.Payment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.PaymentFeePriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.SeatAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.SeparateSegmentByEquipmentResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.SSRAvailabilityForBookingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.SSRAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.TripAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.UpgradeAvailabilityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\MyCTS.Services.BookingManagerTest.ValidationPayment.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BookingManagerTest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SessionManagerTest\SessionManager.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManagerTest\SessionManager.disco" />
+    <None Include="Service References\SessionManagerTest\SessionManager.wsdl" />
+    <None Include="Service References\SessionManagerTest\SessionManager1.xsd" />
+    <None Include="Service References\SessionManagerTest\SessionManager2.xsd" />
+    <None Include="Service References\SessionManagerTest\SessionManager3.xsd" />
+    <None Include="Service References\SessionManagerTest\SessionManager4.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManagerTest\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManagerTest\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManagerTest\MyCTS.Services.SessionManagerTest.TransferSessionResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SessionManagerTest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManagerTest\ContentManager.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager1.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManagerTest\ContentManager.disco" />
+    <None Include="Service References\ContentManagerTest\ContentManager.wsdl" />
+    <None Include="Service References\ContentManagerTest\ContentManager3.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager4.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager5.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager6.xsd" />
+    <None Include="Service References\ContentManagerTest\ContentManager7.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManagerTest\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManagerTest\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManagerTest\MyCTS.Services.ContentManagerTest.Content.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ContentManagerTest\MyCTS.Services.ContentManagerTest.ContentResponseData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ContentManagerTest\MyCTS.Services.ContentManagerTest.FareRuleInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ContentManagerTest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\AddRemarkProduction\AddRemarkLLS1.wsdl" />
+    <None Include="Web References\AddRemarkProduction\AddRemarkLLS1.xsd" />
+    <None Include="Web References\AddRemarkProduction\AddRemarkLLS10.xsd" />
+    <None Include="Web References\AddRemarkProduction\AddRemarkLLS11.xsd" />
+    <None Include="Web References\AddRemarkProduction\AddRemarkRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AddRemarkProduction\envelope.xsd" />
+    <None Include="Web References\AddRemarkProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\AddRemarkProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AddRemarkProduction\wsse.xsd" />
+    <None Include="Web References\AddRemarkProduction\xlink.xsd" />
+    <None Include="Web References\AddRemarkProduction\xml.xsd" />
+    <None Include="Web References\AddRemarkProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AddRemarkTest\AddRemarkLLS1.wsdl" />
+    <None Include="Web References\AddRemarkTest\AddRemarkLLS1.xsd" />
+    <None Include="Web References\AddRemarkTest\AddRemarkLLS10.xsd" />
+    <None Include="Web References\AddRemarkTest\AddRemarkLLS11.xsd" />
+    <None Include="Web References\AddRemarkTest\AddRemarkRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AddRemarkTest\envelope.xsd" />
+    <None Include="Web References\AddRemarkTest\msg-header-2_0.xsd" />
+    <None Include="Web References\AddRemarkTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AddRemarkTest\wsse.xsd" />
+    <None Include="Web References\AddRemarkTest\xlink.xsd" />
+    <None Include="Web References\AddRemarkTest\xml.xsd" />
+    <None Include="Web References\AddRemarkTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirBookProduction\envelope.xsd" />
+    <None Include="Web References\AirBookProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\AirBookProduction\OTA_AirBookLLS1.wsdl" />
+    <None Include="Web References\AirBookProduction\OTA_AirBookLLS1.xsd" />
+    <None Include="Web References\AirBookProduction\OTA_AirBookLLS10.xsd" />
+    <None Include="Web References\AirBookProduction\OTA_AirBookLLS11.xsd" />
+    <None Include="Web References\AirBookProduction\OTA_AirBookRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirBookProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirBookProduction\wsse.xsd" />
+    <None Include="Web References\AirBookProduction\xlink.xsd" />
+    <None Include="Web References\AirBookProduction\xml.xsd" />
+    <None Include="Web References\AirBookProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirBookTest\envelope.xsd" />
+    <None Include="Web References\AirBookTest\msg-header-2_0.xsd" />
+    <None Include="Web References\AirBookTest\OTA_AirBookLLS1.wsdl" />
+    <None Include="Web References\AirBookTest\OTA_AirBookLLS1.xsd" />
+    <None Include="Web References\AirBookTest\OTA_AirBookLLS10.xsd" />
+    <None Include="Web References\AirBookTest\OTA_AirBookLLS11.xsd" />
+    <None Include="Web References\AirBookTest\OTA_AirBookRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirBookTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirBookTest\wsse.xsd" />
+    <None Include="Web References\AirBookTest\xlink.xsd" />
+    <None Include="Web References\AirBookTest\xml.xsd" />
+    <None Include="Web References\AirBookTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirLowFareSearch\envelope.xsd" />
+    <None Include="Web References\AirLowFareSearch\msg-header-2_0.xsd" />
+    <None Include="Web References\AirLowFareSearch\OTA_AirLowFareSearchLLS1.wsdl" />
+    <None Include="Web References\AirLowFareSearch\OTA_AirLowFareSearchLLS1.xsd" />
+    <None Include="Web References\AirLowFareSearch\OTA_AirLowFareSearchLLS10.xsd" />
+    <None Include="Web References\AirLowFareSearch\OTA_AirLowFareSearchLLS11.xsd" />
+    <None Include="Web References\AirLowFareSearch\OTA_AirLowFareSearchRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirLowFareSearch\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirLowFareSearch\wsse.xsd" />
+    <None Include="Web References\AirLowFareSearch\xlink.xsd" />
+    <None Include="Web References\AirLowFareSearch\xml.xsd" />
+    <None Include="Web References\AirLowFareSearch\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirPriceProduction\envelope.xsd" />
+    <None Include="Web References\AirPriceProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\AirPriceProduction\OTA_AirPriceLLS1.wsdl" />
+    <None Include="Web References\AirPriceProduction\OTA_AirPriceLLS1.xsd" />
+    <None Include="Web References\AirPriceProduction\OTA_AirPriceLLS10.xsd" />
+    <None Include="Web References\AirPriceProduction\OTA_AirPriceLLS11.xsd" />
+    <None Include="Web References\AirPriceProduction\OTA_AirPriceRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirPriceProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirPriceProduction\wsse.xsd" />
+    <None Include="Web References\AirPriceProduction\xlink.xsd" />
+    <None Include="Web References\AirPriceProduction\xml.xsd" />
+    <None Include="Web References\AirPriceProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirPriceTest\envelope.xsd" />
+    <None Include="Web References\AirPriceTest\msg-header-2_0.xsd" />
+    <None Include="Web References\AirPriceTest\OTA_AirPriceLLS1.wsdl" />
+    <None Include="Web References\AirPriceTest\OTA_AirPriceLLS1.xsd" />
+    <None Include="Web References\AirPriceTest\OTA_AirPriceLLS10.xsd" />
+    <None Include="Web References\AirPriceTest\OTA_AirPriceLLS11.xsd" />
+    <None Include="Web References\AirPriceTest\OTA_AirPriceRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirPriceTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirPriceTest\wsse.xsd" />
+    <None Include="Web References\AirPriceTest\xlink.xsd" />
+    <None Include="Web References\AirPriceTest\xml.xsd" />
+    <None Include="Web References\AirPriceTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirTicketProduction\AirTicketLLS1.wsdl" />
+    <None Include="Web References\AirTicketProduction\AirTicketLLS1.xsd" />
+    <None Include="Web References\AirTicketProduction\AirTicketLLS10.xsd" />
+    <None Include="Web References\AirTicketProduction\AirTicketLLS11.xsd" />
+    <None Include="Web References\AirTicketProduction\AirTicketRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirTicketProduction\envelope.xsd" />
+    <None Include="Web References\AirTicketProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\AirTicketProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirTicketProduction\wsse.xsd" />
+    <None Include="Web References\AirTicketProduction\xlink.xsd" />
+    <None Include="Web References\AirTicketProduction\xml.xsd" />
+    <None Include="Web References\AirTicketProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\AirTicketTest\AirTicketLLS1.wsdl" />
+    <None Include="Web References\AirTicketTest\AirTicketLLS1.xsd" />
+    <None Include="Web References\AirTicketTest\AirTicketLLS10.xsd" />
+    <None Include="Web References\AirTicketTest\AirTicketLLS11.xsd" />
+    <None Include="Web References\AirTicketTest\AirTicketRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AirTicketTest\envelope.xsd" />
+    <None Include="Web References\AirTicketTest\msg-header-2_0.xsd" />
+    <None Include="Web References\AirTicketTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AirTicketTest\wsse.xsd" />
+    <None Include="Web References\AirTicketTest\xlink.xsd" />
+    <None Include="Web References\AirTicketTest\xml.xsd" />
+    <None Include="Web References\AirTicketTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\DesignatePrinterLLS1.wsdl" />
+    <None Include="Web References\DesignatePrinterProduction\DesignatePrinterLLS1.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\DesignatePrinterLLS10.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\DesignatePrinterLLS11.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\DesignatePrinterRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DesignatePrinterProduction\envelope.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DesignatePrinterProduction\wsse.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\xlink.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\xml.xsd" />
+    <None Include="Web References\DesignatePrinterProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\DesignatePrinterTest\DesignatePrinterLLS1.wsdl" />
+    <None Include="Web References\DesignatePrinterTest\DesignatePrinterLLS1.xsd" />
+    <None Include="Web References\DesignatePrinterTest\DesignatePrinterLLS10.xsd" />
+    <None Include="Web References\DesignatePrinterTest\DesignatePrinterLLS11.xsd" />
+    <None Include="Web References\DesignatePrinterTest\DesignatePrinterRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DesignatePrinterTest\envelope.xsd" />
+    <None Include="Web References\DesignatePrinterTest\msg-header-2_0.xsd" />
+    <None Include="Web References\DesignatePrinterTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DesignatePrinterTest\wsse.xsd" />
+    <None Include="Web References\DesignatePrinterTest\xlink.xsd" />
+    <None Include="Web References\DesignatePrinterTest\xml.xsd" />
+    <None Include="Web References\DesignatePrinterTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\EndTransactionProduction\EndTransactionLLS1.wsdl" />
+    <None Include="Web References\EndTransactionProduction\EndTransactionLLS1.xsd" />
+    <None Include="Web References\EndTransactionProduction\EndTransactionLLS10.xsd" />
+    <None Include="Web References\EndTransactionProduction\EndTransactionLLS11.xsd" />
+    <None Include="Web References\EndTransactionProduction\EndTransactionRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EndTransactionProduction\envelope.xsd" />
+    <None Include="Web References\EndTransactionProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\EndTransactionProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EndTransactionProduction\wsse.xsd" />
+    <None Include="Web References\EndTransactionProduction\xlink.xsd" />
+    <None Include="Web References\EndTransactionProduction\xml.xsd" />
+    <None Include="Web References\EndTransactionProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\EndTransactionTest\EndTransactionLLS1.wsdl" />
+    <None Include="Web References\EndTransactionTest\EndTransactionLLS1.xsd" />
+    <None Include="Web References\EndTransactionTest\EndTransactionLLS10.xsd" />
+    <None Include="Web References\EndTransactionTest\EndTransactionLLS11.xsd" />
+    <None Include="Web References\EndTransactionTest\EndTransactionRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\EndTransactionTest\envelope.xsd" />
+    <None Include="Web References\EndTransactionTest\msg-header-2_0.xsd" />
+    <None Include="Web References\EndTransactionTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EndTransactionTest\wsse.xsd" />
+    <None Include="Web References\EndTransactionTest\xlink.xsd" />
+    <None Include="Web References\EndTransactionTest\xml.xsd" />
+    <None Include="Web References\EndTransactionTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\FraudCheckProduction\envelope.xsd" />
+    <None Include="Web References\FraudCheckProduction\FraudCheckRQ_v1.wsdl" />
+    <None Include="Web References\FraudCheckProduction\FraudCheckRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FraudCheckProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\FraudCheckProduction\OTA2003B.xsd" />
+    <None Include="Web References\FraudCheckProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FraudCheckProduction\wsse.xsd" />
+    <None Include="Web References\FraudCheckProduction\xlink.xsd" />
+    <None Include="Web References\FraudCheckProduction\xml.xsd" />
+    <None Include="Web References\FraudCheckProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\FraudCheckTest\envelope.xsd" />
+    <None Include="Web References\FraudCheckTest\FraudCheckRQ_v1.wsdl" />
+    <None Include="Web References\FraudCheckTest\FraudCheckRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FraudCheckTest\msg-header-2_0.xsd" />
+    <None Include="Web References\FraudCheckTest\OTA2003B.xsd" />
+    <None Include="Web References\FraudCheckTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FraudCheckTest\wsse.xsd" />
+    <None Include="Web References\FraudCheckTest\xlink.xsd" />
+    <None Include="Web References\FraudCheckTest\xml.xsd" />
+    <None Include="Web References\FraudCheckTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\envelope.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\IgnoreTransactionLLSRQ.wsdl" />
+    <None Include="Web References\IgnoreTransactionProduction\IgnoreTransactionLLSRQ.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\IgnoreTransactionLLSRQRS.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\IgnoreTransactionLLSRS.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\IgnoreTransactionRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\IgnoreTransactionProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\IgnoreTransactionProduction\wsse.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\xlink.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\xml.xsd" />
+    <None Include="Web References\IgnoreTransactionProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\envelope.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\IgnoreTransactionLLSRQ.wsdl" />
+    <None Include="Web References\IgnoreTransanctionTest\IgnoreTransactionLLSRQ.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\IgnoreTransactionLLSRQRS.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\IgnoreTransactionLLSRS.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\IgnoreTransactionRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\IgnoreTransanctionTest\msg-header-2_0.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\IgnoreTransanctionTest\wsse.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\xlink.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\xml.xsd" />
+    <None Include="Web References\IgnoreTransanctionTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\LowFareSearchTest\envelope.xsd" />
+    <None Include="Web References\LowFareSearchTest\msg-header-2_0.xsd" />
+    <None Include="Web References\LowFareSearchTest\OTA_AirLowFareSearchLLS1.wsdl" />
+    <None Include="Web References\LowFareSearchTest\OTA_AirLowFareSearchLLS1.xsd" />
+    <None Include="Web References\LowFareSearchTest\OTA_AirLowFareSearchLLS10.xsd" />
+    <None Include="Web References\LowFareSearchTest\OTA_AirLowFareSearchLLS11.xsd" />
+    <None Include="Web References\LowFareSearchTest\OTA_AirLowFareSearchRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LowFareSearchTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LowFareSearchTest\wsse.xsd" />
+    <None Include="Web References\LowFareSearchTest\xlink.xsd" />
+    <None Include="Web References\LowFareSearchTest\xml.xsd" />
+    <None Include="Web References\LowFareSearchTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\MyCTSGEAComunication\GeaComunication.disco" />
+    <None Include="Web References\MyCTSGEAComunication\GeaComunication.wsdl" />
+    <None Include="Web References\MyCTSGEAComunication\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentProduction\envelope.xsd" />
+    <None Include="Web References\PaymentProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\PaymentProduction\OTA2003B.xsd" />
+    <None Include="Web References\PaymentProduction\PaymentRQ_v1.wsdl" />
+    <None Include="Web References\PaymentProduction\PaymentRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentProduction\wsse.xsd" />
+    <None Include="Web References\PaymentProduction\xlink.xsd" />
+    <None Include="Web References\PaymentProduction\xml.xsd" />
+    <None Include="Web References\PaymentProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\PaymentTest\envelope.xsd" />
+    <None Include="Web References\PaymentTest\msg-header-2_0.xsd" />
+    <None Include="Web References\PaymentTest\OTA2003B.xsd" />
+    <None Include="Web References\PaymentTest\PaymentRQ_v1.wsdl" />
+    <None Include="Web References\PaymentTest\PaymentRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\PaymentTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PaymentTest\wsse.xsd" />
+    <None Include="Web References\PaymentTest\xlink.xsd" />
+    <None Include="Web References\PaymentTest\xml.xsd" />
+    <None Include="Web References\PaymentTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\SabreCommandTest\envelope.xsd" />
+    <None Include="Web References\SabreCommandTest\msg-header-2_0.xsd" />
+    <None Include="Web References\SabreCommandTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SabreCommandTest\SabreCommandLLS1.wsdl" />
+    <None Include="Web References\SabreCommandTest\SabreCommandLLS1.xsd" />
+    <None Include="Web References\SabreCommandTest\SabreCommandLLS10.xsd" />
+    <None Include="Web References\SabreCommandTest\SabreCommandLLS11.xsd" />
+    <None Include="Web References\SabreCommandTest\SabreCommandLLSRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SabreCommandTest\wsse.xsd" />
+    <None Include="Web References\SabreCommandTest\xlink.xsd" />
+    <None Include="Web References\SabreCommandTest\xml.xsd" />
+    <None Include="Web References\SabreCommandTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\SessionCloseTest\envelope.xsd" />
+    <None Include="Web References\SessionCloseTest\msg-header-2_0.xsd" />
+    <None Include="Web References\SessionCloseTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SessionCloseTest\SessionCloseRQ.wsdl" />
+    <None Include="Web References\SessionCloseTest\SessionCloseRQ.xsd" />
+    <None Include="Web References\SessionCloseTest\SessionCloseRQRS.xsd" />
+    <None Include="Web References\SessionCloseTest\SessionCloseRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SessionCloseTest\SessionCloseRS.xsd" />
+    <None Include="Web References\SessionCloseTest\wsse.xsd" />
+    <None Include="Web References\SessionCloseTest\xlink.xsd" />
+    <None Include="Web References\SessionCloseTest\xml.xsd" />
+    <None Include="Web References\SessionCloseTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\SessionCreateTest\envelope.xsd" />
+    <None Include="Web References\SessionCreateTest\msg-header-2_0.xsd" />
+    <None Include="Web References\SessionCreateTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SessionCreateTest\SessionCreateRQ.wsdl" />
+    <None Include="Web References\SessionCreateTest\SessionCreateRQ.xsd" />
+    <None Include="Web References\SessionCreateTest\SessionCreateRQRS.xsd" />
+    <None Include="Web References\SessionCreateTest\SessionCreateRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SessionCreateTest\SessionCreateRS.xsd" />
+    <None Include="Web References\SessionCreateTest\wsse.xsd" />
+    <None Include="Web References\SessionCreateTest\xlink.xsd" />
+    <None Include="Web References\SessionCreateTest\xml.xsd" />
+    <None Include="Web References\SessionCreateTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\SpecialServiceProduction\envelope.xsd" />
+    <None Include="Web References\SpecialServiceProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\SpecialServiceProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SpecialServiceProduction\SpecialServiceLLS1.wsdl" />
+    <None Include="Web References\SpecialServiceProduction\SpecialServiceLLS1.xsd" />
+    <None Include="Web References\SpecialServiceProduction\SpecialServiceLLS10.xsd" />
+    <None Include="Web References\SpecialServiceProduction\SpecialServiceLLS11.xsd" />
+    <None Include="Web References\SpecialServiceProduction\SpecialServiceRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpecialServiceProduction\wsse.xsd" />
+    <None Include="Web References\SpecialServiceProduction\xlink.xsd" />
+    <None Include="Web References\SpecialServiceProduction\xml.xsd" />
+    <None Include="Web References\SpecialServiceProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\SpecialServiceTest\envelope.xsd" />
+    <None Include="Web References\SpecialServiceTest\msg-header-2_0.xsd" />
+    <None Include="Web References\SpecialServiceTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SpecialServiceTest\SpecialServiceLLS1.wsdl" />
+    <None Include="Web References\SpecialServiceTest\SpecialServiceLLS1.xsd" />
+    <None Include="Web References\SpecialServiceTest\SpecialServiceLLS10.xsd" />
+    <None Include="Web References\SpecialServiceTest\SpecialServiceLLS11.xsd" />
+    <None Include="Web References\SpecialServiceTest\SpecialServiceRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SpecialServiceTest\wsse.xsd" />
+    <None Include="Web References\SpecialServiceTest\xlink.xsd" />
+    <None Include="Web References\SpecialServiceTest\xml.xsd" />
+    <None Include="Web References\SpecialServiceTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\envelope.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TravelItineraryAddInfoProduction\TravelItineraryAddInfoLLS1.wsdl" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\TravelItineraryAddInfoLLS1.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\TravelItineraryAddInfoLLS10.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\TravelItineraryAddInfoLLS11.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\TravelItineraryAddInfoRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TravelItineraryAddInfoProduction\wsse.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\xlink.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\xml.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\envelope.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\msg-header-2_0.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TravelItineraryAddInfoTest\TravelItineraryAddInfoLLS1.wsdl" />
+    <None Include="Web References\TravelItineraryAddInfoTest\TravelItineraryAddInfoLLS1.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\TravelItineraryAddInfoLLS10.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\TravelItineraryAddInfoLLS11.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\TravelItineraryAddInfoRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TravelItineraryAddInfoTest\wsse.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\xlink.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\xml.xsd" />
+    <None Include="Web References\TravelItineraryAddInfoTest\xmldsig-core-schema.xsd" />
+    <None Include="Web References\TravelItineraryProduction\envelope.xsd" />
+    <None Include="Web References\TravelItineraryProduction\msg-header-2_0.xsd" />
+    <None Include="Web References\TravelItineraryProduction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TravelItineraryProduction\TravelItineraryReadLLS1.wsdl" />
+    <None Include="Web References\TravelItineraryProduction\TravelItineraryReadLLS1.xsd" />
+    <None Include="Web References\TravelItineraryProduction\TravelItineraryReadLLS10.xsd" />
+    <None Include="Web References\TravelItineraryProduction\TravelItineraryReadLLS11.xsd" />
+    <None Include="Web References\TravelItineraryProduction\TravelItineraryReadRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TravelItineraryProduction\wsse.xsd" />
+    <None Include="Web References\TravelItineraryProduction\xlink.xsd" />
+    <None Include="Web References\TravelItineraryProduction\xml.xsd" />
+    <None Include="Web References\TravelItineraryProduction\xmldsig-core-schema.xsd" />
+    <None Include="Web References\TravelItineraryTest\envelope.xsd" />
+    <None Include="Web References\TravelItineraryTest\msg-header-2_0.xsd" />
+    <None Include="Web References\TravelItineraryTest\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TravelItineraryTest\TravelItineraryReadLLS1.wsdl" />
+    <None Include="Web References\TravelItineraryTest\TravelItineraryReadLLS1.xsd" />
+    <None Include="Web References\TravelItineraryTest\TravelItineraryReadLLS10.xsd" />
+    <None Include="Web References\TravelItineraryTest\TravelItineraryReadLLS11.xsd" />
+    <None Include="Web References\TravelItineraryTest\TravelItineraryReadRS.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\TravelItineraryTest\wsse.xsd" />
+    <None Include="Web References\TravelItineraryTest\xlink.xsd" />
+    <None Include="Web References\TravelItineraryTest\xml.xsd" />
+    <None Include="Web References\TravelItineraryTest\xmldsig-core-schema.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Contracts\Volaris\VolarisResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VolarisResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\BuildElectronicTicketDev\MailProvider.disco" />
+    <None Include="Web References\BuildElectronicTicketDev\MailProvider.wsdl" />
+    <None Include="Web References\BuildElectronicTicketDev\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PrintVoucher\Voucher.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\BuildElectronicTicket\Mailprovider.wsdl" />
+    <None Include="Web References\PrintVoucher\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\PrintVoucher\Voucher.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\BuildElectronicTicket\Mailprovider.disco" />
+    <None Include="Web References\BuildElectronicTicket\ObjectTicketByPNR5.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\BuildElectronicTicket\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\BuildElectronicTicket\TicketInformationObject5.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManager\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManager\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ContentManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManager\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManager\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BookingManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManager\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManager\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SessionManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ValidateDKsAndCreditCards\WsMyCTS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\PagosMIT\TransaccionesTarjetaNPService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClipboardService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClipboardService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClipboardService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIVolaris\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIVolaris\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIVolaris\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIInterJet\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIInterJet\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIInterJet\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIInterJet\InterJet1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClipboardService\ClipboardService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\APIInterJet\InterJet2.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

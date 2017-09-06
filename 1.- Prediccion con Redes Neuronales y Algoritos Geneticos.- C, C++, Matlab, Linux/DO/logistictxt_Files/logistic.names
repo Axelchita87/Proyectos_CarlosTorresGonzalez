@@ -1,0 +1,17 @@
+The logistic map TS is generated with the iterated quadratic equation:
+\begin{equation}
+\label{ec:logistic}
+	  x(t+1) = 4x(t)(1-x(t))
+\end{equation}
+
+$x(0)= 0.2$
+
+cited in \cite{yao:EPnet:chaoticTS:97}
+
+inputs 1
+delays 1
+no validation set
+100 train
+100 test
+NRMSE used
+

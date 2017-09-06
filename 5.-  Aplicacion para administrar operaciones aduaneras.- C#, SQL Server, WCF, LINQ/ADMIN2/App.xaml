@@ -1,0 +1,783 @@
+﻿<Application x:Class="ADMIN2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Splash.xaml">
+    <Application.Resources>
+        <!--BOTON PARA CERRAR VENTANAS-->
+        <Style x:Key="cerrarven" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas x:Name="Capa_1">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+                                                <EasingColorKeyFrame KeyTime="0" Value="#693A11"/>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Path x:Name="path" Width="20" Canvas.Top="0" Canvas.Left="0" Height="20" Fill="Transparent" Data="F1M20,20L0,20 0,0 20,0z"/>
+                            <Path Width="10.418" Canvas.Top="4.791" Canvas.Left="4.791" Height="10.417" Fill="White" Data="F1M10.418,1.736L8.682,0 5.209,3.472 1.736,0 0,1.736 3.473,5.209 0,8.681 1.736,10.417 5.209,6.945 8.682,10.417 10.418,8.681 6.945,5.209z"/>
+                        </Canvas>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--TEXTO BLANCO-->
+        <Style x:Key="textw" TargetType="{x:Type Label}">
+            <Setter Property="Foreground" Value="white"></Setter>
+            <Setter Property="FontFamily" Value="Myriad"></Setter>
+        </Style>
+
+        <!--TEXTBOX BLANCO-->
+        <Style x:Key="TxtLogin" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="Transparent">                
+            </Setter>            
+        </Style>
+
+        <Style x:Key="Txtpwd" TargetType="{x:Type PasswordBox}">
+            <Setter Property="Background" Value="Transparent">
+            </Setter>
+        </Style>
+
+        <!--Estilo del boton de login-->
+        <SolidColorBrush x:Key="texto" Color="Transparent"></SolidColorBrush>
+        <Style x:Key="loginboton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <SolidColorBrush Color="Transparent" />
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Rectangle x:Name="rectangle" Stroke="Transparent"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="{StaticResource texto}"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Foreground" Value="Transparent"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+
+        <!--Minimizar, maximizar, cerrar-->
+        <Style x:Key="btn_mini" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas x:Name="btn_manimizar" UseLayoutRounding="False">
+                            <Canvas x:Name="Capa_1" Height="18" Canvas.Left="1" Canvas.Top="1" Width="18">
+                                <Path Data="F1M18.563,9.563C18.563,14.534 14.534,18.563 9.563,18.563 4.592,18.563 0.563,14.534 0.563,9.563 0.563,4.592 4.592,0.563 9.563,0.563 14.534,0.563 18.563,4.592 18.563,9.563" Fill="Transparent" Height="19.125" Canvas.Left="-0.563" Stroke="White" StrokeThickness="1.90" Canvas.Top="-0.563" Width="19.125"/>
+                                <Path Data="M0,1.5L9.492,1.5" Height="3" Canvas.Left="4.254" Stroke="White" StrokeThickness="3" Canvas.Top="7.5" Width="9.492"/>
+                            </Canvas>
+                        </Canvas>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="maxim_boton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas x:Name="btn_maximizar" UseLayoutRounding="False">
+                            <Canvas x:Name="Capa_1" Height="18" Canvas.Left="1" Canvas.Top="1" Width="18">
+                                <Path Data="F1M18.563,9.563C18.563,14.534 14.534,18.563 9.563,18.563 4.592,18.563 0.563,14.534 0.563,9.563 0.563,4.592 4.592,0.563 9.563,0.563 14.534,0.563 18.563,4.592 18.563,9.563" Fill="Transparent" Height="19.125" Canvas.Left="-0.563" Stroke="White" StrokeThickness="1.90" Canvas.Top="-0.563" Width="19.125"/>
+                                <Path Data="F1M6.732,5.084L0.779,5.084 0.779,0.779 6.732,0.779z" Fill="Transparent" Height="5.863" Canvas.Left="6.733" Stroke="White" StrokeThickness="1.558" Canvas.Top="4.992" Width="7.511"/>
+                                <Path Data="F1M6.732,5.084L0.779,5.084 0.779,0.779 6.732,0.779z" Fill="Transparent" Height="5.863" Canvas.Left="3.756" Stroke="White" StrokeThickness="1.558" Canvas.Top="7.144" Width="7.511"/>
+                            </Canvas>
+                        </Canvas>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="close_boton" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Canvas x:Name="btn_cerrar" UseLayoutRounding="False">
+                            <Canvas x:Name="Capa_1" Width="18" Canvas.Top="1" Canvas.Left="1" Height="18">
+                                <Path Width="19.125" Canvas.Top="-0.563" StrokeThickness="1.90" Stroke="White" Canvas.Left="-0.563" Height="19.125" Fill="Transparent" Data="F1M18.563,9.563C18.563,14.534 14.534,18.563 9.563,18.563 4.592,18.563 0.563,14.534 0.563,9.563 0.563,4.592 4.592,0.563 9.563,0.563 14.534,0.563 18.563,4.592 18.563,9.563"/>
+                                <Path Width="9.152" Canvas.Top="4.424" StrokeThickness="3" Stroke="White" Canvas.Left="4.424" Height="9.152" Data="M1.06,1.06L8.091,8.091"/>
+                                <Path Width="9.152" Canvas.Top="4.424" StrokeThickness="3" Stroke="White" Canvas.Left="4.424" Height="9.152" Data="M8.092,1.06L1.061,8.091"/>
+                            </Canvas>
+                        </Canvas>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Height" Value="16"/>
+            <Setter Property="Width" Value="16"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="ToolTip" Value="Cerrar"/>
+        </Style>
+
+        <!--ESTILO DE LOS GROUPBOX-->
+        <Style x:Key="borde_naranja" TargetType="{x:Type GroupBox}">
+            <Setter Property="BorderBrush" Value="#D0A82D"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <!-- CONTROL TEXTBOX CON ESQUINAS REDONDEADAS-->
+        <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="{x:Type TextBoxBase}">
+
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Gray" BorderThickness="1.5"
+                 CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+                <Trigger Property="BorderThickness" Value="2"/>
+
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="PassBaseControlTemplate" TargetType="{x:Type PasswordBox}">
+
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Gray" BorderThickness="1.5"
+                 CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+                <Trigger Property="BorderThickness" Value="2"/>
+
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+
+        <Style x:Key="DatePickerStyle1" TargetType="{x:Type DatePicker}">
+
+            <Setter Property="Foreground" Value="#FF333333"/>
+            <Setter Property="IsTodayHighlighted" Value="True"/>
+            <Setter Property="SelectedDateFormat" Value="Short"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="BorderBrush">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint=".5,0" StartPoint=".5,1">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FF617584" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DatePicker}">
+                        <Border BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" BorderBrush="#FFBBBBBB" Background="#FFE0E0E0">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="PART_DisabledVisual"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid x:Name="PART_Root" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                <Grid.Resources>
+                                    <SolidColorBrush x:Key="DisabledBrush" Color="#A5FFFFFF"/>
+                                    <ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
+                                        <Grid>
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup x:Name="CommonStates">
+                                                    <VisualStateGroup.Transitions>
+                                                        <VisualTransition GeneratedDuration="0"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                                        <VisualTransition GeneratedDuration="0:0:0.1" To="Pressed"/>
+                                                    </VisualStateGroup.Transitions>
+                                                    <VisualState x:Name="Normal"/>
+                                                    <VisualState x:Name="MouseOver"/>
+                                                    <VisualState x:Name="Pressed"/>
+                                                    <VisualState x:Name="Disabled"/>
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <Grid Background="#11FFFFFF" FlowDirection="LeftToRight" HorizontalAlignment="Center" Height="18" Margin="0" VerticalAlignment="Center" Width="19">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                    <ColumnDefinition Width="20*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="23*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                    <RowDefinition Height="19*"/>
+                                                </Grid.RowDefinitions>
+                                            </Grid>
+                                            <Canvas x:Name="calnedario" HorizontalAlignment="Left" Height="36.339" UseLayoutRounding="False" VerticalAlignment="Top" Width="36.339" Grid.ColumnSpan="1" Margin="-8.333,-7.997,-8.006,-11.342" Grid.RowSpan="1">
+                                                <Canvas x:Name="Capa_1" Height="23.863" Canvas.Left="7.844" Canvas.Top="5.899" Width="20.651">
+                                                    <Path Data="F1M20.766,19.102C20.766,20.623,19.533,21.855,18.013,21.855L2.869,21.855C1.348,21.855,0.115,20.623,0.115,19.102L0.115,2.868C0.115,1.348,1.348,0.115,2.869,0.115L18.013,0.115C19.533,0.115,20.766,1.348,20.766,2.868z" Fill="#FFB9B9B9" Height="21.969" Canvas.Left="-0.115" Stroke="#FF1D1D1B" StrokeThickness="0.229" Canvas.Top="2.008" Width="20.88"/>
+                                                    <Path Data="F1M20.72,7.096L20.72,2.822C20.72,1.302,19.487,0.069,17.967,0.069L2.823,0.069C1.302,0.069,0.069,1.302,0.069,2.822L0.069,7.096z" Fill="#FFF96600" Height="7.165" Canvas.Left="-0.069" Stroke="White" StrokeThickness="0.138" Canvas.Top="2.054" Width="20.789"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="2.122" Canvas.Top="11.587" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="5.679" Canvas.Top="11.587" Width="2.18"/>
+                                                    <Path Data="F1M2.294,2.294L0.114,2.294 0.114,0.114 2.294,0.114z" Fill="White" Height="2.409" Canvas.Left="9.121" Stroke="#FFB7B7B7" StrokeThickness="0.229" Canvas.Top="11.473" Width="2.409"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="12.792" Canvas.Top="11.587" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="16.348" Canvas.Top="11.587" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="2.122" Canvas.Top="15.144" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="5.679" Canvas.Top="15.144" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="9.235" Canvas.Top="15.144" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="12.792" Canvas.Top="15.144" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="16.348" Canvas.Top="15.144" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="2.122" Canvas.Top="18.7" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="5.679" Canvas.Top="18.7" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="9.235" Canvas.Top="18.7" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="12.792" Canvas.Top="18.7" Width="2.18"/>
+                                                    <Path Data="F1M2.18,2.18L0,2.18 0,0 2.18,0z" Fill="White" Height="2.18" Canvas.Left="16.348" Canvas.Top="18.7" Width="2.18"/>
+                                                    <Path Data="F1M0,1.664C0,0.745 0.745,0 1.664,0 2.582,0 3.327,0.745 3.327,1.664 3.327,2.583 2.582,3.328 1.664,3.328 0.745,3.328 0,2.583 0,1.664" Fill="#FFBF3D00" Height="3.328" Canvas.Left="2.639" Canvas.Top="3.972" Width="3.327"/>
+                                                    <Path Data="F1M0,1.664C0,0.745 0.745,0 1.664,0 2.582,0 3.327,0.745 3.327,1.664 3.327,2.583 2.582,3.328 1.664,3.328 0.745,3.328 0,2.583 0,1.664" Fill="#FFBF3D00" Height="3.328" Canvas.Left="15.201" Canvas.Top="3.972" Width="3.327"/>
+                                                    <Path Data="F1M2.18,4.761C2.18,5.363 1.692,5.851 1.09,5.851 0.488,5.851 0,5.363 0,4.761L0,1.09C0,0.488 0.488,0 1.09,0 1.692,0 2.18,0.488 2.18,1.09z" Fill="#FFBDC3C7" Height="5.851" Canvas.Left="3.212" Canvas.Top="0" Width="2.18"/>
+                                                    <Path Data="F1M2.18,0C2.18,0.479 1.692,0.866 1.09,0.866 0.488,0.866 0,0.479 0,0" Fill="#FF888C8E" Height="0.866" Canvas.Left="3.212" Canvas.Top="5.386" Width="2.18"/>
+                                                    <Path Data="F1M2.18,1.414L0,1.414 0,0 2.18,0z" Fill="#FF888C8E" Height="1.414" Canvas.Left="3.212" Canvas.Top="3.972" Width="2.18"/>
+                                                    <Path Data="F1M2.18,4.761C2.18,5.363 1.692,5.851 1.09,5.851 0.488,5.851 0,5.363 0,4.761L0,1.09C0,0.488 0.488,0 1.09,0 1.692,0 2.18,0.488 2.18,1.09z" Fill="#FFBDC3C7" Height="5.851" Canvas.Left="15.775" Canvas.Top="0" Width="2.18"/>
+                                                    <Path Data="F1M2.18,0C2.18,0.479 1.692,0.866 1.09,0.866 0.488,0.866 0,0.479 0,0" Fill="#FF888C8E" Height="0.866" Canvas.Left="15.775" Canvas.Top="5.386" Width="2.18"/>
+                                                    <Path Data="F1M2.18,1.414L0,1.414 0,0 2.18,0z" Fill="#FF888C8E" Height="1.414" Canvas.Left="15.775" Canvas.Top="3.972" Width="2.18"/>
+                                                </Canvas>
+                                            </Canvas>
+                                        </Grid>
+                                    </ControlTemplate>
+                                </Grid.Resources>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="PART_Button" Grid.Column="1" Foreground="{TemplateBinding Foreground}" Focusable="False" HorizontalAlignment="Left" Margin="3,0,3,0" Grid.Row="0" Template="{StaticResource DropDownButtonTemplate}" VerticalAlignment="Top" Width="20"/>
+                                <DatePickerTextBox x:Name="PART_TextBox" Grid.Column="0" Focusable="{TemplateBinding Focusable}" HorizontalContentAlignment="Stretch" Grid.Row="0" VerticalContentAlignment="Stretch" Background="#FFE0E0E0" Style="{DynamicResource DatePickerTextBoxStyle1}" Margin="0,3.996,0,-3.996" FontFamily="Arial" Foreground="#FF727272" />
+                                <Grid x:Name="PART_DisabledVisual" Grid.ColumnSpan="2" Grid.Column="0" IsHitTestVisible="False" Opacity="0" Grid.Row="0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Rectangle Grid.Column="0" Fill="Transparent" RadiusY="1" Grid.Row="0" RadiusX="1"/>
+                                    <Rectangle Grid.Column="1" Fill="Transparent" Height="18" Margin="3,0.666,3,-0.667" RadiusY="1" Grid.Row="0" RadiusX="1" Width="19"/>
+                                    <Popup x:Name="PART_Popup" AllowsTransparency="True" Placement="Bottom" PlacementTarget="{Binding ElementName=PART_TextBox}" StaysOpen="False" ForceCursor="True"/>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <DataTrigger Binding="{Binding Source={x:Static SystemParameters.HighContrast}}" Value="false">
+                                <Setter Property="Foreground" TargetName="PART_TextBox" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            </DataTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- CONTROL CHECKBOX-->
+        <Style x:Key="Check" TargetType="{x:Type RadioButton}">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#333333"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#333333"/>
+        </Style>
+
+        <Style x:Key="CheckBoxStyle" TargetType="{x:Type CheckBox}">
+            <Setter Property="SnapsToDevicePixels" Value="true" />
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="Height" Value="22" />
+            <Setter Property="FocusVisualStyle" Value="{DynamicResource MyFocusVisualStyte}" />
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type CheckBox}">
+                        <BulletDecorator>
+                            <BulletDecorator.Bullet>
+                                <Grid Height="{TemplateBinding Height}" Width="{Binding RelativeSource={RelativeSource Self}, Path=Height, UpdateSourceTrigger=PropertyChanged}"
+                              MinHeight="20" MinWidth="20" ShowGridLines="False">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="4*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="4*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="2*" />
+                                        <ColumnDefinition Width="2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="3*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="4*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="1*" />
+                                        <RowDefinition Height="4*" />
+                                    </Grid.RowDefinitions>
+
+                                    <Border Name="MainBorder"
+                                    Grid.ColumnSpan="9" Grid.RowSpan="9"
+                                    CornerRadius="4"
+                                    BorderThickness="1"
+                                    Background="Transparent" />
+
+                                    <Border Name="InnerBorder"
+                                    Grid.Column="1" Grid.ColumnSpan="5"
+                                    Grid.Row="2" Grid.RowSpan="5"
+                                    BorderThickness="1"
+                                    BorderBrush="#808080" />
+
+                                    <Path Name="InnerPath"
+                                  Grid.Column="1" Grid.ColumnSpan="5"
+                                  Grid.Row="2" Grid.RowSpan="5"
+                                  Data="M31,5 L19.5,5 19.5,19.5 34.5,19.5 34.5,11.75"
+                                  Stretch="Fill" Stroke="#808080"/>
+
+                                    <Path Name="CheckMark"
+                                  Grid.Column="2" Grid.ColumnSpan="5"
+                                  Grid.Row="1" Grid.RowSpan="5"
+                                  Opacity="0"
+                                  Data="M9.07743946676476E-09,4.31805768640244L4.68740335877841,8.86361158398516C4.68740335877841,8.86361158398516,16.3281249985376,-2.42451336648723,16.3281249985376,-2.42451336648723L14.0622100581796,-4.77304938341948 4.68740335877846,4.31805791992662 2.22656251699567,1.93164208562579z"
+                                  Fill="#D24726"
+                                  Stretch="Fill"
+                                  Stroke="#D24726" />
+
+                                    <Path Name="InderminateMark"
+                                  Grid.Column="3"
+                                  Grid.Row="4"
+                                  Data="M0,4 L1,5 5,1 4,0"
+                                  Opacity="0"
+                                  Stretch="Fill"
+                                  StrokeThickness="0"
+                                  Fill="#808080" />
+                                </Grid>
+                            </BulletDecorator.Bullet>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CheckStates">
+                                    <VisualState x:Name="Checked">
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             Storyboard.TargetName="CheckMark" Duration="0:0:0.2" To="1" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unchecked" >
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             Storyboard.TargetName="CheckMark" Duration="0:0:0.2" To="0" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Indeterminate">
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                             Storyboard.TargetName="InderminateMark" Duration="0:0:0.2" To="1" />
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter Margin="4,0,4,0"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        RecognizesAccessKey="True" />
+                        </BulletDecorator>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="InnerBorder" Property="Visibility" Value="Collapsed" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="MainBorder" Property="Background" Value="#D24726" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="CheckMark" Property="Fill" Value="#cccccc" />
+                                <Setter TargetName="CheckMark" Property="Stroke" Value="#cccccc" />
+                                <Setter TargetName="InnerPath" Property="Stroke" Value="#cccccc" />
+                                <Setter TargetName="InderminateMark" Property="Fill" Value="#cccccc" />
+                                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="#cccccc" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#333333"/>
+        </Style>
+
+        <!--ESTILO GENERAL DE LOS BOTONES-->
+        <Style x:Key="btn_gen_naranja" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke)" Storyboard.TargetName="rectangle">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Null}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill)" Storyboard.TargetName="rectangle">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                            <GradientStop Color="#D0A82D" Offset="0.814"/>
+                                                            <GradientStop Color="#D0A82D" Offset="0"/>
+                                                        </LinearGradientBrush>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke)" Storyboard.TargetName="rectangle">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <SolidColorBrush Color="#333333"/>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.24"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="contentPresenter">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.315"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Rectangle x:Name="rectangle" RadiusY="2" RadiusX="2" Stroke="#D0A82D" StrokeThickness="2"/>
+                            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="Foreground" Value="#FF383838"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Foreground" Value="#333333"></Setter>
+                </Trigger>
+            </Style.Triggers>
+
+        </Style>
+
+        <!--ESTILO LABEL DE LA CABECERA-->
+        <Style x:Key="labe_cabecera" TargetType="{x:Type Label}">
+            <Setter Property="Width" Value="auto"/>
+            <Setter Property="FontFamily" Value="Tunga"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="5,0,0,0"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+
+        <!--ESTILOS PARA LAS FUENTES-->
+        <Style x:Key="estilo_labels" TargetType="{x:Type TextBlock}">
+
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Justify"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <!--ESTILOS PARA LAS FUENTES-->
+        <Style x:Key="estilo_labels2" TargetType="{x:Type TextBlock}">
+            <Setter Property="Foreground" Value="#333333"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Justify"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+
+        <!--===========================Estilo de botón de busqueda con botón en forma de Lupa================================-->
+        <Style x:Key="buscar2" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Image x:Name="image1" Source="images/buscar_icon.png" Stretch="Fill"/>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content=""/>
+                            <Image x:Name="image" Opacity="0" Source="images/buscar_icon.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <Image x:Name="image2" Opacity="0" Source="images/buscar_icon.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="rectangulo_superior" TargetType="{x:Type Rectangle}">
+            <Setter Property="Fill" Value="#D0A82D"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+
+        <Style x:Key="NotEqual" TargetType="{x:Type PasswordBox}">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#D0A82D"/>
+        </Style>
+        <Style x:Key="NotSelect" TargetType="{x:Type ComboBox}">
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#D0A82D"/>
+        </Style>
+
+        <!--segundo estilo del border-->
+
+        <ControlTemplate x:Key="segundo_estilo" TargetType="{x:Type TextBoxBase}">
+
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="#D0A82D" BorderThickness="1.5"
+                 CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+                <Trigger Property="BorderThickness" Value="3"/>
+                <Trigger Property="BorderBrush" Value="red"/>
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+
+        <!--Acceso directo Menú Principal-->
+        <Style x:Key="AccDMulticonsulta" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Source="Images/multiconsulta.png" Stretch="Uniform"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="AccDClientes" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Source="Images/clientes.png" Stretch="Uniform"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="AccDProductos" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Source="images/productos-activos.png" Stretch="Uniform"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True"/>
+                            <Trigger Property="IsPressed" Value="True"/>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Name="Border" BorderThickness="1,1,1,0" BorderBrush="Gainsboro" CornerRadius="0,0,0,0" Margin="0">
+                            <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        Margin="10,2"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#D0A82D" />
+                                <Setter Property="Foreground" Value="Black"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="#D8D8D8" />
+                                <Setter Property="Foreground" Value="#333333"/>
+                                <Setter Property="BorderBrush" Value="#D24726"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+
+
+    </Application.Resources>
+</Application>
